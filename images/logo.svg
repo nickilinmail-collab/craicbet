@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48">
+  <defs>
+    <linearGradient id="clover-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B8C3D"/>
+      <stop offset="100%" stop-color="#0A2E14"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F26522"/>
+      <stop offset="100%" stop-color="#D4551A"/>
+    </linearGradient>
+  </defs>
+  <!-- Shamrock icon -->
+  <g transform="translate(24, 24)">
+    <!-- Top leaf -->
+    <ellipse cx="0" cy="-8" rx="6.5" ry="7" fill="url(#clover-grad)"/>
+    <!-- Left leaf -->
+    <ellipse cx="-7.5" cy="-1" rx="6.5" ry="7" fill="url(#clover-grad)" transform="rotate(-30 -7.5 -1)"/>
+    <!-- Right leaf -->
+    <ellipse cx="7.5" cy="-1" rx="6.5" ry="7" fill="url(#clover-grad)" transform="rotate(30 7.5 -1)"/>
+    <!-- Stem -->
+    <path d="M0 4 Q2 12 0 18" stroke="#1B8C3D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <!-- Orange dot accent -->
+    <circle cx="0" cy="-5" r="3" fill="url(#accent-grad)"/>
+  </g>
+  <!-- Text: Craic -->
+  <text x="48" y="33" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#0A2E14" letter-spacing="-0.5">Craic</text>
+  <!-- Text: Bet -->
+  <text x="127" y="33" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="800" fill="#F26522" letter-spacing="-0.5">Bet</text>
+</svg>
