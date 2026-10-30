@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="wg-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1040"/>
+      <stop offset="50%" stop-color="#2d1b69"/>
+      <stop offset="100%" stop-color="#c8860b"/>
+    </linearGradient>
+    <radialGradient id="moon-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8DC"/>
+      <stop offset="60%" stop-color="#FFE4B5"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="coin-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#wg-bg)"/>
+  <!-- Stars -->
+  <circle cx="30" cy="20" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle cx="80" cy="45" r="1" fill="#fff" opacity="0.6"/>
+  <circle cx="140" cy="15" r="1.2" fill="#fff" opacity="0.7"/>
+  <circle cx="210" cy="30" r="1" fill="#fff" opacity="0.5"/>
+  <circle cx="280" cy="20" r="1.5" fill="#fff" opacity="0.8"/>
+  <circle cx="350" cy="40" r="1" fill="#fff" opacity="0.6"/>
+  <circle cx="60" cy="60" r="0.8" fill="#fff" opacity="0.4"/>
+  <circle cx="320" cy="55" r="1.3" fill="#fff" opacity="0.7"/>
+  <circle cx="170" cy="50" r="0.8" fill="#fff" opacity="0.5"/>
+  <circle cx="380" cy="15" r="1" fill="#fff" opacity="0.6"/>
+  <!-- Moon glow -->
+  <circle cx="310" cy="55" r="50" fill="url(#moon-glow)" opacity="0.3"/>
+  <!-- Full moon -->
+  <circle cx="310" cy="55" r="30" fill="#FFF8DC"/>
+  <circle cx="300" cy="48" r="4" fill="#EDE7C5" opacity="0.5"/>
+  <circle cx="318" cy="60" r="3" fill="#EDE7C5" opacity="0.4"/>
+  <circle cx="305" cy="65" r="2.5" fill="#EDE7C5" opacity="0.3"/>
+  <!-- Desert ground -->
+  <path d="M0 160 Q50 145 100 155 Q150 140 200 150 Q250 138 300 148 Q350 140 400 150 L400 200 L0 200Z" fill="#3D2B1F" opacity="0.8"/>
+  <path d="M0 170 Q80 158 160 165 Q240 155 320 162 Q360 158 400 163 L400 200 L0 200Z" fill="#4A3728" opacity="0.6"/>
+  <!-- Cactus left -->
+  <rect x="55" y="120" width="8" height="50" rx="4" fill="#2D5016"/>
+  <rect x="48" y="130" width="7" height="4" rx="2" fill="#2D5016" transform="rotate(-15 48 130)"/>
+  <rect x="42" y="118" width="6" height="20" rx="3" fill="#2D5016"/>
+  <rect x="63" y="125" width="7" height="4" rx="2" fill="#2D5016" transform="rotate(15 63 125)"/>
+  <rect x="68" y="112" width="6" height="22" rx="3" fill="#2D5016"/>
+  <!-- Cactus right -->
+  <rect x="360" y="130" width="7" height="40" rx="3.5" fill="#2D5016"/>
+  <rect x="353" y="138" width="6" height="4" rx="2" fill="#2D5016" transform="rotate(-10 353 138)"/>
+  <rect x="348" y="125" width="5" height="18" rx="2.5" fill="#2D5016"/>
+  <!-- Wolf silhouette -->
+  <g transform="translate(140, 60)">
+    <!-- Body -->
+    <path d="M0 80 Q10 50 30 45 Q45 40 60 42 Q75 38 90 40 Q100 38 110 42 Q120 44 130 50 L130 80 Q120 78 110 80 Q90 82 70 80 Q50 82 30 80Z" fill="#1a1040"/>
+    <!-- Head -->
+    <path d="M120 50 Q125 35 135 25 Q140 20 145 22 Q148 18 152 12 Q155 18 156 24 Q160 22 165 25 Q168 18 172 10 Q175 18 175 26 Q180 30 178 38 Q175 45 170 50 Q165 55 155 55 Q145 52 140 48 Q130 48 120 50Z" fill="#1a1040"/>
+    <!-- Ear tips -->
+    <path d="M148 18 Q152 12 155 18" fill="#2d2060"/>
+    <path d="M168 18 Q172 10 175 18" fill="#2d2060"/>
+    <!-- Eye -->
+    <circle cx="160" cy="35" r="3" fill="#FFD700"/>
+    <circle cx="161" cy="35" r="1.5" fill="#1a1040"/>
+    <!-- Snout -->
+    <path d="M170 50 Q178 48 180 42 Q178 38 175 38" fill="#2d1b50" opacity="0.7"/>
+    <!-- Nose -->
+    <circle cx="179" cy="41" r="2" fill="#111"/>
+    <!-- Tail -->
+    <path d="M0 80 Q-15 65 -10 50 Q-5 45 0 50" stroke="#1a1040" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <!-- Legs -->
+    <rect x="25" y="78" width="6" height="18" rx="3" fill="#1a1040"/>
+    <rect x="45" y="78" width="6" height="20" rx="3" fill="#1a1040"/>
+    <rect x="95" y="78" width="6" height="20" rx="3" fill="#1a1040"/>
+    <rect x="115" y="78" width="6" height="18" rx="3" fill="#1a1040"/>
+  </g>
+  <!-- Gold coins -->
+  <ellipse cx="90" cy="178" rx="10" ry="9" fill="url(#coin-g)" stroke="#8B6914" stroke-width="1"/>
+  <text x="86" y="182" font-size="10" fill="#8B6914" font-weight="bold">$</text>
+  <ellipse cx="115" cy="182" rx="9" ry="8" fill="url(#coin-g)" stroke="#8B6914" stroke-width="1"/>
+  <text x="111" y="186" font-size="9" fill="#8B6914" font-weight="bold">$</text>
+  <ellipse cx="100" cy="188" rx="8" ry="7" fill="url(#coin-g)" stroke="#8B6914" stroke-width="1"/>
+  <text x="97" y="192" font-size="8" fill="#8B6914" font-weight="bold">$</text>
+</svg>
