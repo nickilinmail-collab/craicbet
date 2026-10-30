@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="desert" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F9A825"/>
+      <stop offset="40%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+    <linearGradient id="pyr" x1="0%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#F9A825"/>
+      <stop offset="100%" stop-color="#FFD54F"/>
+    </linearGradient>
+    <linearGradient id="book-cover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8D6E63"/>
+      <stop offset="50%" stop-color="#5D4037"/>
+      <stop offset="100%" stop-color="#3E2723"/>
+    </linearGradient>
+    <radialGradient id="sun-glow" cx="75%" cy="20%" r="35%">
+      <stop offset="0%" stop-color="#FFEE58" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#E65100" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#desert)"/>
+  <rect width="400" height="200" fill="url(#sun-glow)"/>
+
+  <!-- Sun -->
+  <circle cx="320" cy="35" r="22" fill="#FFEE58" opacity="0.8"/>
+  <circle cx="320" cy="35" r="18" fill="#FFF9C4"/>
+
+  <!-- Pyramids background -->
+  <polygon points="280,160 340,80 400,160" fill="url(#pyr)" opacity="0.5"/>
+  <polygon points="320,160 370,90 420,160" fill="#FFB300" opacity="0.4"/>
+  <!-- Pyramid lines -->
+  <line x1="340" y1="80" x2="310" y2="160" stroke="#E65100" stroke-width="0.5" opacity="0.3"/>
+  <line x1="340" y1="80" x2="370" y2="160" stroke="#E65100" stroke-width="0.5" opacity="0.3"/>
+
+  <!-- Sand dunes -->
+  <path d="M0,170 Q50,155 100,165 Q150,175 200,160 Q250,150 300,165 Q350,175 400,160 L400,200 L0,200Z" fill="#E65100" opacity="0.4"/>
+  <path d="M0,180 Q60,170 120,178 Q180,185 240,175 Q300,168 360,178 Q380,182 400,178 L400,200 L0,200Z" fill="#BF360C" opacity="0.4"/>
+
+  <!-- Open book center -->
+  <g transform="translate(160, 100)">
+    <!-- Book spine shadow -->
+    <rect x="-2" y="-40" width="4" height="80" fill="#3E2723"/>
+    <!-- Left page -->
+    <path d="M-2,-40 Q-50,-42 -70,-35 L-70,35 Q-50,40 -2,40Z" fill="#FFF8E1" stroke="#8D6E63" stroke-width="1.5"/>
+    <!-- Right page -->
+    <path d="M2,-40 Q50,-42 70,-35 L70,35 Q50,40 2,40Z" fill="#FFF8E1" stroke="#8D6E63" stroke-width="1.5"/>
+    <!-- Book edges -->
+    <path d="M-70,-35 L-72,-33 L-72,37 L-70,35Z" fill="url(#book-cover)"/>
+    <path d="M70,-35 L72,-33 L72,37 L70,35Z" fill="url(#book-cover)"/>
+    <!-- Book bottom -->
+    <path d="M-70,35 L-72,37 L0,45 L72,37 L70,35 Q50,40 2,40 L-2,40 Q-50,40 -70,35Z" fill="#5D4037"/>
+
+    <!-- Hieroglyphs on left page -->
+    <g fill="#BF360C" opacity="0.6">
+      <!-- Eye of Horus simplified -->
+      <ellipse cx="-40" cy="-20" rx="8" ry="5"/>
+      <circle cx="-40" cy="-20" r="3" fill="#3E2723"/>
+      <path d="M-32,-20 L-25,-18" stroke="#BF360C" stroke-width="1.5"/>
+      <path d="M-40,-15 Q-42,-8 -45,-5" stroke="#BF360C" stroke-width="1" fill="none"/>
+      <!-- Wavy line -->
+      <path d="M-55,-5 Q-50,-8 -45,-5 Q-40,-2 -35,-5 Q-30,-8 -25,-5" fill="none" stroke="#BF360C" stroke-width="1"/>
+      <!-- Bird shape -->
+      <path d="M-50,8 Q-45,2 -40,5 Q-35,8 -30,5 L-28,10 L-50,10Z" fill="#BF360C" opacity="0.5"/>
+      <!-- Lines -->
+      <line x1="-55" y1="18" x2="-25" y2="18" stroke="#BF360C" stroke-width="0.5"/>
+      <line x1="-55" y1="22" x2="-30" y2="22" stroke="#BF360C" stroke-width="0.5"/>
+      <line x1="-55" y1="26" x2="-28" y2="26" stroke="#BF360C" stroke-width="0.5"/>
+    </g>
+
+    <!-- Ankh on right page -->
+    <g transform="translate(35, -5)" fill="#DAA520" stroke="#B8860B" stroke-width="1">
+      <ellipse cx="0" cy="-18" rx="8" ry="10" fill="none" stroke="#DAA520" stroke-width="2.5"/>
+      <line x1="0" y1="-8" x2="0" y2="20" stroke="#DAA520" stroke-width="2.5"/>
+      <line x1="-10" y1="2" x2="10" y2="2" stroke="#DAA520" stroke-width="2.5"/>
+    </g>
+
+    <!-- Golden glow on book -->
+    <ellipse cx="0" cy="0" rx="60" ry="35" fill="#FFD54F" opacity="0.08"/>
+  </g>
+
+  <!-- Scarab beetle -->
+  <g transform="translate(60, 70)">
+    <ellipse cx="0" cy="0" rx="14" ry="10" fill="#1B5E20"/>
+    <ellipse cx="0" cy="-3" rx="10" ry="7" fill="#2E7D32"/>
+    <circle cx="0" cy="-10" r="6" fill="#1B5E20"/>
+    <!-- Wings -->
+    <path d="M-14,0 Q-25,-5 -20,5 Q-15,10 -10,5Z" fill="#4CAF50" opacity="0.7"/>
+    <path d="M14,0 Q25,-5 20,5 Q15,10 10,5Z" fill="#4CAF50" opacity="0.7"/>
+    <!-- Gold accent on scarab -->
+    <ellipse cx="0" cy="-2" rx="5" ry="3" fill="#FFD54F" opacity="0.5"/>
+    <!-- Legs -->
+    <line x1="-12" y1="5" x2="-18" y2="12" stroke="#1B5E20" stroke-width="1"/>
+    <line x1="12" y1="5" x2="18" y2="12" stroke="#1B5E20" stroke-width="1"/>
+    <line x1="-14" y1="0" x2="-20" y2="3" stroke="#1B5E20" stroke-width="1"/>
+    <line x1="14" y1="0" x2="20" y2="3" stroke="#1B5E20" stroke-width="1"/>
+  </g>
+
+  <!-- Floating golden coins/gems -->
+  <g>
+    <ellipse cx="90" cy="155" rx="10" ry="7" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="90" cy="153" rx="10" ry="7" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+    <ellipse cx="300" cy="140" rx="9" ry="6" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="300" cy="138" rx="9" ry="6" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#FFD54F" opacity="0.7">
+    <polygon points="130,40 132,35 134,40 132,45"/>
+    <polygon points="260,55 262,50 264,55 262,60"/>
+    <polygon points="190,45 192,40 194,45 192,50"/>
+    <polygon points="350,120 352,115 354,120 352,125"/>
+  </g>
+
+  <!-- Sand particles -->
+  <g fill="#FFE082" opacity="0.2">
+    <circle cx="20" cy="185" r="1.5"/>
+    <circle cx="50" cy="190" r="1"/>
+    <circle cx="150" cy="188" r="1.5"/>
+    <circle cx="250" cy="192" r="1"/>
+    <circle cx="380" cy="185" r="1.5"/>
+  </g>
+</svg>

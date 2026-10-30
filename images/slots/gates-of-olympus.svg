@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8C00"/>
+      <stop offset="40%" stop-color="#E8751A"/>
+      <stop offset="100%" stop-color="#B8620E"/>
+    </linearGradient>
+    <linearGradient id="col" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <linearGradient id="bolt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFACD"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFFACD" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FF8C00" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gem1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4444"/>
+      <stop offset="100%" stop-color="#CC0000"/>
+    </linearGradient>
+    <linearGradient id="gem2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4488FF"/>
+      <stop offset="100%" stop-color="#0044CC"/>
+    </linearGradient>
+    <linearGradient id="gem3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44DD44"/>
+      <stop offset="100%" stop-color="#008800"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="200" fill="url(#sky)"/>
+  <rect width="400" height="200" fill="url(#glow)"/>
+
+  <!-- Clouds -->
+  <g opacity="0.35" fill="#FFF5E0">
+    <ellipse cx="60" cy="35" rx="45" ry="18"/>
+    <ellipse cx="90" cy="30" rx="35" ry="15"/>
+    <ellipse cx="30" cy="38" rx="30" ry="12"/>
+    <ellipse cx="320" cy="25" rx="50" ry="20"/>
+    <ellipse cx="355" cy="20" rx="30" ry="14"/>
+    <ellipse cx="290" cy="30" rx="28" ry="12"/>
+    <ellipse cx="180" cy="15" rx="40" ry="14"/>
+    <ellipse cx="210" cy="10" rx="25" ry="10"/>
+  </g>
+
+  <!-- Left column -->
+  <rect x="30" y="60" width="16" height="140" fill="url(#col)" rx="3"/>
+  <rect x="28" y="55" width="20" height="10" fill="#FFD700" rx="2"/>
+  <rect x="28" y="190" width="20" height="10" fill="#B8860B" rx="2"/>
+  <line x1="35" y1="70" x2="35" y2="190" stroke="#B8860B" stroke-width="0.5" opacity="0.4"/>
+  <line x1="41" y1="70" x2="41" y2="190" stroke="#B8860B" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Second left column -->
+  <rect x="60" y="80" width="14" height="120" fill="url(#col)" rx="3"/>
+  <rect x="58" y="76" width="18" height="8" fill="#FFD700" rx="2"/>
+  <rect x="58" y="192" width="18" height="8" fill="#B8860B" rx="2"/>
+
+  <!-- Right column -->
+  <rect x="354" y="60" width="16" height="140" fill="url(#col)" rx="3"/>
+  <rect x="352" y="55" width="20" height="10" fill="#FFD700" rx="2"/>
+  <rect x="352" y="190" width="20" height="10" fill="#B8860B" rx="2"/>
+  <line x1="359" y1="70" x2="359" y2="190" stroke="#B8860B" stroke-width="0.5" opacity="0.4"/>
+  <line x1="365" y1="70" x2="365" y2="190" stroke="#B8860B" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Second right column -->
+  <rect x="326" y="80" width="14" height="120" fill="url(#col)" rx="3"/>
+  <rect x="324" y="76" width="18" height="8" fill="#FFD700" rx="2"/>
+  <rect x="324" y="192" width="18" height="8" fill="#B8860B" rx="2"/>
+
+  <!-- Temple top beam -->
+  <polygon points="95,72 305,72 310,65 90,65" fill="#FFD700" stroke="#B8860B" stroke-width="0.5"/>
+  <polygon points="100,65 300,65 280,45 120,45" fill="#FFD700" stroke="#B8860B" stroke-width="0.5"/>
+
+  <!-- Central lightning bolt -->
+  <polygon points="200,30 185,80 197,78 180,130 220,70 205,73 215,30" fill="url(#bolt)" stroke="#FFA000" stroke-width="1"/>
+  <!-- Lightning glow -->
+  <polygon points="200,30 185,80 197,78 180,130 220,70 205,73 215,30" fill="#FFFACD" opacity="0.3" transform="scale(1.15) translate(-15,-8)"/>
+
+  <!-- Small lightning left -->
+  <polygon points="120,50 114,72 118,71 112,95 126,68 121,69 125,50" fill="url(#bolt)" stroke="#FFA000" stroke-width="0.5" opacity="0.7"/>
+
+  <!-- Small lightning right -->
+  <polygon points="280,45 274,67 278,66 272,90 286,63 281,64 285,45" fill="url(#bolt)" stroke="#FFA000" stroke-width="0.5" opacity="0.7"/>
+
+  <!-- Gems / coins scattered -->
+  <!-- Red gem -->
+  <polygon points="140,140 148,130 156,140 148,150" fill="url(#gem1)" stroke="#AA0000" stroke-width="0.5"/>
+  <line x1="148" y1="132" x2="148" y2="148" stroke="#FF8888" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Blue gem -->
+  <polygon points="250,145 258,135 266,145 258,155" fill="url(#gem2)" stroke="#0033AA" stroke-width="0.5"/>
+  <line x1="258" y1="137" x2="258" y2="153" stroke="#88AAFF" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Green gem -->
+  <polygon points="195,160 203,150 211,160 203,170" fill="url(#gem3)" stroke="#006600" stroke-width="0.5"/>
+
+  <!-- Gold coins -->
+  <ellipse cx="160" cy="175" rx="10" ry="7" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <ellipse cx="160" cy="173" rx="10" ry="7" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+  <ellipse cx="240" cy="178" rx="9" ry="6" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <ellipse cx="240" cy="176" rx="9" ry="6" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+  <ellipse cx="310" cy="170" rx="8" ry="5.5" fill="#FFD700" stroke="#B8860B" stroke-width="1"/>
+  <ellipse cx="310" cy="168" rx="8" ry="5.5" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+
+  <!-- Sparkles -->
+  <g fill="#FFFACD" opacity="0.8">
+    <polygon points="170,50 172,46 174,50 172,54" />
+    <polygon points="230,55 232,51 234,55 232,59" />
+    <polygon points="300,100 302,96 304,100 302,104" />
+    <polygon points="100,110 102,106 104,110 102,114" />
+    <polygon points="340,45 342,41 344,45 342,49" />
+  </g>
+</svg>

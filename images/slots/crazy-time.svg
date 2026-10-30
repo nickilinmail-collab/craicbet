@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="show-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6F00"/>
+      <stop offset="50%" stop-color="#E65100"/>
+      <stop offset="100%" stop-color="#BF360C"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFF9C4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E65100" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#show-bg)"/>
+  <rect width="400" height="200" fill="url(#spot)"/>
+
+  <!-- Stage lights -->
+  <g opacity="0.15">
+    <polygon points="50,0 20,200 80,200" fill="#FFEB3B"/>
+    <polygon points="150,0 120,200 180,200" fill="#FF4081"/>
+    <polygon points="250,0 220,200 280,200" fill="#448AFF"/>
+    <polygon points="350,0 320,200 380,200" fill="#69F0AE"/>
+  </g>
+
+  <!-- Spinning wheel -->
+  <g transform="translate(200, 105)">
+    <!-- Wheel outer ring -->
+    <circle cx="0" cy="0" r="72" fill="none" stroke="#FFD54F" stroke-width="4"/>
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#3E2723" stroke-width="2"/>
+
+    <!-- Wheel segments -->
+    <!-- Segment 1 - Yellow -->
+    <path d="M0,0 L0,-68 A68,68 0 0,1 48,-48Z" fill="#FFEB3B"/>
+    <!-- Segment 2 - Blue -->
+    <path d="M0,0 L48,-48 A68,68 0 0,1 68,0Z" fill="#2196F3"/>
+    <!-- Segment 3 - Red -->
+    <path d="M0,0 L68,0 A68,68 0 0,1 48,48Z" fill="#F44336"/>
+    <!-- Segment 4 - Green -->
+    <path d="M0,0 L48,48 A68,68 0 0,1 0,68Z" fill="#4CAF50"/>
+    <!-- Segment 5 - Purple -->
+    <path d="M0,0 L0,68 A68,68 0 0,1 -48,48Z" fill="#9C27B0"/>
+    <!-- Segment 6 - Orange -->
+    <path d="M0,0 L-48,48 A68,68 0 0,1 -68,0Z" fill="#FF9800"/>
+    <!-- Segment 7 - Pink -->
+    <path d="M0,0 L-68,0 A68,68 0 0,1 -48,-48Z" fill="#E91E63"/>
+    <!-- Segment 8 - Teal -->
+    <path d="M0,0 L-48,-48 A68,68 0 0,1 0,-68Z" fill="#00BCD4"/>
+
+    <!-- Segment dividers -->
+    <g stroke="#3E2723" stroke-width="1.5">
+      <line x1="0" y1="0" x2="0" y2="-68"/>
+      <line x1="0" y1="0" x2="48" y2="-48"/>
+      <line x1="0" y1="0" x2="68" y2="0"/>
+      <line x1="0" y1="0" x2="48" y2="48"/>
+      <line x1="0" y1="0" x2="0" y2="68"/>
+      <line x1="0" y1="0" x2="-48" y2="48"/>
+      <line x1="0" y1="0" x2="-68" y2="0"/>
+      <line x1="0" y1="0" x2="-48" y2="-48"/>
+    </g>
+
+    <!-- Center hub -->
+    <circle cx="0" cy="0" r="15" fill="#FFD54F" stroke="#B8860B" stroke-width="2"/>
+    <circle cx="0" cy="0" r="10" fill="#FFF9C4"/>
+    <circle cx="0" cy="0" r="5" fill="#FFD54F"/>
+
+    <!-- Pointer/flapper at top -->
+    <polygon points="0,-78 -6,-68 6,-68" fill="#F44336" stroke="#B71C1C" stroke-width="1"/>
+
+    <!-- Pegs around the wheel -->
+    <g fill="#FFD54F">
+      <circle cx="0" cy="-70" r="3"/>
+      <circle cx="49.5" cy="-49.5" r="3"/>
+      <circle cx="70" cy="0" r="3"/>
+      <circle cx="49.5" cy="49.5" r="3"/>
+      <circle cx="0" cy="70" r="3"/>
+      <circle cx="-49.5" cy="49.5" r="3"/>
+      <circle cx="-70" cy="0" r="3"/>
+      <circle cx="-49.5" cy="-49.5" r="3"/>
+    </g>
+  </g>
+
+  <!-- Confetti -->
+  <g>
+    <rect x="30" y="20" width="6" height="4" rx="1" fill="#FF4081" transform="rotate(35 33 22)" opacity="0.8"/>
+    <rect x="80" y="35" width="5" height="3" rx="1" fill="#FFEB3B" transform="rotate(-20 82 36)" opacity="0.7"/>
+    <rect x="120" y="15" width="6" height="4" rx="1" fill="#2196F3" transform="rotate(50 123 17)" opacity="0.8"/>
+    <rect x="50" y="55" width="5" height="3" rx="1" fill="#4CAF50" transform="rotate(-40 52 56)" opacity="0.7"/>
+    <rect x="320" y="25" width="6" height="4" rx="1" fill="#9C27B0" transform="rotate(25 323 27)" opacity="0.8"/>
+    <rect x="360" y="50" width="5" height="3" rx="1" fill="#FF9800" transform="rotate(-30 362 51)" opacity="0.7"/>
+    <rect x="340" y="15" width="6" height="4" rx="1" fill="#E91E63" transform="rotate(60 343 17)" opacity="0.8"/>
+    <rect x="15" y="100" width="5" height="3" rx="1" fill="#00BCD4" transform="rotate(-15 17 101)" opacity="0.6"/>
+    <rect x="385" y="120" width="5" height="3" rx="1" fill="#FFEB3B" transform="rotate(40 387 121)" opacity="0.6"/>
+    <rect x="60" y="160" width="5" height="3" rx="1" fill="#FF4081" transform="rotate(-50 62 161)" opacity="0.5"/>
+    <rect x="350" y="170" width="6" height="4" rx="1" fill="#2196F3" transform="rotate(30 353 172)" opacity="0.5"/>
+  </g>
+
+  <!-- Circular confetti dots -->
+  <g>
+    <circle cx="40" cy="45" r="3" fill="#FFEB3B" opacity="0.6"/>
+    <circle cx="95" cy="20" r="2.5" fill="#FF4081" opacity="0.7"/>
+    <circle cx="300" cy="40" r="3" fill="#4CAF50" opacity="0.6"/>
+    <circle cx="370" cy="35" r="2" fill="#2196F3" opacity="0.7"/>
+    <circle cx="25" cy="75" r="2.5" fill="#9C27B0" opacity="0.5"/>
+    <circle cx="380" cy="80" r="2" fill="#FF9800" opacity="0.5"/>
+  </g>
+
+  <!-- Dice left -->
+  <g transform="translate(40, 150) rotate(-15)">
+    <rect x="-12" y="-12" width="24" height="24" rx="4" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="1"/>
+    <circle cx="-5" cy="-5" r="2" fill="#212121"/>
+    <circle cx="5" cy="-5" r="2" fill="#212121"/>
+    <circle cx="-5" cy="5" r="2" fill="#212121"/>
+    <circle cx="5" cy="5" r="2" fill="#212121"/>
+    <circle cx="0" cy="0" r="2" fill="#212121"/>
+  </g>
+
+  <!-- Dice right -->
+  <g transform="translate(365, 160) rotate(20)">
+    <rect x="-10" y="-10" width="20" height="20" rx="3" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="1"/>
+    <circle cx="0" cy="-4" r="1.8" fill="#F44336"/>
+    <circle cx="0" cy="4" r="1.8" fill="#F44336"/>
+  </g>
+
+  <!-- Gold coins bottom -->
+  <g>
+    <ellipse cx="90" cy="185" rx="10" ry="6" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="90" cy="183" rx="10" ry="6" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+    <ellipse cx="310" cy="188" rx="9" ry="5.5" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="310" cy="186" rx="9" ry="5.5" fill="#FFEC8B" stroke="#DAA520" stroke-width="1"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <polygon points="160,30 162,24 164,30 162,36"/>
+    <polygon points="240,20 242,14 244,20 242,26"/>
+    <polygon points="30" cy="130" r="1"/>
+  </g>
+</svg>

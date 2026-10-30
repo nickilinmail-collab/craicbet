@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="space" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="50%" stop-color="#311B92"/>
+      <stop offset="100%" stop-color="#0D0D2B"/>
+    </linearGradient>
+    <radialGradient id="nebula" cx="60%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#7C4DFF" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#651FFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#1A237E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="star-gem" cx="40%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="30%" stop-color="#FFEB3B"/>
+      <stop offset="100%" stop-color="#F9A825"/>
+    </radialGradient>
+    <radialGradient id="gem-r" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FF8A80"/>
+      <stop offset="100%" stop-color="#D50000"/>
+    </radialGradient>
+    <radialGradient id="gem-b" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#82B1FF"/>
+      <stop offset="100%" stop-color="#2962FF"/>
+    </radialGradient>
+    <radialGradient id="gem-g" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#B9F6CA"/>
+      <stop offset="100%" stop-color="#00C853"/>
+    </radialGradient>
+    <radialGradient id="gem-p" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#EA80FC"/>
+      <stop offset="100%" stop-color="#AA00FF"/>
+    </radialGradient>
+    <radialGradient id="gem-o" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#FFD180"/>
+      <stop offset="100%" stop-color="#FF6D00"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#space)"/>
+  <rect width="400" height="200" fill="url(#nebula)"/>
+
+  <!-- Stars background -->
+  <g fill="#FFFFFF">
+    <circle cx="20" cy="15" r="1" opacity="0.8"/>
+    <circle cx="55" cy="40" r="0.7" opacity="0.5"/>
+    <circle cx="90" cy="8" r="1" opacity="0.7"/>
+    <circle cx="130" cy="55" r="0.5" opacity="0.4"/>
+    <circle cx="170" cy="20" r="0.8" opacity="0.6"/>
+    <circle cx="210" cy="45" r="1" opacity="0.5"/>
+    <circle cx="250" cy="12" r="0.7" opacity="0.7"/>
+    <circle cx="290" cy="35" r="0.5" opacity="0.4"/>
+    <circle cx="330" cy="18" r="1" opacity="0.8"/>
+    <circle cx="370" cy="42" r="0.7" opacity="0.5"/>
+    <circle cx="40" cy="80" r="0.5" opacity="0.3"/>
+    <circle cx="110" cy="170" r="0.8" opacity="0.5"/>
+    <circle cx="180" cy="185" r="0.5" opacity="0.4"/>
+    <circle cx="280" cy="175" r="0.7" opacity="0.5"/>
+    <circle cx="350" cy="160" r="0.5" opacity="0.3"/>
+    <circle cx="380" cy="90" r="0.8" opacity="0.6"/>
+    <circle cx="15" cy="140" r="0.5" opacity="0.4"/>
+    <circle cx="395" cy="150" r="0.7" opacity="0.5"/>
+  </g>
+
+  <!-- Cosmic rays from center -->
+  <g opacity="0.15" stroke="#B388FF" fill="none">
+    <line x1="200" y1="100" x2="0" y2="0" stroke-width="2"/>
+    <line x1="200" y1="100" x2="400" y2="0" stroke-width="2"/>
+    <line x1="200" y1="100" x2="0" y2="200" stroke-width="1.5"/>
+    <line x1="200" y1="100" x2="400" y2="200" stroke-width="1.5"/>
+    <line x1="200" y1="100" x2="100" y2="0" stroke-width="1"/>
+    <line x1="200" y1="100" x2="300" y2="0" stroke-width="1"/>
+    <line x1="200" y1="100" x2="0" y2="100" stroke-width="1"/>
+    <line x1="200" y1="100" x2="400" y2="100" stroke-width="1"/>
+  </g>
+
+  <!-- Central starburst gem -->
+  <g transform="translate(200, 95)">
+    <!-- Outer glow -->
+    <polygon points="0,-50 8,-15 45,-35 15,-8 50,0 15,8 45,35 8,15 0,50 -8,15 -45,35 -15,8 -50,0 -15,-8 -45,-35 -8,-15" fill="#FFEB3B" opacity="0.15"/>
+    <!-- Star shape -->
+    <polygon points="0,-35 6,-12 32,-25 12,-6 35,0 12,6 32,25 6,12 0,35 -6,12 -32,25 -12,6 -35,0 -12,-6 -32,-25 -6,-12" fill="url(#star-gem)" stroke="#FFC107" stroke-width="1"/>
+    <!-- Inner facets -->
+    <polygon points="0,-20 5,-5 18,-14 7,-3 20,0 7,3 18,14 5,5 0,20 -5,5 -18,14 -7,3 -20,0 -7,-3 -18,-14 -5,-5" fill="#FFFFFF" opacity="0.3"/>
+    <!-- Center shine -->
+    <circle cx="-3" cy="-5" r="5" fill="#FFFFFF" opacity="0.5"/>
+  </g>
+
+  <!-- Floating gems -->
+  <!-- Red gem top-left -->
+  <g transform="translate(70, 50)">
+    <polygon points="0,-16 14,-5 9,14 -9,14 -14,-5" fill="url(#gem-r)" stroke="#C62828" stroke-width="0.8"/>
+    <polygon points="0,-16 5,-5 -5,-5" fill="#FF8A80" opacity="0.4"/>
+    <polygon points="5,-5 14,-5 9,14 0,5" fill="#D50000" opacity="0.3"/>
+  </g>
+
+  <!-- Blue gem top-right -->
+  <g transform="translate(330, 45)">
+    <polygon points="0,-14 12,-4 8,12 -8,12 -12,-4" fill="url(#gem-b)" stroke="#1565C0" stroke-width="0.8"/>
+    <polygon points="0,-14 4,-4 -4,-4" fill="#82B1FF" opacity="0.4"/>
+  </g>
+
+  <!-- Green gem bottom-left -->
+  <g transform="translate(90, 150)">
+    <polygon points="0,-12 10,-4 7,10 -7,10 -10,-4" fill="url(#gem-g)" stroke="#2E7D32" stroke-width="0.8"/>
+    <polygon points="0,-12 3,-4 -3,-4" fill="#B9F6CA" opacity="0.4"/>
+  </g>
+
+  <!-- Purple gem bottom-right -->
+  <g transform="translate(310, 155)">
+    <polygon points="0,-13 11,-4 7,11 -7,11 -11,-4" fill="url(#gem-p)" stroke="#6A1B9A" stroke-width="0.8"/>
+    <polygon points="0,-13 4,-4 -4,-4" fill="#EA80FC" opacity="0.4"/>
+  </g>
+
+  <!-- Orange gem left -->
+  <g transform="translate(40, 110)">
+    <polygon points="0,-11 9,-3 6,9 -6,9 -9,-3" fill="url(#gem-o)" stroke="#E65100" stroke-width="0.8"/>
+    <polygon points="0,-11 3,-3 -3,-3" fill="#FFD180" opacity="0.4"/>
+  </g>
+
+  <!-- Blue gem right -->
+  <g transform="translate(365, 110)">
+    <polygon points="0,-10 8,-3 5,8 -5,8 -8,-3" fill="url(#gem-b)" stroke="#1565C0" stroke-width="0.8"/>
+  </g>
+
+  <!-- Sparkle effects -->
+  <g fill="#FFFFFF">
+    <polygon points="140,30 142,22 144,30 142,38" opacity="0.7"/>
+    <polygon points="260,25 262,18 264,25 262,32" opacity="0.6"/>
+    <polygon points="160,160 162,154 164,160 162,166" opacity="0.5"/>
+    <polygon points="240,165 242,159 244,165 242,171" opacity="0.6"/>
+    <polygon points="50,30 51,26 52,30 51,34" opacity="0.4"/>
+    <polygon points="350,80 351,76 352,80 351,84" opacity="0.5"/>
+  </g>
+</svg>

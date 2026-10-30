@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200">
+  <defs>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0288D1"/>
+      <stop offset="50%" stop-color="#01579B"/>
+      <stop offset="100%" stop-color="#002F6C"/>
+    </linearGradient>
+    <linearGradient id="fish-body" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="40%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <linearGradient id="fish-belly" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#A5D6A7"/>
+    </linearGradient>
+    <linearGradient id="coin-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEC8B"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+    <radialGradient id="light" cx="50%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#4FC3F7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#01579B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#water)"/>
+  <rect width="400" height="200" fill="url(#light)"/>
+
+  <!-- Water surface waves -->
+  <path d="M0,20 Q25,10 50,20 Q75,30 100,20 Q125,10 150,20 Q175,30 200,20 Q225,10 250,20 Q275,30 300,20 Q325,10 350,20 Q375,30 400,20 L400,0 L0,0Z" fill="#4FC3F7" opacity="0.3"/>
+  <path d="M0,30 Q30,22 60,30 Q90,38 120,30 Q150,22 180,30 Q210,38 240,30 Q270,22 300,30 Q330,38 360,30 Q390,22 400,30 L400,0 L0,0Z" fill="#29B6F6" opacity="0.2"/>
+
+  <!-- Bubbles -->
+  <g fill="none" stroke="#B3E5FC" opacity="0.4">
+    <circle cx="50" cy="60" r="4" stroke-width="1"/>
+    <circle cx="55" cy="45" r="2.5" stroke-width="0.8"/>
+    <circle cx="340" cy="80" r="5" stroke-width="1"/>
+    <circle cx="345" cy="60" r="3" stroke-width="0.8"/>
+    <circle cx="180" cy="170" r="3" stroke-width="0.8"/>
+    <circle cx="250" cy="180" r="4" stroke-width="1"/>
+  </g>
+
+  <!-- Fishing rod -->
+  <path d="M350,10 Q330,40 310,80 Q295,110 280,120" fill="none" stroke="#8D6E63" stroke-width="3" stroke-linecap="round"/>
+  <path d="M280,120 L260,130 L250,125" fill="none" stroke="#90A4AE" stroke-width="1" stroke-dasharray="3 2"/>
+  <!-- Hook -->
+  <path d="M250,125 Q245,135 250,140 Q255,145 258,140" fill="none" stroke="#CFD8DC" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Rod handle -->
+  <rect x="348" y="5" width="6" height="14" rx="2" fill="#5D4037"/>
+  <rect x="346" y="7" width="10" height="3" rx="1" fill="#795548"/>
+
+  <!-- Main bass fish -->
+  <g transform="translate(170, 95)">
+    <!-- Body -->
+    <ellipse cx="0" cy="0" rx="65" ry="30" fill="url(#fish-body)"/>
+    <!-- Belly -->
+    <ellipse cx="0" cy="10" rx="55" ry="18" fill="url(#fish-belly)" opacity="0.6"/>
+    <!-- Tail fin -->
+    <polygon points="55,0 80,-20 80,20" fill="#1B5E20" stroke="#0D3B10" stroke-width="0.5"/>
+    <polygon points="58,-5 78,-18 75,-5" fill="#2E7D32" opacity="0.5"/>
+    <!-- Dorsal fin -->
+    <path d="M-20,-28 Q-5,-45 15,-30 Q25,-28 30,-30" fill="#1B5E20" stroke="#0D3B10" stroke-width="0.5"/>
+    <!-- Pectoral fin -->
+    <path d="M-15,15 Q-25,30 -10,35 Q0,30 -5,18" fill="#2E7D32" opacity="0.7"/>
+    <!-- Anal fin -->
+    <path d="M20,25 Q30,38 40,28 Q38,22 30,22" fill="#1B5E20" opacity="0.7"/>
+    <!-- Mouth -->
+    <path d="M-62,0 Q-68,-5 -65,-2 Q-68,5 -62,2" fill="#1B5E20" stroke="#0D3B10" stroke-width="0.5"/>
+    <!-- Eye -->
+    <circle cx="-40" cy="-5" r="7" fill="#FFFFFF"/>
+    <circle cx="-38" cy="-5" r="4" fill="#212121"/>
+    <circle cx="-36" cy="-7" r="1.5" fill="#FFFFFF"/>
+    <!-- Scales pattern -->
+    <g stroke="#1B5E20" stroke-width="0.3" fill="none" opacity="0.3">
+      <path d="M-20,0 Q-15,-5 -10,0 Q-15,5 -20,0"/>
+      <path d="M-5,0 Q0,-5 5,0 Q0,5 -5,0"/>
+      <path d="M10,0 Q15,-5 20,0 Q15,5 10,0"/>
+      <path d="M25,0 Q30,-5 35,0 Q30,5 25,0"/>
+      <path d="M-12,-10 Q-7,-15 -2,-10 Q-7,-5 -12,-10"/>
+      <path d="M3,-10 Q8,-15 13,-10 Q8,-5 3,-10"/>
+      <path d="M-12,10 Q-7,5 -2,10 Q-7,15 -12,10"/>
+      <path d="M3,10 Q8,5 13,10 Q8,15 3,10"/>
+    </g>
+    <!-- Lateral line -->
+    <path d="M-50,0 Q0,-3 50,0" fill="none" stroke="#4CAF50" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Water splash -->
+  <g fill="#B3E5FC" opacity="0.5">
+    <ellipse cx="130" cy="45" rx="8" ry="3" transform="rotate(-30 130 45)"/>
+    <ellipse cx="115" cy="50" rx="6" ry="2.5" transform="rotate(-45 115 50)"/>
+    <ellipse cx="145" cy="48" rx="5" ry="2" transform="rotate(20 145 48)"/>
+    <circle cx="120" cy="38" r="3"/>
+    <circle cx="140" cy="35" r="2"/>
+  </g>
+
+  <!-- Gold coins -->
+  <g>
+    <ellipse cx="60" cy="160" rx="12" ry="8" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="60" cy="157" rx="12" ry="8" fill="url(#coin-g)" stroke="#DAA520" stroke-width="1"/>
+    <ellipse cx="80" cy="170" rx="10" ry="7" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="80" cy="167" rx="10" ry="7" fill="url(#coin-g)" stroke="#DAA520" stroke-width="1"/>
+    <ellipse cx="320" cy="165" rx="11" ry="7" fill="#DAA520" stroke="#B8860B" stroke-width="1"/>
+    <ellipse cx="320" cy="162" rx="11" ry="7" fill="url(#coin-g)" stroke="#DAA520" stroke-width="1"/>
+  </g>
+
+  <!-- Lily pad -->
+  <ellipse cx="45" cy="140" rx="18" ry="8" fill="#388E3C" opacity="0.5"/>
+  <path d="M45,132 L45,140" stroke="#2E7D32" stroke-width="1" opacity="0.3"/>
+
+  <!-- Seaweed -->
+  <path d="M370,200 Q365,170 370,150 Q375,130 370,110" stroke="#2E7D32" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
+  <path d="M380,200 Q375,175 380,160 Q385,145 380,130" stroke="#388E3C" stroke-width="2.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <path d="M20" y="200" Q15,180 20,165 Q25,150 20,135" stroke="#2E7D32" stroke-width="2.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+</svg>
