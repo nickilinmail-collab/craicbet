@@ -1,7 +1,7 @@
 /*  CraicBet Mini Slot Machine — conversion widget
     Self-contained: injects its own CSS, floating button, and modal.
     Just add <script src="/js/slot-game.js"></script> before </body>.
-    Tracking link placeholder: TRACKING_LINK_HERE                    */
+    Tracking link placeholder: https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/                    */
 
 (function () {
   'use strict';
@@ -222,7 +222,7 @@
       <button class="cb-spin-btn" id="cbSpin">${t.spin}</button>
       <div class="cb-result" id="cbResult"></div>
       <div class="cb-cta-wrap" id="cbCtaWrap">
-        <a href="TRACKING_LINK_HERE" class="cb-cta" id="cbCta" target="_blank" rel="noopener">${t.cta}</a><br>
+        <a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" class="cb-cta" id="cbCta" target="_blank" rel="noopener">${t.cta}</a><br>
         <button class="cb-again" id="cbAgain">${t.tryAgain}</button>
       </div>
     </div>
