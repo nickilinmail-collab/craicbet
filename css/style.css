@@ -1259,3 +1259,49 @@ ul, ol { list-style: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== LANGUAGE SWITCHER ===== */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 12px;
+  padding-left: 12px;
+  border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.lang-switcher a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 10px !important;
+  border-radius: 6px;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  color: var(--gray-300) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.lang-switcher a:hover {
+  color: var(--white) !important;
+  background: var(--dark-surface) !important;
+}
+
+.lang-switcher a.active-lang {
+  color: var(--white) !important;
+  background: var(--emerald) !important;
+}
+
+@media (max-width: 768px) {
+  .lang-switcher {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+    justify-content: center;
+    padding: 8px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 8px;
+  }
+}
