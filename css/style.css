@@ -395,9 +395,9 @@ ul, ol { list-style: none; }
 }
 
 .tag-gibraltar {
-  background: #F3E5F5;
-  color: #6A1B9A;
-  border: 1px solid #CE93D8;
+  background: #E8F5E9;
+  color: #0A2E14;
+  border: 1px solid #6BC880;
 }
 
 .tag-curacao {
@@ -676,7 +676,7 @@ ul, ol { list-style: none; }
 
 /* ===== GRAI INFO BOX ===== */
 .info-box {
-  background: linear-gradient(135deg, var(--emerald-light), #F3E5F5);
+  background: linear-gradient(135deg, var(--emerald-light), #E8F5E9);
   border: 2px solid var(--emerald);
   border-radius: var(--radius);
   padding: 32px;
