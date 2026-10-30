@@ -56,7 +56,7 @@
 /* floating button */
 .cb-slot-fab{
   position:fixed;bottom:24px;right:24px;z-index:9998;
-  background:linear-gradient(135deg,#F26522,#7B3FBF);
+  background:linear-gradient(135deg,#F26522,#1B8C3D);
   color:#fff;border:none;border-radius:60px;
   padding:14px 24px;font-size:16px;font-weight:700;
   cursor:pointer;box-shadow:0 4px 20px rgba(242,101,34,.45);
@@ -94,7 +94,7 @@
 
 /* modal */
 .cb-slot-modal{
-  background:linear-gradient(160deg,#1E0A3C 0%,#2d1259 100%);
+  background:linear-gradient(160deg,#0A2E14 0%,#0F3D1C 100%);
   border-radius:20px;padding:28px 24px;
   width:min(380px,92vw);text-align:center;
   color:#fff;font-family:'Inter',sans-serif;
@@ -363,7 +363,7 @@
         h: 4 + Math.random() * 4,
         vx: (Math.random() - 0.5) * 3,
         vy: 2 + Math.random() * 3,
-        color: ['#F26522','#7B3FBF','#fbbf24','#22c55e','#ef4444','#3b82f6'][Math.floor(Math.random()*6)],
+        color: ['#F26522','#1B8C3D','#fbbf24','#22c55e','#ef4444','#3b82f6'][Math.floor(Math.random()*6)],
         rot: Math.random() * 360,
         rv: (Math.random() - 0.5) * 10
       });
