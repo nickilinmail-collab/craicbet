@@ -127,93 +127,167 @@
   0%,100%{box-shadow:0 4px 20px rgba(242,101,34,.45);}
   50%{box-shadow:0 4px 35px rgba(123,63,191,.7),0 0 60px rgba(242,101,34,.35);}
 }
-
-/* badge */
 .cb-slot-fab .cb-badge{
   background:#fff;color:#F26522;font-size:11px;font-weight:800;
   padding:2px 7px;border-radius:20px;text-transform:uppercase;
   animation:cb-badge-bounce 1.5s ease-in-out infinite;
 }
-@keyframes cb-badge-bounce{
-  0%,100%{transform:scale(1);}
-  50%{transform:scale(1.15);}
-}
+@keyframes cb-badge-bounce{0%,100%{transform:scale(1);}50%{transform:scale(1.15);}}
 
 /* overlay */
 .cb-slot-overlay{
   position:fixed;inset:0;z-index:9999;
-  background:rgba(0,0,0,.7);
+  background:rgba(0,0,0,.75);
   display:flex;align-items:center;justify-content:center;
-  opacity:0;pointer-events:none;
-  transition:opacity .3s;
+  opacity:0;pointer-events:none;transition:opacity .3s;
 }
 .cb-slot-overlay.open{opacity:1;pointer-events:all;}
 
-/* modal */
+/* modal = cabinet */
 .cb-slot-modal{
   background:linear-gradient(160deg,#0A2E14 0%,#0F3D1C 100%);
-  border-radius:20px;padding:28px 24px;
-  width:min(380px,92vw);text-align:center;
+  border-radius:22px;padding:24px 22px 26px;
+  width:min(400px,92vw);text-align:center;
   color:#fff;font-family:'Inter',sans-serif;
-  box-shadow:0 20px 60px rgba(0,0,0,.5);
+  box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 0 4px #7a4a12,0 0 0 7px #c8871f,0 0 45px rgba(242,101,34,.25);
   transform:scale(.85);transition:transform .3s;
   position:relative;
 }
 .cb-slot-overlay.open .cb-slot-modal{transform:scale(1);}
+.cb-slot-modal.shake{animation:cb-shake .45s ease;}
+@keyframes cb-shake{
+  0%,100%{transform:scale(1) translateX(0);}
+  20%{transform:scale(1) translateX(-9px) rotate(-.6deg);}
+  40%{transform:scale(1) translateX(8px) rotate(.5deg);}
+  60%{transform:scale(1) translateX(-6px);}
+  80%{transform:scale(1) translateX(4px);}
+}
+.cb-slot-modal.winflash{animation:cb-winflash 1.6s ease;}
+@keyframes cb-winflash{
+  0%,100%{box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 0 4px #7a4a12,0 0 0 7px #c8871f,0 0 45px rgba(242,101,34,.25);}
+  25%,75%{box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 0 4px #ffd34d,0 0 0 7px #ffb300,0 0 90px rgba(255,200,60,.8);}
+  50%{box-shadow:0 20px 60px rgba(0,0,0,.55),0 0 0 4px #fff,0 0 0 7px #ffd34d,0 0 120px rgba(255,220,100,.9);}
+}
+
+/* marquee bulbs */
+.cb-bulbs{display:flex;justify-content:center;gap:9px;margin:-4px 0 8px;}
+.cb-bulbs i{
+  width:10px;height:10px;border-radius:50%;
+  background:#5c3a10;box-shadow:inset 0 0 2px rgba(0,0,0,.6);
+  animation:cb-bulb 1.1s linear infinite;
+}
+.cb-bulbs i:nth-child(2n){animation-delay:.55s;}
+@keyframes cb-bulb{
+  0%,49%{background:#ffd34d;box-shadow:0 0 8px #ffd34d,0 0 16px rgba(255,211,77,.6);}
+  50%,100%{background:#5c3a10;box-shadow:inset 0 0 2px rgba(0,0,0,.6);}
+}
+.cb-slot-overlay .cb-bulbs i{animation-play-state:running;}
+.cb-slot-modal.spinning .cb-bulbs i{animation-duration:.35s;}
 
 .cb-slot-close{
-  position:absolute;top:12px;right:16px;background:none;border:none;
-  color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;
-  transition:color .2s;
+  position:absolute;top:10px;right:14px;background:none;border:none;
+  color:rgba(255,255,255,.6);font-size:22px;cursor:pointer;transition:color .2s;z-index:3;
 }
 .cb-slot-close:hover{color:#fff;}
 
 .cb-slot-title{
-  font-size:22px;font-weight:800;margin:0 0 4px;
-  background:linear-gradient(90deg,#F26522,#fbbf24);
+  font-size:24px;font-weight:900;margin:0 0 2px;letter-spacing:1px;
+  background:linear-gradient(90deg,#ffd34d,#F26522,#ffd34d);
+  background-size:200% 100%;
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  animation:cb-title-shine 3s linear infinite;
 }
-.cb-slot-subtitle{font-size:13px;color:rgba(255,255,255,.5);margin-bottom:18px;}
+@keyframes cb-title-shine{0%{background-position:0 0;}100%{background-position:200% 0;}}
+.cb-slot-subtitle{font-size:12px;color:rgba(255,255,255,.45);margin-bottom:12px;letter-spacing:2px;text-transform:uppercase;}
 
-/* reels */
+/* reel window */
+.cb-machine{position:relative;padding:0 26px;}
 .cb-reels{
-  display:flex;gap:10px;justify-content:center;margin-bottom:20px;
+  display:flex;gap:8px;justify-content:center;
+  background:linear-gradient(180deg,#07230f,#0c3317);
+  border:3px solid #c8871f;border-radius:16px;
+  padding:12px 10px;position:relative;margin-bottom:18px;
+  box-shadow:inset 0 6px 18px rgba(0,0,0,.6);
 }
 .cb-reel{
-  width:80px;height:90px;
-  background:rgba(255,255,255,.08);
-  border:2px solid rgba(255,255,255,.12);
-  border-radius:14px;
-  display:flex;align-items:center;justify-content:center;
-  font-size:48px;line-height:1;
-  overflow:hidden;position:relative;
-  transition:border-color .3s;
+  width:84px;height:96px;border-radius:10px;overflow:hidden;position:relative;
+  background:linear-gradient(180deg,#d9d9d9 0%,#ffffff 22%,#ffffff 78%,#c9c9c9 100%);
+  box-shadow:inset 0 10px 14px rgba(0,0,0,.35),inset 0 -10px 14px rgba(0,0,0,.35);
 }
-.cb-reel.win{border-color:#F26522;box-shadow:0 0 20px rgba(242,101,34,.4);}
+.cb-reel::after{ /* glass shine */
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.35) 48%,transparent 56%);
+}
+.cb-strip{
+  position:absolute;left:0;top:0;width:100%;
+  will-change:transform;
+}
+.cb-cell{
+  height:96px;display:flex;align-items:center;justify-content:center;
+  font-size:52px;line-height:1;
+}
+.cb-reel.spin-blur .cb-cell{filter:blur(1.5px);}
+.cb-reel.land .cb-strip{animation:cb-land .32s ease-out;}
+@keyframes cb-land{
+  0%{margin-top:0;}35%{margin-top:14px;}70%{margin-top:-6px;}100%{margin-top:0;}
+}
+.cb-reel.win{box-shadow:inset 0 10px 14px rgba(0,0,0,.2),inset 0 -10px 14px rgba(0,0,0,.2),0 0 0 3px #ffd34d,0 0 22px rgba(255,211,77,.8);}
 
-.cb-reel-inner{
-  display:flex;flex-direction:column;align-items:center;
-  transition:transform .1s;
+/* payline */
+.cb-payline{
+  position:absolute;left:4px;right:4px;top:50%;height:3px;margin-top:-1.5px;
+  background:linear-gradient(90deg,transparent,#F26522 15%,#F26522 85%,transparent);
+  border-radius:2px;opacity:.55;pointer-events:none;z-index:2;
 }
+.cb-payline::before,.cb-payline::after{
+  content:'▶';position:absolute;top:50%;transform:translateY(-50%);
+  font-size:13px;color:#ffd34d;text-shadow:0 0 6px rgba(255,211,77,.8);
+}
+.cb-payline::before{left:-3px;}
+.cb-payline::after{right:-3px;content:'◀';}
+.cb-payline.hit{opacity:1;animation:cb-payline-hit .5s ease 4;}
+@keyframes cb-payline-hit{
+  0%,100%{background:linear-gradient(90deg,transparent,#F26522 15%,#F26522 85%,transparent);}
+  50%{background:linear-gradient(90deg,transparent,#ffd34d 15%,#ffd34d 85%,transparent);box-shadow:0 0 18px #ffd34d;}
+}
+
+/* lever */
+.cb-lever{
+  position:absolute;right:-18px;top:6px;width:20px;height:110px;cursor:pointer;z-index:2;
+}
+.cb-lever .cb-lever-base{
+  position:absolute;right:0;top:44px;width:14px;height:34px;border-radius:5px;
+  background:linear-gradient(90deg,#8a5a16,#c8871f,#8a5a16);
+  box-shadow:0 2px 6px rgba(0,0,0,.5);
+}
+.cb-lever .cb-lever-arm{
+  position:absolute;right:4px;bottom:50px;width:6px;height:62px;border-radius:3px;
+  background:linear-gradient(90deg,#9aa0a6,#e8eaed,#9aa0a6);
+  transform-origin:bottom center;transition:transform .18s ease-in;
+}
+.cb-lever .cb-lever-arm::after{
+  content:'';position:absolute;top:-16px;left:50%;transform:translateX(-50%);
+  width:20px;height:20px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#ff9d5c,#F26522 55%,#a33c0a);
+  box-shadow:0 2px 6px rgba(0,0,0,.5);
+}
+.cb-lever.pulled .cb-lever-arm{transform:rotateX(150deg);}
 
 /* spin button */
 .cb-spin-btn{
-  background:linear-gradient(135deg,#F26522,#e8511a);
+  background:linear-gradient(180deg,#ff8a48,#F26522 45%,#c84f12);
   color:#fff;border:none;border-radius:50px;
-  padding:14px 48px;font-size:18px;font-weight:800;
+  padding:14px 52px;font-size:19px;font-weight:900;
   cursor:pointer;font-family:'Inter',sans-serif;
-  transition:all .2s;letter-spacing:1px;
-  box-shadow:0 4px 15px rgba(242,101,34,.4);
+  transition:all .15s;letter-spacing:2px;
+  box-shadow:0 5px 0 #8f3708,0 8px 18px rgba(242,101,34,.45);
 }
-.cb-spin-btn:hover:not(:disabled){transform:scale(1.05);box-shadow:0 6px 25px rgba(242,101,34,.5);}
-.cb-spin-btn:disabled{opacity:.5;cursor:default;}
+.cb-spin-btn:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 6px 0 #8f3708,0 10px 24px rgba(242,101,34,.55);}
+.cb-spin-btn:active:not(:disabled){transform:translateY(4px);box-shadow:0 1px 0 #8f3708,0 4px 10px rgba(242,101,34,.4);}
+.cb-spin-btn:disabled{opacity:.55;cursor:default;box-shadow:0 2px 0 #8f3708;}
 
-/* result message */
-.cb-result{
-  min-height:28px;margin:14px 0 6px;
-  font-size:15px;font-weight:600;
-  transition:opacity .3s;
-}
+/* result */
+.cb-result{min-height:28px;margin:14px 0 4px;font-size:15px;font-weight:700;transition:opacity .3s;}
 
 /* CTA */
 .cb-cta{
@@ -223,8 +297,7 @@
   padding:13px 36px;font-size:16px;font-weight:700;
   font-family:'Inter',sans-serif;
   box-shadow:0 4px 15px rgba(242,101,34,.4);
-  transition:all .2s;
-  animation:cb-cta-glow 1.8s ease-in-out infinite;
+  transition:all .2s;animation:cb-cta-glow 1.8s ease-in-out infinite;
   margin-top:8px;
 }
 .cb-cta:hover{transform:scale(1.05);box-shadow:0 6px 25px rgba(242,101,34,.5);}
@@ -232,29 +305,25 @@
   0%,100%{box-shadow:0 4px 15px rgba(242,101,34,.4);}
   50%{box-shadow:0 4px 30px rgba(242,101,34,.6),0 0 50px rgba(242,101,34,.2);}
 }
-
-.cb-cta-wrap{display:none;margin-top:10px;}
+.cb-cta-wrap{display:none;margin-top:8px;}
 .cb-cta-wrap.show{display:block;}
 
-/* try-again link */
 .cb-again{
   display:inline-block;margin-top:12px;
   color:rgba(255,255,255,.5);font-size:13px;cursor:pointer;
-  text-decoration:underline;background:none;border:none;
-  font-family:'Inter',sans-serif;
+  text-decoration:underline;background:none;border:none;font-family:'Inter',sans-serif;
 }
 .cb-again:hover{color:#fff;}
 
-/* confetti canvas */
-.cb-confetti{
-  position:absolute;inset:0;pointer-events:none;border-radius:20px;overflow:hidden;
-}
+.cb-confetti{position:absolute;inset:0;pointer-events:none;border-radius:22px;overflow:hidden;z-index:4;}
 
-/* mobile */
 @media(max-width:480px){
   .cb-slot-fab{bottom:16px;right:12px;padding:11px 18px;font-size:14px;}
-  .cb-reel{width:68px;height:78px;font-size:40px;}
-  .cb-slot-modal{padding:22px 16px;}
+  .cb-reel{width:70px;height:84px;}
+  .cb-cell{height:84px;font-size:44px;}
+  .cb-slot-modal{padding:20px 14px 22px;}
+  .cb-machine{padding:0 20px;}
+  .cb-lever{right:-10px;}
 }
 `;
   document.head.appendChild(css);
@@ -270,12 +339,16 @@
   const overlay = document.createElement('div');
   overlay.className = 'cb-slot-overlay';
   overlay.innerHTML = `
-    <div class="cb-slot-modal">
+    <div class="cb-slot-modal" id="cbModal">
       <canvas class="cb-confetti" id="cbConfetti"></canvas>
       <button class="cb-slot-close">${t.close}</button>
       <div class="cb-slot-title">${t.title}</div>
+      <div class="cb-bulbs"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       <div class="cb-slot-subtitle">CraicBet.com</div>
-      <div class="cb-reels" id="cbReels"></div>
+      <div class="cb-machine">
+        <div class="cb-reels" id="cbReels"><div class="cb-payline" id="cbPayline"></div></div>
+        <div class="cb-lever" id="cbLever"><div class="cb-lever-base"></div><div class="cb-lever-arm"></div></div>
+      </div>
       <button class="cb-spin-btn" id="cbSpin">${t.spin}</button>
       <div class="cb-result" id="cbResult"></div>
       <div class="cb-cta-wrap" id="cbCtaWrap">
@@ -295,17 +368,30 @@
   const confettiCanvas = document.getElementById('cbConfetti');
   const ctx = confettiCanvas.getContext('2d');
 
-  // create reels
+  const modalEl = document.getElementById('cbModal');
+  const leverEl = document.getElementById('cbLever');
+  const paylineEl = document.getElementById('cbPayline');
+
+  // create reels: each is a window over a vertical strip of symbols
+  const CELL_H = window.matchMedia('(max-width:480px)').matches ? 84 : 96;
   const reelEls = [];
   for (let i = 0; i < REEL_COUNT; i++) {
     const reel = document.createElement('div');
     reel.className = 'cb-reel';
-    const inner = document.createElement('div');
-    inner.className = 'cb-reel-inner';
-    inner.textContent = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-    reel.appendChild(inner);
+    const strip = document.createElement('div');
+    strip.className = 'cb-strip';
+    const startSym = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
+    strip.appendChild(makeCell(startSym));
+    reel.appendChild(strip);
     reelsEl.appendChild(reel);
-    reelEls.push({ el: reel, inner: inner });
+    reelEls.push({ el: reel, strip: strip, current: startSym });
+  }
+
+  function makeCell(sym) {
+    const d = document.createElement('div');
+    d.className = 'cb-cell';
+    d.textContent = sym;
+    return d;
   }
 
   /* ── game logic ── */
@@ -349,27 +435,42 @@
     spinning = true;
     sfx.unlock();
     sfx.lever();
+    leverEl.classList.add('pulled');
+    setTimeout(function(){ leverEl.classList.remove('pulled'); }, 450);
+    modalEl.classList.add('spinning');
+    modalEl.classList.remove('winflash');
     spinBtn.disabled = true;
     resultEl.textContent = '';
     ctaWrap.classList.remove('show');
-    reelEls.forEach(r => r.el.classList.remove('win'));
+    paylineEl.classList.remove('hit');
+    reelEls.forEach(r => r.el.classList.remove('win', 'land'));
     stopConfetti();
 
     const final = getResult();
 
-    // animate each reel
-    const delays = [0, 300, 600];
-    const promises = reelEls.map((reel, i) => animateReel(reel, final[i], SPIN_MS + delays[i]));
-    await Promise.all(promises);
+    // tick sounds while reels turn
+    const tickTimer = setInterval(function(){ sfx.tick(); }, 90);
 
-    // check result
+    const delays = [0, 350, 700];
+    const promises = reelEls.map((reel, i) => animateReel(reel, final[i], SPIN_MS + delays[i], i));
+    await Promise.all(promises);
+    clearInterval(tickTimer);
+    modalEl.classList.remove('spinning');
+
     const isWin = final[0] === final[1] && final[1] === final[2];
+    const nearMiss = !isWin && (final[0] === final[1] || final[1] === final[2] || final[0] === final[2]);
     if (isWin) {
       reelEls.forEach(r => r.el.classList.add('win'));
+      paylineEl.classList.add('hit');
+      modalEl.classList.add('winflash');
       resultEl.textContent = t.win;
       sfx.win();
       startConfetti();
     } else {
+      if (nearMiss) {
+        modalEl.classList.add('shake');
+        setTimeout(function(){ modalEl.classList.remove('shake'); }, 500);
+      }
       resultEl.textContent = t.almost;
       sfx.almost();
     }
@@ -379,30 +480,44 @@
     spinBtn.disabled = false;
   }
 
-  function animateReel(reel, finalSymbol, duration) {
+  // Real reel: build a long vertical strip, scroll it down with easing, bounce on stop
+  function animateReel(reel, finalSymbol, duration, idx) {
     return new Promise(resolve => {
-      const start = performance.now();
-      const interval = 80;
-      let last = start;
-
-      function tick(now) {
-        if (now - last >= interval) {
-          reel.inner.textContent = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
-          sfx.tick();
-          last = now;
-        }
-        if (now - start < duration) {
-          requestAnimationFrame(tick);
-        } else {
-          reel.inner.textContent = finalSymbol;
-          sfx.reelStop(0);
-          resolve();
-        }
+      const LOOPS = 22 + idx * 6; // symbols to scroll past
+      const strip = reel.strip;
+      // rebuild strip: current symbol on top, randoms, final at bottom
+      strip.style.transition = 'none';
+      strip.style.transform = 'translateY(0)';
+      strip.innerHTML = '';
+      strip.appendChild(makeCell(reel.current));
+      for (let i = 0; i < LOOPS - 1; i++) {
+        strip.appendChild(makeCell(SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)]));
       }
-      requestAnimationFrame(tick);
+      strip.appendChild(makeCell(finalSymbol));
+      reel.current = finalSymbol;
+
+      // force reflow, then animate to the last cell
+      void strip.offsetHeight;
+      reel.el.classList.add('spin-blur');
+      strip.style.transition = 'transform ' + duration + 'ms cubic-bezier(.12,.65,.28,1)';
+      strip.style.transform = 'translateY(-' + (LOOPS * CELL_H) + 'px)';
+
+      let done = false;
+      function finish() {
+        if (done) return;
+        done = true;
+        reel.el.classList.remove('spin-blur');
+        reel.el.classList.add('land');
+        setTimeout(function(){ reel.el.classList.remove('land'); }, 350);
+        sfx.reelStop(idx);
+        resolve();
+      }
+      strip.addEventListener('transitionend', finish, { once: true });
+      setTimeout(finish, duration + 120); // safety
     });
   }
 
+  leverEl.addEventListener('click', spin);
   spinBtn.addEventListener('click', spin);
   againBtn.addEventListener('click', function () {
     ctaWrap.classList.remove('show');
