@@ -449,6 +449,21 @@
 
 <script src="../js/slot-game.js"></script>
 <script>(function(){
+/* Day lager / night stout: 08-20 local = light beer */
+try{
+  var hh=new Date().getHours();
+  if(hh>=8&&hh<20){
+    var pre=document.getElementById("preloader");
+    var g=pre.querySelector("#stout");
+    if(g){var st=g.querySelectorAll("stop");
+      if(st[0])st[0].setAttribute("stop-color","#FFC53D");
+      if(st[1])st[1].setAttribute("stop-color","#F5A623");
+      if(st[2])st[2].setAttribute("stop-color","#D9880B");}
+    pre.querySelectorAll('[fill="#2A0E00"]').forEach(function(el){el.setAttribute("fill","#E8A319")});
+    pre.querySelectorAll('[fill="#3D1500"]').forEach(function(el){el.setAttribute("fill","#FFDF7E")});
+    pre.querySelectorAll('[fill="#3A1500"]').forEach(function(el){el.setAttribute("fill","#FFF6D8");el.setAttribute("opacity","0.55")});
+  }
+}catch(e){}
 var audio=new Audio("/audio/pour.mp3");
 audio.volume=0.7;
 var evs=["pointerdown","keydown","touchstart","wheel","mousemove","scroll"];
