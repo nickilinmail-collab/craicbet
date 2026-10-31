@@ -1,3 +1,12 @@
+/* Clean URL: strip .html from the address bar */
+(function(){
+  try{
+    if(/\.html$/.test(location.pathname)){
+      var p = location.pathname.replace(/index\.html$/,'').replace(/\.html$/,'');
+      history.replaceState(null, '', p + location.search + location.hash);
+    }
+  }catch(e){}
+})();
 /* CraicBet UI sound - juicy can-crack + fizz (soda-ad style) */
 (function(){
   var ctx=null,noiseBuf=null;
