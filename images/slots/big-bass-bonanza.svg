@@ -111,5 +111,5 @@
   <!-- Seaweed -->
   <path d="M370,200 Q365,170 370,150 Q375,130 370,110" stroke="#2E7D32" stroke-width="3" fill="none" opacity="0.4" stroke-linecap="round"/>
   <path d="M380,200 Q375,175 380,160 Q385,145 380,130" stroke="#388E3C" stroke-width="2.5" fill="none" opacity="0.3" stroke-linecap="round"/>
-  <path d="M20" y="200" Q15,180 20,165 Q25,150 20,135" stroke="#2E7D32" stroke-width="2.5" fill="none" opacity="0.3" stroke-linecap="round"/>
+  <path d="M20,200 Q15,180 20,165 Q25,150 20,135" stroke="#2E7D32" stroke-width="2.5" fill="none" opacity="0.3" stroke-linecap="round"/>
 </svg>
