@@ -469,76 +469,13 @@
 
 <script src="../js/slot-game.js"></script>
 <script>(function(){
-/* Web Audio API - beer pouring sound */
-var actx;
-function startPourSound(){
-  try{
-    actx=new(window.AudioContext||window.webkitAudioContext)();
-    /* Brown noise (filtered white noise = pour sound) */
-    var bufSize=2*actx.sampleRate;
-    var buf=actx.createBuffer(1,bufSize,actx.sampleRate);
-    var d=buf.getChannelData(0);
-    var last=0;
-    for(var i=0;i<bufSize;i++){
-      var w=Math.random()*2-1;
-      d[i]=(last+(0.02*w))/1.02;
-      last=d[i];
-      d[i]*=3.5;
-    }
-    var src=actx.createBufferSource();
-    src.buffer=buf;
-    src.loop=true;
-    /* Bandpass filter = liquid sound */
-    var bp=actx.createBiquadFilter();
-    bp.type="bandpass";
-    bp.frequency.value=800;
-    bp.Q.value=0.8;
-    /* Second resonance for glass */
-    var bp2=actx.createBiquadFilter();
-    bp2.type="bandpass";
-    bp2.frequency.value=2200;
-    bp2.Q.value=1.2;
-    /* Gain envelope */
-    var gain=actx.createGain();
-    gain.gain.setValueAtTime(0,actx.currentTime);
-    gain.gain.linearRampToValueAtTime(0.12,actx.currentTime+0.5);
-    gain.gain.setValueAtTime(0.12,actx.currentTime+4.5);
-    gain.gain.linearRampToValueAtTime(0,actx.currentTime+5.5);
-    /* Gain for second filter */
-    var gain2=actx.createGain();
-    gain2.gain.value=0.04;
-    /* Connect: src -> bp -> gain -> out */
-    src.connect(bp);
-    bp.connect(gain);
-    /* Also src -> bp2 -> gain2 -> out for glass resonance */
-    src.connect(bp2);
-    bp2.connect(gain2);
-    gain.connect(actx.destination);
-    gain2.connect(actx.destination);
-    /* Rising pitch as glass fills */
-    bp.frequency.linearRampToValueAtTime(1400,actx.currentTime+5.5);
-    /* Bubbling: LFO modulates volume subtly */
-    var lfo=actx.createOscillator();
-    lfo.frequency.value=6;
-    var lfoGain=actx.createGain();
-    lfoGain.gain.value=0.015;
-    lfo.connect(lfoGain);
-    lfoGain.connect(gain.gain);
-    lfo.start();
-    src.start();
-    src.stop(actx.currentTime+6);
-  }catch(e){}
-}
-/* Start sound on first interaction or immediately */
-var soundStarted=false;
-function trySound(){
-  if(!soundStarted){soundStarted=true;startPourSound()}
-}
-document.addEventListener("click",trySound,{once:true});
-document.addEventListener("touchstart",trySound,{once:true});
-/* Try autoplay */
-setTimeout(trySound,200);
-
+/* Play real pour sound */
+var audio=new Audio("/audio/pour.mp3");
+audio.volume=0.7;
+audio.play().catch(function(){
+  document.addEventListener("click",function(){audio.play()},{once:true});
+  document.addEventListener("touchstart",function(){audio.play()},{once:true});
+});
 /* Pour counter */
 var pct=document.getElementById("pour-pct");
 var p=0;
@@ -551,7 +488,7 @@ var iv=setInterval(function(){
     setTimeout(function(){
       var el=document.getElementById("preloader");
       if(el){el.style.opacity="0";setTimeout(function(){el.style.display="none"},800)}
-      if(actx)try{actx.close()}catch(e){}
+      try{audio.pause()}catch(e){}
     },800);
   }
 },110);
