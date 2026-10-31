@@ -253,7 +253,7 @@
       <text x="400" y="385" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" fill="rgba(255,255,255,0.35)" letter-spacing="12" font-weight="700">D U B L I N</text>
     </svg>
 
-    <div id="pour-pct" style="text-align:center;color:#DEB887;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin-top:8px;letter-spacing:2px;opacity:0.8">Pouring your pint... 0%</div>
+    <div id="pour-pct" style="text-align:center;color:#DEB887;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin-top:8px;letter-spacing:2px;opacity:0.8">Ag líonadh do phionta... 0%</div>
   </div>
 
   <div style="text-align:center;margin-top:14px"><img src="/images/logo-full.svg" alt="CraicBet - Ireland's Casino Guide" style="width:min(420px,80vw);height:auto;filter:drop-shadow(0 2px 12px rgba(242,101,34,.3))"></div>
@@ -459,7 +459,7 @@ var pct=document.getElementById("pour-pct");
 var p=0;
 var iv=setInterval(function(){
   p+=2;if(p>100)p=100;
-  if(pct)pct.textContent="Pouring your pint... "+p+"%";
+  if(pct)pct.textContent="Ag líonadh do phionta... "+p+"%";
   if(p>=100){
     clearInterval(iv);
     if(pct)pct.textContent="Sláinte!";
