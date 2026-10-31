@@ -257,6 +257,7 @@
   <div style="text-align:center;margin-top:14px"><img src="/images/logo-full.svg" alt="CraicBet - Ireland's Casino Guide" style="width:min(420px,80vw);height:auto;filter:drop-shadow(0 2px 12px rgba(242,101,34,.3))"></div>
 </div>
 <style>@keyframes x{}</style>
+<script>try{if(sessionStorage.getItem("cbPre")){document.getElementById("preloader").style.display="none"}}catch(e){}</script>
 
 
 <!-- HEADER -->
@@ -476,6 +477,9 @@
 
 <script src="../js/slot-game.js"></script>
 <script>(function(){
+var _pre=document.getElementById("preloader");
+if(_pre&&_pre.style.display==="none"){/* already seen this session */}else{
+try{sessionStorage.setItem("cbPre","1")}catch(e){}
 /* Day lager / night stout: 08-20 local = light beer */
 try{
   var hh=new Date().getHours();
@@ -512,6 +516,7 @@ var iv=setInterval(function(){
     },800);
   }
 },70);
+}
 })();</script>
 <script src="/js/ui-sound.js"></script>
 </body>
