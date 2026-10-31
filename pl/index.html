@@ -507,10 +507,10 @@
 <script>(function(){
 var audio=new Audio("/audio/pour.mp3");
 audio.volume=0.7;
-audio.play().catch(function(){
-  document.addEventListener("click",function(){audio.play()},{once:true});
-  document.addEventListener("touchstart",function(){audio.play()},{once:true});
-});
+var evs=["pointerdown","keydown","touchstart","wheel","mousemove","scroll"];
+function unlock(){audio.play().then(function(){evs.forEach(function(e){document.removeEventListener(e,unlock)})}).catch(function(){})}
+audio.play().catch(function(){});
+evs.forEach(function(e){document.addEventListener(e,unlock,{passive:true})});
 var pct=document.getElementById("pour-pct");
 var p=0;
 var iv=setInterval(function(){
