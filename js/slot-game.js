@@ -4,6 +4,63 @@
     Tracking link placeholder: https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/                    */
 
 (function () {
+  /* ===== Slot machine sound engine (Web Audio, no files) ===== */
+  const sfx = (function(){
+    let ctx = null;
+    function ac(){
+      if(!ctx){ try{ ctx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){ return null; } }
+      if(ctx && ctx.state === 'suspended') ctx.resume().catch(function(){});
+      return ctx;
+    }
+    function blip(freq, t0, dur, vol, type){
+      const c = ac(); if(!c) return;
+      const o = c.createOscillator(), g = c.createGain();
+      o.type = type || 'square';
+      o.frequency.setValueAtTime(freq, t0);
+      g.gain.setValueAtTime(0.0001, t0);
+      g.gain.exponentialRampToValueAtTime(vol, t0 + 0.005);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + dur);
+      o.connect(g); g.connect(c.destination);
+      o.start(t0); o.stop(t0 + dur + 0.02);
+    }
+    return {
+      unlock: function(){ ac(); },
+      lever: function(){
+        const c = ac(); if(!c) return; const t = c.currentTime;
+        const o = c.createOscillator(), g = c.createGain();
+        o.type = 'sawtooth';
+        o.frequency.setValueAtTime(700, t);
+        o.frequency.exponentialRampToValueAtTime(180, t + 0.18);
+        g.gain.setValueAtTime(0.08, t);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.2);
+        o.connect(g); g.connect(c.destination); o.start(t); o.stop(t + 0.22);
+      },
+      tick: function(){
+        const c = ac(); if(!c) return;
+        blip(1800 + Math.random()*500, c.currentTime, 0.03, 0.045, 'square');
+      },
+      reelStop: function(n){
+        const c = ac(); if(!c) return; const t = c.currentTime;
+        blip(220 - n*30, t, 0.09, 0.22, 'sine');
+        blip(2500, t, 0.02, 0.06, 'square');
+      },
+      win: function(){
+        const c = ac(); if(!c) return; const t = c.currentTime;
+        [523, 659, 784, 1047, 1319, 1568].forEach(function(f, i){ blip(f, t + i*0.09, 0.25, 0.14, 'triangle'); });
+        for(let i = 0; i < 12; i++){
+          blip(2000 + Math.random()*2500, t + 0.5 + i*0.07 + Math.random()*0.03, 0.08, 0.05, 'sine');
+        }
+        [523, 784, 1047].forEach(function(f){ blip(f, t + 0.95, 0.5, 0.1, 'triangle'); });
+      },
+      almost: function(){
+        const c = ac(); if(!c) return; const t = c.currentTime;
+        blip(392, t, 0.16, 0.1, 'triangle');
+        blip(311, t + 0.17, 0.26, 0.1, 'triangle');
+      }
+    };
+  })();
+
+
   'use strict';
 
   /* ── symbols & paytable ── */
@@ -290,6 +347,8 @@
   async function spin() {
     if (spinning) return;
     spinning = true;
+    sfx.unlock();
+    sfx.lever();
     spinBtn.disabled = true;
     resultEl.textContent = '';
     ctaWrap.classList.remove('show');
@@ -308,9 +367,11 @@
     if (isWin) {
       reelEls.forEach(r => r.el.classList.add('win'));
       resultEl.textContent = t.win;
+      sfx.win();
       startConfetti();
     } else {
       resultEl.textContent = t.almost;
+      sfx.almost();
     }
 
     ctaWrap.classList.add('show');
@@ -327,12 +388,14 @@
       function tick(now) {
         if (now - last >= interval) {
           reel.inner.textContent = SYMBOLS[Math.floor(Math.random() * SYMBOLS.length)];
+          sfx.tick();
           last = now;
         }
         if (now - start < duration) {
           requestAnimationFrame(tick);
         } else {
           reel.inner.textContent = finalSymbol;
+          sfx.reelStop(0);
           resolve();
         }
       }
