@@ -750,7 +750,8 @@ ul, ol { list-style: none; }
   padding: 60px 0 0;
 }
 
-.footer-grid {
+.footer-grid,
+.footer-inner {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 40px;
@@ -833,7 +834,7 @@ ul, ol { list-style: none; }
   .casino-card.featured::before { display: none; }
   .features-grid, .guides-grid { grid-template-columns: repeat(2, 1fr); }
   .steps { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid, .footer-inner { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -855,7 +856,7 @@ ul, ol { list-style: none; }
   .hero p { font-size: 1rem; }
   .features-grid, .guides-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr; }
+  .footer-grid, .footer-inner { grid-template-columns: 1fr; }
   .trust-bar-inner { gap: 20px; }
   .casino-card { padding: 16px; }
 }
