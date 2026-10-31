@@ -31,146 +31,257 @@
 </head>
 <body>
 <!-- Preloader -->
-<div id="preloader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#0A2E14;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .8s ease;overflow:hidden">
+<div id="preloader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,#061a0a 0%,#0A2E14 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .8s ease;overflow:hidden">
 
-  <div style="position:relative;width:100%;max-width:600px;padding:0 20px">
-    <svg viewBox="0 0 600 400" style="width:100%" xmlns="http://www.w3.org/2000/svg">
+  <div style="position:relative;width:100%;max-width:650px;padding:0 16px">
+    <svg viewBox="0 0 700 420" style="width:100%" xmlns="http://www.w3.org/2000/svg">
       <defs>
-        <clipPath id="dublin-clip">
-          <rect x="0" y="300" width="600" height="100"/>
-          <rect x="20" y="230" width="40" height="70" rx="2"/>
-          <rect x="30" y="210" width="25" height="90" rx="1"/>
-          <rect x="65" y="245" width="35" height="55" rx="2"/>
-          <rect x="105" y="200" width="30" height="100" rx="1"/>
-          <polygon points="105,200 120,180 135,200"/>
-          <rect x="138" y="215" width="25" height="85" rx="1"/>
-          <rect x="166" y="195" width="28" height="105" rx="1"/>
-          <polygon points="166,195 180,172 194,195"/>
-          <rect x="198" y="220" width="35" height="80" rx="2"/>
-          <rect x="210" y="170" width="10" height="50"/>
-          <polygon points="210,170 215,148 220,170"/>
-          <rect x="236" y="235" width="28" height="65" rx="1"/>
-          <rect x="268" y="120" width="30" height="180" rx="2"/>
-          <rect x="271" y="110" width="24" height="15" rx="1"/>
-          <polygon points="308,20 311,300 305,300"/>
-          <rect x="320" y="210" width="60" height="90" rx="2"/>
-          <rect x="325" y="200" width="50" height="15" rx="1"/>
-          <polygon points="330,200 350,175 370,200"/>
-          <rect x="345" y="155" width="10" height="25"/>
-          <circle cx="350" cy="152" r="6"/>
-          <rect x="385" y="225" width="45" height="75" rx="2"/>
-          <polygon points="385,225 407,190 430,225"/>
-          <polygon points="435,260 475,200 478,205 438,265"/>
-          <rect x="435" y="260" width="50" height="8" rx="1"/>
-          <rect x="488" y="210" width="25" height="90" rx="2"/>
-          <rect x="516" y="195" width="30" height="105" rx="2"/>
-          <rect x="549" y="225" width="28" height="75" rx="2"/>
-          <rect x="530" y="230" width="18" height="70" rx="1"/>
+        <!-- Dublin skyline clip -->
+        <clipPath id="dublin">
+          <!-- River Liffey quay wall base -->
+          <rect x="0" y="310" width="700" height="110"/>
+
+          <!-- === LEFT: Georgian Houses & Christ Church === -->
+          <rect x="15" y="245" width="28" height="65" rx="1"/>
+          <rect x="18" y="238" width="22" height="7"/>
+          <rect x="46" y="235" width="30" height="75" rx="1"/>
+          <polygon points="46,235 61,218 76,235"/>
+          <rect x="80" y="250" width="25" height="60" rx="1"/>
+          <rect x="82" y="243" width="21" height="7"/>
+
+          <!-- Christ Church Cathedral -->
+          <rect x="110" y="220" width="45" height="90" rx="2"/>
+          <polygon points="110,220 132,190 155,220"/>
+          <rect x="128" y="165" width="8" height="30"/>
+          <polygon points="128,165 132,150 136,165"/>
+
+          <!-- Four Courts dome -->
+          <rect x="165" y="235" width="55" height="75" rx="2"/>
+          <rect x="170" y="225" width="45" height="15" rx="1"/>
+          <ellipse cx="192" cy="225" rx="22" ry="15"/>
+          <rect x="188" y="200" width="8" height="25"/>
+          <circle cx="192" cy="198" r="5"/>
+
+          <!-- === CENTER LEFT: Temple Bar area === -->
+          <rect x="228" y="242" width="22" height="68" rx="1"/>
+          <polygon points="228,242 239,225 250,242"/>
+          <rect x="253" y="250" width="20" height="60" rx="1"/>
+          <rect x="253" y="243" width="20" height="7"/>
+          <rect x="276" y="238" width="24" height="72" rx="1"/>
+          <polygon points="276,238 288,222 300,238"/>
+
+          <!-- Ha'penny Bridge -->
+          <path d="M302,305 Q330,280 358,305" fill="black" stroke="none"/>
+          <rect x="302" y="303" width="56" height="4"/>
+
+          <!-- === CENTER: Liberty Hall (tallest) === -->
+          <rect x="362" y="130" width="28" height="180" rx="1"/>
+          <rect x="365" y="120" width="22" height="15" rx="1"/>
+
+          <!-- The Spire -->
+          <polygon points="398,30 401,310 395,310"/>
+
+          <!-- === CENTER RIGHT: Custom House === -->
+          <rect x="410" y="230" width="70" height="80" rx="2"/>
+          <rect x="415" y="220" width="60" height="15" rx="1"/>
+          <polygon points="420,220 445,195 470,220"/>
+          <rect x="440" y="168" width="10" height="30"/>
+          <circle cx="445" cy="165" r="7"/>
+
+          <!-- O'Connell Bridge area -->
+          <rect x="485" y="295" width="45" height="15" rx="2"/>
+
+          <!-- === RIGHT: Modern Docklands === -->
+          <rect x="490" y="225" width="30" height="85" rx="2"/>
+          <rect x="524" y="210" width="25" height="100" rx="1"/>
+          <rect x="524" y="202" width="25" height="8"/>
+
+          <!-- Convention Centre (tilted glass) -->
+          <polygon points="555,240 585,310 555,310"/>
+          <rect x="555" y="240" width="30" height="70" rx="1"/>
+
+          <!-- Samuel Beckett Bridge (harp shape) -->
+          <polygon points="592,300 620,220 624,224 596,304"/>
+          <rect x="590" y="298" width="40" height="6" rx="1"/>
+
+          <!-- Aviva Stadium -->
+          <ellipse cx="652" cy="280" rx="30" ry="20"/>
+          <rect x="622" y="275" width="60" height="35" rx="3"/>
+
+          <!-- Docklands towers -->
+          <rect x="660" y="245" width="18" height="65" rx="1"/>
+          <rect x="680" y="255" width="15" height="55" rx="1"/>
         </clipPath>
-        <linearGradient id="foam-grad" x1="0" y1="0" x2="0" y2="1">
+
+        <!-- Foam gradient -->
+        <linearGradient id="foam" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#F5E6C8"/>
-          <stop offset="30%" stop-color="#FAEBD7"/>
-          <stop offset="100%" stop-color="#E8C896"/>
+          <stop offset="40%" stop-color="#FAEBD7"/>
+          <stop offset="100%" stop-color="#DEB887"/>
         </linearGradient>
+
+        <!-- Beer shimmer filter -->
+        <filter id="shimmer">
+          <feTurbulence type="fractalNoise" baseFrequency="0.03 0.06" numOctaves="2" seed="2">
+            <animate attributeName="seed" values="1;5;10;5;1" dur="3s" repeatCount="indefinite"/>
+          </feTurbulence>
+          <feDisplacementMap in="SourceGraphic" scale="4"/>
+        </filter>
       </defs>
 
-      <!-- Dublin skyline outlines -->
-      <g fill="none" stroke="#F26522" stroke-width="1.2" opacity="0.3">
-        <rect x="20" y="230" width="40" height="70" rx="2"/>
-        <rect x="30" y="210" width="25" height="90" rx="1"/>
-        <rect x="65" y="245" width="35" height="55" rx="2"/>
-        <rect x="105" y="200" width="30" height="100" rx="1"/>
-        <polygon points="105,200 120,180 135,200"/>
-        <rect x="138" y="215" width="25" height="85" rx="1"/>
-        <rect x="166" y="195" width="28" height="105" rx="1"/>
-        <polygon points="166,195 180,172 194,195"/>
-        <rect x="198" y="220" width="35" height="80" rx="2"/>
-        <rect x="210" y="170" width="10" height="50"/>
-        <polygon points="210,170 215,148 220,170"/>
-        <rect x="236" y="235" width="28" height="65" rx="1"/>
-        <rect x="268" y="120" width="30" height="180" rx="2"/>
-        <rect x="271" y="110" width="24" height="15" rx="1"/>
-        <polygon points="308,20 311,300 305,300"/>
-        <rect x="320" y="210" width="60" height="90" rx="2"/>
-        <rect x="325" y="200" width="50" height="15" rx="1"/>
-        <polygon points="330,200 350,175 370,200"/>
-        <rect x="345" y="155" width="10" height="25"/>
-        <circle cx="350" cy="152" r="6"/>
-        <rect x="385" y="225" width="45" height="75" rx="2"/>
-        <polygon points="385,225 407,190 430,225"/>
-        <polygon points="435,260 475,200 478,205 438,265"/>
-        <rect x="435" y="260" width="50" height="8" rx="1"/>
-        <rect x="488" y="210" width="25" height="90" rx="2"/>
-        <rect x="516" y="195" width="30" height="105" rx="2"/>
-        <rect x="549" y="225" width="28" height="75" rx="2"/>
-        <rect x="530" y="230" width="18" height="70" rx="1"/>
+      <!-- City outline glow -->
+      <g fill="none" stroke="#F26522" stroke-width="0.8" opacity="0.25">
+        <rect x="15" y="245" width="28" height="65" rx="1"/>
+        <rect x="46" y="235" width="30" height="75" rx="1"/>
+        <polygon points="46,235 61,218 76,235"/>
+        <rect x="80" y="250" width="25" height="60" rx="1"/>
+        <rect x="110" y="220" width="45" height="90" rx="2"/>
+        <polygon points="110,220 132,190 155,220"/>
+        <rect x="128" y="165" width="8" height="30"/>
+        <polygon points="128,165 132,150 136,165"/>
+        <rect x="165" y="235" width="55" height="75" rx="2"/>
+        <ellipse cx="192" cy="225" rx="22" ry="15"/>
+        <rect x="188" y="200" width="8" height="25"/>
+        <circle cx="192" cy="198" r="5"/>
+        <rect x="228" y="242" width="22" height="68" rx="1"/>
+        <polygon points="228,242 239,225 250,242"/>
+        <rect x="253" y="250" width="20" height="60" rx="1"/>
+        <rect x="276" y="238" width="24" height="72" rx="1"/>
+        <polygon points="276,238 288,222 300,238"/>
+        <path d="M302,305 Q330,280 358,305"/>
+        <rect x="362" y="130" width="28" height="180" rx="1"/>
+        <rect x="365" y="120" width="22" height="15" rx="1"/>
+        <polygon points="398,30 401,310 395,310"/>
+        <rect x="410" y="230" width="70" height="80" rx="2"/>
+        <polygon points="420,220 445,195 470,220"/>
+        <rect x="440" y="168" width="10" height="30"/>
+        <circle cx="445" cy="165" r="7"/>
+        <rect x="490" y="225" width="30" height="85" rx="2"/>
+        <rect x="524" y="210" width="25" height="100" rx="1"/>
+        <polygon points="555,240 585,310 555,310"/>
+        <polygon points="592,300 620,220 624,224 596,304"/>
+        <rect x="590" y="298" width="40" height="6" rx="1"/>
+        <ellipse cx="652" cy="280" rx="30" ry="20"/>
+        <rect x="622" y="275" width="60" height="35" rx="3"/>
+        <rect x="660" y="245" width="18" height="65" rx="1"/>
+        <rect x="680" y="255" width="15" height="55" rx="1"/>
       </g>
-      <line x1="0" y1="300" x2="600" y2="300" stroke="#1B8C3D" stroke-width="1" opacity="0.3"/>
 
-      <!-- Guinness fill clipped to Dublin -->
-      <g clip-path="url(#dublin-clip)">
-        <rect id="guinness-fill" x="0" y="400" width="600" height="400" fill="#1A0A00">
-          <animate attributeName="y" from="400" to="20" dur="5.5s" fill="freeze"/>
+      <!-- Liffey water line -->
+      <line x1="0" y1="310" x2="700" y2="310" stroke="#1B8C3D" stroke-width="0.5" opacity="0.3"/>
+
+      <!-- Landmark labels (subtle) -->
+      <text x="132" y="160" text-anchor="middle" font-family="Inter,sans-serif" font-size="6" fill="#1B8C3D" opacity="0.4">Christ Church</text>
+      <text x="192" y="196" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#1B8C3D" opacity="0.4">Four Courts</text>
+      <text x="330" y="276" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#1B8C3D" opacity="0.4">Ha'penny Bridge</text>
+      <text x="376" y="116" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#1B8C3D" opacity="0.4">Liberty Hall</text>
+      <text x="398" y="26" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#F26522" opacity="0.5">Spire</text>
+      <text x="445" y="162" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#1B8C3D" opacity="0.4">Custom House</text>
+      <text x="610" y="216" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#1B8C3D" opacity="0.4">Beckett Bridge</text>
+      <text x="652" y="268" text-anchor="middle" font-family="Inter,sans-serif" font-size="5" fill="#1B8C3D" opacity="0.4">Aviva</text>
+
+      <!-- === GUINNESS FILL === -->
+      <g clip-path="url(#dublin)">
+        <!-- Dark stout body -->
+        <rect id="gfill" x="0" y="420" width="700" height="420" fill="#1A0800">
+          <animate attributeName="y" from="420" to="25" dur="5.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
         </rect>
-        <!-- Foam -->
-        <g id="foam-head">
-          <animate attributeName="transform" attributeType="XML" type="translate" from="0 400" to="0 20" dur="5.5s" fill="freeze"/>
-          <ellipse cx="50" cy="2" rx="35" ry="12" fill="url(#foam-grad)"/>
-          <ellipse cx="120" cy="0" rx="40" ry="14" fill="url(#foam-grad)"/>
-          <ellipse cx="190" cy="-2" rx="38" ry="13" fill="url(#foam-grad)"/>
-          <ellipse cx="260" cy="1" rx="42" ry="12" fill="url(#foam-grad)"/>
-          <ellipse cx="330" cy="-1" rx="38" ry="14" fill="url(#foam-grad)"/>
-          <ellipse cx="400" cy="0" rx="40" ry="13" fill="url(#foam-grad)"/>
-          <ellipse cx="470" cy="-2" rx="36" ry="12" fill="url(#foam-grad)"/>
-          <ellipse cx="540" cy="1" rx="35" ry="13" fill="url(#foam-grad)"/>
-          <circle cx="80" cy="-5" r="6" fill="#FAEBD7" opacity="0.7"/>
-          <circle cx="200" cy="-4" r="5" fill="#FAEBD7" opacity="0.6"/>
-          <circle cx="350" cy="-6" r="7" fill="#FAEBD7" opacity="0.5"/>
-          <circle cx="480" cy="-3" r="4" fill="#FAEBD7" opacity="0.6"/>
-          <circle cx="130" cy="-3" r="4" fill="#FAEBD7" opacity="0.5"/>
-          <circle cx="420" cy="-5" r="5" fill="#FAEBD7" opacity="0.7"/>
+
+        <!-- Beer wave shimmer overlay -->
+        <rect x="0" y="25" width="700" height="400" fill="#2A1200" opacity="0.3" filter="url(#shimmer)"/>
+
+        <!-- Inner beer highlight (amber glow at edges) -->
+        <rect id="ghigh" x="0" y="420" width="700" height="420" fill="#3D1A00" opacity="0.4">
+          <animate attributeName="y" from="420" to="25" dur="5.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+        </rect>
+
+        <!-- Foam head -->
+        <g id="foamhead">
+          <animate attributeName="transform" attributeType="XML" type="translate" from="0 420" to="0 25" dur="5.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+          <ellipse cx="40" cy="0" rx="40" ry="14" fill="url(#foam)"/>
+          <ellipse cx="110" cy="-2" rx="42" ry="16" fill="url(#foam)"/>
+          <ellipse cx="180" cy="1" rx="38" ry="13" fill="url(#foam)"/>
+          <ellipse cx="250" cy="-1" rx="44" ry="15" fill="url(#foam)"/>
+          <ellipse cx="320" cy="0" rx="40" ry="14" fill="url(#foam)"/>
+          <ellipse cx="390" cy="-2" rx="42" ry="16" fill="url(#foam)"/>
+          <ellipse cx="460" cy="1" rx="38" ry="13" fill="url(#foam)"/>
+          <ellipse cx="530" cy="-1" rx="44" ry="15" fill="url(#foam)"/>
+          <ellipse cx="600" cy="0" rx="40" ry="14" fill="url(#foam)"/>
+          <ellipse cx="670" cy="-2" rx="35" ry="13" fill="url(#foam)"/>
+          <!-- Foam bubbles -->
+          <circle cx="60" cy="-6" r="5" fill="#FAEBD7" opacity="0.6"/>
+          <circle cx="160" cy="-4" r="4" fill="#F5E6C8" opacity="0.5"/>
+          <circle cx="280" cy="-7" r="6" fill="#FAEBD7" opacity="0.4"/>
+          <circle cx="370" cy="-3" r="3" fill="#F5E6C8" opacity="0.6"/>
+          <circle cx="500" cy="-5" r="5" fill="#FAEBD7" opacity="0.5"/>
+          <circle cx="620" cy="-4" r="4" fill="#F5E6C8" opacity="0.4"/>
+          <!-- Foam wave animation -->
+          <animateTransform attributeName="transform" type="translate" values="0 420;0 25" dur="5.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" additive="replace"/>
         </g>
+
+        <!-- Rising bubbles in stout -->
+        <circle cx="80" r="2" fill="#3A1500" opacity="0.3"><animate attributeName="cy" from="420" to="25" dur="3.8s" repeatCount="indefinite"/></circle>
+        <circle cx="180" r="1.5" fill="#3A1500" opacity="0.25"><animate attributeName="cy" from="420" to="25" dur="4.2s" repeatCount="indefinite" begin="0.4s"/></circle>
+        <circle cx="300" r="2" fill="#3A1500" opacity="0.3"><animate attributeName="cy" from="420" to="25" dur="3.5s" repeatCount="indefinite" begin="0.8s"/></circle>
+        <circle cx="400" r="1.5" fill="#3A1500" opacity="0.25"><animate attributeName="cy" from="420" to="25" dur="4s" repeatCount="indefinite" begin="0.2s"/></circle>
+        <circle cx="520" r="2" fill="#3A1500" opacity="0.3"><animate attributeName="cy" from="420" to="25" dur="3.6s" repeatCount="indefinite" begin="1s"/></circle>
+        <circle cx="620" r="1.5" fill="#3A1500" opacity="0.25"><animate attributeName="cy" from="420" to="25" dur="4.5s" repeatCount="indefinite" begin="0.6s"/></circle>
+        <circle cx="140" r="1" fill="#3A1500" opacity="0.2"><animate attributeName="cy" from="420" to="25" dur="3.3s" repeatCount="indefinite" begin="1.2s"/></circle>
+        <circle cx="450" r="1.5" fill="#3A1500" opacity="0.2"><animate attributeName="cy" from="420" to="25" dur="3.9s" repeatCount="indefinite" begin="0.5s"/></circle>
       </g>
 
-      <!-- Bubbles inside stout -->
-      <g clip-path="url(#dublin-clip)">
-        <circle cx="100" r="2" fill="#3A1F00" opacity="0.4"><animate attributeName="cy" from="400" to="30" dur="4s" repeatCount="indefinite"/></circle>
-        <circle cx="200" r="1.5" fill="#3A1F00" opacity="0.3"><animate attributeName="cy" from="400" to="30" dur="3.5s" repeatCount="indefinite" begin="0.5s"/></circle>
-        <circle cx="310" r="2" fill="#3A1F00" opacity="0.4"><animate attributeName="cy" from="400" to="30" dur="4.5s" repeatCount="indefinite" begin="1s"/></circle>
-        <circle cx="400" r="1.5" fill="#3A1F00" opacity="0.3"><animate attributeName="cy" from="400" to="30" dur="3.8s" repeatCount="indefinite" begin="0.3s"/></circle>
-        <circle cx="500" r="2" fill="#3A1F00" opacity="0.4"><animate attributeName="cy" from="400" to="30" dur="4.2s" repeatCount="indefinite" begin="0.8s"/></circle>
-        <circle cx="150" r="1" fill="#3A1F00" opacity="0.3"><animate attributeName="cy" from="400" to="30" dur="3.2s" repeatCount="indefinite" begin="1.5s"/></circle>
-        <circle cx="450" r="1.5" fill="#3A1F00" opacity="0.35"><animate attributeName="cy" from="400" to="30" dur="3.6s" repeatCount="indefinite" begin="0.7s"/></circle>
-      </g>
-
-      <!-- Windows light up as beer fills -->
+      <!-- Windows light up progressively -->
       <g opacity="0">
-        <rect x="35" y="220" width="6" height="6" fill="#FFE082" rx="1"/>
-        <rect x="110" y="210" width="5" height="6" fill="#FFE082" rx="1"/>
-        <rect x="142" y="225" width="5" height="6" fill="#FFE082" rx="1"/>
-        <rect x="172" y="205" width="5" height="6" fill="#FFE082" rx="1"/>
-        <rect x="205" y="230" width="6" height="6" fill="#FFE082" rx="1"/>
-        <rect x="275" y="140" width="6" height="8" fill="#FFE082" rx="1"/>
-        <rect x="275" y="160" width="6" height="8" fill="#FFE082" rx="1"/>
-        <rect x="275" y="180" width="6" height="8" fill="#FFE082" rx="1"/>
-        <rect x="335" y="220" width="6" height="6" fill="#FFE082" rx="1"/>
-        <rect x="355" y="220" width="6" height="6" fill="#FFE082" rx="1"/>
-        <rect x="495" y="220" width="5" height="6" fill="#FFE082" rx="1"/>
-        <rect x="522" y="205" width="5" height="6" fill="#FFE082" rx="1"/>
-        <rect x="555" y="235" width="5" height="6" fill="#FFE082" rx="1"/>
-        <animate attributeName="opacity" from="0" to="0.9" begin="2s" dur="2s" fill="freeze"/>
+        <!-- Georgian houses -->
+        <rect x="25" y="255" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="53" y="245" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="53" y="258" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="64" y="258" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="86" y="258" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <!-- Christ Church -->
+        <rect x="125" y="235" width="6" height="8" fill="#FFE082" rx="0.5"/>
+        <rect x="137" y="240" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <!-- Four Courts -->
+        <rect x="175" y="245" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="188" y="245" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="200" y="245" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <!-- Temple Bar -->
+        <rect x="234" y="252" width="4" height="5" fill="#FFE082" rx="0.5"/>
+        <rect x="258" y="258" width="4" height="5" fill="#FFE082" rx="0.5"/>
+        <rect x="282" y="248" width="4" height="5" fill="#FFE082" rx="0.5"/>
+        <!-- Liberty Hall (many windows) -->
+        <rect x="370" y="140" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="378" y="140" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="370" y="155" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="378" y="155" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="370" y="170" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="378" y="170" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="370" y="185" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="378" y="185" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <!-- Custom House -->
+        <rect x="420" y="240" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="435" y="240" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="450" y="240" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="465" y="240" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <!-- Docklands -->
+        <rect x="498" y="235" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="530" y="220" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="530" y="235" width="5" height="6" fill="#FFE082" rx="0.5"/>
+        <rect x="665" y="255" width="4" height="5" fill="#FFE082" rx="0.5"/>
+        <rect x="684" y="265" width="4" height="5" fill="#FFE082" rx="0.5"/>
+        <animate attributeName="opacity" from="0" to="0.85" begin="1.5s" dur="3s" fill="freeze"/>
       </g>
 
-      <!-- DUBLIN label -->
-      <text x="300" y="385" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" fill="#1B8C3D" opacity="0.5" letter-spacing="6" font-weight="600">D U B L I N</text>
+      <!-- D U B L I N text at bottom -->
+      <text x="350" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#1B8C3D" opacity="0.4" letter-spacing="8" font-weight="600">D U B L I N</text>
     </svg>
 
-    <!-- Pour percentage -->
-    <div id="pour-pct" style="text-align:center;color:#E8C896;font-family:Inter,sans-serif;font-size:18px;font-weight:600;margin-top:10px;letter-spacing:2px;opacity:0.8">Pouring... 0%</div>
+    <!-- Pour status -->
+    <div id="pour-pct" style="text-align:center;color:#DEB887;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin-top:8px;letter-spacing:2px;opacity:0.8">Pouring your pint... 0%</div>
   </div>
 
-  <div style="color:#F26522;font-family:Inter,sans-serif;font-size:42px;font-weight:900;margin-top:20px;letter-spacing:4px;text-shadow:0 2px 10px rgba(242,101,34,.4)">CraicBet</div>
-  <div style="color:rgba(255,255,255,.5);font-size:15px;margin-top:6px;letter-spacing:2px">Ireland's Casino Guide</div>
+  <div style="color:#F26522;font-family:Inter,sans-serif;font-size:42px;font-weight:900;margin-top:18px;letter-spacing:4px;text-shadow:0 2px 12px rgba(242,101,34,.3)">CraicBet</div>
+  <div style="color:rgba(255,255,255,.45);font-size:15px;margin-top:5px;letter-spacing:2px">Ireland's Casino Guide</div>
 </div>
 <style>@keyframes x{}</style>
 
@@ -988,6 +1099,93 @@ document.querySelector('.burger')?.addEventListener('click', () => {
 </script>
 
 <script src="js/slot-game.js"></script>
-<script>(function(){var pct=document.getElementById("pour-pct");var p=0;var iv=setInterval(function(){p+=2;if(p>100)p=100;if(pct)pct.textContent="Pouring... "+p+"%";if(p>=100){clearInterval(iv);if(pct)pct.textContent="Sláinte!";setTimeout(function(){var el=document.getElementById("preloader");if(el){el.style.opacity="0";setTimeout(function(){el.style.display="none"},800)}},800)}},110)})();</script>
+<script>(function(){
+/* Web Audio API - beer pouring sound */
+var actx;
+function startPourSound(){
+  try{
+    actx=new(window.AudioContext||window.webkitAudioContext)();
+    /* Brown noise (filtered white noise = pour sound) */
+    var bufSize=2*actx.sampleRate;
+    var buf=actx.createBuffer(1,bufSize,actx.sampleRate);
+    var d=buf.getChannelData(0);
+    var last=0;
+    for(var i=0;i<bufSize;i++){
+      var w=Math.random()*2-1;
+      d[i]=(last+(0.02*w))/1.02;
+      last=d[i];
+      d[i]*=3.5;
+    }
+    var src=actx.createBufferSource();
+    src.buffer=buf;
+    src.loop=true;
+    /* Bandpass filter = liquid sound */
+    var bp=actx.createBiquadFilter();
+    bp.type="bandpass";
+    bp.frequency.value=800;
+    bp.Q.value=0.8;
+    /* Second resonance for glass */
+    var bp2=actx.createBiquadFilter();
+    bp2.type="bandpass";
+    bp2.frequency.value=2200;
+    bp2.Q.value=1.2;
+    /* Gain envelope */
+    var gain=actx.createGain();
+    gain.gain.setValueAtTime(0,actx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.12,actx.currentTime+0.5);
+    gain.gain.setValueAtTime(0.12,actx.currentTime+4.5);
+    gain.gain.linearRampToValueAtTime(0,actx.currentTime+5.5);
+    /* Gain for second filter */
+    var gain2=actx.createGain();
+    gain2.gain.value=0.04;
+    /* Connect: src -> bp -> gain -> out */
+    src.connect(bp);
+    bp.connect(gain);
+    /* Also src -> bp2 -> gain2 -> out for glass resonance */
+    src.connect(bp2);
+    bp2.connect(gain2);
+    gain.connect(actx.destination);
+    gain2.connect(actx.destination);
+    /* Rising pitch as glass fills */
+    bp.frequency.linearRampToValueAtTime(1400,actx.currentTime+5.5);
+    /* Bubbling: LFO modulates volume subtly */
+    var lfo=actx.createOscillator();
+    lfo.frequency.value=6;
+    var lfoGain=actx.createGain();
+    lfoGain.gain.value=0.015;
+    lfo.connect(lfoGain);
+    lfoGain.connect(gain.gain);
+    lfo.start();
+    src.start();
+    src.stop(actx.currentTime+6);
+  }catch(e){}
+}
+/* Start sound on first interaction or immediately */
+var soundStarted=false;
+function trySound(){
+  if(!soundStarted){soundStarted=true;startPourSound()}
+}
+document.addEventListener("click",trySound,{once:true});
+document.addEventListener("touchstart",trySound,{once:true});
+/* Try autoplay */
+setTimeout(trySound,200);
+
+/* Pour counter */
+var pct=document.getElementById("pour-pct");
+var p=0;
+var iv=setInterval(function(){
+  p+=2;if(p>100)p=100;
+  if(pct)pct.textContent="Pouring your pint... "+p+"%";
+  if(p>=100){
+    clearInterval(iv);
+    if(pct)pct.textContent="Sláinte!";
+    setTimeout(function(){
+      var el=document.getElementById("preloader");
+      if(el){el.style.opacity="0";setTimeout(function(){el.style.display="none"},800)}
+      if(actx)try{actx.close()}catch(e){}
+    },800);
+  }
+},110);
+})();</script>
 </body>
 </html>
