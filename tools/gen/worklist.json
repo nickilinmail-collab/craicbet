@@ -74,35 +74,35 @@
   "title": "NFL Betting from Ireland",
   "brief": "Sunday night slate; spread betting logic; key numbers 3 and 7; teasers as margin traps; Dublin game interest",
   "cat": "sport",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "esports-betting-guide",
   "title": "Esports Betting Guide",
   "brief": "CS2/LoL/Dota markets; map handicaps; roster-change repricing; integrity flags on tier-3 matches - avoid; 18+ emphasis",
   "cat": "sport",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "greyhound-betting-guide",
   "title": "Greyhound Betting Guide",
   "brief": "Irish tracks heritage; trap bias reality; forecast/tricast mechanics; shorter form cycles than horses",
   "cat": "sport",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "horse-racing-ante-post",
   "title": "Ante-Post Racing Betting Deep Dive",
   "brief": "Seasonal value windows by month; NRNB timing; stable-switch risk; builds on racing guide and Cheltenham hub",
   "cat": "sport",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "league-of-ireland-betting",
   "title": "League of Ireland Betting",
   "brief": "Softest priced league relevant to Irish punters; Friday nights; summer football calendar edge vs UK books' attention",
   "cat": "sport",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "over-under-goals-explained",
