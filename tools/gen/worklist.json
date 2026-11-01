@@ -109,35 +109,35 @@
   "title": "Over/Under Goals Explained",
   "brief": "2.5 line logic, why totals are the cleanest margin comparison, quarter lines, league scoring profiles",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "btts-betting-explained",
   "title": "Both Teams To Score Explained",
   "brief": "Why BTTS is acca fuel, correlation with over 2.5 (and double-count margin in combos), form stats that matter",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "asian-handicap-explained",
   "title": "Asian Handicap Explained",
   "brief": "Quarter/half lines, stake splits, why margin is lowest here, worked examples from -0.25 to -1.5",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "draw-no-bet-explained",
   "title": "Draw No Bet Explained",
   "brief": "DNB as insurance priced in; DIY DNB via stake split on 1X2 often beats the listed price - show the maths",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "double-chance-explained",
   "title": "Double Chance Betting",
   "brief": "1X/X2/12 pricing vs DNB; when double chance is the wrong comfort blanket; short-price stacking in accas",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "correct-score-betting",
