@@ -1,0 +1,317 @@
+[
+ {
+  "slug": "rugby-betting-ireland",
+  "title": "Rugby Betting in Ireland",
+  "brief": "Six Nations as the betting peak, handicaps on mismatches, URC/Leinster angle, try scorer markets, in-play kicking tee rhythm",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "tennis-betting-guide",
+  "title": "Tennis Betting Guide",
+  "brief": "No draw = cleaner markets; retirement settlement rules differ by book (set 1 completed vs match); games/sets handicaps; serve stats over rankings",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "golf-betting-each-way",
+  "title": "Golf Betting & Each-Way Places",
+  "brief": "72-hole outrights at huge odds make e/w king; place terms 5-10 places; dead heat rules bite hardest in golf - worked example; Irish majors angle",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "darts-betting-guide",
+  "title": "Darts Betting Guide",
+  "brief": "Worlds every Christmas = seasonal spike; 180s and checkout markets; leg handicaps; favourites' short prices vs leg-by-leg volatility",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "snooker-betting-guide",
+  "title": "Snooker Betting Guide",
+  "brief": "Crucible marathon matches; frame handicaps; century/147 specials; session betting; why long matches suit in-play discipline",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "boxing-betting-guide",
+  "title": "Boxing Betting Guide",
+  "brief": "Method of victory and round groups beat 1/8 favourites; judges' scorecards risk; Irish fight nights; always check draw rules",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "mma-ufc-betting-guide",
+  "title": "UFC & MMA Betting",
+  "brief": "Method/round props vs moneyline; late replacement fighters re-price everything; Irish MMA interest; ITD vs decision value logic",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "f1-betting-guide",
+  "title": "F1 Betting Guide",
+  "brief": "Qualifying vs race winner; podium/points finish e/w mechanics; constructor markets; weather as the only true variable",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "cricket-betting-basics",
+  "title": "Cricket Betting Basics",
+  "brief": "Growing Irish interest; match odds with draw in Tests; innings runs; DLS confusion and settlement; T20 volatility",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "nba-betting-ireland",
+  "title": "NBA Betting from Ireland",
+  "brief": "Night-time slate suits Irish hours; spreads and totals as the core; back-to-backs and rest days as the real edge; player props margin warning",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "nfl-betting-ireland",
+  "title": "NFL Betting from Ireland",
+  "brief": "Sunday night slate; spread betting logic; key numbers 3 and 7; teasers as margin traps; Dublin game interest",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "esports-betting-guide",
+  "title": "Esports Betting Guide",
+  "brief": "CS2/LoL/Dota markets; map handicaps; roster-change repricing; integrity flags on tier-3 matches - avoid; 18+ emphasis",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "greyhound-betting-guide",
+  "title": "Greyhound Betting Guide",
+  "brief": "Irish tracks heritage; trap bias reality; forecast/tricast mechanics; shorter form cycles than horses",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "horse-racing-ante-post",
+  "title": "Ante-Post Racing Betting Deep Dive",
+  "brief": "Seasonal value windows by month; NRNB timing; stable-switch risk; builds on racing guide and Cheltenham hub",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "league-of-ireland-betting",
+  "title": "League of Ireland Betting",
+  "brief": "Softest priced league relevant to Irish punters; Friday nights; summer football calendar edge vs UK books' attention",
+  "cat": "sport",
+  "status": "todo"
+ },
+ {
+  "slug": "over-under-goals-explained",
+  "title": "Over/Under Goals Explained",
+  "brief": "2.5 line logic, why totals are the cleanest margin comparison, quarter lines, league scoring profiles",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "btts-betting-explained",
+  "title": "Both Teams To Score Explained",
+  "brief": "Why BTTS is acca fuel, correlation with over 2.5 (and double-count margin in combos), form stats that matter",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "asian-handicap-explained",
+  "title": "Asian Handicap Explained",
+  "brief": "Quarter/half lines, stake splits, why margin is lowest here, worked examples from -0.25 to -1.5",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "draw-no-bet-explained",
+  "title": "Draw No Bet Explained",
+  "brief": "DNB as insurance priced in; DIY DNB via stake split on 1X2 often beats the listed price - show the maths",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "double-chance-explained",
+  "title": "Double Chance Betting",
+  "brief": "1X/X2/12 pricing vs DNB; when double chance is the wrong comfort blanket; short-price stacking in accas",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "correct-score-betting",
+  "title": "Correct Score Betting",
+  "brief": "Huge margins, lottery variance; scorecast/wincast even worse; why it is entertainment pricing by design",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "first-goalscorer-betting",
+  "title": "Goalscorer Markets Explained",
+  "brief": "First vs anytime value gap; penalty takers; 60th-minute substitutions kill first-scorer bets; settlement on own goals",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "corners-betting-guide",
+  "title": "Corners Betting Guide",
+  "brief": "Totals/race-to lines; team style stats that predict corners; in-play corner rhythm; model-priced market softness",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "cards-betting-guide",
+  "title": "Cards & Bookings Betting",
+  "brief": "Referee profiles are the market; derby inflation; booking points vs cards count formats across books",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "outright-futures-betting",
+  "title": "Outright & Futures Betting",
+  "brief": "Season-long margin and dead money; each-way outrights; cashout on outrights as double margin; when futures beat match bets",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "in-play-betting-guide",
+  "title": "In-Play Betting Guide",
+  "brief": "Suspension windows, latency reality, chasing danger; pre-planned in-play entries vs reactive punting; the discipline rules",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "winning-margin-betting",
+  "title": "Winning Margin Betting",
+  "brief": "Bands pricing in football/GAA; relation to handicaps; variance profile between 1X2 and correct score",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "half-time-full-time",
+  "title": "Half-Time/Full-Time Explained",
+  "brief": "HT/FT vs to-win-either-half; why X/X and X/1 carry hidden value debates; margin stacking vs double result",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "bet-builder-maths",
+  "title": "Bet Builder Maths",
+  "brief": "Same-game combos: correlation pricing, margin per leg, when builders are fair-ish (truly independent legs) and when not",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "each-way-football",
+  "title": "Each-Way in Football Outrights",
+  "brief": "E/W on league winners and golf-style place logic applied to football; terms comparison discipline",
+  "cat": "market",
+  "status": "todo"
+ },
+ {
+  "slug": "odds-formats-explained",
+  "title": "Fractional vs Decimal Odds",
+  "brief": "Conversion table, implied probability formula, why decimal exposes margin faster, Irish habit of fractions",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "bookmaker-margin-explained",
+  "title": "Bookmaker Margin (Overround) Explained",
+  "brief": "Compute overround from any market; typical margins by sport/market; margin as the real price of every bet",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "implied-probability-guide",
+  "title": "Implied Probability & Value",
+  "brief": "Odds to % both directions; value betting definition; why 'value' without a probability opinion is a buzzword",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "bankroll-management-betting",
+  "title": "Bankroll Management for Punters",
+  "brief": "Unit sizing, flat vs proportional, variance maths for 55% hit rates, the stop-loss that actually works",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "betting-glossary",
+  "title": "Betting Glossary A-Z",
+  "brief": "60+ terms: acca to yankee, Irish usage notes, links into our guides per term",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "lucky-15-yankee-patent",
+  "title": "Lucky 15, Yankee, Patent & Trixie",
+  "brief": "Full-cover bet families: combinations count, cost, bonus terms books attach, when full-cover beats an acca",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "dead-heat-rules",
+  "title": "Dead Heat Rules Explained",
+  "brief": "Stake division maths, golf ties as the classic case, e/w interaction, worked examples",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "void-bets-settlement",
+  "title": "Void Bets & Settlement Rules",
+  "brief": "Postponements, non-runners, player-never-played props; 24/48h rules differ by book; where disputes actually come from",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "max-payout-limits",
+  "title": "Max Payout & Stake Limits",
+  "brief": "Payout caps by sport tier; why limits matter for acca dreamers; restricted accounts reality, factually",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "request-a-bet-explained",
+  "title": "Request-a-Bet Markets",
+  "brief": "Social-priced specials: fun formats, chunky margins; how compilers price novelty requests",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "betting-statistics-sources",
+  "title": "Stats Sources for Smarter Betting",
+  "brief": "Free data sources worth using (official league stats, public xG), how to read them without overfitting",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "betting-psychology-tilt",
+  "title": "Tilt & Betting Psychology",
+  "brief": "Chasing, gambler's fallacy, outcome bias; practical circuit-breakers; links to RG support prominently",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "acca-insurance-promos",
+  "title": "Promo Terms Decoder",
+  "brief": "Enhanced odds, acca insurance, money-back specials: the standard catches (free-bet payout, caps, min odds) in one page",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "betting-tax-duty-ireland",
+  "title": "Betting Duty in Ireland",
+  "brief": "2% duty on operators, zero tax on winnings, history of punter-paid duty, how Ireland compares",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "safer-gambling-tools-betting",
+  "title": "Safer Gambling Tools for Punters",
+  "brief": "Deposit limits, timeouts, exclusion register status for betting, how to actually set limits; GAT 1800 753 753",
+  "cat": "mechanics",
+  "status": "todo"
+ }
+]
