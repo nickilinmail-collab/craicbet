@@ -16,3 +16,12 @@ Content conventions for conveyor pages (see CLAUDE.md rules first):
 - After building a batch: verify internal links resolve, JSON-LD parses, grep page for banned brand names (CLAUDE.md list),
   append entries to sitemap.xml (clean URLs, today lastmod), add the new links to the "Betting" related block on pages/betting-sites-ireland.html
   (keep it one div), update each item's status to "done" in worklist.json, commit, push.
+
+## Phase 2: translations (worklist_i18n.json)
+When worklist.json has no "todo" left, the conveyor switches to worklist_i18n.json: each item = translate pages/<en_slug>.html
+into Irish (lang "ga", use gabuilder.py, shell ga/cain-cearrbhachais.html) or Polish (lang "pl", use plbuilder.py, shell
+pl/podatek-od-hazardu.html). Translate meaning, not word-for-word: natural native phrasing, Irish-language betting/gambling
+terminology (gealltóireacht, cearrbhachas, ceadúnas), Polish diaspora angle where relevant. Slug: localized, lowercase, no accents
+in filename. Keep all facts, numbers and the CTA (localize button label). Set reciprocal hreflang across the en/ga/pl trio
+(all existing versions + new one; update the EN page's hreflang too). Internal links point to same-language pages where they
+exist, otherwise ../pages/<en_slug>. Sitemap append. Then flip status to "done" with the chosen slug saved as "slug".
