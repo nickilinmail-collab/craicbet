@@ -313,5 +313,110 @@
   "brief": "Deposit limits, timeouts, exclusion register status for betting, how to actually set limits; GAT 1800 753 753",
   "cat": "mechanics",
   "status": "todo"
+ },
+ {
+  "slug": "irish-grand-national-betting",
+  "title": "Irish Grand National Betting Guide — Fairyhouse",
+  "brief": "Easter Monday at Fairyhouse: race profile, each-way terms, ante-post vs day-of, Irish trainers' record. No tips presented as certainties.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "punchestown-festival-betting",
+  "title": "Punchestown Festival Betting Guide",
+  "brief": "Ireland's biggest jumps festival (late April/May): key races, how post-Cheltenham form translates, value angles, each-way terms.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "galway-races-betting",
+  "title": "Galway Races Betting Guide",
+  "brief": "The July festival: Galway Plate and Hurdle, huge fields, why favourites struggle, bankroll discipline for a 7-day meeting.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "leopardstown-christmas-festival-betting",
+  "title": "Leopardstown Christmas Festival Betting",
+  "brief": "Four days after Christmas: Grade 1s, Irish form lines, crowds vs value, antepost timing.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "six-nations-betting-ireland",
+  "title": "Six Nations Betting Guide for Irish Fans",
+  "brief": "Outrights, handicaps, Grand Slam markets; how home advantage and fixture order shape Ireland's price.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "all-ireland-football-betting",
+  "title": "All-Ireland Football Championship Betting",
+  "brief": "GAA football: outright market shape, provincial vs All-Ireland odds, why Dublin/Kerry prices compress, handicap value in mismatches.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "all-ireland-hurling-betting",
+  "title": "All-Ireland Hurling Championship Betting",
+  "brief": "Hurling outrights and match betting: small field of genuine contenders, draw frequency, points handicaps.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "premier-league-betting-ireland",
+  "title": "Premier League Betting from Ireland",
+  "brief": "Most-bet league in Ireland: market depth, team news timing (Friday pressers), why accas on favourites bleed margin.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "champions-league-betting-ireland",
+  "title": "Champions League Betting Guide",
+  "brief": "Midweek European nights: group vs knockout dynamics, two-leg maths, Irish kick-off times.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "accumulator-betting-guide",
+  "title": "Accumulator Betting — The Honest Maths",
+  "brief": "How acca odds multiply and why margin compounds per leg: worked example of a 5-fold's real house edge; when accas make sense.",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "odds-converter-guide",
+  "title": "Odds Converter: Fractional, Decimal, American",
+  "brief": "Conversion formulas and a full reference table; implied probability from each format; why Irish sites show fractional.",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "horse-racing-form-guide",
+  "title": "How to Read Horse Racing Form",
+  "brief": "Decoding the form line: figures, going, class, weight, days since run; what actually predicts and what's noise.",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "spread-betting-vs-fixed-odds",
+  "title": "Spread Betting vs Fixed Odds",
+  "brief": "Why sports spread betting can lose more than your stake, regulatory difference (Central Bank vs GRAI), who should avoid it.",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "virtual-sports-betting-explained",
+  "title": "Virtual Sports Betting Explained",
+  "brief": "RNG races and matches: fixed margins, no form to study, how virtuals differ from real-event betting; honest take on the value.",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "live-streaming-betting-sites",
+  "title": "Watching Sport via Betting Sites in Ireland",
+  "brief": "Which sports are typically streamed by licensed bookmakers, funded-account rules, racing streaming conventions; 18+.",
+  "cat": "irish",
+  "status": "todo"
  }
 ]
