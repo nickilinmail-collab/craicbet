@@ -418,5 +418,145 @@
   "brief": "Which sports are typically streamed by licensed bookmakers, funded-account rules, racing streaming conventions; 18+.",
   "cat": "irish",
   "status": "todo"
+ },
+ {
+  "slug": "euro-2028-betting",
+  "title": "Euro 2028 Betting — Ireland Co-Hosts",
+  "brief": "Euro 2028 at the Aviva: outright markets 18 months out, host-nation history, qualification scenarios for Ireland, ante-post risk honestly explained.",
+  "cat": "event",
+  "status": "todo"
+ },
+ {
+  "slug": "six-nations-2027-betting",
+  "title": "Six Nations 2027 Betting Preview",
+  "brief": "2027 championship: fixture order, Ireland's schedule, Grand Slam and outright markets, when prices are value vs hype.",
+  "cat": "event",
+  "status": "todo"
+ },
+ {
+  "slug": "grand-national-2027-betting",
+  "title": "Grand National 2027 Betting Guide",
+  "brief": "Aintree 2027: Irish-trained dominance in recent years, each-way places (often enhanced), non-runner no bet timing.",
+  "cat": "event",
+  "status": "todo"
+ },
+ {
+  "slug": "dublin-racing-festival-betting",
+  "title": "Dublin Racing Festival Betting",
+  "brief": "Leopardstown, early February: Grade 1 card, Cheltenham clues, field sizes and each-way maths.",
+  "cat": "event",
+  "status": "todo"
+ },
+ {
+  "slug": "irish-derby-betting",
+  "title": "Irish Derby Betting Guide",
+  "brief": "The Curragh Classic: draw, pace, English raiders vs home yards; ante-post vs day-of value.",
+  "cat": "event",
+  "status": "todo"
+ },
+ {
+  "slug": "irish-champions-weekend-betting",
+  "title": "Irish Champions Weekend Betting",
+  "brief": "September flat highlight: Irish Champion Stakes profile, big-field handicaps, the honest case against multiples here.",
+  "cat": "event",
+  "status": "todo"
+ },
+ {
+  "slug": "how-to-open-betting-account-ireland",
+  "title": "Opening a Betting Account in Ireland",
+  "brief": "Step-by-step: what ID the GRAI-era KYC requires, proof of address, affordability questions, how long verification takes; your rights.",
+  "cat": "process",
+  "status": "todo"
+ },
+ {
+  "slug": "betting-deposits-revolut-apple-pay",
+  "title": "Betting Deposits: Revolut & Apple Pay",
+  "brief": "Which deposit methods Irish betting sites take after the credit-card ban (5 Feb 2026), minimums, instant vs delayed, withdrawal back to same method.",
+  "cat": "process",
+  "status": "todo"
+ },
+ {
+  "slug": "betting-withdrawal-times-ireland",
+  "title": "Betting Withdrawal Times in Ireland",
+  "brief": "Realistic payout timelines by method, why first withdrawals are slower (KYC), red flags of a stalling operator.",
+  "cat": "process",
+  "status": "todo"
+ },
+ {
+  "slug": "bookmaker-account-restrictions",
+  "title": "Why Bookmakers Restrict Winning Accounts",
+  "brief": "The industry's open secret: stake factoring and account limits for winners; what the GRAI era may change; exchanges as the alternative.",
+  "cat": "process",
+  "status": "todo"
+ },
+ {
+  "slug": "safer-gambling-betting-ireland",
+  "title": "Safer Gambling Tools for Irish Punters",
+  "brief": "Deposit limits, time-outs, self-exclusion under the Gambling Regulation Act; GRAI's National Gambling Exclusion Register; where to get help. 18+.",
+  "cat": "process",
+  "status": "todo"
+ },
+ {
+  "slug": "leinster-munster-rugby-betting",
+  "title": "Leinster & Munster Rugby Betting",
+  "brief": "URC and Champions Cup week to week: rotation risk in league rounds, handicap value, derby dynamics.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "irish-boxers-betting",
+  "title": "Betting on Irish Boxers",
+  "brief": "How boxing odds work (method of victory, rounds), the Irish scene, why home-fighter prices are often short.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "irish-ufc-fighters-betting",
+  "title": "Betting on Irish UFC Fighters",
+  "brief": "Irish MMA betting: card timing for Irish viewers, method props, the honest maths of heavy favourites.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "fai-cup-betting",
+  "title": "FAI Cup Betting Guide",
+  "brief": "Ireland's knockout competition: giant-killing frequency, replays/extra time rules in settlement, outright value spots.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "ireland-international-football-betting",
+  "title": "Ireland National Team Betting",
+  "brief": "Qualifiers and Nations League: how market prices Ireland, draw-heavy profile, qualification specials.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "new-betting-sites-ireland",
+  "title": "New Betting Sites in Ireland 2026",
+  "brief": "What a new entrant must show post-GRAI: licence check first, realistic welcome structures, why 'new' isn't automatically better.",
+  "cat": "irish",
+  "status": "todo"
+ },
+ {
+  "slug": "best-odds-guaranteed-explained",
+  "title": "Best Odds Guaranteed Explained",
+  "brief": "BOG on racing: what it is, when it applies, its real expected value, and the catches (max stakes, early prices).",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "non-runner-no-bet-explained",
+  "title": "Non-Runner No Bet Explained",
+  "brief": "NRNB vs ante-post all-in: when books switch it on before festivals and what it does to the price.",
+  "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "cashback-and-extra-places-offers",
+  "title": "Extra Places & Betting Offers Maths",
+  "brief": "Extra-place races and money-back offers: how to value them honestly, wagering strings, why 'free' rarely is.",
+  "cat": "mechanics",
+  "status": "todo"
  }
 ]
