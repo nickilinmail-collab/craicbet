@@ -144,35 +144,35 @@
   "title": "Correct Score Betting",
   "brief": "Huge margins, lottery variance; scorecast/wincast even worse; why it is entertainment pricing by design",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "first-goalscorer-betting",
   "title": "Goalscorer Markets Explained",
   "brief": "First vs anytime value gap; penalty takers; 60th-minute substitutions kill first-scorer bets; settlement on own goals",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "corners-betting-guide",
   "title": "Corners Betting Guide",
   "brief": "Totals/race-to lines; team style stats that predict corners; in-play corner rhythm; model-priced market softness",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "cards-betting-guide",
   "title": "Cards & Bookings Betting",
   "brief": "Referee profiles are the market; derby inflation; booking points vs cards count formats across books",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "outright-futures-betting",
   "title": "Outright & Futures Betting",
   "brief": "Season-long margin and dead money; each-way outrights; cashout on outrights as double margin; when futures beat match bets",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "in-play-betting-guide",
