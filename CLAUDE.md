@@ -1,7 +1,14 @@
 # CraicBet — craicbet.com
 
-Static English/Irish/Polish site (casino & betting guide for Ireland), plain HTML on GitHub Pages.
+Static English/Irish/Polish site (betting & casino guide for Ireland), plain HTML on GitHub Pages.
 Funnel: every CTA button links to https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/ (rel="nofollow", target="_blank").
+
+## Strategy (as of 1 Nov 2026) — BETTING FIRST
+The site started casino-first; the priority is now BETTING + GRAI, because the partner operator's only Irish licence is a GRAI
+remote betting licence. In every choice (new content, ordering, nav, homepage, internal links, indexing lists, social posts):
+betting and GRAI topics come first, casino second. Casino content stays maintained (it carries current search demand) but new
+investment goes to betting. Positioning phrase: "Ireland's independent betting & casino guide" (betting named first). Trust asset:
+the operator's licence number GRAI-0191-RB-26-0001 — cite it; never claim any GRAI casino licence exists (zero issued, expected 2027–2028).
 
 ## Editorial rules (MUST follow)
 - NEVER use operator brand names in URLs, <title>, H1/H2, meta description, keywords or schema. This covers the partner brand
