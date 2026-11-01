@@ -284,35 +284,35 @@
   "title": "Bet Builder Maths",
   "brief": "Same-game combos: correlation pricing, margin per leg, when builders are fair-ish (truly independent legs) and when not",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "each-way-football",
   "title": "Each-Way in Football Outrights",
   "brief": "E/W on league winners and golf-style place logic applied to football; terms comparison discipline",
   "cat": "market",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "odds-formats-explained",
   "title": "Fractional vs Decimal Odds",
   "brief": "Conversion table, implied probability formula, why decimal exposes margin faster, Irish habit of fractions",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "bookmaker-margin-explained",
   "title": "Bookmaker Margin (Overround) Explained",
   "brief": "Compute overround from any market; typical margins by sport/market; margin as the real price of every bet",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "implied-probability-guide",
   "title": "Implied Probability & Value",
   "brief": "Odds to % both directions; value betting definition; why 'value' without a probability opinion is a buzzword",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "bankroll-management-betting",
