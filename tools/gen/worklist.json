@@ -555,7 +555,7 @@
  {
   "slug": "betting-deposits-revolut-apple-pay",
   "title": "Betting Deposits: Revolut & Apple Pay",
-  "brief": "Which deposit methods Irish betting sites take after the credit-card ban (5 Feb 2026), minimums, instant vs delayed, withdrawal back to same method.",
+  "brief": "Target 'revolut betting sites ireland': which deposit methods Irish betting sites take after the credit-card ban (5 Feb 2026), why Revolut (3m+ Irish users) became the default, Apple/Google Pay, minimums, withdrawal-to-same-method rule, and the honest note that Revolut blocks credit-funded gambling. No invented brand lists.",
   "cat": "process",
   "status": "todo"
  },
@@ -655,6 +655,13 @@
   "title": "Loot Boxes and Irish Law: A Parent's Guide",
   "brief": "GRAI concluded video-game microtransactions fall outside the Gambling Regulation Act but keeps the matter under review; Belgium/Netherlands treat them as gambling; what loot boxes and skin gambling are, warning signs, parental controls. Non-commercial trust page - no CTA, keep RG lines.",
   "cat": "grai",
+  "status": "todo"
+ },
+ {
+  "slug": "watch-irish-horse-racing-tv",
+  "title": "How to Watch Irish Horse Racing on TV",
+  "brief": "Racing TV holds rights to all 26 Irish courses to 2029 (launched in Ireland at EUR 31/month; Sky 426, Virgin 411, Apple TV); Sky Sports Racing carries international racing; RTE/Virgin Media show select terrestrial days. The watershed angle: the 5.30am-9pm ad ban threatens Racing TV's Irish service (regionalising reported at ~EUR 2m). Practical punter guide + what may change. Sources: Racing Post, Irish Field, SBC.",
+  "cat": "irish",
   "status": "todo"
  }
 ]

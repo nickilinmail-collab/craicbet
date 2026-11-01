@@ -1,59 +1,5 @@
 [
  {
-  "en_slug": "when-will-grai-license-online-casinos",
-  "lang": "ga",
-  "note": "GRAI casino licence timeline",
-  "status": "todo"
- },
- {
-  "en_slug": "when-will-grai-license-online-casinos",
-  "lang": "pl",
-  "note": "GRAI casino licence timeline",
-  "status": "todo"
- },
- {
-  "en_slug": "gambling-regulation-act-2024-explained",
-  "lang": "ga",
-  "note": "Act 2024 for players",
-  "status": "todo"
- },
- {
-  "en_slug": "gambling-regulation-act-2024-explained",
-  "lang": "pl",
-  "note": "Act 2024 for players",
-  "status": "todo"
- },
- {
-  "en_slug": "unlicensed-casino-ireland-risks",
-  "lang": "ga",
-  "note": "Unlicensed casino risks",
-  "status": "todo"
- },
- {
-  "en_slug": "unlicensed-casino-ireland-risks",
-  "lang": "pl",
-  "note": "Unlicensed casino risks",
-  "status": "todo"
- },
- {
-  "en_slug": "grai-fines-and-penalties",
-  "lang": "ga",
-  "note": "GRAI fines",
-  "status": "todo"
- },
- {
-  "en_slug": "grai-fines-and-penalties",
-  "lang": "pl",
-  "note": "GRAI fines",
-  "status": "todo"
- },
- {
-  "en_slug": "free-bets-ireland",
-  "lang": "ga",
-  "note": "Free bets",
-  "status": "todo"
- },
- {
   "en_slug": "free-bets-ireland",
   "lang": "pl",
   "note": "Free bets",
@@ -61,20 +7,8 @@
  },
  {
   "en_slug": "horse-racing-betting-ireland",
-  "lang": "ga",
-  "note": "Horse racing betting",
-  "status": "todo"
- },
- {
-  "en_slug": "horse-racing-betting-ireland",
   "lang": "pl",
   "note": "Horse racing betting",
-  "status": "todo"
- },
- {
-  "en_slug": "gaa-betting-guide",
-  "lang": "ga",
-  "note": "GAA betting",
   "status": "todo"
  },
  {
@@ -85,13 +19,97 @@
  },
  {
   "en_slug": "football-betting-ireland",
-  "lang": "ga",
+  "lang": "pl",
   "note": "Football betting",
   "status": "todo"
  },
  {
-  "en_slug": "football-betting-ireland",
+  "en_slug": "betting-apps-ireland",
   "lang": "pl",
+  "note": "Betting apps",
+  "status": "todo"
+ },
+ {
+  "en_slug": "grai-licensed-bookmakers",
+  "lang": "pl",
+  "note": "legalny bukmacher w Irlandii - licencje GRAI, jak sprawdzic",
+  "status": "todo"
+ },
+ {
+  "en_slug": "each-way-calculator",
+  "lang": "pl",
+  "note": "kalkulator each-way po polsku (static explainer linking EN tool)",
+  "status": "todo"
+ },
+ {
+  "en_slug": "when-will-grai-license-online-casinos",
+  "lang": "ga",
+  "note": "GRAI casino licence timeline",
+  "status": "todo"
+ },
+ {
+  "en_slug": "when-will-grai-license-online-casinos",
+  "lang": "pl",
+  "note": "GRAI casino licence timeline",
+  "status": "todo"
+ },
+ {
+  "en_slug": "gambling-regulation-act-2024-explained",
+  "lang": "ga",
+  "note": "Act 2024 for players",
+  "status": "todo"
+ },
+ {
+  "en_slug": "gambling-regulation-act-2024-explained",
+  "lang": "pl",
+  "note": "Act 2024 for players",
+  "status": "todo"
+ },
+ {
+  "en_slug": "unlicensed-casino-ireland-risks",
+  "lang": "ga",
+  "note": "Unlicensed casino risks",
+  "status": "todo"
+ },
+ {
+  "en_slug": "unlicensed-casino-ireland-risks",
+  "lang": "pl",
+  "note": "Unlicensed casino risks",
+  "status": "todo"
+ },
+ {
+  "en_slug": "grai-fines-and-penalties",
+  "lang": "ga",
+  "note": "GRAI fines",
+  "status": "todo"
+ },
+ {
+  "en_slug": "grai-fines-and-penalties",
+  "lang": "pl",
+  "note": "GRAI fines",
+  "status": "todo"
+ },
+ {
+  "en_slug": "free-bets-ireland",
+  "lang": "ga",
+  "note": "Free bets",
+  "status": "todo"
+ },
+ {
+  "en_slug": "horse-racing-betting-ireland",
+  "lang": "ga",
+  "note": "Horse racing betting",
+  "status": "todo"
+ },
+ {
+  "en_slug": "gaa-betting-guide",
+  "lang": "ga",
+  "note": "GAA betting",
+  "status": "todo"
+ },
+ {
+  "en_slug": "football-betting-ireland",
+  "lang": "ga",
   "note": "Football betting",
   "status": "todo"
  },
@@ -140,12 +158,6 @@
  {
   "en_slug": "betting-apps-ireland",
   "lang": "ga",
-  "note": "Betting apps",
-  "status": "todo"
- },
- {
-  "en_slug": "betting-apps-ireland",
-  "lang": "pl",
   "note": "Betting apps",
   "status": "todo"
  },
