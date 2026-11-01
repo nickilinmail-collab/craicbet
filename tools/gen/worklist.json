@@ -179,35 +179,35 @@
   "title": "What a GRAI Betting Licence Actually Means",
   "brief": "Decode a GRAI remote betting licence for punters: what the holder had to prove (fitness, funds segregation, software), licence number anatomy (RB), duration, and what it does NOT cover (casino). Use GRAI-0191-RB-26-0001 as the worked example.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "check-bookmaker-grai-licence",
   "title": "How to Check a Bookmaker's GRAI Licence",
   "brief": "2-minute verification against the official GRAI register: company vs brand name, licence types, expiry dates, red flags of fake 'licensed' claims.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "grai-rules-for-punters",
   "title": "GRAI Rules That Protect Irish Punters",
   "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights — in plain English.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "gambling-regulation-act-betting",
   "title": "The Gambling Regulation Act 2024 and Betting",
   "brief": "The Act's betting provisions: licence categories, who must hold one, enforcement powers, rollout timeline from commencement to full licensing.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "grai-vs-ukgc-betting",
   "title": "GRAI vs UK Gambling Commission",
   "brief": "How Ireland's new regulator compares to the UKGC on betting: scope, player protections, enforcement track record (young vs mature regulator), what Irish punters gain.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "national-gambling-exclusion-register",
