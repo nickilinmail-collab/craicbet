@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bankroll Management for Punters | CraicBet</title>
+  <meta name="description" content="Unit sizing, flat vs proportional staking, the variance maths behind a 55% hit rate and the stop-loss that actually works - honest bankroll rules for Irish punters.">
+  <meta name="keywords" content="bankroll management betting, unit staking, flat vs proportional staking, betting stop loss, staking plan ireland">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <link rel="alternate" hreflang="en-IE" href="https://craicbet.com/pages/bankroll-management-betting">
+  <link rel="alternate" hreflang="x-default" href="https://craicbet.com/pages/bankroll-management-betting">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CraicBet",
+    "url": "https://craicbet.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Ireland"
+    },
+    "description": "Ireland's trusted guide to gambling in Ireland — sports betting and online casinos: GRAI licence tracking, honest odds and bonus maths, reviews and payout tests.",
+    "inLanguage": ["en-IE", "ga", "pl"]
+  }
+  </script>
+  <link rel="canonical" href="https://craicbet.com/pages/bankroll-management-betting">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CraicBet">
+  <meta property="og:locale" content="en_IE">
+  <meta property="og:title" content="Bankroll Management for Punters | CraicBet">
+  <meta property="og:description" content="Unit sizing, flat vs proportional staking, the variance maths behind a 55% hit rate and the stop-loss that actually works - honest bankroll rules for Irish punters.">
+  <meta property="og:url" content="https://craicbet.com/pages/bankroll-management-betting">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bankroll Management for Punters | CraicBet">
+  <meta name="twitter:description" content="Unit sizing, flat vs proportional staking, the variance maths behind a 55% hit rate and the stop-loss that actually works - honest bankroll rules for Irish punters.">
+  <meta name="twitter:image" content="https://craicbet.com/images/og-default.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://craicbet.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://craicbet.com/pages/guides"}, {"@type": "ListItem", "position": 3, "name": "Credit Card Ban", "item": "https://craicbet.com/pages/credit-card-casino-ban-ireland"}]}</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How much of my bankroll should I stake per bet?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "The standard disciplined range is 1-2% of your bankroll per bet, set by rule before the bet is placed. Larger percentages make ordinary losing runs - which happen even to punters hitting 55% - capable of wiping the bankroll out."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is flat or proportional staking better?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Proportional staking (a fixed percentage of current bankroll) shrinks stakes automatically in downswings and can never reach zero; flat staking is simpler. The choice matters less than deciding stakes by rule rather than by confidence."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What is a realistic stop-loss for a betting session?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A fixed limit set in advance - for example 5 units or one evening, whichever comes first - with the next session no earlier than the next day. Irish GRAI-licensed bookmakers must also offer deposit limits and time-outs that enforce it for you."
+   }
+  }
+ ]
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo">
+      <img src="../images/logo.svg" alt="CraicBet" style="height:40px;">
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="../">Home</a>
+      <a href="betting-sites-ireland" class="active">Betting</a>
+      <a href="best-casinos-ireland">Best Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="fast-payout-casinos">Fast Payouts</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="guides">Guides</a>
+    </nav>
+    <div class="lang-switcher"><a href="../" class="active-lang">EN</a><a href="../ga/">GA</a><a href="../pl/">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumbs">
+    <a href="../">Home</a> &rsaquo; <a href="guides">Guides</a> &rsaquo; Bankroll Management
+  </div>
+</div>
+
+<article class="article" style="max-width:960px;">
+
+  <div class="article-header">
+    <span class="section-label">Updated November 2026</span>
+    <h1>Bankroll Management for Punters</h1>
+    <div class="article-meta">
+      <span>&#128221; <a href="author-mark-craic" style="color:inherit;text-decoration:underline dotted">Mark Craic, editor (8 years in gambling analytics)</a></span>
+      <span>&#128197; Updated 1 November 2026</span>
+      <span>&#9201; 5 min read</span>
+    </div>
+  </div>
+
+  <div class="article-content">
+
+<p>Most punters who go broke do not go broke because their picks were bad. They go broke because their stakes were wrong: too big for the variance their hit rate produces, resized upwards after wins, doubled after losses. Bankroll management is the unglamorous arithmetic that keeps a decent judge of odds in the game long enough for that judgement to matter.</p>
+
+<h2>Start with a real bankroll</h2>
+<p>A bankroll is money set aside purely for betting &mdash; an amount you could lose entirely without touching rent, bills or savings. In Ireland that discipline has regulatory backing: GRAI-licensed bookmakers must offer deposit limits, and setting one at the size of your monthly bankroll turns a private rule into an enforced one. If no amount fits that definition, the honest answer is not to bet.</p>
+
+<h2>Units: the stake that survives variance</h2>
+<p>Divide the bankroll into units and stake in units, not euros-that-feel-right. The standard range is 1&ndash;2% of bankroll per bet: a &euro;500 bankroll means &euro;5&ndash;&euro;10 stakes. That sounds timid until you see the losing runs that normal results produce. A punter who genuinely wins 55% of even-money-ish bets still loses 45% of them &mdash; and 0.45 to the power of eight is about 0.17%, which means a run of eight straight losses is expected somewhere in roughly every thousand bets. At 10% stakes that run is ruinous; at 2% it is a bad fortnight.</p>
+
+<h2>Flat vs proportional staking</h2>
+<p>Flat staking bets the same fixed amount every time, recalculated rarely (say monthly). Proportional staking bets a fixed percentage of the <em>current</em> bankroll, so stakes shrink automatically in a downswing and grow in an upswing &mdash; mathematically it can never hit zero, which is its great virtue. The practical compromise most disciplined punters use: proportional in spirit, recalculated weekly, never mid-session. What matters far more than the choice between them is that the stake is decided <strong>before</strong> the bet, by rule, not by confidence.</p>
+<div style="text-align:center;margin:28px 0"><a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn btn-primary" style="width:auto;padding:14px 40px;">Visit the Irish-Licensed Bookmaker &#8594;</a></div>
+<h2>The maths of a 55% hit rate</h2>
+<p>Say you hit 55% at average odds of 1.91. Expected value per bet is 0.55 &times; 1.91 &minus; 1 = +5% &mdash; a genuinely strong edge, better than most tipsters ever achieve. Even so, over 100 bets at 1 unit each, swings of 10&ndash;15 units either side of expectation are completely normal, and losing months happen to winning punters. If a 5% edge produces that much turbulence, a punter with <em>no</em> edge &mdash; which, after the <a href="bookmaker-margin-explained">bookmaker&rsquo;s margin</a>, describes almost everyone &mdash; is guaranteed turbulence around a downward slope. Staking rules do not create an edge; they only decide how long you last.</p>
+
+<h2>A stop-loss that actually works</h2>
+<p>Loss-chasing is the single most reliable way to turn a bad day into a destroyed bankroll, so the stop-loss must be set when you are calm and enforced when you are not. The version that works is boring: a fixed session limit (for example 5 units or one evening, whichever comes first), written down, with the next session no sooner than the next day. &ldquo;Stop when I win it back&rdquo; is not a stop-loss &mdash; it is the chase with paperwork. GRAI-licensed sites must also offer time-outs and self-exclusion through the National Gambling Exclusion Register if limits stop holding.</p>
+
+<h2>Honest conclusions</h2>
+<p>Stake 1&ndash;2% of a ring-fenced bankroll, decide stakes by rule before the bet, recalculate on a schedule, and treat a pre-set stop-loss as non-negotiable. None of it will make a losing strategy win &mdash; the margin sees to that &mdash; but it keeps betting what it should be: a priced form of entertainment rather than a financial event. 18+ &mdash; Gambling Awareness Trust, 1800 753 753, gamblingcare.ie.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item"><div class="faq-question">How much of my bankroll should I stake per bet?</div><div class="faq-answer"><p>The standard disciplined range is 1&ndash;2% per bet, decided by rule before the bet. Larger stakes make ordinary losing runs &mdash; which hit even 55% punters &mdash; capable of wiping the bankroll out.</p></div></div>
+<div class="faq-item"><div class="faq-question">Is flat or proportional staking better?</div><div class="faq-answer"><p>Proportional staking shrinks stakes automatically in downswings and can mathematically never reach zero; flat staking is simpler to run. The choice matters far less than deciding every stake by rule, not by confidence.</p></div></div>
+<div class="faq-item"><div class="faq-question">What is a realistic stop-loss for a betting session?</div><div class="faq-answer"><p>A fixed limit set in advance &mdash; for example 5 units or one evening, whichever comes first &mdash; with the next session no earlier than the next day. GRAI-licensed bookmakers must also offer deposit limits and time-outs that enforce it for you.</p></div></div>
+  </div>
+
+<div class="editorial-box" style="border:1px solid #d5ded8;border-left:4px solid #F26522;padding:16px 18px;margin:32px 0;border-radius:8px;font-size:15px"><strong>About the Editorial Team</strong><p style="margin:8px 0 0">This review is written by <a href="author-mark-craic">Mark Craic</a>, editor at CraicBet with 8 years of experience in gambling analytics. Read how we test and rank casinos on our <a href="about">About page</a>.</p></div>
+<div style="margin:24px 0;padding:14px 18px;background:#eef6f0;border-radius:8px"><strong>Related:</strong> <a href="betting-sites-ireland">Betting sites in Ireland</a> &middot; <a href="bookmaker-margin-explained">Margin (overround)</a> &middot; <a href="implied-probability-guide">Implied probability &amp; value</a> &middot; <a href="free-bets-ireland">Free bets guide</a> &middot; <a href="responsible-gambling">Responsible gambling</a> &middot; <a href="grai-player-protection">GRAI player protection</a></div>
+</article>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../images/logo.svg" alt="CraicBet" style="height:32px;">
+      </div>
+      <p>CraicBet is Ireland's independent betting &amp; casino guide. Honest, transparent, always up to date.</p>
+      <div class="age-badge">18+</div>
+        <div class="social-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0"><a href="https://www.youtube.com/@CraicBet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">YouTube</a><a href="https://x.com/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">X</a><span style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2">Reddit</span><a href="https://t.me/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">Telegram</a></div>
+    </div>
+    <div class="footer-col">
+      <h4>Betting</h4>
+      <a href="betting-sites-ireland">Betting Sites Ireland</a>
+      <a href="grai-licensed-bookmakers">GRAI Licensed Bookmakers</a>
+      <a href="free-bets-ireland">Free Bets</a>
+      <a href="horse-racing-betting-ireland">Horse Racing</a>
+      <a href="gaa-betting-guide">GAA Betting</a>
+      <a href="football-betting-ireland">Football Betting</a>
+      <a href="each-way-calculator">Each-Way Calculator</a>
+      <a href="betting-apps-ireland">Betting Apps</a>
+    </div>
+    <div class="footer-col">
+      <h4>Casino Guides</h4>
+      <a href="best-casinos-ireland">Best Casinos Ireland</a>
+      <a href="casino-bonuses-ireland">Casino Bonuses</a>
+      <a href="fast-payout-casinos">Fast Payout Casinos</a>
+      <a href="no-deposit-bonus">No Deposit Bonuses</a>
+      <a href="revolut-casinos">Revolut Casinos</a>
+    </div>
+    <div class="footer-col">
+      <h4>Game Guides</h4>
+      <a href="slot-reviews">Slot Reviews</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="rtp-explained">RTP Explained</a>
+      <a href="blackjack-guide">Blackjack Guide</a>
+      <a href="roulette-guide">Roulette Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about">About CraicBet</a>
+      <a href="how-we-review">How We Review</a>
+      <a href="responsible-gambling">Responsible Gambling</a>
+      <a href="contact">Contact Us</a>
+      <a href="privacy">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      &#9888;&#65039; Gambling can be addictive. Please play responsibly. 18+ only.
+      Contact <strong>Gambling Awareness Trust</strong> at 1800 753 753 or visit <strong>gamblingcare.ie</strong>.
+      <br><br>
+      &copy; 2026 CraicBet.com &bull; All rights reserved &bull; Independent review site. Affiliate commissions may apply.
+    <br>CraicBet tracks <a href="grai-licence-register-tracker" style="color:#dfe9e2;">the GRAI licence register</a> daily &mdash; see our <a href="grai-guide" style="color:#dfe9e2;">GRAI guide</a>.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+});
+document.querySelector('.burger')?.addEventListener('click', () => {
+  document.getElementById('mainNav').classList.toggle('open');
+});
+</script>
+
+<script src="../js/slot-game.js"></script>
+<script src="/js/ui-sound.js"></script>
+</body>
+</html>

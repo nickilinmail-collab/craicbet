@@ -191,7 +191,7 @@
  {
   "slug": "grai-rules-for-punters",
   "title": "GRAI Rules That Protect Irish Punters",
-  "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights — in plain English.",
+  "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights \u2014 in plain English.",
   "cat": "grai",
   "status": "done"
  },
@@ -319,35 +319,35 @@
   "title": "Bankroll Management for Punters",
   "brief": "Unit sizing, flat vs proportional, variance maths for 55% hit rates, the stop-loss that actually works",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "betting-glossary",
   "title": "Betting Glossary A-Z",
   "brief": "60+ terms: acca to yankee, Irish usage notes, links into our guides per term",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "lucky-15-yankee-patent",
   "title": "Lucky 15, Yankee, Patent & Trixie",
   "brief": "Full-cover bet families: combinations count, cost, bonus terms books attach, when full-cover beats an acca",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "dead-heat-rules",
   "title": "Dead Heat Rules Explained",
   "brief": "Stake division maths, golf ties as the classic case, e/w interaction, worked examples",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "void-bets-settlement",
   "title": "Void Bets & Settlement Rules",
   "brief": "Postponements, non-runners, player-never-played props; 24/48h rules differ by book; where disputes actually come from",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "max-payout-limits",
@@ -400,7 +400,7 @@
  },
  {
   "slug": "irish-grand-national-betting",
-  "title": "Irish Grand National Betting Guide — Fairyhouse",
+  "title": "Irish Grand National Betting Guide \u2014 Fairyhouse",
   "brief": "Easter Monday at Fairyhouse: race profile, each-way terms, ante-post vs day-of, Irish trainers' record. No tips presented as certainties.",
   "cat": "irish",
   "status": "todo"
@@ -463,7 +463,7 @@
  },
  {
   "slug": "accumulator-betting-guide",
-  "title": "Accumulator Betting — The Honest Maths",
+  "title": "Accumulator Betting \u2014 The Honest Maths",
   "brief": "How acca odds multiply and why margin compounds per leg: worked example of a 5-fold's real house edge; when accas make sense.",
   "cat": "mechanics",
   "status": "todo"
@@ -505,7 +505,7 @@
  },
  {
   "slug": "euro-2028-betting",
-  "title": "Euro 2028 Betting — Ireland Co-Hosts",
+  "title": "Euro 2028 Betting \u2014 Ireland Co-Hosts",
   "brief": "Euro 2028 at the Aviva: outright markets 18 months out, host-nation history, qualification scenarios for Ireland, ante-post risk honestly explained.",
   "cat": "event",
   "status": "todo"
