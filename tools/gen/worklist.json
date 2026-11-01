@@ -212,7 +212,7 @@
  {
   "slug": "national-gambling-exclusion-register",
   "title": "Ireland's National Gambling Exclusion Register",
-  "brief": "The NGER under the Act: how self-exclusion will work across all licensed operators, current status, interim tools until it's fully live. 18+ and support lines.",
+  "brief": "Target 'self exclusion Ireland' and 'GamStop Ireland': the NGER under the Act (centralised register, all licensed operators must integrate, status/rollout), PLUS practical steps to self-exclude TODAY (operator tools, bank gambling blocks at AIB/BoI/Revolut, blocking software), and the honest clarification that UK GamStop does not cover Irish-licensed sites. 18+ and support lines prominent.",
   "cat": "grai",
   "status": "todo"
  },
@@ -641,6 +641,20 @@
   "title": "Extra Places & Betting Offers Maths",
   "brief": "Extra-place races and money-back offers: how to value them honestly, wagering strings, why 'free' rarely is.",
   "cat": "mechanics",
+  "status": "todo"
+ },
+ {
+  "slug": "online-poker-ireland-law",
+  "title": "Is Online Poker Legal in Ireland? The GRAI Era",
+  "brief": "Poker is legal today (open international market, winnings untaxed). The looming issue: proposed EUR 10 max stake / EUR 3,000 max win limits on gaming would make regulated online poker unviable as written; Section 83 lets GRAI vary limits with ministerial consent; GGPoker first to express licence interest; Aug 2026 consultation. Present as evolving - dates and 'reported'.",
+  "cat": "grai",
+  "status": "todo"
+ },
+ {
+  "slug": "loot-boxes-ireland",
+  "title": "Loot Boxes and Irish Law: A Parent's Guide",
+  "brief": "GRAI concluded video-game microtransactions fall outside the Gambling Regulation Act but keeps the matter under review; Belgium/Netherlands treat them as gambling; what loot boxes and skin gambling are, warning signs, parental controls. Non-commercial trust page - no CTA, keep RG lines.",
+  "cat": "grai",
   "status": "todo"
  }
 ]
