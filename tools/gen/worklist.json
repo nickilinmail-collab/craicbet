@@ -231,6 +231,34 @@
   "status": "todo"
  },
  {
+  "slug": "gambling-ads-watershed-ireland",
+  "title": "Ireland's Gambling Advertising Watershed Explained",
+  "brief": "Consumer explainer: the 5.30am-9pm broadcast watershed, opt-in rule for social/on-demand ads, why Racing TV and Sky Sports Racing coverage in Ireland is affected, what punters will actually notice and when. Sources: Racing Post, McCann FitzGerald.",
+  "cat": "grai",
+  "status": "todo"
+ },
+ {
+  "slug": "grai-social-impact-fund",
+  "title": "The GRAI Social Impact Fund Explained",
+  "brief": "Levy on licensed operators (reported at least EUR 14m/yr expected), what it funds (treatment, education, research via Pobal), the detail that unclaimed balances from closed accounts go to the fund. Consumer angle: who pays, who benefits.",
+  "cat": "grai",
+  "status": "todo"
+ },
+ {
+  "slug": "ireland-casino-stake-win-limits",
+  "title": "Ireland's Proposed Casino Stake and Win Limits",
+  "brief": "The reported EUR 10 max stake / EUR 3,000 max win proposal for online casino games under the Act: current status (verify before publishing - proposal vs in force), what it would mean for slots and poker players, industry pushback. Mark unverified as reported.",
+  "cat": "grai",
+  "status": "todo"
+ },
+ {
+  "slug": "inducements-ban-ireland",
+  "title": "Free Bets and Inducements Under Irish Law",
+  "brief": "What the Act actually says: targeted/VIP inducements restricted, general promotions allowed under conditions - the nuance everyone gets wrong. What changes for free bets in practice.",
+  "cat": "grai",
+  "status": "todo"
+ },
+ {
   "slug": "in-play-betting-guide",
   "title": "In-Play Betting Guide",
   "brief": "Suspension windows, latency reality, chasing danger; pre-planned in-play entries vs reactive punting; the discipline rules",
