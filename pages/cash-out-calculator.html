@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Out Calculator Ireland — Is Your Cash Out Offer Fair? | CraicBet</title>
+  <meta name="description" content="Free cash out calculator: enter your original bet, original odds and current odds to see the fair cash out value and how much margin your bookmaker is taking. Ireland's honest betting tool.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"CraicBet","url":"https://craicbet.com","areaServed":{"@type":"Country","name":"Ireland"},"description":"Ireland's trusted guide to gambling in Ireland — sports betting and online casinos: GRAI licence tracking, honest odds and bonus maths, reviews and payout tests.","inLanguage":["en-IE","ga","pl"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Cash Out Fairness Calculator","url":"https://craicbet.com/pages/cash-out-calculator","description":"Calculate the mathematically fair cash out value of a bet and see the margin your bookmaker takes on the cash out offer.","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
+  <link rel="canonical" href="https://craicbet.com/pages/cash-out-calculator">
+  <meta property="og:title" content="Cash Out Calculator Ireland — Is Your Cash Out Offer Fair?">
+  <meta property="og:description" content="See the mathematically fair cash out value and how much margin the bookmaker takes. Free honest tool.">
+  <meta property="og:url" content="https://craicbet.com/pages/cash-out-calculator">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <link rel="alternate" hreflang="en-IE" href="https://craicbet.com/pages/cash-out-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://craicbet.com/pages/cash-out-calculator">
+  <style>
+    .tool-card{background:#fff;border:1px solid #d5ded8;border-radius:12px;padding:32px;margin:28px 0;max-width:680px;}
+    .field-row{margin:16px 0;}
+    .field-row label{display:block;font-size:14px;font-weight:600;color:#1b4332;margin-bottom:6px;}
+    .field-row input{width:100%;padding:13px 16px;border:2px solid #d5ded8;border-radius:8px;font-size:16px;font-family:Inter,sans-serif;box-sizing:border-box;outline:none;transition:border-color .2s;}
+    .field-row input:focus{border-color:#2d6a4f;}
+    .field-hint{font-size:12px;color:#888;margin-top:4px;}
+    .calc-btn{width:100%;padding:15px;background:#F26522;color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;margin-top:8px;transition:background .2s;}
+    .calc-btn:hover{background:#d4551c;}
+    .result-panel{display:none;margin-top:24px;border-top:2px solid #eef6f0;padding-top:20px;}
+    .verdict-banner{border-radius:10px;padding:18px 20px;margin-bottom:18px;font-size:15px;font-weight:600;}
+    .verdict-fair{background:#eef6f0;border:2px solid #2d6a4f;color:#1b4332;}
+    .verdict-warn{background:#fff8f0;border:2px solid #e07b39;color:#8b4513;}
+    .verdict-bad{background:#fff0f0;border:2px solid #c0392b;color:#7b1818;}
+    .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;}
+    .result-tile{background:#f5f9f7;border-radius:8px;padding:14px 16px;}
+    .result-tile .val{font-size:20px;font-weight:700;color:#1b4332;}
+    .result-tile .val.warn{color:#e07b39;}
+    .result-tile .val.bad{color:#c0392b;}
+    .result-tile .lbl{font-size:12px;color:#666;margin-top:2px;}
+    .margin-bar-wrap{margin:16px 0;background:#e8f0eb;border-radius:999px;height:12px;overflow:hidden;}
+    .margin-bar{height:100%;border-radius:999px;background:#2d6a4f;transition:width .6s ease;}
+    .margin-bar.warn{background:#e07b39;}
+    .margin-bar.bad{background:#c0392b;}
+    .info-box{background:#f5f9f7;border-left:4px solid #2d6a4f;padding:14px 18px;border-radius:0 8px 8px 0;margin:24px 0;font-size:14px;line-height:1.6;}
+    .formula-box{background:#1b4332;color:#dfe9e2;border-radius:10px;padding:20px 24px;font-family:monospace;font-size:14px;margin:20px 0;line-height:1.8;}
+    .formula-box span{color:#7ecda0;}
+    .section-divider{border:none;border-top:1px solid #d5ded8;margin:32px 0;}
+    @media(max-width:480px){.result-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo"><img src="../images/logo.svg" alt="CraicBet" style="height:40px;"></a>
+    <nav class="nav" id="mainNav">
+      <a href="../">Home</a>
+      <a href="betting-sites-ireland" class="active">Betting</a>
+      <a href="best-casinos-ireland">Best Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="fast-payout-casinos">Fast Payouts</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="guides">Guides</a>
+    </nav>
+    <div class="lang-switcher"><a href="../" class="active-lang">EN</a><a href="../ga/">GA</a><a href="../pl/">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="container"><div class="breadcrumbs"><a href="../">Home</a> &rsaquo; <a href="betting-sites-ireland">Betting</a> &rsaquo; <a href="cash-out-explained">Cash Out Explained</a> &rsaquo; Cash Out Calculator</div></div>
+
+<article class="article" style="max-width:880px;">
+  <div class="article-header">
+    <span class="section-label">Free Tool — Honest Betting Maths</span>
+    <h1>Cash Out Calculator Ireland</h1>
+    <p class="article-intro">Bookmakers offer cash out to let you settle your bet early &mdash; but the offered amount is almost always less than the mathematically fair value. This calculator shows you the <strong>fair cash out price</strong> and exactly how much margin the bookmaker is taking.</p>
+  </div>
+
+  <div class="tool-card">
+    <h2 style="margin:0 0 18px;font-size:20px;">Cash Out Fairness Calculator</h2>
+
+    <div class="field-row">
+      <label for="originalStake">Original Stake (€)</label>
+      <input type="number" id="originalStake" placeholder="e.g. 20" min="0.50" step="0.50">
+      <div class="field-hint">The amount you originally staked on the bet</div>
+    </div>
+
+    <div class="field-row">
+      <label for="originalOdds">Original Odds (Decimal)</label>
+      <input type="number" id="originalOdds" placeholder="e.g. 4.00" min="1.01" step="0.05">
+      <div class="field-hint">The decimal odds when you placed the bet — e.g. 4.00 means a potential €80 return on a €20 stake</div>
+    </div>
+
+    <div class="field-row">
+      <label for="currentOdds">Current Odds (Decimal)</label>
+      <input type="number" id="currentOdds" placeholder="e.g. 2.50" min="1.01" step="0.05">
+      <div class="field-hint">The current in-play or pre-event odds for the same selection right now (your bet is "in profit" if this is lower)</div>
+    </div>
+
+    <div class="field-row">
+      <label for="offeredCashOut">Bookmaker's Cash Out Offer (€) <span style="font-weight:400;color:#888;">(optional)</span></label>
+      <input type="number" id="offeredCashOut" placeholder="e.g. 28.50" min="0" step="0.01">
+      <div class="field-hint">Enter the cash out value shown by your bookmaker to compare it against the fair value</div>
+    </div>
+
+    <button class="calc-btn" onclick="calculateCashOut()">Calculate Fair Value</button>
+
+    <div class="result-panel" id="resultPanel">
+      <div class="verdict-banner" id="verdictBanner"></div>
+      <div class="result-grid">
+        <div class="result-tile"><div class="val" id="fairValue">€0.00</div><div class="lbl">Fair cash out value (no margin)</div></div>
+        <div class="result-tile"><div class="val" id="offeredDisplay">—</div><div class="lbl">Bookmaker's offer</div></div>
+        <div class="result-tile"><div class="val" id="savedAmount">€0.00</div><div class="lbl">You'd lose vs fair value</div></div>
+        <div class="result-tile"><div class="val" id="currentProfit">€0.00</div><div class="lbl">Potential full return if left to run</div></div>
+      </div>
+      <div style="margin:16px 0 6px;font-size:13px;font-weight:600;color:#444;">Bookmaker margin on this cash out offer:</div>
+      <div class="margin-bar-wrap"><div class="margin-bar" id="marginBar" style="width:0%"></div></div>
+      <div id="marginLabel" style="font-size:13px;color:#666;margin-top:4px;"></div>
+      <div id="interpretation" style="font-size:14px;color:#444;line-height:1.6;margin-top:16px;padding:14px;background:#eef6f0;border-radius:8px;"></div>
+    </div>
+  </div>
+
+  <h2>The Maths Behind Cash Out</h2>
+  <p>The <strong>fair cash out value</strong> is the amount that leaves you with the same expected return whether you cash out or let the bet run. It&rsquo;s calculated as:</p>
+
+  <div class="formula-box">
+    <strong style="color:#7ecda0;">Fair Cash Out Value</strong><br>
+    Fair Value = (Original Stake × Original Odds) / Current Odds<br><br>
+    <strong style="color:#7ecda0;">Example</strong><br>
+    Stake: <span>€20</span> at original odds <span>4.00</span> (potential return: €80)<br>
+    Current odds have dropped to <span>2.50</span> (your selection is winning)<br>
+    Fair Value = <span>(€20 × 4.00) / 2.50</span> = <span>€80 / 2.50</span> = <span>€32.00</span><br><br>
+    If the bookmaker offers <span>€28.00</span>, the margin = <span>(32 − 28) / 32 = 12.5%</span>
+  </div>
+
+  <div class="info-box">
+    <strong>Why do bookmakers offer less?</strong> Cash out is a product &mdash; bookmakers build a margin into the offered price just as they do in original odds. The margin effectively means you pay for the convenience of early settlement. A cash out margin of 5&ndash;10% is typical; above 15% is poor value and you&rsquo;re better off letting the bet run (accepting the risk).
+  </div>
+
+  <hr class="section-divider">
+  <h2>When Should You Take the Cash Out?</h2>
+  <p><strong>Consider cashing out if:</strong></p>
+  <ul>
+    <li>The margin is below 8% and you want to lock in a certain profit</li>
+    <li>An unexpected event (key player injury, red card) materially changed your view</li>
+    <li>The cash out locks in a return you&rsquo;d be happy with regardless of the result</li>
+  </ul>
+  <p><strong>Consider letting it run if:</strong></p>
+  <ul>
+    <li>The bookmaker&rsquo;s margin is above 15% &mdash; the price is deeply unfair</li>
+    <li>Your original analysis hasn&rsquo;t changed &mdash; the bet is going to plan</li>
+    <li>You&rsquo;re cashing out primarily because of emotions (fear of losing) rather than logic</li>
+  </ul>
+  <p>Read our full <a href="cash-out-explained">guide to cash out betting</a> for more detail on strategy and timing.</p>
+
+  <p style="margin-top:24px;"><a href="each-way-calculator">Each-Way Calculator</a> &nbsp;&bull;&nbsp; <a href="free-bet-calculator">Free Bet Value Calculator</a> &nbsp;&bull;&nbsp; <a href="betting-margin-calculator">Betting Margin Calculator</a></p>
+
+  <div style="margin:28px 0;padding:16px 18px;background:#fff8f0;border:1px solid #f0cba0;border-radius:10px;font-size:14px;">
+    <strong>&#9888; Responsible use:</strong> Cash out is a tool, not a strategy. If you find yourself always cashing out early because of anxiety, that&rsquo;s a sign to review your stakes, not your timing. 18+. Problem gambling helpline: Gambling Awareness Trust 1800 753 753 &bull; gamblingcare.ie
+  </div>
+
+</article>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><img src="../images/logo.svg" alt="CraicBet" style="height:32px;"></div>
+      <p>Ireland's independent betting &amp; casino guide. Honest, transparent, always up to date.</p>
+      <div class="age-badge">18+</div>
+      <div class="social-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0"><a href="https://www.youtube.com/@CraicBet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">YouTube</a><a href="https://x.com/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">X</a><a href="https://t.me/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">Telegram</a></div>
+    </div>
+    <div class="footer-col"><h4>Betting</h4><a href="betting-sites-ireland">Betting Sites</a><a href="grai-licensed-bookmakers">GRAI Bookmakers</a><a href="free-bets-ireland">Free Bets</a><a href="horse-racing-betting-ireland">Horse Racing</a><a href="gaa-betting-guide">GAA Betting</a><a href="each-way-calculator">Each-Way Calculator</a></div>
+    <div class="footer-col"><h4>Casino Guides</h4><a href="best-casinos-ireland">Best Casinos</a><a href="casino-bonuses-ireland">Casino Bonuses</a><a href="fast-payout-casinos">Fast Payouts</a><a href="no-deposit-bonus">No Deposit</a><a href="revolut-casinos">Revolut Casinos</a></div>
+    <div class="footer-col"><h4>Game Guides</h4><a href="slot-reviews">Slot Reviews</a><a href="live-casino-ireland">Live Casino</a><a href="rtp-explained">RTP Explained</a><a href="blackjack-guide">Blackjack</a><a href="roulette-guide">Roulette</a></div>
+    <div class="footer-col"><h4>About</h4><a href="about">About CraicBet</a><a href="how-we-review">How We Review</a><a href="responsible-gambling">Responsible Gambling</a><a href="contact">Contact</a><a href="privacy">Privacy</a></div>
+  </div>
+  <div class="footer-bottom"><p>&#9888;&#65039; Gambling can be addictive. 18+ only. Contact Gambling Awareness Trust at 1800 753 753 or gamblingcare.ie.<br><br>&copy; 2026 CraicBet.com &bull; Independent review site. Affiliate commissions may apply.<br>CraicBet tracks <a href="grai-licence-register-tracker" style="color:#dfe9e2;">the GRAI licence register</a> daily &mdash; see our <a href="grai-guide" style="color:#dfe9e2;">GRAI guide</a>.</p></div>
+</footer>
+
+<script>
+function calculateCashOut() {
+  const stake = parseFloat(document.getElementById('originalStake').value);
+  const origOdds = parseFloat(document.getElementById('originalOdds').value);
+  const currOdds = parseFloat(document.getElementById('currentOdds').value);
+  const offered = parseFloat(document.getElementById('offeredCashOut').value) || null;
+
+  if (isNaN(stake) || stake <= 0) { alert('Enter a valid stake amount.'); return; }
+  if (isNaN(origOdds) || origOdds <= 1) { alert('Enter valid original odds (greater than 1.0).'); return; }
+  if (isNaN(currOdds) || currOdds <= 1) { alert('Enter valid current odds (greater than 1.0).'); return; }
+
+  const potentialReturn = stake * origOdds;
+  const fairValue = potentialReturn / currOdds;
+  const margin = offered !== null ? ((fairValue - offered) / fairValue) * 100 : null;
+  const diffFromFair = offered !== null ? fairValue - offered : null;
+
+  document.getElementById('fairValue').textContent = '€' + fairValue.toFixed(2);
+  document.getElementById('currentProfit').textContent = '€' + potentialReturn.toFixed(2);
+
+  let verdictClass, verdictText, interp;
+
+  if (offered !== null) {
+    document.getElementById('offeredDisplay').textContent = '€' + offered.toFixed(2);
+    document.getElementById('savedAmount').textContent = diffFromFair >= 0 ? '€' + diffFromFair.toFixed(2) : '€0.00 (offer above fair!)';
+    document.getElementById('savedAmount').className = 'val' + (diffFromFair > 0 ? ' warn' : '');
+
+    const barPct = Math.min(Math.max(margin, 0), 40);
+    const bar = document.getElementById('marginBar');
+    bar.style.width = barPct + '%';
+    bar.className = 'margin-bar' + (margin > 15 ? ' bad' : margin > 8 ? ' warn' : '');
+
+    document.getElementById('marginLabel').textContent = margin !== null ? 'Bookmaker margin: ' + (margin < 0 ? 'Offer is above fair value — unusual, check the numbers.' : margin.toFixed(1) + '%') : '';
+
+    if (margin < 0) {
+      verdictClass = 'verdict-fair'; verdictText = '✅ Excellent — the offer is above fair value. Accept it.';
+      interp = `The bookmaker's cash out offer of <strong>€${offered.toFixed(2)}</strong> is actually above the mathematically fair value of <strong>€${fairValue.toFixed(2)}</strong>. This is unusual — accept it. Double-check the current odds figure you entered.`;
+    } else if (margin < 5) {
+      verdictClass = 'verdict-fair'; verdictText = '✅ Good value — margin below 5%. Fair cash out.';
+      interp = `The offered <strong>€${offered.toFixed(2)}</strong> is close to the fair value of <strong>€${fairValue.toFixed(2)}</strong> — the bookmaker is only taking a <strong>${margin.toFixed(1)}%</strong> margin. If you want to lock in profit, this is a reasonable price to pay for certainty.`;
+    } else if (margin < 12) {
+      verdictClass = 'verdict-warn'; verdictText = '⚠️ Moderate margin (' + margin.toFixed(1) + '%) — consider your position.';
+      interp = `The fair value is <strong>€${fairValue.toFixed(2)}</strong> but the bookmaker offers <strong>€${offered.toFixed(2)}</strong> — a <strong>${margin.toFixed(1)}% margin</strong> and <strong>€${diffFromFair.toFixed(2)} less</strong> than fair. This is a typical cash out deduction. Worth taking if you're happy with €${offered.toFixed(2)} profit, less so if your original analysis still holds.`;
+    } else {
+      verdictClass = 'verdict-bad'; verdictText = '❌ Poor value — ' + margin.toFixed(1) + '% margin. Bookmaker is taking a big cut.';
+      interp = `The fair value is <strong>€${fairValue.toFixed(2)}</strong> but the bookmaker only offers <strong>€${offered.toFixed(2)}</strong> — a hefty <strong>${margin.toFixed(1)}% margin</strong> leaving you <strong>€${diffFromFair.toFixed(2)} short</strong>. Unless the event situation has materially changed, letting the bet run is statistically better than accepting this price.`;
+    }
+  } else {
+    document.getElementById('offeredDisplay').textContent = '—';
+    document.getElementById('savedAmount').textContent = '—';
+    document.getElementById('marginBar').style.width = '0%';
+    document.getElementById('marginLabel').textContent = 'Enter the bookmaker\'s offer above to see the margin.';
+    verdictClass = 'verdict-fair';
+    verdictText = '📊 Fair cash out value calculated';
+    interp = `At the current odds of <strong>${currOdds.toFixed(2)}</strong>, the mathematically fair cash out value is <strong>€${fairValue.toFixed(2)}</strong>. Enter the bookmaker's actual offer above to see how fair it is.`;
+  }
+
+  document.getElementById('verdictBanner').className = 'verdict-banner ' + verdictClass;
+  document.getElementById('verdictBanner').textContent = verdictText;
+  document.getElementById('interpretation').innerHTML = interp;
+  document.getElementById('resultPanel').style.display = 'block';
+}
+
+document.querySelector('.burger')?.addEventListener('click', () => {
+  document.getElementById('mainNav').classList.toggle('open');
+});
+</script>
+</body>
+</html>

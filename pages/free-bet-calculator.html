@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Bet Calculator Ireland — Real Value of a Free Bet (SNR) | CraicBet</title>
+  <meta name="description" content="Free bet calculator for Ireland: find the true cash value of any free bet offer (stake not returned). Enter your free bet amount and odds to see what you'll actually win.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"CraicBet","url":"https://craicbet.com","areaServed":{"@type":"Country","name":"Ireland"},"description":"Ireland's trusted guide to gambling in Ireland — sports betting and online casinos: GRAI licence tracking, honest odds and bonus maths, reviews and payout tests.","inLanguage":["en-IE","ga","pl"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Free Bet Value Calculator","url":"https://craicbet.com/pages/free-bet-calculator","description":"Calculate the real cash value of a free bet (stake not returned) and the best odds to use for matched betting.","applicationCategory":"FinanceApplication","operatingSystem":"All","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
+  <link rel="canonical" href="https://craicbet.com/pages/free-bet-calculator">
+  <meta property="og:title" content="Free Bet Calculator Ireland — Real Value of a Free Bet">
+  <meta property="og:description" content="Enter your free bet amount and odds to see the true cash value (SNR). Honest maths — no hidden figures.">
+  <meta property="og:url" content="https://craicbet.com/pages/free-bet-calculator">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <link rel="alternate" hreflang="en-IE" href="https://craicbet.com/pages/free-bet-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://craicbet.com/pages/free-bet-calculator">
+  <style>
+    .tool-card{background:#fff;border:1px solid #d5ded8;border-radius:12px;padding:32px;margin:28px 0;max-width:640px;}
+    .field-row{margin:16px 0;}
+    .field-row label{display:block;font-size:14px;font-weight:600;color:#1b4332;margin-bottom:6px;}
+    .field-row input,.field-row select{width:100%;padding:13px 16px;border:2px solid #d5ded8;border-radius:8px;font-size:16px;font-family:Inter,sans-serif;box-sizing:border-box;outline:none;transition:border-color .2s;}
+    .field-row input:focus,.field-row select:focus{border-color:#2d6a4f;}
+    .field-hint{font-size:12px;color:#888;margin-top:4px;}
+    .calc-btn{width:100%;padding:15px;background:#F26522;color:#fff;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;margin-top:8px;transition:background .2s;}
+    .calc-btn:hover{background:#d4551c;}
+    .result-panel{display:none;margin-top:24px;border-top:2px solid #eef6f0;padding-top:20px;}
+    .result-big{font-size:36px;font-weight:800;color:#2d6a4f;margin:0;}
+    .result-label{font-size:14px;color:#555;margin:2px 0 16px;}
+    .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0;}
+    .result-tile{background:#f5f9f7;border-radius:8px;padding:14px 16px;}
+    .result-tile .val{font-size:20px;font-weight:700;color:#1b4332;}
+    .result-tile .lbl{font-size:12px;color:#666;margin-top:2px;}
+    .odds-tabs{display:flex;gap:8px;margin-bottom:8px;}
+    .odds-tab{padding:6px 14px;border:2px solid #d5ded8;border-radius:6px;font-size:13px;cursor:pointer;background:#fff;}
+    .odds-tab.active{border-color:#2d6a4f;background:#eef6f0;font-weight:600;}
+    .info-box{background:#f5f9f7;border-left:4px solid #2d6a4f;padding:14px 18px;border-radius:0 8px 8px 0;margin:24px 0;font-size:14px;line-height:1.6;}
+    .formula-box{background:#1b4332;color:#dfe9e2;border-radius:10px;padding:20px 24px;font-family:monospace;font-size:14px;margin:20px 0;line-height:1.8;}
+    .formula-box span{color:#7ecda0;}
+    @media(max-width:480px){.result-grid{grid-template-columns:1fr;}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo"><img src="../images/logo.svg" alt="CraicBet" style="height:40px;"></a>
+    <nav class="nav" id="mainNav">
+      <a href="../">Home</a>
+      <a href="betting-sites-ireland" class="active">Betting</a>
+      <a href="best-casinos-ireland">Best Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="fast-payout-casinos">Fast Payouts</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="guides">Guides</a>
+    </nav>
+    <div class="lang-switcher"><a href="../" class="active-lang">EN</a><a href="../ga/">GA</a><a href="../pl/">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="container"><div class="breadcrumbs"><a href="../">Home</a> &rsaquo; <a href="betting-sites-ireland">Betting</a> &rsaquo; <a href="free-bets-ireland">Free Bets</a> &rsaquo; Free Bet Calculator</div></div>
+
+<article class="article" style="max-width:880px;">
+  <div class="article-header">
+    <span class="section-label">Free Tool — Honest Betting Maths</span>
+    <h1>Free Bet Calculator Ireland</h1>
+    <p class="article-intro">Almost every Irish bookmaker welcome offer is &ldquo;Stake Not Returned&rdquo; (SNR) &mdash; meaning if your free bet wins, you keep the <em>profit</em> but not the original free bet amount. This calculator shows exactly what a free bet is worth in real cash.</p>
+  </div>
+
+  <div class="tool-card">
+    <h2 style="margin:0 0 18px;font-size:20px;">Free Bet Value Calculator</h2>
+
+    <div class="field-row">
+      <label for="fbAmount">Free Bet Amount (€)</label>
+      <input type="number" id="fbAmount" placeholder="e.g. 10" min="1" max="500" step="0.50">
+      <div class="field-hint">The free bet value shown in the offer (e.g. €10, €20, €50)</div>
+    </div>
+
+    <div class="field-row">
+      <label>Odds Format</label>
+      <div class="odds-tabs">
+        <div class="odds-tab active" onclick="setOddsFormat('decimal', this)">Decimal (2.00)</div>
+        <div class="odds-tab" onclick="setOddsFormat('fractional', this)">Fractional (1/1)</div>
+        <div class="odds-tab" onclick="setOddsFormat('american', this)">American (+100)</div>
+      </div>
+    </div>
+
+    <div class="field-row">
+      <label for="oddsInput" id="oddsLabel">Odds (Decimal)</label>
+      <input type="text" id="oddsInput" placeholder="e.g. 3.00">
+      <div class="field-hint" id="oddsHint">Enter decimal odds — e.g. 3.00 means you win €2 profit for every €1 staked</div>
+    </div>
+
+    <div class="field-row">
+      <label for="fbType">Free Bet Type</label>
+      <select id="fbType">
+        <option value="snr">Stake Not Returned (SNR) — most common</option>
+        <option value="sr">Stake Returned (SR) — you also get the stake back</option>
+      </select>
+      <div class="field-hint">Most Irish bookmaker welcome offers are SNR (stake not returned)</div>
+    </div>
+
+    <button class="calc-btn" onclick="calculateFreeBet()">Calculate Free Bet Value</button>
+
+    <div class="result-panel" id="resultPanel">
+      <p class="result-big" id="cashValue">€0.00</p>
+      <p class="result-label" id="cashLabel">Cash value of your free bet</p>
+      <div class="result-grid">
+        <div class="result-tile"><div class="val" id="freeBetReturn">€0.00</div><div class="lbl">Total return if free bet wins</div></div>
+        <div class="result-tile"><div class="val" id="profitIfWin">€0.00</div><div class="lbl">Profit if free bet wins</div></div>
+        <div class="result-tile"><div class="val" id="impliedProb">0%</div><div class="lbl">Implied win probability</div></div>
+        <div class="result-tile"><div class="val" id="evValue">€0.00</div><div class="lbl">Expected value (EV)</div></div>
+      </div>
+      <div id="interpretation" style="font-size:14px;color:#444;line-height:1.6;margin-top:12px;padding:14px;background:#eef6f0;border-radius:8px;"></div>
+    </div>
+  </div>
+
+  <h2>How Free Bet Value is Calculated</h2>
+  <p>A free bet&rsquo;s real cash value depends on the odds you use it at. At longer odds, the profit is bigger but less likely to land. The formula below calculates the <em>expected value</em> &mdash; what the free bet is worth on average, factoring in the probability of winning:</p>
+
+  <div class="formula-box">
+    <strong style="color:#7ecda0;">SNR Free Bet Value</strong><br>
+    Cash Value = Free Bet × (Decimal Odds − 1) / Decimal Odds<br><br>
+    <strong style="color:#7ecda0;">Example: €10 free bet at odds 3.00</strong><br>
+    Cash Value = <span>€10 × (3.00 − 1) / 3.00</span> = <span>€10 × 2/3</span> = <span>€6.67</span><br><br>
+    <strong style="color:#7ecda0;">SR Free Bet Value (full odds)</strong><br>
+    Cash Value = Free Bet × Decimal Odds / Decimal Odds = Free Bet amount
+  </div>
+
+  <div class="info-box">
+    <strong>Why odds matter:</strong> At odds 2.00 (evens), a €10 SNR free bet is worth €5. At odds 4.00, it&rsquo;s worth €7.50. The higher the odds, the higher the potential return &mdash; but also the lower the probability of winning. For matched betting, odds around 3.00&ndash;5.00 are typically the sweet spot to extract value while keeping risk manageable.
+  </div>
+
+  <h2>Free Bet Examples</h2>
+  <div style="overflow-x:auto;margin:16px 0;">
+    <table style="width:100%;border-collapse:collapse;font-size:14px;">
+      <thead>
+        <tr style="background:#1b4332;color:#fff;">
+          <th style="padding:10px 14px;text-align:left;">Free Bet</th>
+          <th style="padding:10px 14px;text-align:right;">Odds 2.00</th>
+          <th style="padding:10px 14px;text-align:right;">Odds 3.00</th>
+          <th style="padding:10px 14px;text-align:right;">Odds 5.00</th>
+          <th style="padding:10px 14px;text-align:right;">Odds 10.00</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="background:#f5f9f7;"><td style="padding:9px 14px;">€10 SNR</td><td style="padding:9px 14px;text-align:right;">€5.00</td><td style="padding:9px 14px;text-align:right;">€6.67</td><td style="padding:9px 14px;text-align:right;">€8.00</td><td style="padding:9px 14px;text-align:right;">€9.00</td></tr>
+        <tr><td style="padding:9px 14px;">€20 SNR</td><td style="padding:9px 14px;text-align:right;">€10.00</td><td style="padding:9px 14px;text-align:right;">€13.33</td><td style="padding:9px 14px;text-align:right;">€16.00</td><td style="padding:9px 14px;text-align:right;">€18.00</td></tr>
+        <tr style="background:#f5f9f7;"><td style="padding:9px 14px;">€50 SNR</td><td style="padding:9px 14px;text-align:right;">€25.00</td><td style="padding:9px 14px;text-align:right;">€33.33</td><td style="padding:9px 14px;text-align:right;">€40.00</td><td style="padding:9px 14px;text-align:right;">€45.00</td></tr>
+        <tr><td style="padding:9px 14px;">€100 SNR</td><td style="padding:9px 14px;text-align:right;">€50.00</td><td style="padding:9px 14px;text-align:right;">€66.67</td><td style="padding:9px 14px;text-align:right;">€80.00</td><td style="padding:9px 14px;text-align:right;">€90.00</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><a href="free-bets-ireland">See all current free bet offers in Ireland &rarr;</a> &nbsp;&bull;&nbsp; <a href="each-way-calculator">Each-Way Calculator</a> &nbsp;&bull;&nbsp; <a href="cash-out-calculator">Cash-Out Fairness Calculator</a></p>
+
+  <div style="margin:28px 0;padding:16px 18px;background:#fff8f0;border:1px solid #f0cba0;border-radius:10px;font-size:14px;">
+    <strong>&#9888; Responsible use:</strong> Free bets are a marketing cost to the bookmaker, not guaranteed profit. Always read the qualifying bet terms, minimum odds, and time limits before placing. Chasing losses with free bets is still gambling. 18+. If gambling stops being fun, contact Gambling Awareness Trust: 1800 753 753 or gamblingcare.ie.
+  </div>
+
+</article>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><img src="../images/logo.svg" alt="CraicBet" style="height:32px;"></div>
+      <p>Ireland's independent betting &amp; casino guide. Honest, transparent, always up to date.</p>
+      <div class="age-badge">18+</div>
+      <div class="social-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0"><a href="https://www.youtube.com/@CraicBet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">YouTube</a><a href="https://x.com/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">X</a><a href="https://t.me/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">Telegram</a></div>
+    </div>
+    <div class="footer-col"><h4>Betting</h4><a href="betting-sites-ireland">Betting Sites</a><a href="grai-licensed-bookmakers">GRAI Bookmakers</a><a href="free-bets-ireland">Free Bets</a><a href="horse-racing-betting-ireland">Horse Racing</a><a href="gaa-betting-guide">GAA Betting</a><a href="each-way-calculator">Each-Way Calculator</a></div>
+    <div class="footer-col"><h4>Casino Guides</h4><a href="best-casinos-ireland">Best Casinos</a><a href="casino-bonuses-ireland">Casino Bonuses</a><a href="fast-payout-casinos">Fast Payouts</a><a href="no-deposit-bonus">No Deposit</a><a href="revolut-casinos">Revolut Casinos</a></div>
+    <div class="footer-col"><h4>Game Guides</h4><a href="slot-reviews">Slot Reviews</a><a href="live-casino-ireland">Live Casino</a><a href="rtp-explained">RTP Explained</a><a href="blackjack-guide">Blackjack</a><a href="roulette-guide">Roulette</a></div>
+    <div class="footer-col"><h4>About</h4><a href="about">About CraicBet</a><a href="how-we-review">How We Review</a><a href="responsible-gambling">Responsible Gambling</a><a href="contact">Contact</a><a href="privacy">Privacy</a></div>
+  </div>
+  <div class="footer-bottom"><p>&#9888;&#65039; Gambling can be addictive. 18+ only. Contact Gambling Awareness Trust at 1800 753 753 or gamblingcare.ie.<br><br>&copy; 2026 CraicBet.com &bull; Independent review site. Affiliate commissions may apply.<br>CraicBet tracks <a href="grai-licence-register-tracker" style="color:#dfe9e2;">the GRAI licence register</a> daily &mdash; see our <a href="grai-guide" style="color:#dfe9e2;">GRAI guide</a>.</p></div>
+</footer>
+
+<script>
+let oddsFormat = 'decimal';
+
+function setOddsFormat(fmt, el) {
+  oddsFormat = fmt;
+  document.querySelectorAll('.odds-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const labels = { decimal: ['Odds (Decimal)', 'e.g. 3.00 — means you win €2 profit per €1 staked'], fractional: ['Odds (Fractional)', 'e.g. 2/1 — means you win €2 profit per €1 staked'], american: ['Odds (American)', 'e.g. +200 means win €200 profit on €100 stake; -150 means stake €150 to win €100'] };
+  document.getElementById('oddsLabel').textContent = labels[fmt][0];
+  document.getElementById('oddsHint').textContent = labels[fmt][1];
+  document.getElementById('oddsInput').placeholder = { decimal: 'e.g. 3.00', fractional: 'e.g. 2/1', american: 'e.g. +200' }[fmt];
+}
+
+function toDecimal(raw) {
+  raw = raw.trim();
+  if (oddsFormat === 'decimal') return parseFloat(raw);
+  if (oddsFormat === 'fractional') {
+    const parts = raw.split('/');
+    if (parts.length === 2) return (parseFloat(parts[0]) / parseFloat(parts[1])) + 1;
+    return parseFloat(raw) + 1;
+  }
+  if (oddsFormat === 'american') {
+    const n = parseFloat(raw);
+    return n > 0 ? (n / 100) + 1 : (100 / Math.abs(n)) + 1;
+  }
+  return NaN;
+}
+
+function calculateFreeBet() {
+  const fbAmt = parseFloat(document.getElementById('fbAmount').value);
+  const oddsRaw = document.getElementById('oddsInput').value;
+  const fbType = document.getElementById('fbType').value;
+  const decOdds = toDecimal(oddsRaw);
+
+  if (isNaN(fbAmt) || fbAmt <= 0) { alert('Enter a valid free bet amount.'); return; }
+  if (isNaN(decOdds) || decOdds <= 1) { alert('Enter valid odds greater than 1.0 (evens).'); return; }
+
+  let totalReturn, profit, cashValue;
+  if (fbType === 'snr') {
+    totalReturn = fbAmt * (decOdds - 1); // stake not returned
+    profit = totalReturn;
+    cashValue = fbAmt * (decOdds - 1) / decOdds; // EV
+  } else {
+    totalReturn = fbAmt * decOdds; // full return
+    profit = fbAmt * (decOdds - 1);
+    cashValue = fbAmt; // SR free bet is worth face value
+  }
+
+  const impliedProb = (1 / decOdds) * 100;
+  const ev = (impliedProb / 100) * profit; // EV = prob × profit
+
+  document.getElementById('cashValue').textContent = '€' + cashValue.toFixed(2);
+  document.getElementById('cashLabel').textContent = fbType === 'snr' ? 'Expected cash value (EV) — what this free bet is worth on average' : 'Cash value (Stake Returned — full face value)';
+  document.getElementById('freeBetReturn').textContent = '€' + totalReturn.toFixed(2);
+  document.getElementById('profitIfWin').textContent = '€' + profit.toFixed(2);
+  document.getElementById('impliedProb').textContent = impliedProb.toFixed(1) + '%';
+  document.getElementById('evValue').textContent = '€' + ev.toFixed(2);
+
+  const pct = ((cashValue / fbAmt) * 100).toFixed(0);
+  let tip = '';
+  if (decOdds < 2.0) tip = '⚠️ Low odds: you\'re getting less than 50% of the free bet\'s face value. Consider higher odds for better value.';
+  else if (decOdds < 3.5) tip = '✅ Reasonable odds range. You\'re extracting ' + pct + '% of the face value — solid for a welcome free bet.';
+  else if (decOdds < 8) tip = '👍 Good odds for free bet value. You\'re extracting ' + pct + '% of face value, with a ' + impliedProb.toFixed(1) + '% chance of winning.';
+  else tip = '⚡ High odds — high potential return but only ' + impliedProb.toFixed(1) + '% implied probability. Consider whether the risk suits your strategy.';
+
+  document.getElementById('interpretation').innerHTML = '<strong>What this means:</strong> At odds ' + decOdds.toFixed(2) + ', your €' + fbAmt.toFixed(2) + ' ' + (fbType === 'snr' ? 'SNR' : 'SR') + ' free bet has an <strong>expected value of €' + cashValue.toFixed(2) + '</strong> (' + pct + '% of face value). If the bet wins, you pocket <strong>€' + profit.toFixed(2) + '</strong> cash. ' + tip;
+
+  document.getElementById('resultPanel').style.display = 'block';
+}
+
+document.querySelector('.burger')?.addEventListener('click', () => {
+  document.getElementById('mainNav').classList.toggle('open');
+});
+</script>
+</body>
+</html>

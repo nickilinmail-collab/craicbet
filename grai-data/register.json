@@ -1,0 +1,19 @@
+{
+  "last_updated": "2026-11-02",
+  "note": "GRAI issues remote BETTING licences only (since 1 July 2026). Zero casino licences issued. Casino licences expected 2027–2028.",
+  "source": "https://www.grai.ie/licensing/register-of-licences",
+  "verified_licences": [
+    {
+      "slug": "tonybet",
+      "name": "TonyBet",
+      "licence": "GRAI-0191-RB-26-0001",
+      "valid_from": "2026-09-16",
+      "valid_to": "2029-09-15",
+      "status": "active",
+      "type": "Remote Betting",
+      "verified": true
+    }
+  ],
+  "grai_licensed_betting": ["bet365","paddypower","betfair","betdaq","888sport","williamhill","tote","fitzdares","dragonbet","kwiff","dabble","32red","unibet","netbet","boylsports","ladbrokes"],
+  "not_grai_licensed": []
+}
