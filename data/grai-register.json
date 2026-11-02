@@ -1,0 +1,25 @@
+{
+  "last_updated": "2026-11-02",
+  "note": "GRAI remote BETTING licences only. Zero casino licences issued. Casino expected 2027-2028.",
+  "betting_licensed": [
+    {"key":"tonybet","name":"TonyBet","licence":"GRAI-0191-RB-26-0001","valid_from":"2026-09-16","valid_to":"2029-09-15","verified":true,"partner":true},
+    {"key":"bet365","name":"bet365","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"paddypower","name":"Paddy Power","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"betfair","name":"Betfair","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"betdaq","name":"Betdaq","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"888sport","name":"888sport","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"williamhill","name":"William Hill","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"tote","name":"Tote","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"fitzdares","name":"Fitzdares","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"dragonbet","name":"DragonBet","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"kwiff","name":"Kwiff","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"dabble","name":"Dabble","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"32red","name":"32Red Sport","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"unibet","name":"Unibet","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"netbet","name":"NetBet Sport","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"boylsports","name":"BoyleSports","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false},
+    {"key":"ladbrokes","name":"Ladbrokes","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false}
+  ],
+  "casino_licensed": [],
+  "casino_note": "Zero GRAI casino licences issued as of November 2026. GRAI has issued remote BETTING licences since 1 July 2026 under the Gambling Regulation Act 2024. Remote gaming (casino) licences are expected in 2027-2028."
+}
