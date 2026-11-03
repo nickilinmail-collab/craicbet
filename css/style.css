@@ -992,7 +992,8 @@ ul, ol { list-style: none; }
   display: none;
 }
 
-.faq-item.open .faq-answer {
+.faq-item.open .faq-answer,
+.faq-item.active .faq-answer {
   display: block;
 }
 
