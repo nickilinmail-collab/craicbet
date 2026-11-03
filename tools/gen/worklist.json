@@ -191,7 +191,7 @@
  {
   "slug": "grai-rules-for-punters",
   "title": "GRAI Rules That Protect Irish Punters",
-  "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights \u2014 in plain English.",
+  "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights — in plain English.",
   "cat": "grai",
   "status": "done"
  },
@@ -400,7 +400,7 @@
  },
  {
   "slug": "irish-grand-national-betting",
-  "title": "Irish Grand National Betting Guide \u2014 Fairyhouse",
+  "title": "Irish Grand National Betting Guide — Fairyhouse",
   "brief": "Easter Monday at Fairyhouse: race profile, each-way terms, ante-post vs day-of, Irish trainers' record. No tips presented as certainties.",
   "cat": "irish",
   "status": "done"
@@ -463,7 +463,7 @@
  },
  {
   "slug": "accumulator-betting-guide",
-  "title": "Accumulator Betting \u2014 The Honest Maths",
+  "title": "Accumulator Betting — The Honest Maths",
   "brief": "How acca odds multiply and why margin compounds per leg: worked example of a 5-fold's real house edge; when accas make sense.",
   "cat": "mechanics",
   "status": "done"
@@ -505,7 +505,7 @@
  },
  {
   "slug": "euro-2028-betting",
-  "title": "Euro 2028 Betting \u2014 Ireland Co-Hosts",
+  "title": "Euro 2028 Betting — Ireland Co-Hosts",
   "brief": "Euro 2028 at the Aviva: outright markets 18 months out, host-nation history, qualification scenarios for Ireland, ante-post risk honestly explained.",
   "cat": "event",
   "status": "done"
@@ -635,34 +635,34 @@
   "title": "Non-Runner No Bet Explained",
   "brief": "NRNB vs ante-post all-in: when books switch it on before festivals and what it does to the price.",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "cashback-and-extra-places-offers",
   "title": "Extra Places & Betting Offers Maths",
   "brief": "Extra-place races and money-back offers: how to value them honestly, wagering strings, why 'free' rarely is.",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "online-poker-ireland-law",
   "title": "Is Online Poker Legal in Ireland? The GRAI Era",
   "brief": "Poker is legal today (open international market, winnings untaxed). The looming issue: proposed EUR 10 max stake / EUR 3,000 max win limits on gaming would make regulated online poker unviable as written; Section 83 lets GRAI vary limits with ministerial consent; GGPoker first to express licence interest; Aug 2026 consultation. Present as evolving - dates and 'reported'.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "loot-boxes-ireland",
   "title": "Loot Boxes and Irish Law: A Parent's Guide",
   "brief": "GRAI concluded video-game microtransactions fall outside the Gambling Regulation Act but keeps the matter under review; Belgium/Netherlands treat them as gambling; what loot boxes and skin gambling are, warning signs, parental controls. Non-commercial trust page - no CTA, keep RG lines.",
   "cat": "grai",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "watch-irish-horse-racing-tv",
   "title": "How to Watch Irish Horse Racing on TV",
   "brief": "Racing TV holds rights to all 26 Irish courses to 2029 (launched in Ireland at EUR 31/month; Sky 426, Virgin 411, Apple TV); Sky Sports Racing carries international racing; RTE/Virgin Media show select terrestrial days. The watershed angle: the 5.30am-9pm ad ban threatens Racing TV's Irish service (regionalising reported at ~EUR 2m). Practical punter guide + what may change. Sources: Racing Post, Irish Field, SBC.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  }
 ]
