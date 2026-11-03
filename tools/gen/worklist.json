@@ -191,7 +191,7 @@
  {
   "slug": "grai-rules-for-punters",
   "title": "GRAI Rules That Protect Irish Punters",
-  "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights — in plain English.",
+  "brief": "What the Gambling Regulation Act changes at the betting counter: inducement restrictions, advertising watershed, credit ban, complaint rights \u2014 in plain English.",
   "cat": "grai",
   "status": "done"
  },
@@ -400,7 +400,7 @@
  },
  {
   "slug": "irish-grand-national-betting",
-  "title": "Irish Grand National Betting Guide — Fairyhouse",
+  "title": "Irish Grand National Betting Guide \u2014 Fairyhouse",
   "brief": "Easter Monday at Fairyhouse: race profile, each-way terms, ante-post vs day-of, Irish trainers' record. No tips presented as certainties.",
   "cat": "irish",
   "status": "done"
@@ -463,7 +463,7 @@
  },
  {
   "slug": "accumulator-betting-guide",
-  "title": "Accumulator Betting — The Honest Maths",
+  "title": "Accumulator Betting \u2014 The Honest Maths",
   "brief": "How acca odds multiply and why margin compounds per leg: worked example of a 5-fold's real house edge; when accas make sense.",
   "cat": "mechanics",
   "status": "done"
@@ -505,7 +505,7 @@
  },
  {
   "slug": "euro-2028-betting",
-  "title": "Euro 2028 Betting — Ireland Co-Hosts",
+  "title": "Euro 2028 Betting \u2014 Ireland Co-Hosts",
   "brief": "Euro 2028 at the Aviva: outright markets 18 months out, host-nation history, qualification scenarios for Ireland, ante-post risk honestly explained.",
   "cat": "event",
   "status": "done"
@@ -600,35 +600,35 @@
   "title": "Betting on Irish UFC Fighters",
   "brief": "Irish MMA betting: card timing for Irish viewers, method props, the honest maths of heavy favourites.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "fai-cup-betting",
   "title": "FAI Cup Betting Guide",
   "brief": "Ireland's knockout competition: giant-killing frequency, replays/extra time rules in settlement, outright value spots.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "ireland-international-football-betting",
   "title": "Ireland National Team Betting",
   "brief": "Qualifiers and Nations League: how market prices Ireland, draw-heavy profile, qualification specials.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "new-betting-sites-ireland",
   "title": "New Betting Sites in Ireland 2026",
   "brief": "What a new entrant must show post-GRAI: licence check first, realistic welcome structures, why 'new' isn't automatically better.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "best-odds-guaranteed-explained",
   "title": "Best Odds Guaranteed Explained",
   "brief": "BOG on racing: what it is, when it applies, its real expected value, and the catches (max stakes, early prices).",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "non-runner-no-bet-explained",
