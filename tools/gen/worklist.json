@@ -459,35 +459,35 @@
   "title": "Champions League Betting Guide",
   "brief": "Midweek European nights: group vs knockout dynamics, two-leg maths, Irish kick-off times.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "accumulator-betting-guide",
   "title": "Accumulator Betting — The Honest Maths",
   "brief": "How acca odds multiply and why margin compounds per leg: worked example of a 5-fold's real house edge; when accas make sense.",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "odds-converter-guide",
   "title": "Odds Converter: Fractional, Decimal, American",
   "brief": "Conversion formulas and a full reference table; implied probability from each format; why Irish sites show fractional.",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "horse-racing-form-guide",
   "title": "How to Read Horse Racing Form",
   "brief": "Decoding the form line: figures, going, class, weight, days since run; what actually predicts and what's noise.",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "spread-betting-vs-fixed-odds",
   "title": "Spread Betting vs Fixed Odds",
   "brief": "Why sports spread betting can lose more than your stake, regulatory difference (Central Bank vs GRAI), who should avoid it.",
   "cat": "mechanics",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "virtual-sports-betting-explained",
