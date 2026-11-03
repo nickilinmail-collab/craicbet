@@ -564,35 +564,36 @@
   "title": "Betting Withdrawal Times in Ireland",
   "brief": "Realistic payout timelines by method, why first withdrawals are slower (KYC), red flags of a stalling operator.",
   "cat": "process",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "bookmaker-account-restrictions",
   "title": "Why Bookmakers Restrict Winning Accounts",
   "brief": "The industry's open secret: stake factoring and account limits for winners; what the GRAI era may change; exchanges as the alternative.",
   "cat": "process",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "safer-gambling-betting-ireland",
   "title": "Safer Gambling Tools for Irish Punters",
   "brief": "Deposit limits, time-outs, self-exclusion under the Gambling Regulation Act; GRAI's National Gambling Exclusion Register; where to get help. 18+.",
   "cat": "process",
-  "status": "todo"
+  "status": "done",
+  "note": "not built: duplicate of existing pages/safer-gambling-tools-betting.html (same title/brief already live)"
  },
  {
   "slug": "leinster-munster-rugby-betting",
   "title": "Leinster & Munster Rugby Betting",
   "brief": "URC and Champions Cup week to week: rotation risk in league rounds, handicap value, derby dynamics.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "irish-boxers-betting",
   "title": "Betting on Irish Boxers",
   "brief": "How boxing odds work (method of victory, rounds), the Irish scene, why home-fighter prices are often short.",
   "cat": "irish",
-  "status": "todo"
+  "status": "done"
  },
  {
   "slug": "irish-ufc-fighters-betting",
