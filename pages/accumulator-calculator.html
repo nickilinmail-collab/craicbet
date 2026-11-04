@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accumulator Calculator Ireland 2026 | CraicBet</title>
+  <meta name="description" content="Calculate your accumulator return in seconds — add up to 8 selections, mark legs won/lost/pending, and see running subtotals. Free, no sign-up.">
+  <meta name="keywords" content="accumulator calculator Ireland, acca calculator, football accumulator calculator, bet calculator Ireland 2026">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <link rel="alternate" hreflang="en-IE" href="https://craicbet.com/pages/accumulator-calculator">
+  <link rel="alternate" hreflang="x-default" href="https://craicbet.com/pages/accumulator-calculator">
+  <link rel="canonical" href="https://craicbet.com/pages/accumulator-calculator">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CraicBet">
+  <meta property="og:locale" content="en_IE">
+  <meta property="og:title" content="Accumulator Calculator Ireland 2026 | CraicBet">
+  <meta property="og:description" content="Calculate your accumulator payout — up to 8 selections, mark won/lost/pending, see running subtotals. Free, instant, no sign-up.">
+  <meta property="og:url" content="https://craicbet.com/pages/accumulator-calculator">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Accumulator Calculator Ireland 2026 | CraicBet">
+  <meta name="twitter:description" content="Calculate your accumulator payout — up to 8 selections, running subtotals, won/lost/pending. Free and instant.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://craicbet.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Betting", "item": "https://craicbet.com/pages/betting-sites-ireland"},
+      {"@type": "ListItem", "position": 3, "name": "Accumulator Calculator", "item": "https://craicbet.com/pages/accumulator-calculator"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How does an accumulator work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An accumulator (acca) combines multiple selections into one bet. The odds multiply together, so a 4-fold acca at 2.0, 2.5, 1.8 and 3.0 gives combined odds of 27.0. All selections must win for the bet to pay out — one loss busts the entire accumulator."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens if one leg of my accumulator loses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If any single leg loses, the entire accumulator is lost and your return is €0. Some bookmakers offer acca insurance that refunds the stake (as a free bet) if exactly one leg loses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I calculate accumulator odds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Multiply all the decimal odds together. For example, three selections at 2.0, 2.5 and 3.0 give combined odds of 2.0 × 2.5 × 3.0 = 15.0. Your potential return is 15.0 × your stake."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a running subtotal in an accumulator?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A running subtotal shows the cumulative value after each winning leg. If your stake is €10 and leg 1 is at 2.0, the subtotal after leg 1 is €20. After leg 2 at 3.0, it becomes €60 — and so on. This tells you exactly what you are playing for at any point in a live accumulator."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    .calc-container {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 28px;
+      margin: 24px 0;
+    }
+    @media (max-width: 600px) {
+      .calc-container { padding: 16px; }
+    }
+    .stake-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .stake-row label {
+      font-size: 14px;
+      font-weight: 700;
+      color: #374151;
+      white-space: nowrap;
+    }
+    .stake-input {
+      padding: 10px 14px;
+      border: 2px solid #ea580c;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: Inter, sans-serif;
+      color: #111827;
+      width: 120px;
+      -moz-appearance: textfield;
+    }
+    .stake-input::-webkit-outer-spin-button,
+    .stake-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+    .stake-input:focus { outline: none; box-shadow: 0 0 0 3px rgba(234,88,12,0.15); }
+
+    .selections-list { margin-bottom: 16px; }
+    .selection-row {
+      display: grid;
+      grid-template-columns: 32px 1fr 160px auto;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 600px) {
+      .selection-row {
+        grid-template-columns: 28px 1fr 1fr;
+        grid-template-rows: auto auto;
+      }
+      .selection-row .remove-btn {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+      }
+      .selection-row select {
+        grid-column: 1 / 3;
+        grid-row: 2;
+      }
+    }
+    .leg-num {
+      width: 28px;
+      height: 28px;
+      background: #ea580c;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .odds-input {
+      padding: 9px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 16px;
+      font-family: Inter, sans-serif;
+      color: #111827;
+      width: 100%;
+      -moz-appearance: textfield;
+    }
+    .odds-input::-webkit-outer-spin-button,
+    .odds-input::-webkit-inner-spin-button { -webkit-appearance: none; }
+    .odds-input:focus { outline: none; border-color: #ea580c; box-shadow: 0 0 0 2px rgba(234,88,12,0.1); }
+    .status-select {
+      padding: 9px 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: Inter, sans-serif;
+      color: #374151;
+      background: #fff;
+      cursor: pointer;
+      width: 100%;
+    }
+    .status-select:focus { outline: none; border-color: #ea580c; }
+    .status-select.won { border-color: #16a34a; background: #f0fdf4; color: #15803d; }
+    .status-select.lost { border-color: #dc2626; background: #fef2f2; color: #dc2626; }
+    .status-select.pending { border-color: #d97706; background: #fffbeb; color: #92400e; }
+    .remove-btn {
+      background: none;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 6px 10px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #9ca3af;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .remove-btn:hover { color: #dc2626; border-color: #dc2626; }
+    .add-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 18px;
+      background: #fff;
+      border: 2px solid #ea580c;
+      border-radius: 8px;
+      color: #ea580c;
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      margin-bottom: 20px;
+    }
+    .add-btn:hover { background: #ea580c; color: #fff; }
+    .add-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .calc-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      background: #ea580c;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: Inter, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .calc-btn:hover { background: #c2410c; }
+    .error-msg {
+      display: none;
+      color: #dc2626;
+      font-size: 13px;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .results-box {
+      display: none;
+      margin-top: 24px;
+    }
+    .results-box.show { display: block; }
+    .bust-banner {
+      background: #fef2f2;
+      border: 2px solid #dc2626;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-align: center;
+    }
+    .bust-banner h3 { color: #dc2626; margin: 0 0 8px; font-size: 20px; }
+    .bust-banner p { color: #7f1d1d; margin: 0; font-size: 15px; }
+    .summary-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+    }
+    .summary-box h3 { margin: 0 0 16px; font-size: 16px; font-weight: 700; color: #166534; }
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #d1fae5;
+      font-size: 15px;
+    }
+    .result-row:last-child { border-bottom: none; }
+    .result-label { color: #374151; font-weight: 500; }
+    .result-value { font-weight: 700; color: #111827; }
+    .result-value.big { font-size: 22px; color: #15803d; }
+    .subtotals-box {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .subtotals-box table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .subtotals-box th {
+      background: #f8fafc;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      color: #374151;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .subtotals-box td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #f1f5f9;
+      color: #374151;
+    }
+    .subtotals-box tr:last-child td { border-bottom: none; }
+    .subtotals-box td.won { color: #15803d; font-weight: 600; }
+    .subtotals-box td.lost { color: #dc2626; font-weight: 600; }
+    .subtotals-box td.pending { color: #d97706; font-weight: 600; }
+    .pending-box {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 16px;
+      font-size: 14px;
+      color: #78350f;
+    }
+    .pending-box strong { display: block; margin-bottom: 6px; color: #92400e; }
+    .cluster-card {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-left: 4px solid #ea580c;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 32px 0;
+    }
+    .cluster-card strong { display: block; margin-bottom: 10px; color: #374151; }
+    .cluster-card a {
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 5px 12px;
+      background: #ea580c;
+      color: #fff;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .cluster-card a:hover { background: #c2410c; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo">
+      <img src="../images/logo.svg" alt="CraicBet" style="height:40px;">
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="grai-licence-explained">GRAI</a>
+      <a href="betting-sites-ireland">Betting</a>
+      <a href="best-casinos-ireland">Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="fast-payout-casinos">Fast Payouts</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="guides">Guides</a>
+    </nav>
+    <div class="lang-switcher"><a href="../" class="active-lang">EN</a><a href="../ga/">GA</a><a href="../pl/">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumbs">
+    &rsaquo; <a href="betting-sites-ireland">Betting</a> &rsaquo; Accumulator Calculator
+  </div>
+</div>
+
+<article class="article" style="max-width:800px;">
+
+  <div class="article-header">
+    <span class="section-label">Updated November 2026</span>
+    <h1>Accumulator Calculator</h1>
+    <div class="article-meta">
+      <span>&#128197; Updated 4 November 2026</span>
+      <span>&#9201; 2 min read</span>
+    </div>
+  </div>
+
+  <div class="article-content">
+
+    <p class="article-intro">An accumulator combines multiple selections into a single bet — your returns from each leg roll into the next, multiplying the odds at every step. The appeal is obvious: even four selections at modest odds can produce a substantial payout. The risk is equally clear: one losing leg busts the entire bet. Use this calculator to see your potential return before you place, check your running subtotals mid-event, or work out the remaining combined odds if some legs are already settled.</p>
+
+    <div class="calc-container">
+      <div class="stake-row">
+        <label for="acca-stake">Stake: €</label>
+        <input type="number" id="acca-stake" class="stake-input" placeholder="10" min="0.01" step="0.01" value="10">
+      </div>
+
+      <div class="selections-list" id="selections-list">
+        <!-- Legs injected by JS -->
+      </div>
+
+      <button class="add-btn" id="add-btn" onclick="addLeg()">
+        <span style="font-size:18px;line-height:1">+</span> Add Selection
+      </button>
+
+      <div class="error-msg" id="acca-error">Please check your inputs — odds must be above 1.00 and stake must be positive.</div>
+      <button class="calc-btn" onclick="calcAcca()">Calculate Accumulator</button>
+
+      <div class="results-box" id="acca-results"></div>
+    </div>
+
+    <h2>How Accumulator Odds Work</h2>
+    <p>Decimal odds multiply together. A treble at 2.0, 3.0 and 4.0 gives combined odds of 24.0 — a €10 stake returns €240. Add a fourth leg at 1.5 and the combined odds jump to 36.0, returning €360. Each leg you add increases the potential return while also adding another way to lose.</p>
+    <p><strong>Bookmaker margin compounds in accumulators.</strong> Every leg carries the bookmaker's edge. On a 5-leg acca where each leg has a 5% margin, the combined margin is roughly 23% — meaning the fair combined odds are about 23% higher than what you are offered. Longer accas multiply both your potential return and the house edge.</p>
+
+    <div style="background:#eef6f0;border-left:4px solid #1a6435;padding:16px 20px;border-radius:8px;margin:24px 0">
+      <strong>GRAI-licensed bookmaker — licence No. GRAI-0191-RB-26-0001</strong><br>
+      <span style="font-size:14px;color:#374151;">Acca insurance and enhanced odds promotions available. The only bookmaker on our list with a current Irish remote betting licence.</span>
+      <div style="margin-top:12px"><a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn btn-primary" style="width:auto;padding:11px 28px;display:inline-block">Place an Accumulator &rarr;</a></div>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <div class="faq-question">How many selections can I include in an accumulator?</div>
+      <div class="faq-answer"><p>Most bookmakers allow accumulators of 2 to 20+ selections, though very long accas can be subject to maximum payout limits. Our calculator supports 2–8 legs, covering the most common sizes. A 2-selection acca is called a double; 3 is a treble; 4+ are called four-fold, five-fold and so on.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What happens if one leg is a void or non-runner?</div>
+      <div class="faq-answer"><p>If a leg is voided (e.g., a match is abandoned or a horse is a non-runner), that leg is removed from the accumulator and the remaining legs continue as if the voided selection was never included. A 5-fold acca with one void becomes a 4-fold. Our calculator does not currently handle void legs — set those to "pending" and remove them from your calculation.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What is acca insurance?</div>
+      <div class="faq-answer"><p>Acca insurance is a promotion where the bookmaker refunds your stake (usually as a free bet) if exactly one leg of your accumulator loses. It is typically available on football accumulators of 5+ legs. The offer reduces the worst-case loss but does not change the odds or the payout if the acca lands.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Are accumulators better value than singles?</div>
+      <div class="faq-answer"><p>Mathematically, no — the bookmaker's margin applies to every leg, so longer accas carry more built-in edge. The appeal is the multiplied payout for a small outlay, not better expected value. If you back value singles, combining them into an acca does not create more value; it just concentrates the risk and return into a single outcome.</p></div>
+    </div>
+
+    <div class="cluster-card">
+      <strong>Related Betting Guides &amp; Tools</strong>
+      <a href="accumulator-betting-ireland">Accumulator Betting Guide</a>
+      <a href="doubles-trebles-betting-ireland">Doubles &amp; Trebles</a>
+      <a href="free-bet-calculator">Free Bet Calculator</a>
+      <a href="value-betting-ireland">Value Betting</a>
+      <a href="betting-odds-explained-ireland">Odds Explained</a>
+      <a href="football-betting-ireland">Football Betting</a>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../images/logo.svg" alt="CraicBet" style="height:32px;">
+      </div>
+      <p>CraicBet is Ireland's independent betting &amp; casino guide. Honest, transparent, always up to date.</p>
+      <div class="age-badge">18+</div>
+      <div class="social-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0"><a href="https://www.youtube.com/@CraicBet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">YouTube</a><a href="https://x.com/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">X</a><a href="https://t.me/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">Telegram</a></div>
+    </div>
+    <div class="footer-col">
+      <h4>Betting</h4>
+      <a href="betting-sites-ireland">Betting Sites Ireland</a>
+      <a href="grai-licensed-bookmakers">GRAI Licensed Bookmakers</a>
+      <a href="free-bets-ireland">Free Bets</a>
+      <a href="horse-racing-betting-ireland">Horse Racing</a>
+      <a href="gaa-betting-guide">GAA Betting</a>
+      <a href="football-betting-ireland">Football Betting</a>
+      <a href="each-way-calculator">Each-Way Calculator</a>
+      <a href="betting-apps-ireland">Betting Apps</a>
+    </div>
+    <div class="footer-col">
+      <h4>Casino Guides</h4>
+      <a href="best-casinos-ireland">Best Casinos Ireland</a>
+      <a href="casino-bonuses-ireland">Casino Bonuses</a>
+      <a href="fast-payout-casinos">Fast Payout Casinos</a>
+      <a href="no-deposit-bonus">No Deposit Bonuses</a>
+      <a href="revolut-casinos">Revolut Casinos</a>
+    </div>
+    <div class="footer-col">
+      <h4>Game Guides</h4>
+      <a href="slot-reviews">Slot Reviews</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="rtp-explained">RTP Explained</a>
+      <a href="blackjack-guide">Blackjack Guide</a>
+      <a href="roulette-guide">Roulette Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about">About CraicBet</a>
+      <a href="how-we-review">How We Review</a>
+      <a href="responsible-gambling">Responsible Gambling</a>
+      <a href="contact">Contact Us</a>
+      <a href="privacy">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      &#9888;&#65039; Gambling can be addictive. Please play responsibly. 18+ only.
+      Contact <strong>Gambling Awareness Trust</strong> at 1800 753 753 or visit <strong>gamblingcare.ie</strong>.
+      <br><br>
+      &copy; 2026 CraicBet.com &bull; All rights reserved &bull; Independent review site. Affiliate commissions may apply.
+      <br>CraicBet tracks <a href="grai-licence-register-tracker" style="color:#dfe9e2;">the GRAI licence register</a> daily &mdash; see our <a href="grai-guide" style="color:#dfe9e2;">GRAI guide</a>.
+    </p>
+  </div>
+</footer>
+
+<script>
+  let legCount = 0;
+
+  function addLeg() {
+    if (legCount >= 8) return;
+    legCount++;
+    const list = document.getElementById('selections-list');
+    const div = document.createElement('div');
+    div.className = 'selection-row';
+    div.id = 'leg-' + legCount;
+    div.innerHTML =
+      '<div class="leg-num">' + legCount + '</div>' +
+      '<input type="number" class="odds-input" id="odds-' + legCount + '" placeholder="e.g. 2.50" min="1.01" step="0.01" oninput="updateSelectStyle(this.parentElement.querySelector(\'select\'))">' +
+      '<select class="status-select pending" id="status-' + legCount + '" onchange="updateSelectStyle(this)">' +
+        '<option value="pending" selected>Pending</option>' +
+        '<option value="won">Won</option>' +
+        '<option value="lost">Lost</option>' +
+      '</select>' +
+      '<button class="remove-btn" onclick="removeLeg(' + legCount + ')" title="Remove">&times;</button>';
+    list.appendChild(div);
+    updateAddBtn();
+    document.getElementById('odds-' + legCount).focus();
+  }
+
+  function updateSelectStyle(el) {
+    el.className = 'status-select ' + el.value;
+  }
+
+  function removeLeg(id) {
+    const el = document.getElementById('leg-' + id);
+    if (el) el.remove();
+    renumberLegs();
+    updateAddBtn();
+  }
+
+  function renumberLegs() {
+    const rows = document.querySelectorAll('.selection-row');
+    legCount = rows.length;
+    rows.forEach((row, i) => {
+      const n = i + 1;
+      row.id = 'leg-' + n;
+      const numEl = row.querySelector('.leg-num');
+      if (numEl) numEl.textContent = n;
+      const oddsEl = row.querySelector('.odds-input');
+      if (oddsEl) oddsEl.id = 'odds-' + n;
+      const statusEl = row.querySelector('.status-select');
+      if (statusEl) {
+        statusEl.id = 'status-' + n;
+        statusEl.onchange = function() { updateSelectStyle(this); };
+      }
+      const removeBtn = row.querySelector('.remove-btn');
+      if (removeBtn) removeBtn.setAttribute('onclick', 'removeLeg(' + n + ')');
+    });
+  }
+
+  function updateAddBtn() {
+    const btn = document.getElementById('add-btn');
+    btn.disabled = legCount >= 8;
+    btn.textContent = legCount >= 8 ? 'Maximum 8 selections' : '+ Add Selection';
+  }
+
+  function calcAcca() {
+    const stake = parseFloat(document.getElementById('acca-stake').value);
+    const rows = document.querySelectorAll('.selection-row');
+    const errEl = document.getElementById('acca-error');
+    const resEl = document.getElementById('acca-results');
+
+    if (isNaN(stake) || stake <= 0 || rows.length < 2) {
+      errEl.style.display = 'block';
+      resEl.classList.remove('show');
+      return;
+    }
+
+    const legs = [];
+    let valid = true;
+    rows.forEach((row, i) => {
+      const n = i + 1;
+      const odds = parseFloat(document.getElementById('odds-' + n).value);
+      const status = document.getElementById('status-' + n).value;
+      if (isNaN(odds) || odds <= 1) { valid = false; return; }
+      legs.push({ n, odds, status });
+    });
+
+    if (!valid) {
+      errEl.style.display = 'block';
+      resEl.classList.remove('show');
+      return;
+    }
+    errEl.style.display = 'none';
+
+    // Check for any lost leg
+    const hasLost = legs.some(l => l.status === 'lost');
+
+    if (hasLost) {
+      resEl.innerHTML =
+        '<div class="bust-banner">' +
+          '<h3>Accumulator Bust</h3>' +
+          '<p>One or more legs have lost. Potential return: <strong>€0.00</strong>.</p>' +
+        '</div>';
+      resEl.classList.add('show');
+      return;
+    }
+
+    // Calculate subtotals
+    let running = stake;
+    const wonLegs = legs.filter(l => l.status === 'won');
+    const pendingLegs = legs.filter(l => l.status === 'pending');
+
+    // Running subtotals per leg (all legs, in order)
+    const subtotals = [];
+    let acc = stake;
+    legs.forEach(leg => {
+      acc = acc * leg.odds;
+      subtotals.push({ leg, subtotal: acc });
+    });
+
+    // Combined odds across all legs
+    const totalOdds = legs.reduce((p, l) => p * l.odds, 1);
+    const potentialReturn = stake * totalOdds;
+    const potentialProfit = potentialReturn - stake;
+
+    // Won legs combined
+    const wonOdds = wonLegs.reduce((p, l) => p * l.odds, 1);
+    const wonSubtotal = stake * wonOdds;
+
+    // Remaining (pending) legs combined
+    const pendingOdds = pendingLegs.reduce((p, l) => p * l.odds, 1);
+
+    // Build results HTML
+    let html = '<div class="summary-box"><h3>Accumulator Summary</h3>';
+
+    // Name
+    const nameMap = { 2: 'Double', 3: 'Treble', 4: 'Four-fold', 5: 'Five-fold', 6: 'Six-fold', 7: 'Seven-fold', 8: 'Eight-fold' };
+    const accaName = nameMap[legs.length] || (legs.length + '-fold');
+
+    html += '<div class="result-row"><span class="result-label">Bet type</span><span class="result-value">' + accaName + ' (' + legs.length + ' selections)</span></div>';
+    html += '<div class="result-row"><span class="result-label">Stake</span><span class="result-value">€' + stake.toFixed(2) + '</span></div>';
+    html += '<div class="result-row"><span class="result-label">Combined odds</span><span class="result-value">' + totalOdds.toFixed(2) + '</span></div>';
+    html += '<div class="result-row"><span class="result-label">Potential return (all legs win)</span><span class="result-value big">€' + potentialReturn.toFixed(2) + '</span></div>';
+    html += '<div class="result-row"><span class="result-label">Potential profit</span><span class="result-value" style="color:#15803d;font-weight:700">€' + potentialProfit.toFixed(2) + '</span></div>';
+    html += '</div>';
+
+    // Running subtotals table
+    html += '<div class="subtotals-box"><table>';
+    html += '<tr><th>Leg</th><th>Odds</th><th>Status</th><th>Running total</th></tr>';
+    subtotals.forEach(({ leg, subtotal }) => {
+      const statusLabel = leg.status.charAt(0).toUpperCase() + leg.status.slice(1);
+      html += '<tr>';
+      html += '<td>Leg ' + leg.n + '</td>';
+      html += '<td>' + leg.odds.toFixed(2) + '</td>';
+      html += '<td class="' + leg.status + '">' + statusLabel + '</td>';
+      html += '<td>€' + subtotal.toFixed(2) + '</td>';
+      html += '</tr>';
+    });
+    html += '</table></div>';
+
+    // Pending note
+    if (wonLegs.length > 0 && pendingLegs.length > 0) {
+      html += '<div class="pending-box">';
+      html += '<strong>Running position after ' + wonLegs.length + ' settled leg' + (wonLegs.length > 1 ? 's' : '') + ':</strong>';
+      html += 'Current subtotal: <strong>€' + wonSubtotal.toFixed(2) + '</strong>. ';
+      html += 'Remaining ' + pendingLegs.length + ' leg' + (pendingLegs.length > 1 ? 's' : '') + ' at combined odds of <strong>' + pendingOdds.toFixed(2) + '</strong>. ';
+      html += 'If all remaining legs win, your return is <strong>€' + potentialReturn.toFixed(2) + '</strong>.';
+      html += '</div>';
+    } else if (pendingLegs.length === legs.length) {
+      // All pending — normal case, no extra note needed
+    }
+
+    resEl.innerHTML = html;
+    resEl.classList.add('show');
+  }
+
+  // Initialise with 3 legs
+  addLeg();
+  addLeg();
+  addLeg();
+
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+  });
+  document.querySelector('.burger')?.addEventListener('click', () => {
+    document.getElementById('mainNav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
