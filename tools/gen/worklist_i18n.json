@@ -199,18 +199,21 @@
   "en_slug": "cash-out-explained",
   "lang": "pl",
   "note": "Cash out",
-  "status": "todo"
+  "status": "done",
+  "slug": "cash-out-wyjasnienie"
  },
  {
   "en_slug": "odds-formats-explained",
   "lang": "ga",
   "note": "Odds formats (after conveyor builds it)",
-  "status": "todo"
+  "status": "done",
+  "slug": "formaidi-corrlaigh-minithe"
  },
  {
   "en_slug": "odds-formats-explained",
   "lang": "pl",
   "note": "Odds formats (after conveyor builds it)",
-  "status": "todo"
+  "status": "done",
+  "slug": "kursy-ulamkowe-i-dziesietne"
  }
 ]
