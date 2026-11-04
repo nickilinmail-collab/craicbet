@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kursy ułamkowe vs dziesiętne: przeliczanie i prawdopodobieństwo | CraicBet</title>
+  <meta name="description" content="Kursy ułamkowe i dziesiętne wyjaśnione dla graczy w Irlandii: tabela przeliczeń, wzór na prawdopodobieństwo implikowane i dlaczego kursy dziesiętne szybciej pokazują marżę bukmachera.">
+  <meta name="keywords" content="kursy ułamkowe, kursy dziesiętne, przeliczanie kursów, prawdopodobieństwo implikowane">  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CraicBet",
+    "url": "https://craicbet.com",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Ireland"
+    },
+    "description": "Ireland's trusted guide to gambling in Ireland — sports betting and online casinos: GRAI licence tracking, honest odds and bonus maths, reviews and payout tests.",
+    "inLanguage": ["en-IE", "ga", "pl"]
+  }
+  </script>
+    <link rel="alternate" hreflang="en-IE" href="https://craicbet.com/pages/odds-formats-explained">
+  <link rel="alternate" hreflang="ga-IE" href="https://craicbet.com/ga/formaidi-corrlaigh-minithe">
+  <link rel="alternate" hreflang="pl" href="https://craicbet.com/pl/kursy-ulamkowe-i-dziesietne">
+  <link rel="alternate" hreflang="x-default" href="https://craicbet.com/pages/odds-formats-explained">
+  <link rel="canonical" href="https://craicbet.com/pl/kursy-ulamkowe-i-dziesietne">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CraicBet">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Kursy ułamkowe vs dziesiętne: przeliczanie i prawdopodobieństwo | CraicBet">
+  <meta property="og:description" content="Kursy ułamkowe i dziesiętne wyjaśnione dla graczy w Irlandii: tabela przeliczeń, wzór na prawdopodobieństwo implikowane i dlaczego kursy dziesiętne szybciej pokazują marżę bukmachera.">
+  <meta property="og:url" content="https://craicbet.com/pl/kursy-ulamkowe-i-dziesietne">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kursy ułamkowe vs dziesiętne: przeliczanie i prawdopodobieństwo | CraicBet">
+  <meta name="twitter:description" content="Kursy ułamkowe i dziesiętne wyjaśnione dla graczy w Irlandii: tabela przeliczeń, wzór na prawdopodobieństwo implikowane i dlaczego kursy dziesiętne szybciej pokazują marżę bukmachera.">
+  <meta name="twitter:image" content="https://craicbet.com/images/og-default.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Główna", "item": "https://craicbet.com/pl"}, {"@type": "ListItem", "position": 2, "name": "Poradniki", "item": "https://craicbet.com/pl/poradniki"}, {"@type": "ListItem", "position": 3, "name": "Kursy ułamkowe i dziesiętne", "item": "https://craicbet.com/pl/kursy-ulamkowe-i-dziesietne"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Jak przeliczyć kurs ułamkowy na dziesiętny?", "acceptedAnswer": {"@type": "Answer", "text": "Podziel licznik przez mianownik i dodaj 1: 5/2 → 2,5 + 1 = 3,50; 4/6 → 0,667 + 1 = 1,67. Kurs dziesiętny zawiera zwrot stawki; ułamek podaje sam zysk."}}, {"@type": "Question", "name": "Czym jest prawdopodobieństwo implikowane?", "acceptedAnswer": {"@type": "Answer", "text": "To prawdopodobieństwo, które sugeruje kurs: 1 ÷ kurs dziesiętny. Kurs 2,50 implikuje 40%, a 1,25 — 80%. Zsumowane dla całego rynku przekraczają 100% — nadwyżka to marża bukmachera."}}, {"@type": "Question", "name": "Dlaczego irlandzcy bukmacherzy wciąż pokazują kursy ułamkowe?", "acceptedAnswer": {"@type": "Answer", "text": "To tradycja toru wyścigowego i tablicy w punkcie. Każda większa aplikacja pozwala przełączyć widok na kursy dziesiętne w ustawieniach — i to one są lepsze do porównywania cen i szukania marży."}}]}</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="./" class="logo">
+      <img src="../images/logo.svg" alt="CraicBet" style="height:40px;">
+      
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="./">Główna</a>
+      <a href="zaklady-bukmacherskie-irlandia">Zakłady</a>
+      <a href="najlepsze-kasyna">Kasyna</a>
+      <a href="bonusy-kasynowe">Bonusy</a>
+      <a href="sloty">Sloty</a>
+      <a href="szybkie-wyplaty">Wypłaty</a>
+      <a href="kasyno-na-zywo">Na Żywo</a>
+      <a href="poradniki">Poradniki</a>
+    </nav>
+    
+    <div class="lang-switcher"><a href="../">EN</a><a href="../ga/">GA</a><a href="../pl/" class="active-lang">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumbs">
+    <a href="./">Główna</a> &rsaquo; <a href="poradniki">Poradniki</a> &rsaquo; Kursy ułamkowe i dziesiętne
+  </div>
+</div>
+
+<article class="article">
+  <div class="article-header">
+    <span class="section-label">Aktualizacja Listopad 2026</span>
+    <h1>Kursy ułamkowe i dziesiętne — jak je czytać</h1>
+    <div class="article-meta">
+      <span>&#128221; Przez Zespół CraicBet</span>
+      <span>&#128197; Aktualizacja Listopad 2026</span>
+      <span>&#9201; 4 min czytania</span>
+    </div>
+  </div>
+  <div class="article-content">
+
+<p>Irlandia obstawia w dwóch językach. Tor wyścigowy, tablica w punkcie i większość rozmów wciąż mówią ułamkami — 5/2, 11/8, 4/6 — podczas gdy aplikacje bukmacherskie i giełdy domyślnie pokazują kursy dziesiętne. Oba zapisy kodują to samo, ale jeden z nich od razu pokazuje, ile zabiera bukmacher. Nauka przeliczania między nimi to najcenniejsze pięć minut w edukacji gracza.</p>
+<h2>Co mówi każdy format</h2>
+<p>Kurs ułamkowy podaje zysk względem stawki: 5/2 oznacza €5 zysku z każdych €2 stawki. Kurs dziesiętny podaje łączny zwrot z każdego €1, razem ze stawką: ta sama cena to 3,50, bo €1 zwraca €2,50 zysku plus twoje euro. Przeliczenie to jeden krok w każdą stronę: <strong>kurs dziesiętny = (licznik ÷ mianownik) + 1</strong>, a ułamek to kurs dziesiętny minus 1, zapisany jako ułamek.</p>
+<h2>Tabela przeliczeń</h2>
+
+<table style="width:100%;border-collapse:collapse;margin:16px 0">
+<tr style="background:#eef6f0"><th style="padding:8px;border:1px solid #d7e4da;text-align:left">Ułamkowe</th><th style="padding:8px;border:1px solid #d7e4da;text-align:left">Dziesiętne</th><th style="padding:8px;border:1px solid #d7e4da;text-align:left">Prawdopodobieństwo implikowane</th></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">1/4</td><td style="padding:8px;border:1px solid #d7e4da">1.25</td><td style="padding:8px;border:1px solid #d7e4da">80.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">4/6</td><td style="padding:8px;border:1px solid #d7e4da">1.67</td><td style="padding:8px;border:1px solid #d7e4da">60.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">Evens (1/1)</td><td style="padding:8px;border:1px solid #d7e4da">2.00</td><td style="padding:8px;border:1px solid #d7e4da">50.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">6/4</td><td style="padding:8px;border:1px solid #d7e4da">2.50</td><td style="padding:8px;border:1px solid #d7e4da">40.0%</td></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">5/2</td><td style="padding:8px;border:1px solid #d7e4da">3.50</td><td style="padding:8px;border:1px solid #d7e4da">28.6%</td></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">5/1</td><td style="padding:8px;border:1px solid #d7e4da">6.00</td><td style="padding:8px;border:1px solid #d7e4da">16.7%</td></tr>
+<tr><td style="padding:8px;border:1px solid #d7e4da">10/1</td><td style="padding:8px;border:1px solid #d7e4da">11.00</td><td style="padding:8px;border:1px solid #d7e4da">9.1%</td></tr>
+</table>
+
+<h2>Wzór na prawdopodobieństwo implikowane</h2>
+<p>Z kursu dziesiętnego: <strong>prawdopodobieństwo implikowane = 1 ÷ kurs dziesiętny</strong>. Kurs 2,50 implikuje 40%; kurs 1,25 — 80%. Z ułamka najpierw przelicz na kurs dziesiętny. Ta liczba to twierdzenie ceny o świecie — a twierdzenia bukmachera zsumowane dla całego rynku zawsze przekraczają 100%: w tej nadwyżce chowa się marża.</p>
+<div style="text-align:center;margin:28px 0"><a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn btn-primary" style="width:auto;padding:14px 40px;">Bukmacher z irlandzką licencją &#8594;</a></div>
+<h2>Dlaczego kursy dziesiętne szybciej pokazują marżę</h2>
+<p>Zsumuj 1 ÷ kurs dla każdego wyniku rynku w zapisie dziesiętnym, a w kilka sekund dostaniesz łączne prawdopodobieństwo implikowane całej oferty: 1÷1,90 + 1÷3,50 + 1÷4,20 ≈ 105%, czyli marża to około 5%. Zrobienie tego samego z 10/11, 5/2 i 16/5 wymaga najpierw trzech przeliczeń. Ułamki powstały do wywoływania cen na ringu bukmacherskim; kursy dziesiętne — do porównywania wartości. Używaj formatu, który pasuje do zadania — a przy ocenie ceny jest nim kurs dziesiętny.</p>
+<h2>Irlandzki zwyczaj — i uczciwa matematyka</h2>
+<p>Dla gracza z Polski ułamki bywają najdziwniejszą częścią lokalnej kultury zakładów — w Polsce bukmacherzy używają wyłącznie kursów dziesiętnych, w Irlandii na torze i w punkcie usłyszysz tylko ułamki. Nikt w Leopardstown nie przejdzie z 5/2 na 3,50 — i nie musi. Zostaw ułamki dla klimatu; przelicznik trzymaj w głowie dla matematyki. Jedna kontrola warta automatyzacji: „odds-on” w ułamkach (4/6, 8/11) to kurs dziesiętny poniżej 2,00 — ryzykujesz więcej, niż możesz wygrać, więc implikowane prawdopodobieństwo przekracza 50% i zasługuje na dodatkową weryfikację. 18+ — graj odpowiedzialnie: Gambling Awareness Trust, 1800 753 753, gamblingcare.ie.</p>
+
+<h2>Najczęstsze pytania</h2>
+<div class="faq-item"><div class="faq-question">Jak przeliczyć kurs ułamkowy na dziesiętny?<span>&#9662;</span></div><div class="faq-answer"><p>Podziel licznik przez mianownik i dodaj 1: 5/2 → 2,5 + 1 = 3,50; 4/6 → 0,667 + 1 = 1,67. Kurs dziesiętny zawiera zwrot stawki; ułamek podaje sam zysk.</p></div></div>
+<div class="faq-item"><div class="faq-question">Czym jest prawdopodobieństwo implikowane?<span>&#9662;</span></div><div class="faq-answer"><p>To prawdopodobieństwo, które sugeruje kurs: 1 ÷ kurs dziesiętny. Kurs 2,50 implikuje 40%, a 1,25 — 80%. Zsumowane dla całego rynku przekraczają 100% — nadwyżka to marża bukmachera.</p></div></div>
+<div class="faq-item"><div class="faq-question">Dlaczego irlandzcy bukmacherzy wciąż pokazują kursy ułamkowe?<span>&#9662;</span></div><div class="faq-answer"><p>To tradycja toru wyścigowego i tablicy w punkcie. Każda większa aplikacja pozwala przełączyć widok na kursy dziesiętne w ustawieniach — i to one są lepsze do porównywania cen i szukania marży.</p></div></div>
+<div style="margin:24px 0;padding:14px 18px;background:#eef6f0;border-radius:8px"><strong>Zobacz też:</strong> <a href="zaklady-bukmacherskie-irlandia">Zakłady bukmacherskie w Irlandii</a> &middot; <a href="legalny-bukmacher-irlandia">Legalny bukmacher w Irlandii</a> &middot; <a href="zaklady-pilkarskie-irlandia">Zakłady piłkarskie</a> &middot; <a href="darmowe-zaklady-irlandia">Darmowe zakłady</a> &middot; <a href="kalkulator-each-way">Kalkulator each-way</a></div>
+
+</div>
+</article>
+
+<section class="content-section" style="text-align:center; padding: 2rem 0;">
+  <div class="container">
+    <p style="color:#666; font-size:0.9rem;">&#127760; Zmień język: <a href="../">English</a> | <strong>Polski</strong> | <a href="../ga/">Gaeilge</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>CraicBet.com</h4>
+        <p>Twoje zaufane źródło informacji o kasynach online w Irlandii. Niezależne recenzje, bonusy i poradniki.</p>
+        <div class="age-badge">18+</div>
+        <div class="social-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0"><a href="https://www.youtube.com/@CraicBet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">YouTube</a><a href="https://x.com/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">X</a><span style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2">Reddit</span><a href="https://t.me/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">Telegram</a></div>
+      
+      </div>
+      <div class="footer-col">
+        <h4>Szybkie Linki</h4>
+        <a href="najlepsze-kasyna">Kasyna</a>
+        <a href="bonusy-kasynowe">Bonusy</a>
+        <a href="kasyna-z-licencja-grai">Licencja GRAI</a>
+        <a href="poradniki">Poradniki</a>
+      </div>
+      <div class="footer-col">
+        <h4>Informacje</h4>
+        <a href="odpowiedzialna-gra">Odpowiedzialna Gra</a>
+        <a href="prawo-hazardowe-irlandia">Prawo Hazardowe</a>
+        <a href="podatek-od-hazardu">Podatek od Hazardu</a>
+      </div>
+      <div class="footer-col">
+        <h4>Prawne</h4>
+        <p style="font-size:0.85rem; color:#aaa;">Musisz mieć ukończone 18 lat, aby grać w gry hazardowe. Graj odpowiedzialnie. CraicBet.com jest serwisem informacyjnym i nie jest operatorem hazardowym.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 CraicBet.com — Wszelkie prawa zastrzeżone. 18+ | Graj Odpowiedzialnie<br>CraicBet codziennie &#347;ledzi rejestr licencji GRAI &mdash; zobacz nasz <a href="kasyna-z-licencja-grai" style="color:#dfe9e2;">przewodnik GRAI</a>.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/slot-game.js"></script>
+<script src="/js/ui-sound.js"></script>
+</body>
+</html>
