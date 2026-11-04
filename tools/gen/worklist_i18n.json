@@ -3,25 +3,29 @@
   "en_slug": "free-bets-ireland",
   "lang": "pl",
   "note": "Free bets",
-  "status": "todo"
+  "status": "done",
+  "slug": "darmowe-zaklady-irlandia"
  },
  {
   "en_slug": "horse-racing-betting-ireland",
   "lang": "pl",
   "note": "Horse racing betting",
-  "status": "todo"
+  "status": "done",
+  "slug": "zaklady-na-wyscigi-konne-irlandia"
  },
  {
   "en_slug": "gaa-betting-guide",
   "lang": "pl",
   "note": "GAA betting",
-  "status": "todo"
+  "status": "done",
+  "slug": "zaklady-gaa-poradnik"
  },
  {
   "en_slug": "football-betting-ireland",
   "lang": "pl",
   "note": "Football betting",
-  "status": "todo"
+  "status": "done",
+  "slug": "zaklady-pilkarskie-irlandia"
  },
  {
   "en_slug": "betting-apps-ireland",
