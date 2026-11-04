@@ -87,25 +87,29 @@
   "en_slug": "unlicensed-casino-ireland-risks",
   "lang": "pl",
   "note": "Unlicensed casino risks",
-  "status": "todo"
+  "status": "done",
+  "slug": "kasyno-bez-licencji-irlandia-ryzyko"
  },
  {
   "en_slug": "grai-fines-and-penalties",
   "lang": "ga",
   "note": "GRAI fines",
-  "status": "todo"
+  "status": "done",
+  "slug": "finealacha-agus-pionois-grai"
  },
  {
   "en_slug": "grai-fines-and-penalties",
   "lang": "pl",
   "note": "GRAI fines",
-  "status": "todo"
+  "status": "done",
+  "slug": "kary-i-grzywny-grai"
  },
  {
   "en_slug": "free-bets-ireland",
   "lang": "ga",
   "note": "Free bets",
-  "status": "todo"
+  "status": "done",
+  "slug": "geallta-saor-in-aisce-eire"
  },
  {
   "en_slug": "horse-racing-betting-ireland",
