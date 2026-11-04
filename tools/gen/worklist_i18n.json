@@ -31,25 +31,29 @@
   "en_slug": "betting-apps-ireland",
   "lang": "pl",
   "note": "Betting apps",
-  "status": "todo"
+  "status": "done",
+  "slug": "aplikacje-bukmacherskie-irlandia"
  },
  {
   "en_slug": "grai-licensed-bookmakers",
   "lang": "pl",
   "note": "legalny bukmacher w Irlandii - licencje GRAI, jak sprawdzic",
-  "status": "todo"
+  "status": "done",
+  "slug": "legalny-bukmacher-irlandia"
  },
  {
   "en_slug": "each-way-calculator",
   "lang": "pl",
   "note": "kalkulator each-way po polsku (static explainer linking EN tool)",
-  "status": "todo"
+  "status": "done",
+  "slug": "kalkulator-each-way"
  },
  {
   "en_slug": "when-will-grai-license-online-casinos",
   "lang": "ga",
   "note": "GRAI casino licence timeline",
-  "status": "todo"
+  "status": "done",
+  "slug": "cathain-ceadunais-chasaineo-grai"
  },
  {
   "en_slug": "when-will-grai-license-online-casinos",
