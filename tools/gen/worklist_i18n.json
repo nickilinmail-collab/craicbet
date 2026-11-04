@@ -115,25 +115,29 @@
   "en_slug": "horse-racing-betting-ireland",
   "lang": "ga",
   "note": "Horse racing betting",
-  "status": "todo"
+  "status": "done",
+  "slug": "gealltoireacht-rasai-capall"
  },
  {
   "en_slug": "gaa-betting-guide",
   "lang": "ga",
   "note": "GAA betting",
-  "status": "todo"
+  "status": "done",
+  "slug": "gealltoireacht-clg"
  },
  {
   "en_slug": "football-betting-ireland",
   "lang": "ga",
   "note": "Football betting",
-  "status": "todo"
+  "status": "done",
+  "slug": "gealltoireacht-sacair-eire"
  },
  {
   "en_slug": "5-euro-deposit-casino",
   "lang": "ga",
   "note": "5 euro deposit (GA only; PL exists)",
-  "status": "todo"
+  "status": "done",
+  "slug": "ceasaineo-earlais-5-euro"
  },
  {
   "en_slug": "casinos-in-dublin",
