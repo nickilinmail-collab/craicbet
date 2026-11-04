@@ -143,25 +143,29 @@
   "en_slug": "casinos-in-dublin",
   "lang": "ga",
   "note": "Casinos in Dublin",
-  "status": "todo"
+  "status": "done",
+  "slug": "caisinoenna-baile-atha-cliath"
  },
  {
   "en_slug": "casinos-in-dublin",
   "lang": "pl",
   "note": "Casinos in Dublin",
-  "status": "todo"
+  "status": "done",
+  "slug": "kasyna-w-dublinie"
  },
  {
   "en_slug": "ireland-gambling-statistics",
   "lang": "ga",
   "note": "Gambling statistics",
-  "status": "todo"
+  "status": "done",
+  "slug": "staitistici-cearrbhachais-eire"
  },
  {
   "en_slug": "ireland-gambling-statistics",
   "lang": "pl",
   "note": "Gambling statistics",
-  "status": "todo"
+  "status": "done",
+  "slug": "statystyki-hazardu-irlandia"
  },
  {
   "en_slug": "gambling-advertising-rules-ireland-2026",
