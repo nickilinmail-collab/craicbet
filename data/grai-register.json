@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-04",
   "note": "GRAI remote BETTING licences only. Zero casino licences issued. Casino expected 2027-2028.",
   "betting_licensed": [
     {"key":"tonybet","name":"TonyBet","licence":"GRAI-0191-RB-26-0001","valid_from":"2026-09-16","valid_to":"2029-09-15","verified":true,"partner":true},
@@ -21,5 +21,5 @@
     {"key":"ladbrokes","name":"Ladbrokes","licence":"GRAI — see register","valid_from":"2026-07-01","valid_to":"2029-06-30","verified":false}
   ],
   "casino_licensed": [],
-  "casino_note": "Zero GRAI casino licences issued as of November 2026. GRAI has issued remote BETTING licences since 1 July 2026 under the Gambling Regulation Act 2024. Remote gaming (casino) licences are expected in 2027-2028."
+  "casino_note": "Zero GRAI casino licences issued as of November 2026. GRAI has issued remote BETTING licences since 1 July 2026 under the Gambling Regulation Act 2024. Remote gaming (casino) licences are expected in 2027-2028; application systems are reported delayed to early 2027 by a GRAI funding shortfall."
 }
