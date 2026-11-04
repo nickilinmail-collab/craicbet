@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search CraicBet &mdash; Ireland's Betting &amp; Casino Guide</title>
+  <meta name="description" content="Search CraicBet — Ireland's independent betting &amp; casino guide. Find reviews, GRAI licence guides, odds explainers and casino comparisons.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <link rel="canonical" href="https://craicbet.com/pages/search">
+  <style>
+    .search-hero {
+      background: linear-gradient(135deg, #1a6435 0%, #0f3d20 100%);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .search-hero h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin: 0 0 8px;
+      color: #fff;
+    }
+    .search-hero p {
+      color: rgba(255,255,255,0.75);
+      margin: 0 0 28px;
+      font-size: 1.05rem;
+    }
+    .search-box-wrap {
+      display: flex;
+      max-width: 640px;
+      margin: 0 auto;
+      gap: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    }
+    #searchInput {
+      flex: 1;
+      padding: 16px 20px;
+      font-size: 1.05rem;
+      border: none;
+      outline: none;
+      font-family: inherit;
+      background: #fff;
+      color: #111;
+    }
+    #searchInput::placeholder { color: #9ca3af; }
+    .search-btn {
+      padding: 16px 24px;
+      background: #F26522;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background .15s;
+    }
+    .search-btn:hover { background: #d9541a; }
+
+    .search-results-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+    .results-status {
+      font-size: 0.95rem;
+      color: #6b7280;
+      margin-bottom: 24px;
+    }
+    .result-card {
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 18px 20px;
+      margin-bottom: 14px;
+      background: #fff;
+      transition: box-shadow .15s, border-color .15s;
+    }
+    .result-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border-color: #1a6435;
+    }
+    .result-title {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #1a6435;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .result-title:hover { text-decoration: underline; }
+    .result-url {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-bottom: 8px;
+    }
+    .result-snippet {
+      font-size: 0.93rem;
+      color: #374151;
+      line-height: 1.55;
+    }
+    .result-snippet mark {
+      background: #fef08a;
+      color: #1a1a1a;
+      border-radius: 2px;
+      padding: 0 1px;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 48px 20px;
+    }
+    .no-results p {
+      color: #6b7280;
+      font-size: 1rem;
+      margin-bottom: 24px;
+    }
+    .suggested-pages {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .suggested-pages a {
+      display: block;
+      padding: 12px 18px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      color: #1a6435;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background .15s;
+    }
+    .suggested-pages a:hover { background: #e5e7eb; }
+
+    .search-cta-bar {
+      background: #eef6f0;
+      border-left: 4px solid #1a6435;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+    }
+    .search-cta-bar a.btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 24px;
+      background: #F26522;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .search-cta-bar a.btn:hover { background: #d9541a; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo">
+      <img src="../images/logo.svg" alt="CraicBet" style="height:40px;">
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="grai-licence-explained">GRAI</a>
+      <a href="betting-sites-ireland">Betting</a>
+      <a href="best-casinos-ireland">Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="fast-payout-casinos">Fast Payouts</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="guides">Guides</a>
+      <a href="/pages/search" class="active">&#128269; Search</a>
+    </nav>
+    <div class="lang-switcher"><a href="../" class="active-lang">EN</a><a href="../ga/">GA</a><a href="../pl/">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="search-hero">
+  <h1>Search CraicBet</h1>
+  <p>Guides, reviews, odds explainers and GRAI licence checks</p>
+  <form id="searchForm" onsubmit="return false;">
+    <div class="search-box-wrap">
+      <input
+        type="search"
+        id="searchInput"
+        name="q"
+        placeholder="e.g. GRAI licence, horse racing, no deposit bonus…"
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Search CraicBet"
+      >
+      <button type="submit" class="search-btn" onclick="runSearch()">Search</button>
+    </div>
+  </form>
+</div>
+
+<div class="search-results-wrap">
+  <div id="resultsStatus" class="results-status" aria-live="polite"></div>
+  <div id="resultsContainer"></div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">
+        <img src="../images/logo.svg" alt="CraicBet" style="height:32px;">
+      </div>
+      <p>CraicBet is Ireland's independent betting &amp; casino guide. Honest, transparent, always up to date.</p>
+      <div class="age-badge">18+</div>
+      <div class="social-row" style="display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0"><a href="https://www.youtube.com/@CraicBet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">YouTube</a><a href="https://x.com/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">X</a><a href="https://t.me/Craicbet" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:5px 12px;font-size:13px;color:#dfe9e2;text-decoration:none">Telegram</a></div>
+    </div>
+    <div class="footer-col">
+      <h4>Betting</h4>
+      <a href="betting-sites-ireland">Betting Sites Ireland</a>
+      <a href="grai-licensed-betting-sites-ireland">GRAI Licensed Bookmakers</a>
+      <a href="free-bets-ireland">Free Bets</a>
+      <a href="horse-racing-betting-ireland">Horse Racing</a>
+      <a href="gaa-betting-ireland">GAA Betting</a>
+      <a href="football-betting-ireland">Football Betting</a>
+      <a href="each-way-betting-guide">Each-Way Guide</a>
+      <a href="betting-apps-ireland">Betting Apps</a>
+    </div>
+    <div class="footer-col">
+      <h4>Casino Guides</h4>
+      <a href="best-casinos-ireland">Best Casinos Ireland</a>
+      <a href="casino-bonuses-ireland">Casino Bonuses</a>
+      <a href="fast-payout-casinos">Fast Payout Casinos</a>
+      <a href="no-deposit-bonus">No Deposit Bonuses</a>
+      <a href="revolut-casinos">Revolut Casinos</a>
+    </div>
+    <div class="footer-col">
+      <h4>GRAI Guides</h4>
+      <a href="grai-licence-explained">GRAI Licence Explained</a>
+      <a href="grai-complaints-ireland">GRAI Complaints</a>
+      <a href="grai-licensed-betting-sites-ireland">Licensed Betting Sites</a>
+      <a href="responsible-gambling">Responsible Gambling</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about">About CraicBet</a>
+      <a href="how-we-review">How We Review</a>
+      <a href="contact">Contact Us</a>
+      <a href="privacy">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      &#9888;&#65039; Gambling can be addictive. Please play responsibly. 18+ only.
+      Contact <strong>Gambling Awareness Trust</strong> at <strong>1800 753 753</strong> or visit
+      <a href="https://www.gamblingcare.ie" style="color:#dfe9e2;" target="_blank" rel="noopener">gamblingcare.ie</a>.
+    </p>
+    <p>&copy; 2026 CraicBet.com &bull; All rights reserved &bull; Independent review site. Affiliate commissions may apply.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var index = null;
+  var indexLoading = false;
+  var pendingQuery = null;
+
+  var POPULAR_PAGES = [
+    { title: 'Betting Sites Ireland', url: '/pages/betting-sites-ireland' },
+    { title: 'GRAI Licence Explained', url: '/pages/grai-licence-explained' },
+    { title: 'Best Casinos Ireland', url: '/pages/best-casinos-ireland' },
+    { title: 'Free Bets Ireland', url: '/pages/free-bets-ireland' },
+    { title: 'Casino Bonuses Ireland', url: '/pages/casino-bonuses-ireland' },
+  ];
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  function normalise(s) {
+    return String(s).toLowerCase().replace(/[^a-z0-9\s]/g, ' ').replace(/\s+/g, ' ').trim();
+  }
+
+  function tokenise(s) {
+    return normalise(s).split(' ').filter(function (w) { return w.length > 1; });
+  }
+
+  function scoreEntry(entry, tokens) {
+    var titleN = normalise(entry.title || '');
+    var h1N    = normalise(entry.h1 || '');
+    var descN  = normalise(entry.description || '');
+    var textN  = normalise(entry.text || '');
+    var urlN   = normalise(entry.url || '');
+
+    var score = 0;
+    for (var i = 0; i < tokens.length; i++) {
+      var t = tokens[i];
+      // Exact word boundary match scores higher than substring
+      var titleExact = titleN.indexOf(t) !== -1;
+      var h1Exact    = h1N.indexOf(t) !== -1;
+      var descExact  = descN.indexOf(t) !== -1;
+      var textExact  = textN.indexOf(t) !== -1;
+      var urlExact   = urlN.indexOf(t) !== -1;
+
+      if (titleExact) score += 10;
+      if (h1Exact)    score += 8;
+      if (descExact)  score += 5;
+      if (textExact)  score += 2;
+      if (urlExact)   score += 3;
+
+      // Fuzzy: partial token match (at least 4 chars, check prefix)
+      if (t.length >= 4) {
+        var partial = t.slice(0, Math.max(4, Math.floor(t.length * 0.7)));
+        if (!titleExact && titleN.indexOf(partial) !== -1) score += 4;
+        if (!h1Exact    && h1N.indexOf(partial) !== -1)    score += 3;
+        if (!descExact  && descN.indexOf(partial) !== -1)  score += 2;
+        if (!textExact  && textN.indexOf(partial) !== -1)  score += 1;
+      }
+    }
+    return score;
+  }
+
+  function highlightTerms(raw, tokens) {
+    if (!raw) return '';
+    var escaped = esc(raw);
+    tokens.forEach(function (t) {
+      if (t.length < 2) return;
+      var rx = new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      escaped = escaped.replace(rx, '<mark>$1</mark>');
+    });
+    return escaped;
+  }
+
+  function snippet(entry, tokens) {
+    // Prefer description; fall back to text
+    var src = entry.description || entry.text || '';
+    // Try to find a window containing a matched token
+    var lower = src.toLowerCase();
+    var best = -1;
+    for (var i = 0; i < tokens.length; i++) {
+      var idx = lower.indexOf(tokens[i]);
+      if (idx !== -1 && (best === -1 || idx < best)) best = idx;
+    }
+    var excerpt;
+    if (best > 60) {
+      excerpt = '…' + src.slice(Math.max(0, best - 40), best + 160);
+    } else {
+      excerpt = src.slice(0, 220);
+    }
+    return highlightTerms(excerpt, tokens);
+  }
+
+  function renderNoResults(query) {
+    var html = '<div class="no-results">'
+      + '<p>No results for <strong>' + esc(query) + '</strong> &mdash; try broader terms or browse popular pages:</p>'
+      + '<ul class="suggested-pages">';
+    POPULAR_PAGES.forEach(function (p) {
+      html += '<li><a href="' + esc(p.url) + '">' + esc(p.title) + '</a></li>';
+    });
+    html += '</ul></div>';
+    return html;
+  }
+
+  function renderResults(results, tokens) {
+    var html = '<div class="search-cta-bar">'
+      + '<strong>Our recommended GRAI-licensed bookmaker (licence No. GRAI-0191-RB-26-0001):</strong><br>'
+      + '<a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn">Visit the GRAI-Licensed Bookmaker &rarr;</a>'
+      + '</div>';
+
+    results.forEach(function (entry) {
+      var titleDisplay = esc(entry.title || entry.h1 || entry.url);
+      html += '<div class="result-card">'
+        + '<a class="result-title" href="' + esc(entry.url) + '">' + titleDisplay + '</a>'
+        + '<div class="result-url">craicbet.com' + esc(entry.url) + '</div>'
+        + '<div class="result-snippet">' + snippet(entry, tokens) + '</div>'
+        + '</div>';
+    });
+    return html;
+  }
+
+  function doSearch(query) {
+    if (!index) return;
+    var q = query.trim();
+    var statusEl    = document.getElementById('resultsStatus');
+    var containerEl = document.getElementById('resultsContainer');
+
+    if (!q) {
+      statusEl.textContent = '';
+      containerEl.innerHTML = '';
+      return;
+    }
+
+    var tokens = tokenise(q);
+    if (!tokens.length) {
+      statusEl.textContent = '';
+      containerEl.innerHTML = renderNoResults(q);
+      return;
+    }
+
+    var scored = [];
+    for (var i = 0; i < index.length; i++) {
+      var s = scoreEntry(index[i], tokens);
+      if (s > 0) scored.push({ entry: index[i], score: s });
+    }
+    scored.sort(function (a, b) { return b.score - a.score; });
+    var top = scored.slice(0, 20).map(function (x) { return x.entry; });
+
+    if (top.length === 0) {
+      statusEl.textContent = '';
+      containerEl.innerHTML = renderNoResults(q);
+      return;
+    }
+
+    statusEl.textContent = top.length + ' result' + (top.length !== 1 ? 's' : '') + ' for “' + q + '”';
+    containerEl.innerHTML = renderResults(top, tokens);
+  }
+
+  function loadIndex(callback) {
+    if (index) { callback(); return; }
+    if (indexLoading) { pendingQuery = callback; return; }
+    indexLoading = true;
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/pages/search-index.json', true);
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        try {
+          index = JSON.parse(xhr.responseText);
+        } catch (e) {
+          document.getElementById('resultsStatus').textContent = 'Search index failed to load.';
+          return;
+        }
+      }
+      indexLoading = false;
+      callback();
+      if (pendingQuery) { pendingQuery(); pendingQuery = null; }
+    };
+    xhr.onerror = function () {
+      document.getElementById('resultsStatus').textContent = 'Could not load search index. Please try again.';
+      indexLoading = false;
+    };
+    xhr.send();
+  }
+
+  function runSearch() {
+    var q = document.getElementById('searchInput').value;
+    // Update URL without reload
+    var newUrl = '/pages/search' + (q ? '?q=' + encodeURIComponent(q) : '');
+    history.replaceState(null, '', newUrl);
+    loadIndex(function () { doSearch(q); });
+  }
+
+  // Expose for inline onclick
+  window.runSearch = runSearch;
+
+  // Wire up form
+  document.getElementById('searchInput').addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') runSearch();
+  });
+  document.getElementById('searchInput').addEventListener('input', function () {
+    // Live search after short debounce
+    clearTimeout(this._dbt);
+    var self = this;
+    this._dbt = setTimeout(function () {
+      loadIndex(function () { doSearch(self.value); });
+    }, 250);
+  });
+
+  // On load: read ?q= and auto-search
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var q = params.get('q') || '';
+    if (q) {
+      document.getElementById('searchInput').value = q;
+      loadIndex(function () { doSearch(q); });
+    } else {
+      document.getElementById('searchInput').focus();
+    }
+  })();
+})();
+</script>
+
+<script>
+document.querySelector('.burger')?.addEventListener('click', () => {
+  document.getElementById('mainNav').classList.toggle('open');
+});
+</script>
+</body>
+</html>
