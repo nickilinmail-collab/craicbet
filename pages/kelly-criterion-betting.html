@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelly Criterion Betting 2026: Optimal Stake Sizing Explained | CraicBet</title>
+  <meta name="description" content="Kelly Criterion betting explained — how to calculate optimal stakes, the difference between full Kelly and fractional Kelly, and the limitations for Irish punters.">
+  <meta name="keywords" content="kelly criterion betting, kelly criterion explained, optimal stake sizing, kelly formula betting ireland, fractional kelly betting">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96.png"><link rel="icon" type="image/svg+xml" href="/images/favicon.svg"><link rel="apple-touch-icon" href="/images/favicon-192.png">
+  <link rel="alternate" hreflang="en-IE" href="https://craicbet.com/pages/kelly-criterion-betting">
+  <link rel="alternate" hreflang="x-default" href="https://craicbet.com/pages/kelly-criterion-betting">
+  <link rel="canonical" href="https://craicbet.com/pages/kelly-criterion-betting">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CraicBet">
+  <meta property="og:locale" content="en_IE">
+  <meta property="og:title" content="Kelly Criterion Betting 2026 | CraicBet">
+  <meta property="og:description" content="How to calculate optimal stakes using the Kelly Criterion — full Kelly vs fractional Kelly, limitations and practical use for Irish punters.">
+  <meta property="og:url" content="https://craicbet.com/pages/kelly-criterion-betting">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kelly Criterion Betting 2026 | CraicBet">
+  <meta name="twitter:description" content="How to calculate optimal stakes using the Kelly Criterion for Irish punters.">
+  <meta name="twitter:image" content="https://craicbet.com/images/og-default.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CraicBet",
+    "url": "https://craicbet.com",
+    "areaServed": {"@type": "Country", "name": "Ireland"},
+    "description": "Ireland's independent betting and casino guide — GRAI licence tracking, honest odds and bonus maths, reviews and payout tests.",
+    "inLanguage": ["en-IE", "ga", "pl"]
+  }
+  </script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://craicbet.com/"},{"@type":"ListItem","position":2,"name":"Betting","item":"https://craicbet.com/pages/betting-sites-ireland"},{"@type":"ListItem","position":3,"name":"Betting Calculators","item":"https://craicbet.com/pages/betting-calculators-ireland"},{"@type":"ListItem","position":4,"name":"Kelly Criterion Betting Guide","item":"https://craicbet.com/pages/kelly-criterion-betting"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the Kelly Criterion in betting?","acceptedAnswer":{"@type":"Answer","text":"The Kelly Criterion is a mathematical formula for calculating the optimal fraction of your bankroll to stake on a bet. It was developed by John L. Kelly Jr. at Bell Labs in 1956. The formula is: stake fraction = (bp − q) / b, where b = decimal odds minus 1 (the net odds), p = your estimated probability of winning, and q = 1 − p (probability of losing)."}},{"@type":"Question","name":"What is the difference between full Kelly and fractional Kelly?","acceptedAnswer":{"@type":"Answer","text":"Full Kelly stakes the exact percentage the formula produces. Fractional Kelly (usually half-Kelly or quarter-Kelly) stakes a reduced fraction of that amount — for example, half-Kelly stakes 50% of what full Kelly suggests. Fractional Kelly reduces bankroll volatility at the cost of slightly slower growth, and is preferred by most serious bettors because probability estimates are rarely perfectly accurate."}},{"@type":"Question","name":"Can I use the Kelly Criterion if I don't know the true probability?","acceptedAnswer":{"@type":"Answer","text":"The Kelly formula requires an accurate estimate of the true probability of winning. If your estimate is significantly wrong, the formula can produce stakes that are too large. When uncertain, use a conservative fractional Kelly (quarter-Kelly) or treat the Kelly output as a maximum rather than a target."}}]}</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo">
+      <img src="../images/logo.svg" alt="CraicBet" style="height:40px;">
+    </a>
+    <nav class="nav" id="mainNav">
+      <a href="grai-licence-explained">GRAI</a>
+      <a href="betting-sites-ireland" class="active">Betting</a>
+      <a href="best-casinos-ireland">Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="fast-payout-casinos">Fast Payouts</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="guides">Guides</a>
+    </nav>
+    <div class="lang-switcher"><a href="../" class="active-lang">EN</a><a href="../ga/">GA</a><a href="../pl/">PL</a></div>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="container">
+  <div class="breadcrumbs">
+     &rsaquo; <a href="betting-sites-ireland">Betting</a> &rsaquo; <a href="betting-calculators-ireland">Betting Calculators</a> &rsaquo; Kelly Criterion Guide
+  </div>
+</div>
+
+<article class="article" style="max-width:860px;">
+<div class="article-header">
+  <span class="section-label">Updated November 2026</span>
+  <h1>The Kelly Criterion in Betting: How to Calculate Optimal Stakes</h1>
+  <div class="article-meta">
+    <span>&#128197; Updated 4 November 2026</span>
+    <span>&#9201; 8 min read</span>
+  </div>
+</div>
+
+<div class="article-content">
+
+<p>The Kelly Criterion is the most mathematically rigorous staking method available to punters. It answers a specific question: given your edge on a bet and the odds available, what fraction of your bankroll should you stake to maximise long-run growth while avoiding ruin? This guide explains the formula, how to apply it in practice, and when a modified version — fractional Kelly — is a safer choice.</p>
+
+<h2>What Is the Kelly Criterion?</h2>
+
+<p>The Kelly Criterion was developed by John L. Kelly Jr. at Bell Labs in 1956. It was originally designed for signal processing, but its application to gambling and investment decisions is now well-established. The core insight is that there is an optimal fraction of your bankroll to bet — too little and you grow too slowly; too much and you risk catastrophic drawdowns.</p>
+
+<p>The formula produces the percentage of your bankroll to stake. If you have a €500 bankroll and the formula produces 5%, you stake €25 on that bet. After the result, you recalculate based on your new bankroll before the next bet.</p>
+
+<p>The Kelly Criterion only applies when you believe you have an <em>edge</em> — that is, when the true probability of winning is higher than the probability implied by the bookmaker's odds. It has no value at all when you don't have an edge, because the formula will tell you to stake zero (or nothing, if the bet is negative expected value).</p>
+
+<h2>How to Apply the Formula</h2>
+
+<p>The Kelly formula is:</p>
+
+<div style="background:#f9fdf9;border:1px solid #c8e6d2;border-radius:10px;padding:18px 20px;margin:28px 0;font-family:monospace;font-size:16px;text-align:center">
+  <strong>f* = (bp − q) / b</strong><br><br>
+  <span style="font-family:Inter,sans-serif;font-size:14px;color:#4a6a54">
+    f* = fraction of bankroll to stake<br>
+    b = decimal odds − 1 (net odds)<br>
+    p = your estimated probability of winning<br>
+    q = 1 − p (probability of losing)
+  </span>
+</div>
+
+<p><strong>Worked example:</strong> You believe a football team has a 55% chance of winning (p = 0.55). The bookmaker is offering decimal odds of 2.10 (net odds b = 1.10). Your estimated probability of losing is q = 0.45.</p>
+
+<p style="text-align:center;font-size:16px;margin:16px 0">f* = (1.10 × 0.55 − 0.45) / 1.10 = (0.605 − 0.45) / 1.10 = 0.155 / 1.10 = <strong>0.141 (14.1%)</strong></p>
+
+<p>Full Kelly says to stake 14.1% of your bankroll. On a €500 bankroll that is €70.50 on this single bet. Use the <a href="kelly-criterion-calculator">Kelly Criterion Calculator</a> to perform this calculation instantly — just enter your estimated win probability and the decimal odds.</p>
+
+<p>If the formula produces a negative number, the bet has negative expected value. Do not place it.</p>
+
+<h2>Full Kelly vs Fractional Kelly</h2>
+
+<p>Full Kelly maximises the long-run geometric growth of your bankroll — but it comes with considerable volatility. Runs of losses, even at positive expected value, can cause significant bankroll drawdowns under full Kelly. Many serious bettors use fractional Kelly to reduce this risk.</p>
+
+<p><strong>Half-Kelly</strong> stakes 50% of the full Kelly amount. In the example above, the half-Kelly stake would be 7.05% of bankroll instead of 14.1%. Half-Kelly grows the bankroll approximately 75% as fast as full Kelly in theoretical long-run models, but reduces the worst-case drawdown substantially.</p>
+
+<p><strong>Quarter-Kelly</strong> stakes 25% of the full Kelly amount. This is a conservative choice, often used when probability estimates carry significant uncertainty. It grows more slowly but protects the bankroll through bad runs and estimation errors.</p>
+
+<table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:15px">
+  <thead>
+    <tr style="background:#0A2E14;color:#fff">
+      <th style="padding:10px 14px;text-align:left">Staking Method</th>
+      <th style="padding:10px 14px;text-align:left">Stake (from example)</th>
+      <th style="padding:10px 14px;text-align:left">Growth Rate</th>
+      <th style="padding:10px 14px;text-align:left">Drawdown Risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#f9fdf9">
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">Full Kelly</td>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">14.1%</td>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">Maximum</td>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">High</td>
+    </tr>
+    <tr>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">Half-Kelly</td>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">7.05%</td>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">~75% of max</td>
+      <td style="padding:9px 14px;border-bottom:1px solid #d4e8db">Moderate</td>
+    </tr>
+    <tr style="background:#f9fdf9">
+      <td style="padding:9px 14px">Quarter-Kelly</td>
+      <td style="padding:9px 14px">3.5%</td>
+      <td style="padding:9px 14px">~56% of max</td>
+      <td style="padding:9px 14px">Low</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For most recreational punters who bet intermittently and cannot constantly recalculate bankroll fractions, half-Kelly is the most practical choice — it retains much of the theoretical growth advantage while keeping individual stakes at a manageable level.</p>
+
+<h2>Limitations of Kelly Criterion Betting</h2>
+
+<p>The Kelly Criterion has real limitations that prevent it from being a simple system to follow blindly.</p>
+
+<p><strong>Your probability estimate must be accurate.</strong> The formula's output is only as good as your estimate of p (the true probability of winning). If you believe a team has a 55% chance of winning but the real probability is 48%, the formula is working from wrong inputs. Overconfident probability estimates are the most common failure mode — and they produce stakes that are too large.</p>
+
+<p><strong>It assumes independent bets.</strong> If you're placing several bets simultaneously, the Kelly Criterion as described applies to each in isolation. Placing simultaneous correlated bets (e.g. multiple legs of a football card where results may be related) requires a more complex portfolio version of the formula.</p>
+
+<p><strong>Bookmaker account restrictions.</strong> Punters who consistently bet value selections — exactly the population Kelly applies to — frequently find their accounts limited or closed by bookmakers. The optimal staking strategy is of limited use if you can't get the bets on at the expected size.</p>
+
+<p><strong>Emotional difficulty with large stakes.</strong> Full Kelly on a 10% edge at short odds might suggest staking 20–25% of your bankroll on a single bet. Many punters find this psychologically very difficult even when they understand the maths. Fractional Kelly makes the method emotionally sustainable.</p>
+
+<div style="background:#f9fdf9;border:1px solid #c8e6d2;border-radius:10px;padding:18px 20px;margin:28px 0">
+  <strong>Looking for a licensed bookmaker?</strong><br>
+  Ireland's regulated sportsbooks hold a <a href="grai-licence-ireland">GRAI remote betting licence</a>. Check the <a href="grai-licence-register-tracker">GRAI licence register</a> before depositing.
+  <div style="margin-top:12px">
+    <a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn-cta">Our recommended GRAI-licensed bookmaker →</a>
+  </div>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-block">
+  <div class="faq-item">
+    <div class="faq-question">What is the Kelly Criterion in betting?</div>
+    <div class="faq-answer">The Kelly Criterion is a mathematical formula for calculating the optimal fraction of your bankroll to stake on a bet. It was developed by John L. Kelly Jr. at Bell Labs in 1956. The formula is: stake fraction = (bp − q) / b, where b = decimal odds minus 1 (the net odds), p = your estimated probability of winning, and q = 1 − p (probability of losing).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">What is the difference between full Kelly and fractional Kelly?</div>
+    <div class="faq-answer">Full Kelly stakes the exact percentage the formula produces. Fractional Kelly (usually half-Kelly or quarter-Kelly) stakes a reduced fraction of that amount — for example, half-Kelly stakes 50% of what full Kelly suggests. Fractional Kelly reduces bankroll volatility at the cost of slightly slower growth, and is preferred by most serious bettors because probability estimates are rarely perfectly accurate.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">Can I use the Kelly Criterion if I don't know the true probability?</div>
+    <div class="faq-answer">The Kelly formula requires an accurate estimate of the true probability of winning. If your estimate is significantly wrong, the formula can produce stakes that are too large. When uncertain, use a conservative fractional Kelly (quarter-Kelly) or treat the Kelly output as a maximum rather than a target.</div>
+  </div>
+</div>
+
+<div class="rg-block">
+  <strong>18+ only.</strong> Gambling should be fun. If it stops being fun, contact the <strong>Gambling Awareness Trust</strong> free helpline: <strong>1800 753 753</strong> or visit <a href="https://www.gamblingcare.ie" rel="nofollow" target="_blank">gamblingcare.ie</a>.
+</div>
+
+</div>
+<div style="margin:28px 0;padding:16px 20px;background:#fefce8;border-radius:8px;border-left:4px solid #ca8a04">
+<strong style="display:block;margin-bottom:10px;color:#713f12">🧮 Betting Calculators Hub — All 22 Free Tools:</strong>
+<div style="display:flex;flex-wrap:wrap;gap:8px">
+<a href="betting-calculators-ireland" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">All Calculators</a>
+<a href="acca-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Acca Calculator</a>
+<a href="each-way-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Each-Way Calculator</a>
+<a href="lucky-15-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Lucky 15</a>
+<a href="lucky-31-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Lucky 31</a>
+<a href="lucky-63-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Lucky 63</a>
+<a href="yankee-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Yankee</a>
+<a href="trixie-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Trixie</a>
+<a href="patent-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Patent</a>
+<a href="heinz-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Heinz</a>
+<a href="super-heinz-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Super Heinz</a>
+<a href="goliath-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Goliath</a>
+<a href="canadian-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Canadian</a>
+<a href="round-robin-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Round Robin</a>
+<a href="arbitrage-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Arbitrage</a>
+<a href="dutching-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Dutching</a>
+<a href="kelly-criterion-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Kelly Criterion</a>
+<a href="free-bet-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Free Bet</a>
+<a href="cash-out-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Cash Out</a>
+<a href="rule-4-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Rule 4</a>
+<a href="wagering-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Wagering</a>
+<a href="bookmaker-margin-calculator" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Margin</a>
+<a href="how-to-use-betting-calculators" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">How to Use Calculators</a>
+<a href="accumulator-odds-explained" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Acca Odds Explained</a>
+<a href="each-way-terms-explained" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Each-Way Terms</a>
+<a href="kelly-criterion-betting" style="background:#fff;border:1px solid #fde68a;border-radius:4px;padding:5px 10px;font-size:13px;text-decoration:none;color:#92400e">Kelly Criterion Guide</a>
+</div>
+</div>
+
+</article>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Betting</h4>
+      <a href="betting-sites-ireland">Betting Sites Ireland</a>
+      <a href="grai-licensed-bookmakers">GRAI Licensed Bookmakers</a>
+      <a href="free-bets-ireland">Free Bets</a>
+      <a href="horse-racing-betting-ireland">Horse Racing</a>
+      <a href="gaa-betting-guide">GAA Betting</a>
+      <a href="football-betting-ireland">Football Betting</a>
+      <a href="betting-calculators-ireland">Betting Calculators</a>
+      <a href="betting-apps-ireland">Betting Apps</a>
+    </div>
+    <div class="footer-col">
+      <h4>Casino Guides</h4>
+      <a href="best-casinos-ireland">Best Casinos Ireland</a>
+      <a href="casino-bonuses-ireland">Casino Bonuses</a>
+      <a href="fast-payout-casinos">Fast Payout Casinos</a>
+      <a href="no-deposit-bonus">No Deposit Bonuses</a>
+      <a href="revolut-casinos">Revolut Casinos</a>
+    </div>
+    <div class="footer-col">
+      <h4>Game Guides</h4>
+      <a href="slot-reviews">Slot Reviews</a>
+      <a href="live-casino-ireland">Live Casino</a>
+      <a href="rtp-explained">RTP Explained</a>
+      <a href="blackjack-guide">Blackjack Guide</a>
+      <a href="roulette-guide">Roulette Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>About</h4>
+      <a href="about">About CraicBet</a>
+      <a href="how-we-review">How We Review</a>
+      <a href="responsible-gambling">Responsible Gambling</a>
+      <a href="contact">Contact Us</a>
+      <a href="privacy">Privacy Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>
+      &#9888;&#65039; Gambling can be addictive. Please play responsibly. 18+ only.
+      Contact <strong>Gambling Awareness Trust</strong> at 1800 753 753 or visit <strong>gamblingcare.ie</strong>.
+      <br><br>
+      &copy; 2026 CraicBet.com &bull; All rights reserved &bull; Independent review site. Affiliate commissions may apply.
+    <br>CraicBet tracks <a href="grai-licence-register-tracker" style="color:#dfe9e2;">the GRAI licence register</a> daily &mdash; see our <a href="grai-guide" style="color:#dfe9e2;">GRAI guide</a>.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+});
+document.querySelector('.burger')?.addEventListener('click', () => {
+  document.getElementById('mainNav').classList.toggle('open');
+});
+</script>
+<script src="../js/slot-game.js"></script>
+<script src="/js/ui-sound.js"></script>
+</body>
+</html>
