@@ -40,8 +40,8 @@
   <meta name="twitter:title" content="Lucky 15 Calculator - Returns for All 15 Bets | CraicBet">
   <meta name="twitter:description" content="Free Lucky 15 calculator: enter 4 selections, tick the winners, see your exact return across all 15 bets - singles, doubles, trebles and the four-fold.">
   <meta name="twitter:image" content="https://craicbet.com/images/og-default.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://craicbet.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://craicbet.com/pages/guides"}, {"@type": "ListItem", "position": 3, "name": "Credit Card Ban", "item": "https://craicbet.com/pages/credit-card-casino-ban-ireland"}]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does a 1 euro Lucky 15 cost?", "acceptedAnswer": {"@type": "Answer", "text": "15 euro - it is 15 separate bets."}}, {"@type": "Question", "name": "Do I get anything with one winner on a Lucky 15?", "acceptedAnswer": {"@type": "Answer", "text": "Yes - the winning single pays, and many bookmakers add a one-winner bonus."}}, {"@type": "Question", "name": "What is the difference between a Lucky 15 and a Yankee?", "acceptedAnswer": {"@type": "Answer", "text": "A Yankee is the same 4 selections without the singles - 11 bets."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://craicbet.com/"}, {"@type": "ListItem", "position": 2, "name": "Betting", "item": "https://craicbet.com/pages/betting-sites-ireland"}, {"@type": "ListItem", "position": 3, "name": "Lucky 15 Calculator", "item": "https://craicbet.com/pages/lucky-15-calculator"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How do you calculate a Lucky 15?", "acceptedAnswer": {"@type": "Answer", "text": "A Lucky 15 has 15 bets from 4 selections: 4 singles, 6 doubles, 4 trebles and 1 four-fold. For each winning combination, multiply the decimal odds together and multiply by your unit stake. Add up all winning bets to get the total return."}}, {"@type": "Question", "name": "How much does a €1 Lucky 15 cost?", "acceptedAnswer": {"@type": "Answer", "text": "€15 total — it is 15 separate bets at €1 each. A €0.50 unit stake costs €7.50, a €2 unit stake costs €30."}}, {"@type": "Question", "name": "Do I get anything with one winner on a Lucky 15?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The winning single always pays out. Many Irish bookmakers also offer a one-winner bonus, often double odds on the winning selection — check the specific terms."}}, {"@type": "Question", "name": "What is the difference between a Lucky 15 and a Yankee?", "acceptedAnswer": {"@type": "Answer", "text": "A Yankee uses the same 4 selections but has no singles — 11 bets instead of 15. It is cheaper but one winner returns nothing."}}, {"@type": "Question", "name": "How many doubles are in a Lucky 15?", "acceptedAnswer": {"@type": "Answer", "text": "6 doubles — AB, AC, AD, BC, BD, CD. These are all the ways you can choose 2 selections from 4."}}, {"@type": "Question", "name": "What is the formula for a Lucky 15?", "acceptedAnswer": {"@type": "Answer", "text": "C(4,1) = 4 singles + C(4,2) = 6 doubles + C(4,3) = 4 trebles + C(4,4) = 1 four-fold = 15 bets. Use the calculator above to work out returns instantly."}}]}</script>
 </head>
 <body>
 
@@ -114,8 +114,51 @@
  calc();
 })();
 </script>
+<h2>How to Calculate a Lucky 15 — Step by Step</h2>
+<p>A Lucky 15 is built from 4 selections. The name comes from the total number of bets: <strong>4 singles + 6 doubles + 4 trebles + 1 four-fold = 15 bets</strong>. Here is exactly how to calculate the return manually:</p>
+
+<h3>Step 1: List All 15 Bet Combinations</h3>
+<div style="overflow-x:auto;margin:16px 0">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+<thead><tr style="background:#0A2E14;color:#fff"><th style="padding:9px 12px;text-align:left">Type</th><th style="padding:9px 12px">Count</th><th style="padding:9px 12px;text-align:left">Combinations</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #ddd"><td style="padding:8px 12px"><strong>Singles</strong></td><td style="padding:8px 12px;text-align:center">4</td><td style="padding:8px 12px">A, B, C, D</td></tr>
+<tr style="border-bottom:1px solid #ddd"><td style="padding:8px 12px"><strong>Doubles</strong></td><td style="padding:8px 12px;text-align:center">6</td><td style="padding:8px 12px">AB, AC, AD, BC, BD, CD</td></tr>
+<tr style="border-bottom:1px solid #ddd"><td style="padding:8px 12px"><strong>Trebles</strong></td><td style="padding:8px 12px;text-align:center">4</td><td style="padding:8px 12px">ABC, ABD, ACD, BCD</td></tr>
+<tr><td style="padding:8px 12px"><strong>Four-fold</strong></td><td style="padding:8px 12px;text-align:center">1</td><td style="padding:8px 12px">ABCD</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Step 2: Calculate Each Winning Bet</h3>
+<p>For each combination where <strong>all selections won</strong>, multiply the decimal odds together and multiply by the unit stake. For example with €1 stakes and odds A=3.0, B=4.0 (both win), C=2.5, D=5.0 (both lose):</p>
+<ul>
+  <li>Single A: 3.0 × €1 = <strong>€3.00</strong></li>
+  <li>Single B: 4.0 × €1 = <strong>€4.00</strong></li>
+  <li>Double AB: 3.0 × 4.0 × €1 = <strong>€12.00</strong></li>
+  <li>Singles C, D and all combinations containing C or D = €0 (lost)</li>
+</ul>
+<p>Total return: €3 + €4 + €12 = <strong>€19.00</strong> from a €15 outlay (profit €4). The calculator above does all this instantly for any odds.</p>
+
+<h3>Step 3: Check for Bookmaker Bonuses</h3>
+<p>Many Irish bookmakers offer a <strong>one-winner bonus</strong> on Lucky 15 bets — often double odds on the winning single. This can significantly change the value. If the same example above had a one-winner bonus, Single A at 3.0 odds would pay at 6.0 odds (€6 instead of €3), adding €3 to the return. Always check bonus terms before placing.</p>
+
+<h3>Lucky 15 vs Yankee vs Patent — Key Differences</h3>
+<div style="overflow-x:auto;margin:16px 0">
+<table style="width:100%;border-collapse:collapse;font-size:15px">
+<thead><tr style="background:#0A2E14;color:#fff"><th style="padding:9px 12px;text-align:left">Bet type</th><th style="padding:9px 12px">Selections</th><th style="padding:9px 12px">Total bets</th><th style="padding:9px 12px">Singles included?</th><th style="padding:9px 12px">€1 unit costs</th></tr></thead>
+<tbody>
+<tr style="border-bottom:1px solid #ddd"><td style="padding:8px 12px"><strong>Lucky 15</strong></td><td style="padding:8px 12px;text-align:center">4</td><td style="padding:8px 12px;text-align:center">15</td><td style="padding:8px 12px;text-align:center">✅ Yes</td><td style="padding:8px 12px;text-align:center">€15</td></tr>
+<tr style="border-bottom:1px solid #ddd"><td style="padding:8px 12px"><strong>Yankee</strong></td><td style="padding:8px 12px;text-align:center">4</td><td style="padding:8px 12px;text-align:center">11</td><td style="padding:8px 12px;text-align:center">❌ No</td><td style="padding:8px 12px;text-align:center">€11</td></tr>
+<tr style="border-bottom:1px solid #ddd"><td style="padding:8px 12px"><strong>Lucky 31</strong></td><td style="padding:8px 12px;text-align:center">5</td><td style="padding:8px 12px;text-align:center">31</td><td style="padding:8px 12px;text-align:center">✅ Yes</td><td style="padding:8px 12px;text-align:center">€31</td></tr>
+<tr><td style="padding:8px 12px"><strong>Lucky 63</strong></td><td style="padding:8px 12px;text-align:center">6</td><td style="padding:8px 12px;text-align:center">63</td><td style="padding:8px 12px;text-align:center">✅ Yes</td><td style="padding:8px 12px;text-align:center">€63</td></tr>
+</tbody>
+</table>
+</div>
+
 <h2>What a Lucky 15 Actually Is</h2>
-<p>Four selections combined into 15 bets: 4 singles, 6 doubles, 4 trebles and 1 four-fold. A &euro;1 unit stake costs &euro;15 total &mdash; the most common surprise at the till. The singles mean one winner always returns something; the honest flip side is that 15 simultaneous bets carry 15 helpings of margin. Many Irish bookmakers pay a bonus (often double odds) on a one-winner Lucky 15 &mdash; check the terms, it materially changes the value.</p>
+<p>Four selections combined into 15 bets: 4 singles, 6 doubles, 4 trebles and 1 four-fold. A €1 unit stake costs €15 total — the most common surprise at the till. The singles mean one winner always returns something; the honest flip side is that 15 simultaneous bets carry 15 helpings of margin. Many Irish bookmakers pay a bonus (often double odds) on a one-winner Lucky 15 — check the terms, it materially changes the value.</p>
+
 <div style="text-align:center;margin:28px 0"><a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn btn-primary" style="width:auto;padding:14px 40px;">Visit the Irish-Licensed Bookmaker &#8594;</a></div>
 <h2>Frequently Asked Questions</h2>
 <div class="faq-item"><div class="faq-question">How much does a 1 euro Lucky 15 cost?</div><div class="faq-answer"><p>15 euro - it is 15 separate bets: 4 singles, 6 doubles, 4 trebles and 1 four-fold.</p></div></div>
