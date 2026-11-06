@@ -1,0 +1,84 @@
+/* ===== CraicBet UK — British Casino Guide ===== */
+/* Loaded AFTER style.css — overrides colour variables only */
+/* Design: Union Jack theme — Navy / Royal Blue + Red */
+
+:root {
+  /* Primary: Union Jack Red */
+  --emerald: #CF142B;        /* primary CTA / accent (was orange) */
+  --emerald-dark: #A80F22;   /* hover state */
+  --emerald-light: #FFF0F2;  /* light tint */
+  /* Secondary: Royal Blue */
+  --gold: #003399;           /* links, secondary accent */
+  --gold-dark: #002277;
+  /* Backgrounds: Navy Blue */
+  --dark: #0D1B3E;           /* header / footer background */
+  --dark-card: #132252;
+  --dark-surface: #1A2E6A;
+  /* Grays stay same */
+  --gray-100: #F5F7FA;
+  --gray-200: #E0E5F2;
+  --gray-300: #A8B4D0;
+  /* Shadows: blue-tinted */
+  --shadow: 0 4px 20px rgba(13, 27, 62, 0.12);
+  --shadow-hover: 0 8px 32px rgba(207, 20, 43, 0.20);
+}
+
+/* UK-specific header accent line */
+.header::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, #CF142B 33%, #FFFFFF 33%, #FFFFFF 67%, #CF142B 67%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* UK badge on logo */
+.uk-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  background: #CF142B;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* CTA button — red for UK */
+.btn-cta, .cta-btn, [class*="cta"] {
+  background: var(--emerald) !important;
+}
+
+/* Info box — blue tint for UK */
+.info-box {
+  border-left-color: #003399;
+  background: #f0f4ff;
+}
+
+/* Quick-summary box — navy */
+.quick-summary {
+  border-color: #003399;
+  background: #f0f4ff;
+}
+
+/* UK version — active lang indicator */
+.lang-switcher .active-lang {
+  background: #CF142B;
+  color: #fff;
+}
+
+/* Geo banner */
+.geo-banner {
+  background: #0D1B3E;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.geo-banner a { color: #CF142B; font-weight: 700; text-decoration: underline; }
