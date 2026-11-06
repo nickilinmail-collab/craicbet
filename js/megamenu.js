@@ -1,15 +1,29 @@
-/* CraicBet mobile mega menu — shared across all pages.
-   Builds the two-column fullscreen menu (same design as the homepage) and binds it to .burger.
+/* CraicBet menu — shared across all pages (mobile + desktop burger).
+   Light accordion panel: outline icons, dark pill for the open section, sub-links on a thin rail.
    Links are absolute so the script works at any depth. */
 (function () {
-  if (document.getElementById('megaMenu')) return; // homepage has its own markup
   var lang = (document.documentElement.getAttribute('lang') || 'en').slice(0, 2);
+  var I = {
+    home: '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
+    grai: '<path d="M3 21h18M5 21V10m14 11V10M3 10l9-6 9 6M9 21v-7h6v7"/>',
+    bet: '<circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18M3.5 9.5l5 1.5-1 5M20.5 9.5l-5 1.5 1 5M12 12l-3.5-1M12 12l3.5-1M12 12v4"/>',
+    casino: '<rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8" cy="8" r="1.2"/><circle cx="16" cy="8" r="1.2"/><circle cx="12" cy="12" r="1.2"/><circle cx="8" cy="16" r="1.2"/><circle cx="16" cy="16" r="1.2"/>',
+    gift: '<rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8v13M12 8s-1-4-4-4-2 4 4 4m0 0s1-4 4-4 2 4-4 4"/>',
+    slots: '<rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 9v6m4-6v6m4-6v6M3 12h18"/>',
+    guide: '<path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/>',
+    news: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/>',
+    fast: '<path d="M13 2L4 14h7l-1 8 9-12h-7z"/>',
+    folder: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+    search: '<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>',
+    spark: '<path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/>',
+    chev: '<path d="M6 9l6 6 6-6"/>'
+  };
+  var svg = function (k, s) { return '<svg class="mm-ic" width="' + (s || 22) + '" height="' + (s || 22) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">' + I[k] + '</svg>'; };
 
   var MENUS = {
-    en: {
-      search: ['🔍 Search', '/pages/search'],
+    en: { title: 'Menu', home: ['Home', '/'], search: ['Search the site', '/pages/search'], footer: '18+ · Gamble responsibly · 1800 753 753',
       items: [
-        ['🏛️', 'GRAI', 'GRAI Licensing', [
+        ['grai', 'GRAI', [
           ['GRAI Licence Explained', '/pages/grai-licence-explained'],
           ['GRAI-Licensed Bookmakers', '/pages/grai-licensed-bookmakers-ireland'],
           ['Licence Checker', '/pages/grai-licence-checker'],
@@ -17,7 +31,7 @@
           ['GRAI Complaints', '/pages/grai-complaints-ireland'],
           ['Is Gambling Legal?', '/pages/is-online-gambling-legal-ireland'],
           ['Unlicensed Sites Warning', '/pages/unlicensed-betting-sites-ireland']]],
-        ['⚽', 'Betting', 'Sports Betting', [
+        ['bet', 'Betting', [
           ['Best Betting Sites', '/pages/betting-sites-ireland'],
           ['Betting Apps', '/pages/betting-apps-ireland'],
           ['Free Bets Ireland', '/pages/free-bets-ireland'],
@@ -25,120 +39,137 @@
           ['GAA Betting', '/pages/gaa-betting-ireland'],
           ['Football Betting', '/pages/football-betting-ireland'],
           ['Acca Calculator', '/pages/accumulator-calculator-ireland']]],
-        ['🎰', 'Casinos', 'Online Casinos', [
+        ['casino', 'Casinos', [
           ['Best Casinos Ireland', '/pages/best-casinos-ireland'],
           ['Fast Payout Casinos', '/pages/fast-payout-casinos'],
           ['Revolut Casinos', '/pages/revolut-casinos'],
           ['Google Pay Casinos', '/pages/google-pay-casino-ireland'],
           ['Trustly Casinos', '/pages/trustly-casino-ireland'],
           ['Bank Blocks Guide', '/pages/irish-banks-blocking-casino-deposits']]],
-        ['🎁', 'Bonuses', 'Bonuses & Offers', [
+        ['gift', 'Bonuses', [
           ['Casino Bonuses', '/pages/casino-bonuses-ireland'],
           ['No Deposit Bonuses', '/pages/no-deposit-bonus'],
           ['Wagering Explained', '/pages/wagering-requirements-explained'],
-          ['Wagering Calculator', '/pages/wagering-calculator'],
-          ['Welcome Bonuses', '/pages/casino-bonuses-ireland#welcome']]],
-        ['🎲', 'Slots', 'Slots', [
+          ['Wagering Calculator', '/pages/wagering-calculator']]],
+        ['slots', 'Slots', [
           ['All Slot Reviews', '/pages/slot-reviews'],
           ['Gates of Olympus', '/pages/slots/gates-of-olympus'],
           ['Sweet Bonanza', '/pages/slots/sweet-bonanza'],
           ['Big Bass Bonanza', '/pages/slots/big-bass-bonanza'],
           ['Book of Dead', '/pages/slots/book-of-dead'],
           ['What Is RTP?', '/pages/rtp-explained']]],
-        ['📖', 'Guides', 'Guides', [
+        ['fast', 'Fast Payouts', [
+          ['Fast Payout Casinos', '/pages/fast-payout-casinos'],
+          ['Revolut Casinos', '/pages/revolut-casinos']]],
+        ['guide', 'Guides', [
           ['All Guides', '/pages/guides'],
-          ['Latest News', '/pages/news/'],
           ['Responsible Gambling', '/pages/responsible-gambling'],
           ['Gambling Tax Ireland', '/pages/gambling-tax-ireland'],
           ['Each-Way Betting', '/pages/each-way-betting-guide'],
           ['Offshore Casinos', '/pages/offshore-casinos-ireland'],
-          ['About CraicBet', '/pages/about']]]
-      ]
-    },
-    ga: {
-      search: ['🔍 Cuardach', '/pages/search'],
+          ['About CraicBet', '/pages/about']]],
+        ['news', 'News', [
+          ['Latest news', '/pages/news/'],
+          ['GRAI register tracker', '/pages/grai-licence-register-tracker']]]
+      ] },
+    ga: { title: 'Roghchlár', home: ['Baile', '/ga/'], search: ['Cuardach', '/pages/search'], footer: '18+ · Imir go freagrach · 1800 753 753',
       items: [
-        ['🏛️', 'GRAI', 'Ceadúnas GRAI', [['Ceadúnas GRAI in Éirinn', '/ga/ceadunas-grai-eire'], ['Geallghlacadóirí le ceadúnas GRAI', '/ga/buimeadoiri-le-ceadunas-grai']]],
-        ['⚽', 'Gealltóireacht', 'Gealltóireacht', [['Geallghlacadóirí in Éirinn', '/ga/geallghlacadoiri-eireann']]],
-        ['🎰', 'Caisíneonna', 'Caisíneonna', [['Na caisíneonna is fearr', '/ga/na-caisinoenna-is-fearr'], ['Caisíneo beo', '/ga/caisineo-beo'], ['Léirmheasanna', '/ga/leirmheasanna-caisineo']]],
-        ['🎁', 'Bónais', 'Bónais', [['Bónais caisíneo', '/ga/bonais-caisineo']]],
-        ['🎲', 'Sliotáin', 'Sliotáin', [['Sliotáin ar líne', '/ga/spinnteanna-saor-in-aisce']]],
-        ['⚡', 'Íocaíochtaí', 'Íocaíochtaí Tapa', [['Íocaíochtaí tapa', '/ga/iocaiochtai-tapa']]],
-        ['📖', 'Treoracha', 'Treoracha', [['Gach treoir', '/ga/treoracha'], ['English', '/']]]
-      ]
-    },
-    pl: {
-      search: ['🔍 Szukaj', '/pages/search'],
+        ['grai', 'GRAI', [['Ceadúnas GRAI in Éirinn', '/ga/ceadunas-grai-eire'], ['Geallghlacadóirí le ceadúnas GRAI', '/ga/buimeadoiri-le-ceadunas-grai']]],
+        ['bet', 'Gealltóireacht', [['Geallghlacadóirí in Éirinn', '/ga/geallghlacadoiri-eireann']]],
+        ['casino', 'Caisíneonna', [['Na caisíneonna is fearr', '/ga/na-caisinoenna-is-fearr'], ['Caisíneo beo', '/ga/caisineo-beo'], ['Léirmheasanna', '/ga/leirmheasanna-caisineo']]],
+        ['gift', 'Bónais', [['Bónais caisíneo', '/ga/bonais-caisineo']]],
+        ['slots', 'Sliotáin', [['Sliotáin ar líne', '/ga/spinnteanna-saor-in-aisce']]],
+        ['fast', 'Íocaíochtaí Tapa', [['Íocaíochtaí tapa', '/ga/iocaiochtai-tapa']]],
+        ['guide', 'Treoracha', [['Gach treoir', '/ga/treoracha'], ['English', '/']]]
+      ] },
+    pl: { title: 'Menu', home: ['Główna', '/pl/'], search: ['Szukaj', '/pages/search'], footer: '18+ · Graj odpowiedzialnie · 1800 753 753',
       items: [
-        ['🏛️', 'GRAI', 'Licencja GRAI', [['Licencja GRAI w Irlandii', '/pl/licencja-grai-irlandia'], ['Bukmacherzy z licencją GRAI', '/pl/bukmacherzy-z-licencja-grai'], ['Licencja bukmacherska GRAI', '/pl/licencja-bukmacherska-grai-irlandia']]],
-        ['⚽', 'Zakłady', 'Zakłady bukmacherskie', [['Zakłady bukmacherskie w Irlandii', '/pl/zaklady-bukmacherskie-irlandia']]],
-        ['🎰', 'Kasyna', 'Kasyna online', [['Najlepsze kasyna', '/pl/najlepsze-kasyna'], ['Kasyno na żywo', '/pl/kasyno-na-zywo'], ['Recenzje kasyn', '/pl/recenzje-kasyn']]],
-        ['🎁', 'Bonusy', 'Bonusy', [['Bonusy kasynowe', '/pl/bonusy-kasynowe']]],
-        ['🎲', 'Sloty', 'Sloty', [['Darmowe spiny', '/pl/darmowe-spiny']]],
-        ['⚡', 'Wypłaty', 'Szybkie wypłaty', [['Szybkie wypłaty', '/pl/szybkie-wyplaty']]],
-        ['📖', 'Poradniki', 'Poradniki', [['Wszystkie poradniki', '/pl/poradniki'], ['English', '/']]]
-      ]
-    }
+        ['grai', 'GRAI', [['Licencja GRAI w Irlandii', '/pl/licencja-grai-irlandia'], ['Bukmacherzy z licencją GRAI', '/pl/bukmacherzy-z-licencja-grai'], ['Licencja bukmacherska GRAI', '/pl/licencja-bukmacherska-grai-irlandia']]],
+        ['bet', 'Zakłady', [['Zakłady bukmacherskie w Irlandii', '/pl/zaklady-bukmacherskie-irlandia']]],
+        ['casino', 'Kasyna', [['Najlepsze kasyna', '/pl/najlepsze-kasyna'], ['Kasyno na żywo', '/pl/kasyno-na-zywo'], ['Recenzje kasyn', '/pl/recenzje-kasyn']]],
+        ['gift', 'Bonusy', [['Bonusy kasynowe', '/pl/bonusy-kasynowe']]],
+        ['slots', 'Sloty', [['Darmowe spiny', '/pl/darmowe-spiny']]],
+        ['fast', 'Szybkie Wypłaty', [['Szybkie wypłaty', '/pl/szybkie-wyplaty']]],
+        ['guide', 'Poradniki', [['Wszystkie poradniki', '/pl/poradniki'], ['English', '/']]]
+      ] }
   };
   var M = MENUS[lang] || MENUS.en;
 
-  // Which top item matches the current page (for initial highlight)
-  var path = location.pathname;
-  var activeIdx = 0;
+  var path = location.pathname.replace(/\.html$/, '');
+  var openIdx = -1, curHref = '';
   M.items.forEach(function (it, i) {
-    if (it[3].some(function (l) { return l[1].split('#')[0] !== '/' && path.indexOf(l[1].split('#')[0]) === 0; })) activeIdx = i;
+    it[2].forEach(function (l) { var h = l[1].split('#')[0]; if (h !== '/' && path.indexOf(h) === 0 && h.length > curHref.length) { curHref = h; openIdx = i; } });
   });
+  if (openIdx < 0) openIdx = 0;
 
-  var css = '#megaMenu{position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.6);display:none}' +
-    '#megaMenu .mm-inner{display:flex;width:min(680px,100vw);height:100%;margin-left:auto;background:#0d2518;box-shadow:-4px 0 40px rgba(0,0,0,.5)}' +
-    '#megaMenu .mm-left{width:200px;flex-shrink:0;background:rgba(0,0,0,.3);display:flex;flex-direction:column;border-right:1px solid rgba(255,255,255,.08);padding:16px 0}' +
-    '#megaMenu .mm-close{align-self:flex-end;margin:0 12px 12px;background:none;border:none;color:rgba(255,255,255,.5);font-size:1.3rem;cursor:pointer;line-height:1}' +
-    '#megaMenu ul{list-style:none;margin:0;padding:0;flex:1}' +
-    '#megaMenu .mm-item{display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid transparent;color:rgba(255,255,255,.65);font-size:.95rem;font-weight:500}' +
-    '#megaMenu .mm-item.active{border-left-color:#F26522;background:rgba(255,255,255,.07);color:#fff}' +
-    '#megaMenu .mm-item .mm-arrow{margin-left:auto;opacity:.5}' +
-    '#megaMenu .mm-search{display:block;margin:12px 16px 0;padding:10px;background:rgba(242,101,34,.15);border:1px solid rgba(242,101,34,.4);border-radius:8px;color:#F26522;text-align:center;font-size:.9rem;font-weight:600;text-decoration:none}' +
-    '#megaMenu .mm-right{flex:1;padding:48px 24px 24px;overflow-y:auto}' +
-    '#megaMenu .mm-sub{display:none}#megaMenu .mm-sub.active{display:block}' +
-    '#megaMenu .mm-title{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px}' +
-    '#megaMenu .mm-sub a{display:block;padding:11px 0;color:rgba(255,255,255,.75);text-decoration:none;font-size:.97rem;font-weight:500;border-bottom:1px solid rgba(255,255,255,.07);transition:color .15s,padding-left .15s}' +
-    '#megaMenu .mm-sub a:hover{color:#fff;padding-left:6px}' +
-    '@media (max-width:480px){#megaMenu .mm-left{width:150px}#megaMenu .mm-item{padding:12px 10px;font-size:.88rem}#megaMenu .mm-right{padding:48px 16px 16px}}';
+  var css = '#megaMenu{position:fixed;inset:0;z-index:10000;background:rgba(10,20,14,.45);display:none;backdrop-filter:blur(2px)}' +
+    '#megaMenu *{box-sizing:border-box}' +
+    '#megaMenu .mm-panel{position:absolute;top:0;right:0;height:100%;width:min(400px,100vw);background:linear-gradient(180deg,#ffffff,#f1f2f4);color:#111;display:flex;flex-direction:column;box-shadow:-8px 0 40px rgba(0,0,0,.25);transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);font-family:Inter,system-ui,sans-serif}' +
+    '#megaMenu.open .mm-panel{transform:none}' +
+    '#megaMenu .mm-head{display:flex;align-items:center;gap:12px;padding:16px 22px;font-size:1.15rem;font-weight:700;background:#0A2E14;color:#fff}' +
+    '#megaMenu .mm-head img{height:38px;width:auto}' +
+    '#megaMenu .mm-head .mm-ic{width:26px;height:26px;color:#111}' +
+    '#megaMenu .mm-close{margin-left:auto;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.1);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}' +
+    '#megaMenu .mm-rule{height:8px}' +
+    '#megaMenu .mm-list{flex:1;overflow-y:auto;padding:4px 14px 14px;-webkit-overflow-scrolling:touch}' +
+    '#megaMenu .mm-row{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:999px;color:#1a1a1a;text-decoration:none;font-size:1.02rem;font-weight:500;cursor:pointer;user-select:none;transition:background .15s}' +
+    '#megaMenu .mm-row:hover{background:#eef0f2}' +
+    '#megaMenu .mm-row .mm-ic{color:#1a1a1a;flex-shrink:0}' +
+    '#megaMenu .mm-row .mm-n{margin-left:auto;min-width:26px;height:24px;border-radius:7px;background:#F26522;color:#fff;font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 7px}' +
+    '#megaMenu .mm-row .mm-ch{width:18px;height:18px;color:#777;transition:transform .2s;margin-left:6px}' +
+    '#megaMenu .mm-sec.open>.mm-row .mm-ch{transform:rotate(180deg);color:#fff}' +
+    '#megaMenu .mm-sec{margin:2px 0}' +
+    '#megaMenu .mm-sec.open>.mm-row{background:#111;color:#fff}' +
+    '#megaMenu .mm-sec.open>.mm-row .mm-ic{color:#fff}' +
+    '#megaMenu .mm-sec.open>.mm-row .mm-n{background:#fff;color:#111}' +
+    '#megaMenu .mm-sub{display:none;position:relative;margin:6px 0 8px 32px;padding-left:16px}' +
+    '#megaMenu .mm-sub:before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1.5px;background:#d6d8dc}' +
+    '#megaMenu .mm-sec.open>.mm-sub{display:block}' +
+    '#megaMenu .mm-sub a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:999px;color:#222;text-decoration:none;font-size:.98rem;font-weight:500;transition:background .15s}' +
+    '#megaMenu .mm-sub a .mm-ic{width:20px;height:20px;color:#222}' +
+    '#megaMenu .mm-sub a:hover{background:#eef0f2}' +
+    '#megaMenu .mm-sub a.cur{background:#e8e9ec;font-weight:600}' +
+    '#megaMenu .mm-foot{padding:12px 22px 18px;border-top:1px solid rgba(0,0,0,.08)}' +
+    '#megaMenu .mm-search{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;background:#111;color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}' +
+    '#megaMenu .mm-search .mm-ic{color:#fff}' +
+    '#megaMenu .mm-rg{margin-top:10px;font-size:.75rem;color:#555;text-align:center}' +
+    '#megaMenu .mm-rg b{display:inline-block;background:#e53935;color:#fff;border-radius:999px;padding:1px 7px;font-weight:800;margin-right:6px}';
 
   var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
-  var html = '<div class="mm-inner"><div class="mm-left"><button class="mm-close" aria-label="Close menu">✕</button><ul>';
+  var h = '<div class="mm-panel" role="dialog" aria-label="' + esc(M.title) + '">' +
+    '<div class="mm-head"><img src="/images/logo.svg" alt="CraicBet"><span style="opacity:.7;font-weight:500">' + esc(M.title) + '</span><button class="mm-close" aria-label="Close">✕</button></div>' +
+    '<div class="mm-rule"></div><div class="mm-list">' +
+    '<a class="mm-row" href="' + M.home[1] + '">' + svg('home') + '<span>' + esc(M.home[0]) + '</span></a>';
   M.items.forEach(function (it, i) {
-    html += '<li class="mm-item' + (i === activeIdx ? ' active' : '') + '" data-i="' + i + '"><span>' + it[0] + '</span><span>' + esc(it[1]) + '</span><span class="mm-arrow">›</span></li>';
+    h += '<div class="mm-sec' + (i === openIdx ? ' open' : '') + '"><div class="mm-row" role="button" tabindex="0" aria-expanded="' + (i === openIdx) + '">' + svg(it[0]) + '<span>' + esc(it[1]) + '</span><span class="mm-n">' + it[2].length + '</span>' + svg('chev', 18).replace('mm-ic', 'mm-ic mm-ch') + '</div><div class="mm-sub">';
+    it[2].forEach(function (l) { h += '<a href="' + l[1] + '"' + (l[1].split('#')[0] === curHref ? ' class="cur"' : '') + '>' + svg('folder', 20) + '<span>' + esc(l[0]) + '</span></a>'; });
+    h += '</div></div>';
   });
-  html += '</ul><a class="mm-search" href="' + M.search[1] + '">' + M.search[0] + '</a></div><div class="mm-right">';
-  M.items.forEach(function (it, i) {
-    html += '<div class="mm-sub' + (i === activeIdx ? ' active' : '') + '" data-i="' + i + '"><div class="mm-title">' + esc(it[2]) + '</div>';
-    it[3].forEach(function (l) { html += '<a href="' + l[1] + '">' + esc(l[0]) + '</a>'; });
-    html += '</div>';
-  });
-  html += '</div></div>';
+  h += '</div><div class="mm-foot"><a class="mm-search" href="' + M.search[1] + '">' + svg('search', 20) + esc(M.search[0]) + '</a><div class="mm-rg"><b>18+</b>' + esc(M.footer) + '</div></div></div>';
 
+  var old = document.getElementById('megaMenu'); if (old) old.parentNode.removeChild(old);
   var style = document.createElement('style'); style.textContent = css; document.head.appendChild(style);
-  var menu = document.createElement('div'); menu.id = 'megaMenu'; menu.setAttribute('aria-hidden', 'true'); menu.innerHTML = html;
+  var menu = document.createElement('div'); menu.id = 'megaMenu'; menu.setAttribute('aria-hidden', 'true'); menu.innerHTML = h;
   document.body.appendChild(menu);
 
   var oldBtn = document.querySelector('.burger');
   if (!oldBtn) return;
-  var btn = oldBtn.cloneNode(true); // drops any old click handlers
-  btn.removeAttribute('onclick');
+  var btn = oldBtn.cloneNode(true); btn.removeAttribute('onclick');
   oldBtn.parentNode.replaceChild(btn, oldBtn);
 
-  function open() { menu.style.display = 'block'; menu.setAttribute('aria-hidden', 'false'); btn.classList.add('is-open'); btn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
-  function close() { menu.style.display = 'none'; menu.setAttribute('aria-hidden', 'true'); btn.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
-  btn.addEventListener('click', function () { menu.style.display === 'block' ? close() : open(); });
+  function open() { menu.style.display = 'block'; requestAnimationFrame(function () { menu.classList.add('open'); }); menu.setAttribute('aria-hidden', 'false'); btn.classList.add('is-open'); btn.setAttribute('aria-expanded', 'true'); document.body.style.overflow = 'hidden'; }
+  function close() { menu.classList.remove('open'); setTimeout(function () { menu.style.display = 'none'; }, 280); menu.setAttribute('aria-hidden', 'true'); btn.classList.remove('is-open'); btn.setAttribute('aria-expanded', 'false'); document.body.style.overflow = ''; }
+  btn.addEventListener('click', function () { menu.classList.contains('open') ? close() : open(); });
   menu.querySelector('.mm-close').addEventListener('click', close);
   menu.addEventListener('click', function (e) { if (e.target === menu) close(); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
-  menu.querySelectorAll('.mm-item').forEach(function (item) {
-    item.addEventListener('click', function () {
-      var i = item.getAttribute('data-i');
-      menu.querySelectorAll('.mm-item').forEach(function (x) { x.classList.toggle('active', x === item); });
-      menu.querySelectorAll('.mm-sub').forEach(function (s) { s.classList.toggle('active', s.getAttribute('data-i') === i); });
-    });
+  menu.querySelectorAll('.mm-sec>.mm-row').forEach(function (row) {
+    var toggle = function () {
+      var sec = row.parentNode, was = sec.classList.contains('open');
+      menu.querySelectorAll('.mm-sec').forEach(function (s) { s.classList.remove('open'); s.firstChild.setAttribute('aria-expanded', 'false'); });
+      if (!was) { sec.classList.add('open'); row.setAttribute('aria-expanded', 'true'); }
+    };
+    row.addEventListener('click', toggle);
+    row.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
   });
 })();
