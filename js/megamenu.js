@@ -41,6 +41,10 @@
           ['Acca Calculator', '/pages/accumulator-calculator-ireland']]],
         ['casino', 'Casinos', [
           ['Best Casinos Ireland', '/pages/best-casinos-ireland'],
+          ['€5 Deposit Casinos', '/pages/5-euro-deposit-casino'],
+          ['Minimum Deposit Casinos', '/pages/minimum-deposit-casinos-ireland'],
+          ['Crypto Casinos', '/pages/crypto-casinos-ireland'],
+          ['Visa & Mastercard Casinos', '/pages/visa-mastercard-casinos-ireland'],
           ['Fast Payout Casinos', '/pages/fast-payout-casinos'],
           ['Revolut Casinos', '/pages/revolut-casinos'],
           ['Google Pay Casinos', '/pages/google-pay-casino-ireland'],
