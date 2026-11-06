@@ -68,9 +68,8 @@
   if (document.cookie.indexOf('cb_geo=uk') > -1) { window.location.href = '/uk/'; return; }
   try {
     var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
-    var lang = navigator.language || '';
     var ukTz = ['Europe/London','Europe/Jersey','Europe/Guernsey','Europe/Isle_of_Man'];
-    var isUK = ukTz.indexOf(tz) > -1 || lang === 'en-GB';
+    var isUK = ukTz.indexOf(tz) > -1;
     if (isUK) { window.location.href = '/uk/'; }
   } catch(e) {}
 })();
@@ -1368,5 +1367,6 @@ var iv=setInterval(function(){
 }
 })();</script>
 <script src="/js/ui-sound.js"></script>
+<script src="/js/geo-switcher.js"></script>
 </body>
 </html>
