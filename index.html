@@ -599,7 +599,7 @@
   var el = document.getElementById('pour-pct');
   if(!el) return;
   var msgs = ['⚓ Setting sail...','🍺 Pouring the pints...','🏴‍☠️ Hoisting the flag...','🌊 Riding the waves...','⚓ Making port...'];
-  var t0 = Date.now(), dur = 2200;
+  var t0 = Date.now(), dur = 4400;
   function tick(){
     var p = Math.min(100, Math.round((Date.now()-t0)/dur*100));
     var mi = Math.min(Math.floor(p/22), msgs.length-1);
@@ -626,7 +626,7 @@
     pre.style.transition = 'opacity .6s';
     pre.style.opacity = '0';
     setTimeout(function(){ pre.style.display = 'none'; try{sessionStorage.setItem('cbPre','1');}catch(e){} }, 650);
-  }, 2400); // 2.4s — enough to enjoy the ship animation
+  }, 4500); // 4.5s — enjoy the full pirate voyage
 })();
 </script>
 
