@@ -1,2 +1,4 @@
 __pycache__/
 *.pyc
+tools/client_secret.json
+tools/client_secret.json
