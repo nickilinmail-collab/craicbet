@@ -67,7 +67,7 @@
 /* Preloader motion in CSS: iOS Safari pauses SVG SMIL in Low Power Mode, CSS animations keep running */
 @keyframes cbWave{to{transform:translateX(var(--dx))}}
 @keyframes cbSail{from{transform:translateX(800px)}to{transform:translateX(0)}}
-@keyframes cbBob{0%{transform:rotate(0)}25%{transform:rotate(2deg)}50%{transform:rotate(-1.5deg)}75%{transform:rotate(1deg)}100%{transform:rotate(0)}}
+@keyframes cbBob{0%{transform:scale(1.25) rotate(0)}25%{transform:scale(1.25) rotate(2deg)}50%{transform:scale(1.25) rotate(-1.5deg)}75%{transform:scale(1.25) rotate(1deg)}100%{transform:scale(1.25) rotate(0)}}
 #preloader .wa,#preloader .wb,#preloader .wc,#preloader .wd,#preloader .we,#preloader .wf{animation:cbWave linear infinite}
 #preloader .wa{--dx:-200px;animation-duration:3s}#preloader .wb{--dx:-200px;transform:translateX(200px);animation-duration:3s;animation-name:cbWaveB}
 #preloader .wc{--dx:-160px;animation-duration:4s}#preloader .wd{--dx:-160px;animation-duration:4s;animation-name:cbWaveD}
@@ -76,7 +76,7 @@
 @keyframes cbWaveD{from{transform:translateX(160px)}to{transform:translateX(0)}}
 @keyframes cbWaveF{from{transform:translateX(80px)}to{transform:translateX(0)}}
 #preloader #ship{animation:cbSail 4s cubic-bezier(.4,0,.2,1) both}
-#preloader #shipBob{transform-origin:400px 290px;transform-box:view-box;animation:cbBob 3.2s ease-in-out infinite}
+#preloader #shipBob{transform-origin:400px 310px;transform-box:view-box;animation:cbBob 3.2s ease-in-out infinite}
 </style>
 <div id="preloader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,#001a3a 0%,#003366 50%,#0a4a7a 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .6s ease;overflow:hidden">
 
@@ -104,7 +104,7 @@
   </div>
 
   <div style="position:relative;width:100%;max-width:700px;padding:0 12px">
-    <svg viewBox="0 0 800 420" style="width:100%" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="40 0 720 420" style="width:100%" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#0a4a7a"/>
@@ -126,6 +126,38 @@
           <stop offset="0%" stop-color="#f5f0e8"/>
           <stop offset="100%" stop-color="#e8e0d0"/>
         </linearGradient>
+        <!-- Reusable crew: feet at (0,0). --b body colour, --h hat/bandana colour -->
+        <g id="pirA">
+          <rect x="-11" y="-28" width="22" height="28" rx="3" style="fill:var(--b,#c0392b)"/>
+          <circle cx="0" cy="-35" r="11" fill="#f5cba7"/>
+          <ellipse cx="0" cy="-43" rx="13" ry="4" style="fill:var(--h,#1a1a1a)"/>
+          <rect x="-9" y="-52" width="18" height="11" rx="2" style="fill:var(--h,#1a1a1a)"/>
+          <rect x="-3" y="-54" width="6" height="4" fill="#f5a623"/>
+          <circle cx="-5" cy="-37" r="4" fill="#111" opacity="0.9"/>
+          <line x1="-7" y1="-39" x2="1" y2="-39" stroke="#111" stroke-width="1.5"/>
+          <circle cx="5" cy="-36" r="2.5" fill="white"/><circle cx="5" cy="-36" r="1.2" fill="#111"/>
+          <path d="M-4,-30 Q0,-26 4,-30" fill="none" stroke="#8B4513" stroke-width="1.5"/>
+          <line x1="11" y1="-20" x2="24" y2="-14" stroke="#f5cba7" stroke-width="4" stroke-linecap="round"/>
+          <rect x="22" y="-20" width="14" height="18" rx="2" fill="url(#beerGrad)" stroke="#8B4513" stroke-width="1.5"/>
+          <rect x="22" y="-20" width="14" height="5" rx="1" fill="url(#foamGrad)"/>
+          <path d="M36,-15 Q42,-15 42,-9 Q42,-3 36,-3" fill="none" stroke="#8B4513" stroke-width="2"/>
+        </g>
+        <g id="pirB">
+          <rect x="-11" y="-28" width="22" height="28" rx="3" style="fill:var(--b,#2ecc71)"/>
+          <circle cx="0" cy="-35" r="11" fill="#f5cba7"/>
+          <path d="M-11,-41 Q0,-48 11,-41 L11,-36 Q0,-43 -11,-36 Z" style="fill:var(--h,#e74c3c)"/>
+          <circle cx="-11" cy="-39" r="3" style="fill:var(--h,#e74c3c)"/>
+          <circle cx="-4" cy="-37" r="2.5" fill="white"/><circle cx="-4" cy="-37" r="1.2" fill="#111"/>
+          <circle cx="4" cy="-37" r="2.5" fill="white"/><circle cx="4" cy="-37" r="1.2" fill="#111"/>
+          <path d="M-5,-30 Q0,-24 5,-30" fill="none" stroke="#c0392b" stroke-width="2"/>
+          <line x1="-11" y1="-21" x2="-25" y2="-28" stroke="#f5cba7" stroke-width="4" stroke-linecap="round"/>
+          <g>
+            <rect x="-39" y="-36" width="14" height="18" rx="2" fill="url(#beerGrad)" stroke="#8B4513" stroke-width="1.5"/>
+            <rect x="-39" y="-36" width="14" height="5" rx="1" fill="url(#foamGrad)"/>
+            <path d="M-39,-31 Q-45,-31 -45,-25 Q-45,-19 -39,-19" fill="none" stroke="#8B4513" stroke-width="2"/>
+            <animateTransform attributeName="transform" type="rotate" values="0 -25 -28;-12 -25 -28;0 -25 -28" dur="1.6s" repeatCount="indefinite"/>
+          </g>
+        </g>
       </defs>
 
       <!-- SEA BACKGROUND -->
@@ -303,6 +335,15 @@
           <!-- Crossbones -->
           <line x1="377" y1="92" x2="389" y2="97" stroke="white" stroke-width="1.5"/>
           <line x1="389" y1="92" x2="377" y2="97" stroke="white" stroke-width="1.5"/>
+
+          <!-- EXTRA CREW (10 pirates in total) -->
+          <use href="#pirA" x="232" y="258" style="--b:#8e44ad;--h:#2c3e50"/>
+          <use href="#pirB" x="268" y="258" style="--b:#f39c12;--h:#2980b9"/>
+          <use href="#pirB" x="478" y="258" style="--b:#3498db;--h:#f1c40f"/>
+          <use href="#pirA" x="508" y="258" style="--b:#16a085;--h:#1a1a1a"/>
+          <use href="#pirB" x="540" y="258" style="--b:#e67e22;--h:#27ae60"/>
+          <use href="#pirA" x="570" y="258" style="--b:#7f8c8d;--h:#8e44ad"/>
+          <g transform="translate(362,120) scale(0.75)"><use href="#pirB" style="--b:#c0392b;--h:#ecf0f1"/></g>
 
           <!-- PIRATE 1 — left, holding beer mug -->
           <!-- Body -->
