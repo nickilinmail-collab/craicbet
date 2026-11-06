@@ -130,9 +130,9 @@
 
   <h2>What the Results Mean</h2>
   <p><strong>✅ GRAI Betting Licence — Active:</strong> The operator holds a current GRAI remote betting licence. This is the strongest consumer protection available for Irish sports betting customers in 2026. The operator is subject to Irish law, GRAI advertising rules, and the national self-exclusion register.</p>
-  <p><strong>ℹ️ GRAI Betting Licence (other operators):</strong> Several major bookmakers were among the first batch licensed by GRAI in July 2026. We track the public register and update this tool daily. For the full official list, check the <a href="grai-licence-register-tracker">GRAI register tracker</a> or the <a href="https://www.grai.ie/licensing/register-of-licences" rel="nofollow noopener" target="_blank">official GRAI website</a>.</p>
+  <p><strong>ℹ️ GRAI Betting Licence (other operators):</strong> Several major bookmakers were among the first batch licensed by GRAI in July 2026. We track the public register and update this tool daily. For the full official list, check the <a href="grai-licence-register-tracker">GRAI register tracker</a> or the <a href="https://www.grai.ie/register/licence-register" rel="nofollow noopener" target="_blank">official GRAI website</a>.</p>
   <p><strong>⚠️ No GRAI Casino Licence:</strong> This is <em>expected</em> for every casino in Ireland right now. Zero GRAI casino licences exist anywhere. If a casino claims to hold a &ldquo;GRAI casino licence&rdquo;, that claim is false &mdash; report it to GRAI. Casinos may legitimately hold a Malta MGA licence, Gibraltar licence or other EU/EEA licence.</p>
-  <p><strong>❌ Not Found / Unlicensed:</strong> The operator name didn&rsquo;t match our database. Check the <a href="https://www.grai.ie/licensing/register-of-licences" rel="nofollow noopener" target="_blank">official GRAI register</a> directly and our guide to <a href="unlicensed-betting-sites-risks">risks of unlicensed betting sites</a>.</p>
+  <p><strong>❌ Not Found / Unlicensed:</strong> The operator name didn&rsquo;t match our database. Check the <a href="https://www.grai.ie/register/licence-register" rel="nofollow noopener" target="_blank">official GRAI register</a> directly and our guide to <a href="unlicensed-betting-sites-risks">risks of unlicensed betting sites</a>.</p>
 
   <h2>Why GRAI Licences Matter for Irish Punters</h2>
   <p>Before GRAI, Ireland had no dedicated gambling regulator. Irish customers betting with offshore operators had limited legal recourse. The Gambling Regulation Act 2024 changed this &mdash; GRAI-licensed operators must:</p>
@@ -233,28 +233,110 @@
 <script>
 // GRAI register data (updated daily by CraicBet tracker)
 const REGISTER = {
-  last_updated: "2026-11-02",
-  // Operators with confirmed GRAI remote BETTING licences
+  last_updated: "2026-11-07",
+  // Every entry read from the official GRAI register (grai.ie) on 7 Nov 2026 — licence numbers and dates verified
   betting_licensed: {
-    "tonybet": { name: "TonyBet", licence: "GRAI-0191-RB-26-0001", valid_from: "16 Sep 2026", valid_to: "15 Sep 2029", verified: true },
-    "bet365": { name: "bet365", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "paddypower": { name: "Paddy Power", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "paddy power": { name: "Paddy Power", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "betfair": { name: "Betfair", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "betdaq": { name: "Betdaq", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "888sport": { name: "888sport", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "williamhill": { name: "William Hill", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "william hill": { name: "William Hill", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "tote": { name: "Tote", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "fitzdares": { name: "Fitzdares", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "dragonbet": { name: "DragonBet", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "kwiff": { name: "Kwiff", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "dabble": { name: "Dabble", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "32red": { name: "32Red Sport", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "unibet": { name: "Unibet", licence: "GRAI — see register", valid_from: "Jul 2026", val_to: "2029", verified: false },
-    "netbet": { name: "NetBet Sport", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "boylsports": { name: "BoyleSports", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
-    "ladbrokes": { name: "Ladbrokes", licence: "GRAI — see register", valid_from: "Jul 2026", valid_to: "2029", verified: false },
+    "fitzdares": { name: "FITZDARES", licence: "GRAI-1193-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Sep 2026", valid_to: "31 Aug 2029", verified: true },
+    "fitzdareslimited": { name: "FITZDARES LIMITED", licence: "GRAI-1193-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Sep 2026", valid_to: "31 Aug 2029", verified: true },
+    "betfairexchange": { name: "Betfair Exchange", licence: "GRAI-1074-RBI-26-0001", ltype: "Remote Betting Intermediary", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "betfairinternationalplc": { name: "Betfair International plc", licence: "GRAI-1074-RBI-26-0001", ltype: "Remote Betting Intermediary", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "williamhill": { name: "William Hill", licence: "GRAI-1096-RB-26-0001", ltype: "Remote Betting", valid_from: "15 Jul 2026", valid_to: "14 Jul 2029", verified: true },
+    "william hill": { name: "William Hill", licence: "GRAI-1096-RB-26-0001", ltype: "Remote Betting", valid_from: "15 Jul 2026", valid_to: "14 Jul 2029", verified: true },
+    "whirelandlimited": { name: "WH Ireland Limited", licence: "GRAI-1096-RB-26-0001", ltype: "Remote Betting", valid_from: "15 Jul 2026", valid_to: "14 Jul 2029", verified: true },
+    "3et": { name: "3et", licence: "GRAI-1021-RB-26-0001", ltype: "Remote Betting", valid_from: "12 Aug 2026", valid_to: "11 Aug 2029", verified: true },
+    "eurasiasportslimited": { name: "Eurasia Sports Limited", licence: "GRAI-1021-RB-26-0001", ltype: "Remote Betting", valid_from: "12 Aug 2026", valid_to: "11 Aug 2029", verified: true },
+    "betway": { name: "Betway", licence: "GRAI-0524-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "betwaylimited": { name: "Betway Limited", licence: "GRAI-0524-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "ladbrokes": { name: "Ladbrokes", licence: "GRAI-0622-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "lcinternationallimited": { name: "LC International Limited", licence: "GRAI-0622-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "goodwinracing": { name: "Goodwin Racing", licence: "GRAI-0678-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "betgoodwin": { name: "Betgoodwin", licence: "GRAI-0678-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "goodwinracinglimited": { name: "Goodwin Racing Limited", licence: "GRAI-0678-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "faybookmakers": { name: "Fay Bookmakers", licence: "GRAI-0900-RB-26-0001", ltype: "Remote Betting", valid_from: "14 Sep 2026", valid_to: "13 Sep 2029", verified: true },
+    "paulfaybookmakersltd": { name: "Paul Fay Bookmakers LTD", licence: "GRAI-0900-RB-26-0001", ltype: "Remote Betting", valid_from: "14 Sep 2026", valid_to: "13 Sep 2029", verified: true },
+    "tonybet": { name: "Tonybet", licence: "GRAI-0191-RB-26-0001", ltype: "Remote Betting", valid_from: "16 Sep 2026", valid_to: "15 Sep 2029", verified: true },
+    "tonybetou": { name: "Tonybet OU", licence: "GRAI-0191-RB-26-0001", ltype: "Remote Betting", valid_from: "16 Sep 2026", valid_to: "15 Sep 2029", verified: true },
+    "interwetten": { name: "Interwetten", licence: "GRAI-1365-RB-26-0001", ltype: "Remote Betting", valid_from: "16 Oct 2026", valid_to: "15 Oct 2029", verified: true },
+    "interwettengaminglimited": { name: "Interwetten Gaming Limited", licence: "GRAI-1365-RB-26-0001", ltype: "Remote Betting", valid_from: "16 Oct 2026", valid_to: "15 Oct 2029", verified: true },
+    "thetrackbookmakers": { name: "The Track Bookmakers", licence: "GRAI-0829-RB-26-0001", ltype: "Remote Betting", valid_from: "24 Aug 2026", valid_to: "23 Aug 2029", verified: true },
+    "tracksportslimited": { name: "Track Sports Limited", licence: "GRAI-0829-RB-26-0001", ltype: "Remote Betting", valid_from: "24 Aug 2026", valid_to: "23 Aug 2029", verified: true },
+    "dabble": { name: "Dabble", licence: "GRAI-0995-RB-26-000", ltype: "Remote Betting", valid_from: "10 Sep 2026", valid_to: "9 Sep 2029", verified: true },
+    "dabblesportsukltd": { name: "DABBLE SPORTS UK LTD", licence: "GRAI-0995-RB-26-000", ltype: "Remote Betting", valid_from: "10 Sep 2026", valid_to: "9 Sep 2029", verified: true },
+    "spreadexsports": { name: "Spreadex Sports", licence: "GRAI-1154-RB-26-0001", ltype: "Remote Betting", valid_from: "25 Sep 2026", valid_to: "24 Sep 2029", verified: true },
+    "spreadexltd": { name: "Spreadex Ltd", licence: "GRAI-1154-RB-26-0001", ltype: "Remote Betting", valid_from: "25 Sep 2026", valid_to: "24 Sep 2029", verified: true },
+    "quinnbet": { name: "QuinnBet", licence: "GRAI-0633-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "quinnsports": { name: "QuinnSports", licence: "GRAI-0633-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "quinncasino": { name: "QuinnCasino", licence: "GRAI-0633-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "quinnbetgibraltarlimited": { name: "QuinnBet (Gibraltar) Limited", licence: "GRAI-0633-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "betvictor": { name: "BetVictor", licence: "GRAI-0862-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "bet victor": { name: "BetVictor", licence: "GRAI-0862-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "talksportbet": { name: "talkSPORT BET", licence: "GRAI-0862-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "bvgaminglimited": { name: "BV Gaming Limited", licence: "GRAI-0862-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "888sport": { name: "888Sport", licence: "GRAI-1090-RB-26-0001", ltype: "Remote Betting", valid_from: "31 Jul 2026", valid_to: "30 Jul 2029", verified: true },
+    "888 sport": { name: "888Sport", licence: "GRAI-1090-RB-26-0001", ltype: "Remote Betting", valid_from: "31 Jul 2026", valid_to: "30 Jul 2029", verified: true },
+    "888": { name: "888", licence: "GRAI-1090-RB-26-0001", ltype: "Remote Betting", valid_from: "31 Jul 2026", valid_to: "30 Jul 2029", verified: true },
+    "888eireltd": { name: "888 EIRE LTD", licence: "GRAI-1090-RB-26-0001", ltype: "Remote Betting", valid_from: "31 Jul 2026", valid_to: "30 Jul 2029", verified: true },
+    "coral": { name: "Coral", licence: "GRAI-0652-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "bwin": { name: "Bwin", licence: "GRAI-0652-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "sportingbet": { name: "Sportingbet", licence: "GRAI-0652-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "partycasinosports": { name: "PartyCasino (Sports)", licence: "GRAI-0652-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "partypokersports": { name: "PartyPoker (Sports)", licence: "GRAI-0652-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "electraworkslimited": { name: "ElectraWorks Limited", licence: "GRAI-0652-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "matchbook": { name: "Matchbook", licence: "GRAI-0955-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Oct 2026", valid_to: "30 Sep 2029", verified: true },
+    "matchbook exchange": { name: "Matchbook", licence: "GRAI-0955-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Oct 2026", valid_to: "30 Sep 2029", verified: true },
+    "easybet": { name: "easybet", licence: "GRAI-0955-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Oct 2026", valid_to: "30 Sep 2029", verified: true },
+    "triplebetlimited": { name: "Triplebet Limited", licence: "GRAI-0955-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Oct 2026", valid_to: "30 Sep 2029", verified: true },
+    "betmaster": { name: "Betmaster", licence: "GRAI-0735-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "casinoin": { name: "Casinoin", licence: "GRAI-0735-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "bmsolutionslimited": { name: "BM Solutions Limited", licence: "GRAI-0735-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "dragonbet": { name: "DragonBet", licence: "GRAI-1185-RB-26-0001", ltype: "Remote Betting", valid_from: "4 Sep 2026", valid_to: "3 Sep 2029", verified: true },
+    "dragonbetltd": { name: "Dragonbet Ltd", licence: "GRAI-1185-RB-26-0001", ltype: "Remote Betting", valid_from: "4 Sep 2026", valid_to: "3 Sep 2029", verified: true },
+    "smarkets": { name: "Smarkets", licence: "GRAI-0691-RBI-26-0001", ltype: "Remote Betting Intermediary", valid_from: "12 Aug 2026", valid_to: "11 Aug 2029", verified: true },
+    "sbk": { name: "SBK", licence: "GRAI-0691-RBI-26-0001", ltype: "Remote Betting Intermediary", valid_from: "12 Aug 2026", valid_to: "11 Aug 2029", verified: true },
+    "smarketsmaltalimited": { name: "Smarkets Malta Limited", licence: "GRAI-0691-RBI-26-0001", ltype: "Remote Betting Intermediary", valid_from: "12 Aug 2026", valid_to: "11 Aug 2029", verified: true },
+    "starspreads": { name: "Star Spreads", licence: "GRAI-1051-RB-26-0001", ltype: "Remote Betting", valid_from: "28 Sep 2026", valid_to: "27 Sep 2029", verified: true },
+    "starspreadslimited": { name: "Star Spreads Limited", licence: "GRAI-1051-RB-26-0001", ltype: "Remote Betting", valid_from: "28 Sep 2026", valid_to: "27 Sep 2029", verified: true },
+    "tote": { name: "Tote", licence: "GRAI-0796-RB-26-0001", ltype: "Remote Betting", valid_from: "26 Aug 2026", valid_to: "25 Aug 2029", verified: true },
+    "tdcolimited": { name: "TDCO Limited", licence: "GRAI-0796-RB-26-0001", ltype: "Remote Betting", valid_from: "26 Aug 2026", valid_to: "25 Aug 2029", verified: true },
+    "midnite": { name: "Midnite", licence: "GRAI-0767-RB-26-0001", ltype: "Remote Betting", valid_from: "24 Aug 2026", valid_to: "23 Aug 2029", verified: true },
+    "midniteeuropelimited": { name: "Midnite Europe Limited", licence: "GRAI-0767-RB-26-0001", ltype: "Remote Betting", valid_from: "24 Aug 2026", valid_to: "23 Aug 2029", verified: true },
+    "geoffbanksonline": { name: "Geoff Banks Online", licence: "GRAI-0483-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "gbsportsadvisorsltd": { name: "GB Sports Advisors Ltd", licence: "GRAI-0483-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "betdaq": { name: "Betdaq", licence: "GRAI-0313-RB-26-0001", ltype: "Remote Betting", valid_from: "30 Jul 2026", valid_to: "29 Jul 2029", verified: true },
+    "exchangeplatformsolutionslimited": { name: "Exchange Platform Solutions Limited", licence: "GRAI-0313-RB-26-0001", ltype: "Remote Betting", valid_from: "30 Jul 2026", valid_to: "29 Jul 2029", verified: true },
+    "novibet": { name: "Novibet", licence: "GRAI-0397-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "logflexmtlimited": { name: "Logflex MT Limited", licence: "GRAI-0397-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "livescorebet": { name: "LiveScore Bet", licence: "GRAI-0724-RB-26-0001", ltype: "Remote Betting", valid_from: "30 Jul 2026", valid_to: "29 Jul 2029", verified: true },
+    "livescorebettingandgaminggibraltarlimited": { name: "LiveScore Betting and Gaming (Gibraltar) Limited", licence: "GRAI-0724-RB-26-0001", ltype: "Remote Betting", valid_from: "30 Jul 2026", valid_to: "29 Jul 2029", verified: true },
+    "netbet": { name: "NetBet", licence: "GRAI-1195-RB-26-0001", ltype: "Remote Betting", valid_from: "24 Aug 2026", valid_to: "23 Aug 2029", verified: true },
+    "netbetenterpriseslimited": { name: "NetBet Enterprises Limited", licence: "GRAI-1195-RB-26-0001", ltype: "Remote Betting", valid_from: "24 Aug 2026", valid_to: "23 Aug 2029", verified: true },
+    "kwiff": { name: "Kwiff", licence: "GRAI-1125-RB-26-0001", ltype: "Remote Betting", valid_from: "10 Sep 2026", valid_to: "9 Sep 2029", verified: true },
+    "kwifflimited": { name: "Kwiff Limited", licence: "GRAI-1125-RB-26-0001", ltype: "Remote Betting", valid_from: "10 Sep 2026", valid_to: "9 Sep 2029", verified: true },
+    "boylesports": { name: "BoyleSports", licence: "GRAI-0852-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "boylsports": { name: "BoyleSports", licence: "GRAI-0852-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "boyle sports": { name: "BoyleSports", licence: "GRAI-0852-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "boylesportsgibraltarlimited": { name: "Boylesports (Gibraltar) Limited", licence: "GRAI-0852-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "bet365": { name: "bet365", licence: "GRAI-0539-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "hillsideeuropeenc": { name: "Hillside (Europe) ENC", licence: "GRAI-0539-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "baroneracing": { name: "Bar One Racing", licence: "GRAI-0498-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "baroneracinglimited": { name: "Bar-One Racing Limited", licence: "GRAI-0498-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "fitzwilliamsports": { name: "Fitzwilliam Sports", licence: "GRAI-0729-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "fwbllimited": { name: "FWBL Limited", licence: "GRAI-0729-RB-26-0001", ltype: "Remote Betting", valid_from: "1 Jul 2026", valid_to: "30 Jun 2029", verified: true },
+    "starsports": { name: "Star Sports", licence: "GRAI-0385-RB-26-0001", ltype: "Remote Betting", valid_from: "6 Jul 2026", valid_to: "5 Jul 2029", verified: true },
+    "starracinglimited": { name: "Star Racing Limited", licence: "GRAI-0385-RB-26-0001", ltype: "Remote Betting", valid_from: "6 Jul 2026", valid_to: "5 Jul 2029", verified: true },
+    "unibet": { name: "Unibet", licence: "GRAI-0890-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Sep 2026", valid_to: "10 Sep 2029", verified: true },
+    "32red": { name: "32Red", licence: "GRAI-0890-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Sep 2026", valid_to: "10 Sep 2029", verified: true },
+    "platinumgaminglimited": { name: "Platinum Gaming Limited", licence: "GRAI-0890-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Sep 2026", valid_to: "10 Sep 2029", verified: true },
+    "skybet": { name: "Sky Bet", licence: "GRAI-1069-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "sky bet": { name: "Sky Bet", licence: "GRAI-1069-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "sbgsportsltd": { name: "SBG Sports Ltd", licence: "GRAI-1069-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "10bet": { name: "10bet", licence: "GRAI-0917-RB-26-0001", ltype: "Remote Betting", valid_from: "6 Jul 2026", valid_to: "5 Jul 2029", verified: true },
+    "bluestarplanetlimited": { name: "Blue Star Planet Limited", licence: "GRAI-0917-RB-26-0001", ltype: "Remote Betting", valid_from: "6 Jul 2026", valid_to: "5 Jul 2029", verified: true },
+    "paddypower": { name: "Paddy Power", licence: "GRAI-1003-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "paddy power": { name: "Paddy Power", licence: "GRAI-1003-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "betfair": { name: "Betfair", licence: "GRAI-1003-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "betfair sportsbook": { name: "Betfair", licence: "GRAI-1003-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
+    "ppbcounterpartyserviceslimited": { name: "PPB Counterparty Services Limited", licence: "GRAI-1003-RB-26-0001", ltype: "Remote Betting", valid_from: "11 Aug 2026", valid_to: "10 Aug 2029", verified: true },
   }
 };
 
@@ -293,10 +375,10 @@ function checkLicence() {
   if (found && found.type === 'betting') {
     box.classList.add('licensed');
     icon.textContent = '✅';
-    title.textContent = found.name + ' — GRAI Remote Betting Licence: Active';
+    title.textContent = found.name + ' — GRAI ' + (found.ltype || 'Remote Betting') + ' Licence: Active';
     const verifiedNote = found.verified
       ? `<br><span class="licence-badge">Licence: ${found.licence}</span><br>Valid: ${found.valid_from} – ${found.valid_to} (verified by CraicBet)`
-      : `<br><span class="licence-badge">Licence: ${found.licence}</span><br>Valid from: ${found.valid_from}. <a href="https://www.grai.ie/licensing/register-of-licences" target="_blank" rel="nofollow noopener">Verify on GRAI register ↗</a>`;
+      : `<br><span class="licence-badge">Licence: ${found.licence}</span><br>Valid from: ${found.valid_from}. <a href="https://www.grai.ie/register/licence-register" target="_blank" rel="nofollow noopener">Verify on GRAI register ↗</a>`;
     detail.innerHTML = `${found.name} holds a GRAI remote <strong>betting</strong> licence, issued under the Gambling Regulation Act 2024.${verifiedNote}<br><br><strong>⚠️ Casino licence: None.</strong> No GRAI casino licences have been issued anywhere in Ireland (expected 2027–2028). ${found.name}'s casino product, if any, operates under an international licence (MGA/Gibraltar/etc).`;
   } else {
     // Check if it sounds like a casino
@@ -312,7 +394,7 @@ function checkLicence() {
       box.classList.add('not-licensed');
       icon.textContent = '⚠️';
       title.textContent = '"' + query + '" — Not Found in Our Database';
-      detail.innerHTML = `We couldn't find <strong>${query}</strong> in our GRAI register database. This could mean:<br><br>• The operator name is spelled differently on the register<br>• The operator holds an international licence (MGA, Gibraltar, UKGC) but not a GRAI licence yet<br>• The operator is <a href="unlicensed-betting-sites-risks">unlicensed</a> — avoid depositing<br><br>Always <strong><a href="https://www.grai.ie/licensing/register-of-licences" target="_blank" rel="nofollow noopener">verify on the official GRAI register ↗</a></strong> for the most current information. We update our database daily but the official register is the definitive source.<br><br><strong>Remember:</strong> No GRAI <em>casino</em> licences exist anywhere — only betting licences.`;
+      detail.innerHTML = `We couldn't find <strong>${query}</strong> in our GRAI register database. This could mean:<br><br>• The operator name is spelled differently on the register<br>• The operator holds an international licence (MGA, Gibraltar, UKGC) but not a GRAI licence yet<br>• The operator is <a href="unlicensed-betting-sites-risks">unlicensed</a> — avoid depositing<br><br>Always <strong><a href="https://www.grai.ie/register/licence-register" target="_blank" rel="nofollow noopener">verify on the official GRAI register ↗</a></strong> for the most current information. We update our database daily but the official register is the definitive source.<br><br><strong>Remember:</strong> No GRAI <em>casino</em> licences exist anywhere — only betting licences.`;
     }
   }
 }

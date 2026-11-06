@@ -1,630 +1,839 @@
 {
- "source": "https://www.grai.ie/register/licence-register",
- "checked": "2026-11-07",
- "licensees": [
+ "last_updated": "2026-11-07",
+ "source": "https://www.grai.ie/register/licence-register (each licensee page read 7 Nov 2026)",
+ "note": "GRAI remote BETTING licences only (37 remote betting + 4 remote betting intermediary; 1 in-person). Zero casino licences issued. Casino expected 2027-2028. One register entry (Dabble) shows a 3-digit suffix on grai.ie and is reproduced as displayed.",
+ "betting_licensed": [
   {
-   "id": "a-1193",
+   "key": "fitzdares",
+   "name": "FITZDARES",
+   "licence": "GRAI-1193-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-01",
+   "valid_to": "2029-08-31",
+   "verified": true
+  },
+  {
+   "key": "fitzdareslimited",
    "name": "FITZDARES LIMITED",
-   "L": [
-    [
-     "GRAI-1193-RB-26-0001",
-     "Remote Betting",
-     "2026-09-01",
-     "2029-08-31"
-    ]
-   ],
-   "T": [
-    "FITZDARES"
-   ]
+   "licence": "GRAI-1193-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-01",
+   "valid_to": "2029-08-31",
+   "verified": true
   },
   {
-   "id": "a-1074",
+   "key": "betfairexchange",
+   "name": "Betfair Exchange",
+   "licence": "GRAI-1074-RBI-26-0001",
+   "licence_type": "Remote Betting Intermediary",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
+  },
+  {
+   "key": "betfairinternationalplc",
    "name": "Betfair International plc",
-   "L": [
-    [
-     "GRAI-1074-RBI-26-0001",
-     "Remote Betting Intermediary",
-     "2026-08-11",
-     "2029-08-10"
-    ]
-   ],
-   "T": [
-    "Betfair Exchange"
-   ]
+   "licence": "GRAI-1074-RBI-26-0001",
+   "licence_type": "Remote Betting Intermediary",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
   },
   {
-   "id": "a-1096",
+   "key": "williamhill",
+   "name": "William Hill",
+   "licence": "GRAI-1096-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-15",
+   "valid_to": "2029-07-14",
+   "verified": true
+  },
+  {
+   "key": "whirelandlimited",
    "name": "WH Ireland Limited",
-   "L": [
-    [
-     "GRAI-1096-RB-26-0001",
-     "Remote Betting",
-     "2026-07-15",
-     "2029-07-14"
-    ]
-   ],
-   "T": [
-    "William Hill"
-   ]
+   "licence": "GRAI-1096-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-15",
+   "valid_to": "2029-07-14",
+   "verified": true
   },
   {
-   "id": "a-1021",
+   "key": "3et",
+   "name": "3et",
+   "licence": "GRAI-1021-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-12",
+   "valid_to": "2029-08-11",
+   "verified": true
+  },
+  {
+   "key": "eurasiasportslimited",
    "name": "Eurasia Sports Limited",
-   "L": [
-    [
-     "GRAI-1021-RB-26-0001",
-     "Remote Betting",
-     "2026-08-12",
-     "2029-08-11"
-    ]
-   ],
-   "T": [
-    "3et"
-   ]
+   "licence": "GRAI-1021-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-12",
+   "valid_to": "2029-08-11",
+   "verified": true
   },
   {
-   "id": "a-0524",
+   "key": "betway",
+   "name": "Betway",
+   "licence": "GRAI-0524-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "betwaylimited",
    "name": "Betway Limited",
-   "L": [
-    [
-     "GRAI-0524-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Betway"
-   ]
+   "licence": "GRAI-0524-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0622",
+   "key": "ladbrokes",
+   "name": "Ladbrokes",
+   "licence": "GRAI-0622-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "lcinternationallimited",
    "name": "LC International Limited",
-   "L": [
-    [
-     "GRAI-0622-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Ladbrokes"
-   ]
+   "licence": "GRAI-0622-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0678",
+   "key": "goodwinracing",
+   "name": "Goodwin Racing",
+   "licence": "GRAI-0678-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "betgoodwin",
+   "name": "Betgoodwin",
+   "licence": "GRAI-0678-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "goodwinracinglimited",
    "name": "Goodwin Racing Limited",
-   "L": [
-    [
-     "GRAI-0678-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Goodwin Racing",
-    "Betgoodwin"
-   ]
+   "licence": "GRAI-0678-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0900",
+   "key": "faybookmakers",
+   "name": "Fay Bookmakers",
+   "licence": "GRAI-0900-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-14",
+   "valid_to": "2029-09-13",
+   "verified": true
+  },
+  {
+   "key": "paulfaybookmakersltd",
    "name": "Paul Fay Bookmakers LTD",
-   "L": [
-    [
-     "GRAI-0900-RB-26-0001",
-     "Remote Betting",
-     "2026-09-14",
-     "2029-09-13"
-    ]
-   ],
-   "T": [
-    "Fay Bookmakers"
-   ]
+   "licence": "GRAI-0900-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-14",
+   "valid_to": "2029-09-13",
+   "verified": true
   },
   {
-   "id": "a-0191",
+   "key": "tonybet",
+   "name": "Tonybet",
+   "licence": "GRAI-0191-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-16",
+   "valid_to": "2029-09-15",
+   "verified": true,
+   "partner": true
+  },
+  {
+   "key": "tonybetou",
    "name": "Tonybet OU",
-   "L": [
-    [
-     "GRAI-0191-RB-26-0001",
-     "Remote Betting",
-     "2026-09-16",
-     "2029-09-15"
-    ]
-   ],
-   "T": [
-    "Tonybet"
-   ]
+   "licence": "GRAI-0191-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-16",
+   "valid_to": "2029-09-15",
+   "verified": true,
+   "partner": true
   },
   {
-   "id": "a-0001365",
+   "key": "interwetten",
+   "name": "Interwetten",
+   "licence": "GRAI-1365-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-10-16",
+   "valid_to": "2029-10-15",
+   "verified": true
+  },
+  {
+   "key": "interwettengaminglimited",
    "name": "Interwetten Gaming Limited",
-   "L": [
-    [
-     "GRAI-1365-RB-26-0001",
-     "Remote Betting",
-     "2026-10-16",
-     "2029-10-15"
-    ]
-   ],
-   "T": [
-    "Interwetten"
-   ]
+   "licence": "GRAI-1365-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-10-16",
+   "valid_to": "2029-10-15",
+   "verified": true
   },
   {
-   "id": "a-0829",
+   "key": "thetrackbookmakers",
+   "name": "The Track Bookmakers",
+   "licence": "GRAI-0829-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-24",
+   "valid_to": "2029-08-23",
+   "verified": true
+  },
+  {
+   "key": "tracksportslimited",
    "name": "Track Sports Limited",
-   "L": [
-    [
-     "GRAI-0829-RB-26-0001",
-     "Remote Betting",
-     "2026-08-24",
-     "2029-08-23"
-    ]
-   ],
-   "T": [
-    "The Track Bookmakers"
-   ]
+   "licence": "GRAI-0829-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-24",
+   "valid_to": "2029-08-23",
+   "verified": true
   },
   {
-   "id": "a-0995",
+   "key": "dabble",
+   "name": "Dabble",
+   "licence": "GRAI-0995-RB-26-000",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-10",
+   "valid_to": "2029-09-09",
+   "verified": true
+  },
+  {
+   "key": "dabblesportsukltd",
    "name": "DABBLE SPORTS UK LTD",
-   "L": [
-    [
-     "GRAI-0995-RB-26-000",
-     "Remote Betting",
-     "2026-09-10",
-     "2029-09-09"
-    ]
-   ],
-   "T": [
-    "Dabble"
-   ]
+   "licence": "GRAI-0995-RB-26-000",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-10",
+   "valid_to": "2029-09-09",
+   "verified": true
   },
   {
-   "id": "a-1154",
+   "key": "spreadexsports",
+   "name": "Spreadex Sports",
+   "licence": "GRAI-1154-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-25",
+   "valid_to": "2029-09-24",
+   "verified": true
+  },
+  {
+   "key": "spreadexltd",
    "name": "Spreadex Ltd",
-   "L": [
-    [
-     "GRAI-1154-RB-26-0001",
-     "Remote Betting",
-     "2026-09-25",
-     "2029-09-24"
-    ]
-   ],
-   "T": [
-    "Spreadex Sports"
-   ]
+   "licence": "GRAI-1154-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-25",
+   "valid_to": "2029-09-24",
+   "verified": true
   },
   {
-   "id": "a-0633",
+   "key": "quinnbet",
+   "name": "QuinnBet",
+   "licence": "GRAI-0633-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "quinnsports",
+   "name": "QuinnSports",
+   "licence": "GRAI-0633-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "quinncasino",
+   "name": "QuinnCasino",
+   "licence": "GRAI-0633-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "quinnbetgibraltarlimited",
    "name": "QuinnBet (Gibraltar) Limited",
-   "L": [
-    [
-     "GRAI-0633-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "QuinnBet",
-    "QuinnSports",
-    "QuinnCasino"
-   ]
+   "licence": "GRAI-0633-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0862",
+   "key": "betvictor",
+   "name": "BetVictor",
+   "licence": "GRAI-0862-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "talksportbet",
+   "name": "talkSPORT BET",
+   "licence": "GRAI-0862-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "bvgaminglimited",
    "name": "BV Gaming Limited",
-   "L": [
-    [
-     "GRAI-0862-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "BetVictor",
-    "talkSPORT BET"
-   ]
+   "licence": "GRAI-0862-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-1090",
+   "key": "888sport",
+   "name": "888Sport",
+   "licence": "GRAI-1090-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-31",
+   "valid_to": "2029-07-30",
+   "verified": true
+  },
+  {
+   "key": "888",
+   "name": "888",
+   "licence": "GRAI-1090-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-31",
+   "valid_to": "2029-07-30",
+   "verified": true
+  },
+  {
+   "key": "888eireltd",
    "name": "888 EIRE LTD",
-   "L": [
-    [
-     "GRAI-1090-RB-26-0001",
-     "Remote Betting",
-     "2026-07-31",
-     "2029-07-30"
-    ]
-   ],
-   "T": [
-    "888Sport",
-    "888"
-   ]
+   "licence": "GRAI-1090-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-31",
+   "valid_to": "2029-07-30",
+   "verified": true
   },
   {
-   "id": "a-0652",
+   "key": "coral",
+   "name": "Coral",
+   "licence": "GRAI-0652-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "bwin",
+   "name": "Bwin",
+   "licence": "GRAI-0652-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "sportingbet",
+   "name": "Sportingbet",
+   "licence": "GRAI-0652-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "partycasinosports",
+   "name": "PartyCasino (Sports)",
+   "licence": "GRAI-0652-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "partypokersports",
+   "name": "PartyPoker (Sports)",
+   "licence": "GRAI-0652-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "electraworkslimited",
    "name": "ElectraWorks Limited",
-   "L": [
-    [
-     "GRAI-0652-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Coral",
-    "Bwin",
-    "Sportingbet",
-    "PartyCasino (Sports)",
-    "PartyPoker (Sports)"
-   ]
+   "licence": "GRAI-0652-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0955",
+   "key": "matchbook",
+   "name": "Matchbook",
+   "licence": "GRAI-0955-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-10-01",
+   "valid_to": "2029-09-30",
+   "verified": true
+  },
+  {
+   "key": "easybet",
+   "name": "easybet",
+   "licence": "GRAI-0955-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-10-01",
+   "valid_to": "2029-09-30",
+   "verified": true
+  },
+  {
+   "key": "triplebetlimited",
    "name": "Triplebet Limited",
-   "L": [
-    [
-     "GRAI-0955-RB-26-0001",
-     "Remote Betting",
-     "2026-10-01",
-     "2029-09-30"
-    ],
-    [
-     "GRAI-0955-RBI-26-0001",
-     "Remote Betting Intermediary",
-     "2026-10-01",
-     "2029-09-30"
-    ]
-   ],
-   "T": [
-    "Matchbook",
-    "easybet"
-   ]
+   "licence": "GRAI-0955-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-10-01",
+   "valid_to": "2029-09-30",
+   "verified": true
   },
   {
-   "id": "a-0735",
+   "key": "betmaster",
+   "name": "Betmaster",
+   "licence": "GRAI-0735-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "casinoin",
+   "name": "Casinoin",
+   "licence": "GRAI-0735-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "bmsolutionslimited",
    "name": "BM Solutions Limited",
-   "L": [
-    [
-     "GRAI-0735-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Betmaster",
-    "Casinoin"
-   ]
+   "licence": "GRAI-0735-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-1185",
+   "key": "dragonbet",
+   "name": "DragonBet",
+   "licence": "GRAI-1185-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-04",
+   "valid_to": "2029-09-03",
+   "verified": true
+  },
+  {
+   "key": "dragonbetltd",
    "name": "Dragonbet Ltd",
-   "L": [
-    [
-     "GRAI-1185-RB-26-0001",
-     "Remote Betting",
-     "2026-09-04",
-     "2029-09-03"
-    ]
-   ],
-   "T": [
-    "DragonBet"
-   ]
+   "licence": "GRAI-1185-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-04",
+   "valid_to": "2029-09-03",
+   "verified": true
   },
   {
-   "id": "a-0691",
+   "key": "smarkets",
+   "name": "Smarkets",
+   "licence": "GRAI-0691-RBI-26-0001",
+   "licence_type": "Remote Betting Intermediary",
+   "valid_from": "2026-08-12",
+   "valid_to": "2029-08-11",
+   "verified": true
+  },
+  {
+   "key": "sbk",
+   "name": "SBK",
+   "licence": "GRAI-0691-RBI-26-0001",
+   "licence_type": "Remote Betting Intermediary",
+   "valid_from": "2026-08-12",
+   "valid_to": "2029-08-11",
+   "verified": true
+  },
+  {
+   "key": "smarketsmaltalimited",
    "name": "Smarkets Malta Limited",
-   "L": [
-    [
-     "GRAI-0691-RBI-26-0001",
-     "Remote Betting Intermediary",
-     "2026-08-12",
-     "2029-08-11"
-    ]
-   ],
-   "T": [
-    "Smarkets",
-    "SBK"
-   ]
+   "licence": "GRAI-0691-RBI-26-0001",
+   "licence_type": "Remote Betting Intermediary",
+   "valid_from": "2026-08-12",
+   "valid_to": "2029-08-11",
+   "verified": true
   },
   {
-   "id": "a-1051",
+   "key": "starspreads",
+   "name": "Star Spreads",
+   "licence": "GRAI-1051-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-28",
+   "valid_to": "2029-09-27",
+   "verified": true
+  },
+  {
+   "key": "starspreadslimited",
    "name": "Star Spreads Limited",
-   "L": [
-    [
-     "GRAI-1051-RB-26-0001",
-     "Remote Betting",
-     "2026-09-28",
-     "2029-09-27"
-    ]
-   ],
-   "T": [
-    "Star Spreads"
-   ]
+   "licence": "GRAI-1051-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-28",
+   "valid_to": "2029-09-27",
+   "verified": true
   },
   {
-   "id": "a-0796",
+   "key": "tote",
+   "name": "Tote",
+   "licence": "GRAI-0796-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-26",
+   "valid_to": "2029-08-25",
+   "verified": true
+  },
+  {
+   "key": "tdcolimited",
    "name": "TDCO Limited",
-   "L": [
-    [
-     "GRAI-0796-RB-26-0001",
-     "Remote Betting",
-     "2026-08-26",
-     "2029-08-25"
-    ]
-   ],
-   "T": [
-    "Tote"
-   ]
+   "licence": "GRAI-0796-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-26",
+   "valid_to": "2029-08-25",
+   "verified": true
   },
   {
-   "id": "a-0767",
+   "key": "midnite",
+   "name": "Midnite",
+   "licence": "GRAI-0767-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-24",
+   "valid_to": "2029-08-23",
+   "verified": true
+  },
+  {
+   "key": "midniteeuropelimited",
    "name": "Midnite Europe Limited",
-   "L": [
-    [
-     "GRAI-0767-RB-26-0001",
-     "Remote Betting",
-     "2026-08-24",
-     "2029-08-23"
-    ]
-   ],
-   "T": [
-    "Midnite"
-   ]
+   "licence": "GRAI-0767-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-24",
+   "valid_to": "2029-08-23",
+   "verified": true
   },
   {
-   "id": "a-0483",
+   "key": "geoffbanksonline",
+   "name": "Geoff Banks Online",
+   "licence": "GRAI-0483-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "gbsportsadvisorsltd",
    "name": "GB Sports Advisors Ltd",
-   "L": [
-    [
-     "GRAI-0483-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Geoff Banks Online"
-   ]
+   "licence": "GRAI-0483-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0313",
+   "key": "betdaq",
+   "name": "Betdaq",
+   "licence": "GRAI-0313-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-30",
+   "valid_to": "2029-07-29",
+   "verified": true
+  },
+  {
+   "key": "exchangeplatformsolutionslimited",
    "name": "Exchange Platform Solutions Limited",
-   "L": [
-    [
-     "GRAI-0313-RB-26-0001",
-     "Remote Betting",
-     "2026-07-30",
-     "2029-07-29"
-    ],
-    [
-     "GRAI-0313-RBI-26-0001",
-     "Remote Betting Intermediary",
-     "2026-07-30",
-     "2029-07-30"
-    ]
-   ],
-   "T": [
-    "Betdaq"
-   ]
+   "licence": "GRAI-0313-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-30",
+   "valid_to": "2029-07-29",
+   "verified": true
   },
   {
-   "id": "a-0397",
+   "key": "novibet",
+   "name": "Novibet",
+   "licence": "GRAI-0397-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "logflexmtlimited",
    "name": "Logflex MT Limited",
-   "L": [
-    [
-     "GRAI-0397-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Novibet"
-   ]
+   "licence": "GRAI-0397-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0724",
+   "key": "livescorebet",
+   "name": "LiveScore Bet",
+   "licence": "GRAI-0724-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-30",
+   "valid_to": "2029-07-29",
+   "verified": true
+  },
+  {
+   "key": "livescorebettingandgaminggibraltarlimited",
    "name": "LiveScore Betting and Gaming (Gibraltar) Limited",
-   "L": [
-    [
-     "GRAI-0724-RB-26-0001",
-     "Remote Betting",
-     "2026-07-30",
-     "2029-07-29"
-    ]
-   ],
-   "T": [
-    "LiveScore Bet"
-   ]
+   "licence": "GRAI-0724-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-30",
+   "valid_to": "2029-07-29",
+   "verified": true
   },
   {
-   "id": "a-1195",
+   "key": "netbet",
+   "name": "NetBet",
+   "licence": "GRAI-1195-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-24",
+   "valid_to": "2029-08-23",
+   "verified": true
+  },
+  {
+   "key": "netbetenterpriseslimited",
    "name": "NetBet Enterprises Limited",
-   "L": [
-    [
-     "GRAI-1195-RB-26-0001",
-     "Remote Betting",
-     "2026-08-24",
-     "2029-08-23"
-    ]
-   ],
-   "T": [
-    "NetBet"
-   ]
+   "licence": "GRAI-1195-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-24",
+   "valid_to": "2029-08-23",
+   "verified": true
   },
   {
-   "id": "a-1125",
+   "key": "kwiff",
+   "name": "Kwiff",
+   "licence": "GRAI-1125-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-10",
+   "valid_to": "2029-09-09",
+   "verified": true
+  },
+  {
+   "key": "kwifflimited",
    "name": "Kwiff Limited",
-   "L": [
-    [
-     "GRAI-1125-RB-26-0001",
-     "Remote Betting",
-     "2026-09-10",
-     "2029-09-09"
-    ]
-   ],
-   "T": [
-    "Kwiff"
-   ]
+   "licence": "GRAI-1125-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-10",
+   "valid_to": "2029-09-09",
+   "verified": true
   },
   {
-   "id": "a-0852",
+   "key": "boylesports",
+   "name": "BoyleSports",
+   "licence": "GRAI-0852-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "boylesportsgibraltarlimited",
    "name": "Boylesports (Gibraltar) Limited",
-   "L": [
-    [
-     "GRAI-0852-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "BoyleSports"
-   ]
+   "licence": "GRAI-0852-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0001295",
-   "name": "Dennis Deane",
-   "L": [
-    [
-     "GRAI-1295-IPB-26-0001",
-     "In-person Betting",
-     "2026-07-23",
-     "2029-07-22"
-    ]
-   ],
-   "T": []
+   "key": "bet365",
+   "name": "bet365",
+   "licence": "GRAI-0539-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0539",
+   "key": "hillsideeuropeenc",
    "name": "Hillside (Europe) ENC",
-   "L": [
-    [
-     "GRAI-0539-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "bet365"
-   ]
+   "licence": "GRAI-0539-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0498",
+   "key": "baroneracing",
+   "name": "Bar One Racing",
+   "licence": "GRAI-0498-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "baroneracinglimited",
    "name": "Bar-One Racing Limited",
-   "L": [
-    [
-     "GRAI-0498-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Bar One Racing"
-   ]
+   "licence": "GRAI-0498-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0729",
+   "key": "fitzwilliamsports",
+   "name": "Fitzwilliam Sports",
+   "licence": "GRAI-0729-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
+  },
+  {
+   "key": "fwbllimited",
    "name": "FWBL Limited",
-   "L": [
-    [
-     "GRAI-0729-RB-26-0001",
-     "Remote Betting",
-     "2026-07-01",
-     "2029-06-30"
-    ]
-   ],
-   "T": [
-    "Fitzwilliam Sports"
-   ]
+   "licence": "GRAI-0729-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-01",
+   "valid_to": "2029-06-30",
+   "verified": true
   },
   {
-   "id": "a-0385",
+   "key": "starsports",
+   "name": "Star Sports",
+   "licence": "GRAI-0385-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-06",
+   "valid_to": "2029-07-05",
+   "verified": true
+  },
+  {
+   "key": "starracinglimited",
    "name": "Star Racing Limited",
-   "L": [
-    [
-     "GRAI-0385-RB-26-0001",
-     "Remote Betting",
-     "2026-07-06",
-     "2029-07-05"
-    ]
-   ],
-   "T": [
-    "Star Sports"
-   ]
+   "licence": "GRAI-0385-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-06",
+   "valid_to": "2029-07-05",
+   "verified": true
   },
   {
-   "id": "a-0890",
+   "key": "unibet",
+   "name": "Unibet",
+   "licence": "GRAI-0890-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-11",
+   "valid_to": "2029-09-10",
+   "verified": true
+  },
+  {
+   "key": "32red",
+   "name": "32Red",
+   "licence": "GRAI-0890-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-11",
+   "valid_to": "2029-09-10",
+   "verified": true
+  },
+  {
+   "key": "platinumgaminglimited",
    "name": "Platinum Gaming Limited",
-   "L": [
-    [
-     "GRAI-0890-RB-26-0001",
-     "Remote Betting",
-     "2026-09-11",
-     "2029-09-10"
-    ]
-   ],
-   "T": [
-    "Unibet",
-    "32Red"
-   ]
+   "licence": "GRAI-0890-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-09-11",
+   "valid_to": "2029-09-10",
+   "verified": true
   },
   {
-   "id": "a-1069",
+   "key": "skybet",
+   "name": "Sky Bet",
+   "licence": "GRAI-1069-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
+  },
+  {
+   "key": "sbgsportsltd",
    "name": "SBG Sports Ltd",
-   "L": [
-    [
-     "GRAI-1069-RB-26-0001",
-     "Remote Betting",
-     "2026-08-11",
-     "2029-08-10"
-    ]
-   ],
-   "T": [
-    "Sky Bet"
-   ]
+   "licence": "GRAI-1069-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
   },
   {
-   "id": "a-0917",
+   "key": "10bet",
+   "name": "10bet",
+   "licence": "GRAI-0917-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-06",
+   "valid_to": "2029-07-05",
+   "verified": true
+  },
+  {
+   "key": "bluestarplanetlimited",
    "name": "Blue Star Planet Limited",
-   "L": [
-    [
-     "GRAI-0917-RB-26-0001",
-     "Remote Betting",
-     "2026-07-06",
-     "2029-07-05"
-    ]
-   ],
-   "T": [
-    "10bet"
-   ]
+   "licence": "GRAI-0917-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-07-06",
+   "valid_to": "2029-07-05",
+   "verified": true
   },
   {
-   "id": "a-1003",
+   "key": "paddypower",
+   "name": "Paddy Power",
+   "licence": "GRAI-1003-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
+  },
+  {
+   "key": "betfair",
+   "name": "Betfair",
+   "licence": "GRAI-1003-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
+  },
+  {
+   "key": "ppbcounterpartyserviceslimited",
    "name": "PPB Counterparty Services Limited",
-   "L": [
-    [
-     "GRAI-1003-RB-26-0001",
-     "Remote Betting",
-     "2026-08-11",
-     "2029-08-10"
-    ]
-   ],
-   "T": [
-    "Paddy Power",
-    "Betfair"
-   ]
+   "licence": "GRAI-1003-RB-26-0001",
+   "licence_type": "Remote Betting",
+   "valid_from": "2026-08-11",
+   "valid_to": "2029-08-10",
+   "verified": true
   }
- ]
+ ],
+ "casino_licensed": [],
+ "casino_note": "Zero GRAI casino licences issued as of November 2026. Casino (remote gaming) licensing expected 2027-2028."
 }
