@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accumulator Calculator Ireland 2026 — Free Acca Returns Calculator | CraicBet</title>
+  <meta name="description" content="Free accumulator calculator for Irish punters. Enter your selections, odds and stake to calculate exact acca returns, profit and each-way options. No signup needed.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="canonical" href="https://craicbet.com/pages/accumulator-calculator-ireland">
+  <meta property="og:title" content="Accumulator Calculator Ireland — Free Acca Returns Tool | CraicBet">
+  <meta property="og:description" content="Calculate your accumulator returns instantly. Enter odds in decimal, fractional or American format. Free, no signup.">
+  <meta property="og:url" content="https://craicbet.com/pages/accumulator-calculator-ireland">
+  <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://craicbet.com/"},
+    {"@type":"ListItem","position":2,"name":"Betting","item":"https://craicbet.com/pages/betting-sites-ireland"},
+    {"@type":"ListItem","position":3,"name":"Accumulator Calculator","item":"https://craicbet.com/pages/accumulator-calculator-ireland"}
+  ]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"How does an accumulator calculator work?","acceptedAnswer":{"@type":"Answer","text":"An accumulator calculator multiplies the decimal odds of all your selections together, then multiplies by your stake. If you pick 4 teams at 2.0, 1.5, 3.0 and 2.5, the combined odds are 2.0 × 1.5 × 3.0 × 2.5 = 22.5. A €10 stake returns €225 (€215 profit). The calculator handles the decimal conversion for you if you enter fractional or American odds."}},
+    {"@type":"Question","name":"What is the minimum and maximum number of legs in an accumulator?","acceptedAnswer":{"@type":"Answer","text":"A double is 2 selections, a treble is 3, and 4+ selections are called accumulators (4-fold, 5-fold etc.). Most Irish bookmakers accept accumulators up to 20 legs. The more legs, the larger the potential returns — but each leg multiplies the chance of losing. This calculator handles 2 to 10 legs."}},
+    {"@type":"Question","name":"How do I convert fractional odds to decimal?","acceptedAnswer":{"@type":"Answer","text":"Divide the fraction and add 1. So 5/1 = (5 ÷ 1) + 1 = 6.0. Evens (1/1) = 2.0. 11/4 = (11 ÷ 4) + 1 = 3.75. This calculator accepts fractional odds directly — just type them in the box and select Fractional as the odds format."}},
+    {"@type":"Question","name":"Does the accumulator calculator work for each-way bets?","acceptedAnswer":{"@type":"Answer","text":"Each-way accumulators split your stake into two equal bets: one on each selection to win, one on each selection to place. The place part pays at 1/4 or 1/5 of the win odds. This calculator has an each-way toggle that handles the split automatically."}},
+    {"@type":"Question","name":"Are accumulator returns taxed in Ireland?","acceptedAnswer":{"@type":"Answer","text":"No. Gambling winnings, including accumulator payouts, are not taxable for players in Ireland. The 2% betting duty is paid by the bookmaker. You keep 100% of your returns."}}
+  ]}
+  </script>
+  <style>
+    .calc-wrap {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+    .calc-box {
+      background: #fff;
+      border: 1.5px solid #d1fae5;
+      border-radius: 16px;
+      padding: 28px 24px;
+      margin: 24px 0;
+      box-shadow: 0 2px 16px rgba(26,58,42,.07);
+    }
+    .calc-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .calc-header h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #1a3a2a;
+    }
+    .odds-format-tabs {
+      display: flex;
+      border: 1.5px solid #d1d5db;
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 13px;
+    }
+    .odds-format-tabs button {
+      padding: 6px 14px;
+      border: none;
+      background: #fff;
+      cursor: pointer;
+      font-weight: 500;
+      color: #6b7280;
+      transition: all .15s;
+    }
+    .odds-format-tabs button.active {
+      background: #1a3a2a;
+      color: #fff;
+    }
+    .leg-row {
+      display: grid;
+      grid-template-columns: 32px 1fr 120px 36px;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .leg-num {
+      font-size: 13px;
+      font-weight: 700;
+      color: #9ca3af;
+      text-align: center;
+    }
+    .leg-name input, .leg-odds input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color .15s;
+      box-sizing: border-box;
+    }
+    .leg-name input:focus, .leg-odds input:focus {
+      outline: none;
+      border-color: #16a34a;
+    }
+    .leg-remove {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #d1d5db;
+      font-size: 18px;
+      line-height: 1;
+      padding: 0;
+      transition: color .15s;
+    }
+    .leg-remove:hover { color: #ef4444; }
+    .calc-controls {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 16px 0;
+      align-items: center;
+    }
+    .stake-input-wrap {
+      position: relative;
+      flex: 1;
+      min-width: 160px;
+    }
+    .stake-input-wrap span {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-weight: 700;
+      color: #374151;
+      font-size: 15px;
+    }
+    .stake-input-wrap input {
+      width: 100%;
+      padding: 11px 12px 11px 28px;
+      border: 1.5px solid #e5e7eb;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+    .stake-input-wrap input:focus {
+      outline: none;
+      border-color: #16a34a;
+    }
+    .ew-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      user-select: none;
+    }
+    .ew-toggle input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: #16a34a;
+    }
+    .btn-add-leg {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: 1.5px dashed #d1fae5;
+      color: #16a34a;
+      padding: 9px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      font-family: inherit;
+    }
+    .btn-add-leg:hover { background: #f0fdf4; border-color: #16a34a; }
+    .calc-results {
+      background: #f0fdf4;
+      border: 1.5px solid #bbf7d0;
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-top: 20px;
+    }
+    .result-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .result-tile {
+      background: #fff;
+      border: 1px solid #d1fae5;
+      border-radius: 10px;
+      padding: 14px 16px;
+      text-align: center;
+    }
+    .result-tile .label {
+      font-size: 12px;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 4px;
+    }
+    .result-tile .value {
+      font-size: 22px;
+      font-weight: 800;
+      color: #15803d;
+    }
+    .result-tile .value.neutral { color: #1a3a2a; }
+    .result-tile .value.orange { color: #d97706; }
+    .result-tile.highlight { border-color: #16a34a; background: #f0fdf4; }
+    .result-tile.highlight .value { font-size: 28px; }
+    .acca-type-badge {
+      display: inline-block;
+      background: #1a3a2a;
+      color: #d1fae5;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: .03em;
+    }
+    .error-msg {
+      color: #dc2626;
+      font-size: 13px;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #fef2f2;
+      border-radius: 8px;
+      border: 1px solid #fecaca;
+      display: none;
+    }
+    .prob-bar-wrap {
+      margin-top: 14px;
+    }
+    .prob-bar-label {
+      font-size: 13px;
+      color: #374151;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .prob-bar {
+      height: 8px;
+      background: #e5e7eb;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .prob-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #16a34a, #22c55e);
+      border-radius: 100px;
+      transition: width .3s ease;
+    }
+    .history-wrap {
+      margin-top: 20px;
+    }
+    .history-wrap h3 {
+      font-size: 15px;
+      color: #374151;
+      margin: 0 0 10px;
+    }
+    .history-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .history-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      background: #f9fafb;
+      border-radius: 8px;
+      margin-bottom: 6px;
+      font-size: 13px;
+    }
+    .history-list li .h-odds { font-weight: 700; color: #15803d; }
+    .history-list li .h-ret { font-weight: 700; color: #1a3a2a; }
+    @media (max-width: 540px) {
+      .leg-row { grid-template-columns: 24px 1fr 90px 28px; gap: 6px; }
+      .calc-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="../" class="logo"><img src="../images/logo.svg" alt="CraicBet — Ireland's Betting &amp; Casino Guide" style="height:40px;"></a>
+    <nav class="nav" id="mainNav">
+      <a href="betting-sites-ireland" class="active">Betting</a>
+      <a href="best-casinos-ireland">Casinos</a>
+      <a href="casino-bonuses-ireland">Bonuses</a>
+      <a href="slot-reviews">Slots</a>
+      <a href="guides">Guides</a>
+      <a href="/pages/search">&#128269; Search</a>
+    </nav>
+    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<article class="article-page">
+  <div class="article-header">
+    <div class="container">
+      <nav class="breadcrumbs"><a href="../">Home</a> › <a href="betting-sites-ireland">Betting</a> › Acca Calculator</nav>
+      <span class="section-label">Free Tool</span>
+      <h1>Accumulator Calculator Ireland — Free Acca Returns Tool</h1>
+      <div class="article-meta">
+        <span>🧮 Instant calculation — no signup</span>
+        <span>📅 Updated November 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-content">
+    <div class="calc-wrap">
+
+      <div class="calc-box">
+        <div class="calc-header">
+          <h2>Accumulator Calculator</h2>
+          <div class="odds-format-tabs" id="oddsFormatTabs">
+            <button class="active" data-fmt="decimal">Decimal</button>
+            <button data-fmt="fractional">Fractional</button>
+            <button data-fmt="american">American</button>
+          </div>
+        </div>
+
+        <div id="legsContainer">
+          <!-- legs injected by JS -->
+        </div>
+
+        <button class="btn-add-leg" id="addLegBtn">＋ Add selection</button>
+
+        <div class="calc-controls">
+          <div class="stake-input-wrap">
+            <span>€</span>
+            <input type="number" id="stakeInput" placeholder="Stake" value="10" min="0.01" step="0.01">
+          </div>
+          <label class="ew-toggle">
+            <input type="checkbox" id="ewToggle"> Each-way (1/4 odds)
+          </label>
+        </div>
+
+        <div class="error-msg" id="errorMsg"></div>
+
+        <div class="calc-results" id="calcResults">
+          <div id="accaBadge" class="acca-type-badge">Accumulator</div>
+          <div class="result-grid" id="resultGrid">
+            <div class="result-tile highlight" id="tileReturns">
+              <div class="label">Total Returns</div>
+              <div class="value" id="valReturns">€0.00</div>
+            </div>
+            <div class="result-tile" id="tileProfit">
+              <div class="label">Profit</div>
+              <div class="value" id="valProfit">€0.00</div>
+            </div>
+            <div class="result-tile">
+              <div class="label">Combined Odds</div>
+              <div class="value neutral" id="valOdds">—</div>
+            </div>
+            <div class="result-tile">
+              <div class="label">Stake</div>
+              <div class="value neutral" id="valStake">€10.00</div>
+            </div>
+          </div>
+          <div class="prob-bar-wrap">
+            <div class="prob-bar-label">
+              <span>Implied probability of winning</span>
+              <span id="valProb">—</span>
+            </div>
+            <div class="prob-bar"><div class="prob-bar-fill" id="probBarFill" style="width:0%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- history -->
+      <div class="calc-box history-wrap" id="historyBox" style="display:none">
+        <h3>Recent calculations</h3>
+        <ul class="history-list" id="historyList"></ul>
+        <button onclick="clearHistory()" style="font-size:12px;color:#9ca3af;background:none;border:none;cursor:pointer;padding:0;margin-top:4px;">Clear history</button>
+      </div>
+
+    </div><!-- /calc-wrap -->
+
+    <h2>How the Accumulator Calculator Works</h2>
+
+    <p>An accumulator combines multiple selections into one bet. Each selection's decimal odds are multiplied together to produce the combined (accumulator) odds. The calculator then multiplies the combined odds by your stake to give total returns.</p>
+
+    <p><strong>Example:</strong> You pick four football teams:</p>
+    <ul style="padding-left:24px;line-height:2.2;">
+      <li>Team A to win at 2.00</li>
+      <li>Team B to win at 1.80</li>
+      <li>Team C to win at 2.50</li>
+      <li>Team D to win at 1.60</li>
+    </ul>
+    <p>Combined odds: 2.00 × 1.80 × 2.50 × 1.60 = <strong>14.40</strong><br>
+    €10 stake returns: 14.40 × €10 = <strong>€144.00</strong> (€134.00 profit)</p>
+
+    <h2>Accumulator Types by Number of Legs</h2>
+
+    <div style="overflow-x:auto;margin:24px 0;">
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <thead>
+          <tr style="background:#1a3a2a;color:#fff;">
+            <th style="padding:11px 14px;text-align:left;">Legs</th>
+            <th style="padding:11px 14px;text-align:left;">Name</th>
+            <th style="padding:11px 14px;text-align:left;">Example combined odds at 2.0 each</th>
+            <th style="padding:11px 14px;text-align:left;">€10 returns</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:10px 14px;">2</td><td style="padding:10px 14px;">Double</td><td style="padding:10px 14px;">4.0</td><td style="padding:10px 14px;">€40</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;"><td style="padding:10px 14px;">3</td><td style="padding:10px 14px;">Treble</td><td style="padding:10px 14px;">8.0</td><td style="padding:10px 14px;">€80</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:10px 14px;">4</td><td style="padding:10px 14px;">4-Fold</td><td style="padding:10px 14px;">16.0</td><td style="padding:10px 14px;">€160</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;background:#f9fafb;"><td style="padding:10px 14px;">5</td><td style="padding:10px 14px;">5-Fold</td><td style="padding:10px 14px;">32.0</td><td style="padding:10px 14px;">€320</td></tr>
+          <tr style="border-bottom:1px solid #e5e7eb;"><td style="padding:10px 14px;">6</td><td style="padding:10px 14px;">6-Fold</td><td style="padding:10px 14px;">64.0</td><td style="padding:10px 14px;">€640</td></tr>
+          <tr style="background:#f9fafb;"><td style="padding:10px 14px;">7+</td><td style="padding:10px 14px;">7-Fold / Super Acca</td><td style="padding:10px 14px;">128.0+</td><td style="padding:10px 14px;">€1,280+</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Decimal vs Fractional vs American Odds</h2>
+
+    <p>The calculator accepts all three formats:</p>
+    <ul style="padding-left:24px;line-height:2.2;">
+      <li><strong>Decimal (European):</strong> Include your stake in the return. 2.50 means you get €2.50 back for every €1 staked (€1.50 profit). Most common on Irish and European betting apps.</li>
+      <li><strong>Fractional (UK/Ireland traditional):</strong> Shows profit relative to stake. 5/2 means €5 profit for every €2 staked (2.50 decimal). Still shown by some Irish bookmakers, especially for horse racing.</li>
+      <li><strong>American (moneyline):</strong> +150 means €150 profit on a €100 stake. -200 means you must stake €200 to win €100. Used by US-facing operators. Convert: +150 → 2.50 decimal; -200 → 1.50 decimal.</li>
+    </ul>
+
+    <h2>Each-Way Accumulator Calculator</h2>
+
+    <p>Each-way (E/W) bets place two equal wagers: one for your selection to win, one for it to place (usually top 2–3, depending on the race). The place part pays at a fraction of the win odds — most commonly 1/4 odds for horse racing.</p>
+
+    <p>The each-way toggle on this calculator uses 1/4 odds for the place part. For races with fewer runners (5–7 runners, 2 places; 8+ runners, 3 places), the terms vary — always check the bookmaker's terms before placing.</p>
+
+    <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:18px;margin:20px 0;">
+      <h3 style="margin:0 0 10px;color:#15803d;font-size:15px;">Related betting tools</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;">
+        <a href="accumulator-odds-explained" style="display:block;padding:12px;background:#fff;border:1px solid #bbf7d0;border-radius:8px;text-decoration:none;color:#1a3a2a;font-size:14px;font-weight:600;">📚 How acca odds work →</a>
+        <a href="grai-licensed-bookmakers-ireland" style="display:block;padding:12px;background:#fff;border:1px solid #bbf7d0;border-radius:8px;text-decoration:none;color:#1a3a2a;font-size:14px;font-weight:600;">✅ GRAI-licensed bookmakers →</a>
+        <a href="betting-apps-ireland" style="display:block;padding:12px;background:#fff;border:1px solid #bbf7d0;border-radius:8px;text-decoration:none;color:#1a3a2a;font-size:14px;font-weight:600;">📱 Best betting apps →</a>
+      </div>
+    </div>
+
+    <div style="margin:32px 0;padding:24px;background:#1a3a2a;border-radius:12px;color:#fff;text-align:center;">
+      <p style="margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#86efac;">GRAI-Licensed Bookmaker</p>
+      <p style="margin:0 0 6px;font-size:17px;font-weight:700;">Place your accumulator with a GRAI-licensed operator</p>
+      <p style="margin:0 0 16px;font-size:14px;color:#d1fae5;">Licence GRAI-0191-RB-26-0001 · Apple Pay &amp; Revolut accepted</p>
+      <a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" style="display:inline-block;background:#f97316;color:#fff;padding:14px 32px;border-radius:8px;font-weight:700;text-decoration:none;font-size:16px;">Place Your Acca →</a>
+      <p style="margin:12px 0 0;font-size:12px;color:#86efac;">18+ | Terms apply | No pronostic is guaranteed | Gamble responsibly</p>
+    </div>
+
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-left:4px solid #dc2626;border-radius:8px;padding:16px 20px;margin:28px 0;">
+      <strong>18+ | Responsible Gambling</strong><br>
+      Accumulator bets are high risk — the probability of all legs winning decreases with each additional leg. Never stake more than you can afford to lose. <strong>Gambling Aware Ireland: 1800 753 753</strong> | <a href="https://gamblingcare.ie" rel="nofollow noopener" target="_blank">gamblingcare.ie</a>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 CraicBet — Ireland's independent betting &amp; casino guide. 18+ only. <a href="responsible-gambling-ireland">Gambling Aware Ireland: 1800 753 753</a>. <a href="https://gamblingcare.ie" rel="nofollow noopener" target="_blank">gamblingcare.ie</a>.</p>
+    <nav style="margin-top:12px;display:flex;flex-wrap:wrap;gap:12px;font-size:13px;">
+      <a href="grai-licence-explained">GRAI Explained</a>
+      <a href="grai-licensed-bookmakers-ireland">Licensed Bookmakers</a>
+      <a href="responsible-gambling-ireland">Responsible Gambling</a>
+      <a href="privacy-policy">Privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var state = {
+    format: 'decimal',
+    legs: [],
+    nextId: 1
+  };
+
+  var ACCA_NAMES = ['', '', 'Double', 'Treble', '4-Fold', '5-Fold', '6-Fold', '7-Fold', '8-Fold', '9-Fold', '10-Fold'];
+  var MAX_LEGS = 10;
+  var history = JSON.parse(localStorage.getItem('cb_acca_hist') || '[]');
+
+  function addLeg(odds, name) {
+    if (state.legs.length >= MAX_LEGS) return;
+    var id = state.nextId++;
+    state.legs.push({ id: id, odds: odds || '', name: name || '' });
+    renderLegs();
+  }
+
+  function removeLeg(id) {
+    state.legs = state.legs.filter(function(l) { return l.id !== id; });
+    renderLegs();
+  }
+
+  function renderLegs() {
+    var container = document.getElementById('legsContainer');
+    container.innerHTML = '';
+    state.legs.forEach(function(leg, i) {
+      var row = document.createElement('div');
+      row.className = 'leg-row';
+      var fmt = state.format;
+      var placeholder = fmt === 'decimal' ? '2.00' : fmt === 'fractional' ? '1/1' : '+100';
+      row.innerHTML =
+        '<div class="leg-num">' + (i + 1) + '</div>' +
+        '<div class="leg-name"><input type="text" placeholder="Selection ' + (i + 1) + '" value="' + escHtml(leg.name) + '" data-id="' + leg.id + '" data-field="name"></div>' +
+        '<div class="leg-odds"><input type="text" placeholder="' + placeholder + '" value="' + escHtml(leg.odds) + '" data-id="' + leg.id + '" data-field="odds" inputmode="decimal"></div>' +
+        '<button class="leg-remove" data-id="' + leg.id + '" title="Remove">✕</button>';
+      container.appendChild(row);
+    });
+    // Show/hide add button
+    document.getElementById('addLegBtn').style.display = state.legs.length >= MAX_LEGS ? 'none' : '';
+    calculate();
+  }
+
+  function escHtml(s) {
+    return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+  }
+
+  function toDecimal(val, fmt) {
+    val = String(val).trim();
+    if (!val) return null;
+    if (fmt === 'decimal') {
+      var d = parseFloat(val);
+      return (isNaN(d) || d < 1.01) ? null : d;
+    }
+    if (fmt === 'fractional') {
+      var parts = val.split('/');
+      if (parts.length === 2) {
+        var n = parseFloat(parts[0]), d2 = parseFloat(parts[1]);
+        if (!isNaN(n) && !isNaN(d2) && d2 > 0) return (n / d2) + 1;
+      }
+      var single = parseFloat(val);
+      return (!isNaN(single) && single >= 0) ? single + 1 : null;
+    }
+    if (fmt === 'american') {
+      var v = parseFloat(val);
+      if (isNaN(v)) return null;
+      if (v > 0) return (v / 100) + 1;
+      if (v < 0) return (100 / Math.abs(v)) + 1;
+    }
+    return null;
+  }
+
+  function calculate() {
+    var stake = parseFloat(document.getElementById('stakeInput').value);
+    var ew = document.getElementById('ewToggle').checked;
+    var errorEl = document.getElementById('errorMsg');
+    errorEl.style.display = 'none';
+
+    if (isNaN(stake) || stake <= 0) {
+      showError('Please enter a valid stake.');
+      return;
+    }
+    if (state.legs.length < 2) {
+      showError('Add at least 2 selections to calculate an accumulator.');
+      return;
+    }
+
+    var decimals = [];
+    var allFilled = true;
+    for (var i = 0; i < state.legs.length; i++) {
+      var leg = state.legs[i];
+      if (!leg.odds) { allFilled = false; break; }
+      var d = toDecimal(leg.odds, state.format);
+      if (d === null) {
+        showError('Invalid odds in selection ' + (i + 1) + '. Use format: ' + (state.format === 'decimal' ? '2.00' : state.format === 'fractional' ? '5/2' : '+150 or -200'));
+        return;
+      }
+      decimals.push(d);
+    }
+    if (!allFilled) {
+      showPlaceholders(stake);
+      return;
+    }
+
+    var combinedOdds = decimals.reduce(function(a, b) { return a * b; }, 1);
+
+    var winStake = ew ? stake / 2 : stake;
+    var placeStake = ew ? stake / 2 : 0;
+
+    var winReturns = winStake * combinedOdds;
+
+    var placeReturns = 0;
+    if (ew) {
+      var placeCombined = decimals.reduce(function(a, d) {
+        return a * ((d - 1) * 0.25 + 1);
+      }, 1);
+      placeReturns = placeStake * placeCombined;
+    }
+
+    var totalReturns = winReturns + placeReturns;
+    var profit = totalReturns - stake;
+    var prob = (1 / combinedOdds) * 100;
+
+    updateResults(totalReturns, profit, combinedOdds, stake, prob);
+    updateBadge();
+    updateStakeDisplay(stake);
+    if (stake > 0 && decimals.length >= 2) saveHistory(state.legs.slice(), combinedOdds, totalReturns, stake, ew);
+  }
+
+  function showError(msg) {
+    var el = document.getElementById('errorMsg');
+    el.textContent = msg;
+    el.style.display = 'block';
+  }
+
+  function showPlaceholders(stake) {
+    document.getElementById('valReturns').textContent = '€—';
+    document.getElementById('valProfit').textContent = '€—';
+    document.getElementById('valOdds').textContent = '—';
+    document.getElementById('valStake').textContent = '€' + stake.toFixed(2);
+    document.getElementById('valProb').textContent = '—';
+    document.getElementById('probBarFill').style.width = '0%';
+  }
+
+  function updateResults(returns, profit, odds, stake, prob) {
+    document.getElementById('valReturns').textContent = '€' + returns.toFixed(2);
+    document.getElementById('valProfit').textContent = (profit >= 0 ? '+' : '') + '€' + profit.toFixed(2);
+    document.getElementById('valProfit').style.color = profit >= 0 ? '#15803d' : '#dc2626';
+    document.getElementById('valOdds').textContent = odds.toFixed(2);
+    document.getElementById('valStake').textContent = '€' + stake.toFixed(2);
+    document.getElementById('valProb').textContent = prob.toFixed(2) + '%';
+    var barW = Math.min(prob, 100);
+    document.getElementById('probBarFill').style.width = barW + '%';
+  }
+
+  function updateBadge() {
+    var n = state.legs.length;
+    var name = ACCA_NAMES[n] || (n + '-Fold Accumulator');
+    document.getElementById('accaBadge').textContent = name;
+  }
+
+  function updateStakeDisplay(stake) {
+    document.getElementById('valStake').textContent = '€' + stake.toFixed(2);
+  }
+
+  function saveHistory(legs, odds, returns, stake, ew) {
+    var label = legs.map(function(l) { return l.name || 'Sel'; }).join(' + ');
+    var entry = { label: label, odds: odds.toFixed(2), returns: returns.toFixed(2), stake: stake.toFixed(2), ew: ew, ts: Date.now() };
+    history.unshift(entry);
+    if (history.length > 5) history = history.slice(0, 5);
+    try { localStorage.setItem('cb_acca_hist', JSON.stringify(history)); } catch(e) {}
+    renderHistory();
+  }
+
+  function renderHistory() {
+    var box = document.getElementById('historyBox');
+    var list = document.getElementById('historyList');
+    if (!history.length) { box.style.display = 'none'; return; }
+    box.style.display = '';
+    list.innerHTML = '';
+    history.forEach(function(h) {
+      var li = document.createElement('li');
+      li.innerHTML = '<span>' + escHtml(h.label.length > 40 ? h.label.slice(0,40) + '…' : h.label) + (h.ew ? ' (E/W)' : '') + '</span>' +
+        '<span><span class="h-odds">' + h.odds + '</span> · €' + h.stake + ' → <span class="h-ret">€' + h.returns + '</span></span>';
+      list.appendChild(li);
+    });
+  }
+
+  window.clearHistory = function() {
+    history = [];
+    try { localStorage.removeItem('cb_acca_hist'); } catch(e) {}
+    renderHistory();
+  };
+
+  // Event delegation
+  document.getElementById('legsContainer').addEventListener('input', function(e) {
+    var el = e.target;
+    var id = parseInt(el.dataset.id);
+    var field = el.dataset.field;
+    if (!field) return;
+    var leg = state.legs.find(function(l) { return l.id === id; });
+    if (!leg) return;
+    leg[field] = el.value;
+    if (field === 'odds') calculate();
+  });
+
+  document.getElementById('legsContainer').addEventListener('click', function(e) {
+    var btn = e.target.closest('.leg-remove');
+    if (!btn) return;
+    removeLeg(parseInt(btn.dataset.id));
+  });
+
+  document.getElementById('addLegBtn').addEventListener('click', function() { addLeg('', ''); });
+
+  document.getElementById('stakeInput').addEventListener('input', calculate);
+  document.getElementById('ewToggle').addEventListener('change', calculate);
+
+  document.getElementById('oddsFormatTabs').addEventListener('click', function(e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    var fmt = btn.dataset.fmt;
+    if (!fmt || fmt === state.format) return;
+    state.format = fmt;
+    document.querySelectorAll('#oddsFormatTabs button').forEach(function(b) {
+      b.classList.toggle('active', b.dataset.fmt === fmt);
+    });
+    // Clear odds values when format changes
+    state.legs.forEach(function(l) { l.odds = ''; });
+    renderLegs();
+  });
+
+  // Init with 4 legs
+  addLeg('', ''); addLeg('', ''); addLeg('', ''); addLeg('', '');
+  renderHistory();
+})();
+</script>
+
+</body>
+</html>
