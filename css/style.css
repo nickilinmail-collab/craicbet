@@ -823,7 +823,8 @@ ul, ol { list-style: none; }
   height: 36px;
   border: 2px solid var(--danger);
   border-radius: 50%;
-  color: var(--danger);
+  background: var(--danger);
+  color: #fff;
   font-weight: 800;
   font-size: 0.85rem;
   margin: 10px 0;
