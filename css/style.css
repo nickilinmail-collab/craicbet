@@ -1291,13 +1291,12 @@ ul, ol { list-style: none; }
 }
 
 .lang-switcher a {
-  padding: 4px 8px !important;
+  padding: 4px 10px !important;
   border-radius: 6px;
-  font-size: 0.75rem !important;
+  font-size: 0.82rem !important;
   font-weight: 700 !important;
   color: var(--gray-300) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
+  letter-spacing: 0;
   transition: var(--transition);
   line-height: 1;
 }
