@@ -63,6 +63,21 @@
 </head>
 <body>
 <!-- Preloader -->
+<style>
+/* Preloader motion in CSS: iOS Safari pauses SVG SMIL in Low Power Mode, CSS animations keep running */
+@keyframes cbWave{to{transform:translateX(var(--dx))}}
+@keyframes cbSail{from{transform:translateX(800px)}to{transform:translateX(0)}}
+@keyframes cbBob{0%{transform:rotate(0)}25%{transform:rotate(2deg)}50%{transform:rotate(-1.5deg)}75%{transform:rotate(1deg)}100%{transform:rotate(0)}}
+#preloader .wa,#preloader .wb,#preloader .wc,#preloader .wd,#preloader .we,#preloader .wf{animation:cbWave linear infinite}
+#preloader .wa{--dx:-200px;animation-duration:3s}#preloader .wb{--dx:-200px;transform:translateX(200px);animation-duration:3s;animation-name:cbWaveB}
+#preloader .wc{--dx:-160px;animation-duration:4s}#preloader .wd{--dx:-160px;animation-duration:4s;animation-name:cbWaveD}
+#preloader .we{--dx:-80px;animation-duration:2.2s}#preloader .wf{--dx:-80px;animation-duration:2.2s;animation-name:cbWaveF}
+@keyframes cbWaveB{from{transform:translateX(200px)}to{transform:translateX(0)}}
+@keyframes cbWaveD{from{transform:translateX(160px)}to{transform:translateX(0)}}
+@keyframes cbWaveF{from{transform:translateX(80px)}to{transform:translateX(0)}}
+#preloader #ship{animation:cbSail 4s cubic-bezier(.4,0,.2,1) both}
+#preloader #shipBob{transform-origin:400px 290px;transform-box:view-box;animation:cbBob 3.2s ease-in-out infinite}
+</style>
 <div id="preloader" style="position:fixed;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,#001a3a 0%,#003366 50%,#0a4a7a 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;transition:opacity .6s ease;overflow:hidden">
 
   <!-- Stars -->
@@ -119,35 +134,26 @@
       <!-- WAVES animated -->
       <g>
         <!-- Wave layer 1 -->
-        <path d="M-100,280 Q-50,265 0,280 Q50,295 100,280 Q150,265 200,280 Q250,295 300,280 Q350,265 400,280 Q450,295 500,280 Q550,265 600,280 Q650,295 700,280 Q750,265 800,280 Q850,295 900,280" fill="none" stroke="#1a6aaa" stroke-width="4" opacity="0.6">
-          <animateTransform attributeName="transform" type="translate" from="0,0" to="-200,0" dur="3s" repeatCount="indefinite"/>
+        <path d="M-100,280 Q-50,265 0,280 Q50,295 100,280 Q150,265 200,280 Q250,295 300,280 Q350,265 400,280 Q450,295 500,280 Q550,265 600,280 Q650,295 700,280 Q750,265 800,280 Q850,295 900,280" fill="none" stroke="#1a6aaa" stroke-width="4" opacity="0.6" class="wa">
         </path>
-        <path d="M-100,280 Q-50,265 0,280 Q50,295 100,280 Q150,265 200,280 Q250,295 300,280 Q350,265 400,280 Q450,295 500,280 Q550,265 600,280 Q650,295 700,280 Q750,265 800,280 Q850,295 900,280" fill="none" stroke="#1a6aaa" stroke-width="4" opacity="0.6">
-          <animateTransform attributeName="transform" type="translate" from="200,0" to="0,0" dur="3s" repeatCount="indefinite"/>
+        <path d="M-100,280 Q-50,265 0,280 Q50,295 100,280 Q150,265 200,280 Q250,295 300,280 Q350,265 400,280 Q450,295 500,280 Q550,265 600,280 Q650,295 700,280 Q750,265 800,280 Q850,295 900,280" fill="none" stroke="#1a6aaa" stroke-width="4" opacity="0.6" class="wb">
         </path>
         <!-- Wave layer 2 -->
-        <path d="M-150,300 Q-80,288 0,300 Q80,312 160,300 Q240,288 320,300 Q400,312 480,300 Q560,288 640,300 Q720,312 800,300 Q880,288 960,300" fill="none" stroke="#2a7bbf" stroke-width="3" opacity="0.5">
-          <animateTransform attributeName="transform" type="translate" from="0,0" to="-160,0" dur="4s" repeatCount="indefinite"/>
+        <path d="M-150,300 Q-80,288 0,300 Q80,312 160,300 Q240,288 320,300 Q400,312 480,300 Q560,288 640,300 Q720,312 800,300 Q880,288 960,300" fill="none" stroke="#2a7bbf" stroke-width="3" opacity="0.5" class="wc">
         </path>
-        <path d="M-150,300 Q-80,288 0,300 Q80,312 160,300 Q240,288 320,300 Q400,312 480,300 Q560,288 640,300 Q720,312 800,300 Q880,288 960,300" fill="none" stroke="#2a7bbf" stroke-width="3" opacity="0.5">
-          <animateTransform attributeName="transform" type="translate" from="160,0" to="0,0" dur="4s" repeatCount="indefinite"/>
+        <path d="M-150,300 Q-80,288 0,300 Q80,312 160,300 Q240,288 320,300 Q400,312 480,300 Q560,288 640,300 Q720,312 800,300 Q880,288 960,300" fill="none" stroke="#2a7bbf" stroke-width="3" opacity="0.5" class="wd">
         </path>
         <!-- Wave layer 3 — whitecaps -->
-        <path d="M0,318 Q40,310 80,318 Q120,326 160,318 Q200,310 240,318 Q280,326 320,318 Q360,310 400,318 Q440,326 480,318 Q520,310 560,318 Q600,326 640,318 Q680,310 720,318 Q760,326 800,318" fill="none" stroke="white" stroke-width="2" opacity="0.25">
-          <animateTransform attributeName="transform" type="translate" from="0,0" to="-80,0" dur="2.2s" repeatCount="indefinite"/>
+        <path d="M0,318 Q40,310 80,318 Q120,326 160,318 Q200,310 240,318 Q280,326 320,318 Q360,310 400,318 Q440,326 480,318 Q520,310 560,318 Q600,326 640,318 Q680,310 720,318 Q760,326 800,318" fill="none" stroke="white" stroke-width="2" opacity="0.25" class="we">
         </path>
-        <path d="M0,318 Q40,310 80,318 Q120,326 160,318 Q200,310 240,318 Q280,326 320,318 Q360,310 400,318 Q440,326 480,318 Q520,310 560,318 Q600,326 640,318 Q680,310 720,318 Q760,326 800,318" fill="none" stroke="white" stroke-width="2" opacity="0.25">
-          <animateTransform attributeName="transform" type="translate" from="80,0" to="0,0" dur="2.2s" repeatCount="indefinite"/>
+        <path d="M0,318 Q40,310 80,318 Q120,326 160,318 Q200,310 240,318 Q280,326 320,318 Q360,310 400,318 Q440,326 480,318 Q520,310 560,318 Q600,326 640,318 Q680,310 720,318 Q760,326 800,318" fill="none" stroke="white" stroke-width="2" opacity="0.25" class="wf">
         </path>
       </g>
 
       <!-- SHIP — gently rocking -->
       <g id="ship">
-        <animateTransform attributeName="transform" type="translate" from="800,0" to="0,0" dur="4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
-
-        <g>
-          <!-- Gentle bob -->
-          <animateTransform attributeName="transform" type="rotate" values="0 400 290; 2 400 290; -1.5 400 290; 1 400 290; 0 400 290" dur="3.2s" repeatCount="indefinite" additive="sum"/>
+        <g id="shipBob">
+          <!-- Gentle bob (CSS) -->
 
           <!-- HULL -->
           <path d="M220,270 L580,270 L560,310 L240,310 Z" fill="url(#hullGrad)" stroke="#2a0e00" stroke-width="2"/>
@@ -599,7 +605,7 @@
   var el = document.getElementById('pour-pct');
   if(!el) return;
   var msgs = ['⚓ Setting sail...','🍺 Pouring the pints...','🏴‍☠️ Hoisting the flag...','🌊 Riding the waves...','⚓ Making port...'];
-  var t0 = Date.now(), dur = 4400;
+  var t0 = Date.now(), dur = 6600;
   function tick(){
     var p = Math.min(100, Math.round((Date.now()-t0)/dur*100));
     var mi = Math.min(Math.floor(p/22), msgs.length-1);
