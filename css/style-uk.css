@@ -66,10 +66,17 @@
   background: #f0f4ff;
 }
 
-/* UK version — active lang indicator */
+/* UK version — lang switcher */
+.lang-switcher a {
+  color: rgba(255,255,255,0.75) !important;
+}
+.lang-switcher a:hover {
+  color: #fff !important;
+  background: rgba(255,255,255,0.15) !important;
+}
 .lang-switcher .active-lang {
-  background: #CF142B;
-  color: #fff;
+  background: #CF142B !important;
+  color: #fff !important;
 }
 
 /* Geo banner */
