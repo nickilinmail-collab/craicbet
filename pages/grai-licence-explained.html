@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GRAI Licence Ireland 2026 | CraicBet</title>
-  <meta name="description" content="GRAI licence Ireland: live tracker of all 33 licensed operators, how to check any betting site, what GRAI means for Irish players, and when casino.">
+  <meta name="description" content="GRAI licence Ireland: full register of all 43 licensed operators with licence numbers, how to check any betting site, what GRAI means for Irish players.">
   <meta name="keywords" content="GRAI licence Ireland, GRAI licensed betting sites, GRAI licensed operators, what is GRAI licence, gambling regulatory authority Ireland, GRAI licence check, GRAI licence number, GRAI casino licence Ireland 2026">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,10 +28,11 @@
   }
   </script>
   <link rel="canonical" href="https://craicbet.com/pages/grai-licence-explained">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the GRAI licence number for bet365 Ireland?","acceptedAnswer":{"@type":"Answer","text":"bet365 holds GRAI remote betting licence number GRAI-0539-RB-26-0001, issued 1 July 2026. You can verify this at grai.ie."}},{"@type":"Question","name":"What is the GRAI licence number for Paddy Power?","acceptedAnswer":{"@type":"Answer","text":"Paddy Power (Flutter Entertainment) holds GRAI remote betting licence number GRAI-1003-RB-26-0001, issued 11 August 2026. Betfair shares the same licence as it is part of the same Flutter group."}},{"@type":"Question","name":"What is the GRAI licence number for Ladbrokes Ireland?","acceptedAnswer":{"@type":"Answer","text":"Ladbrokes Ireland (Entain Ireland) holds GRAI remote betting licence number GRAI-0622-RB-26-0001, issued 1 July 2026."}},{"@type":"Question","name":"What is the GRAI licence number for William Hill Ireland?","acceptedAnswer":{"@type":"Answer","text":"William Hill (Evoke plc) holds GRAI remote betting licence number GRAI-1096-RB-26-0001, issued 15 July 2026."}},{"@type":"Question","name":"What is the GRAI licence number for Betway Ireland?","acceptedAnswer":{"@type":"Answer","text":"Betway holds GRAI remote betting licence number GRAI-0524-RB-26-0001, issued 1 July 2026."}},{"@type":"Question","name":"What is the GRAI licence number for Sky Bet Ireland?","acceptedAnswer":{"@type":"Answer","text":"Sky Bet holds GRAI remote betting licence number GRAI-1069-RB-26-0001, issued 11 August 2026."}},{"@type":"Question","name":"What is the GRAI licence number for Unibet Ireland?","acceptedAnswer":{"@type":"Answer","text":"Unibet holds GRAI remote betting licence number GRAI-0890-RB-26-0001, issued 10 September 2026."}},{"@type":"Question","name":"What is the GRAI licence number for 888sport Ireland?","acceptedAnswer":{"@type":"Answer","text":"888sport holds GRAI remote betting licence number GRAI-1090-RB-26-0001, issued 31 July 2026."}},{"@type":"Question","name":"What is the GRAI licence number for BOYLESports?","acceptedAnswer":{"@type":"Answer","text":"BOYLESports holds GRAI remote betting licence number GRAI-0852-RB-26-0001, issued 1 July 2026."}},{"@type":"Question","name":"How many GRAI remote betting licences have been issued?","acceptedAnswer":{"@type":"Answer","text":"As of November 2026, the GRAI has issued 43 remote betting licences. The first licences were issued on 1 July 2026 and the most recent to Interwetten on 16 October 2026. No casino or gaming licences have been issued — those are expected from 2027–2028."}}]}</script>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="CraicBet">
   <meta property="og:locale" content="en_IE">
-  <meta property="og:title" content="GRAI Licence Ireland 2026: 33 Licensed Operators &amp; Player Guide | CraicBet">
+  <meta property="og:title" content="GRAI Licence Ireland 2026: 43 Licensed Operators &amp; Player Guide | CraicBet">
   <meta property="og:description" content="GRAI licence Ireland: live tracker of all 33 licensed operators, how to check any betting site, and when casino licences arrive.">
   <meta property="og:url" content="https://craicbet.com/pages/grai-licence-explained">
   <meta property="og:image" content="https://craicbet.com/images/og-default.jpg">
@@ -104,7 +105,7 @@
       <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px;">
         <div>
           <h2 style="color:#fff;margin:0 0 4px;font-size:1.3rem;">🏛️ GRAI Licence Register — Live Tracker</h2>
-          <p style="color:#9fcfb3;margin:0;font-size:14px;">33 remote betting licences issued as of November 2026 · <a href="https://www.grai.ie/licensing-regulation/licensing" rel="nofollow noopener" target="_blank" style="color:#4ade80;">Verify at grai.ie ↗</a></p>
+          <p style="color:#9fcfb3;margin:0;font-size:14px;">43 remote betting licences issued as of November 2026 · <a href="https://www.grai.ie/licensing-regulation/licensing" rel="nofollow noopener" target="_blank" style="color:#4ade80;">Verify at grai.ie ↗</a></p>
         </div>
         <div style="background:#1b8c3d;border-radius:8px;padding:10px 20px;text-align:center;">
           <div style="font-size:2rem;font-weight:800;color:#fff;line-height:1;">43</div>
@@ -112,8 +113,13 @@
         </div>
       </div>
 
+      <div style="margin-bottom:14px;">
+        <input id="graiSearch" type="search" placeholder="🔍 Search operator or licence number…" oninput="filterGRAI(this.value)" style="width:100%;box-sizing:border-box;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);color:#e8f5ed;font-size:14px;outline:none;" autocomplete="off">
+        <p id="graiCount" style="color:#9fcfb3;font-size:12px;margin:6px 0 0;"></p>
+      </div>
+
       <div style="overflow-x:auto;">
-        <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <table id="graiTable" style="width:100%;border-collapse:collapse;font-size:14px;">
           <thead>
             <tr style="border-bottom:1px solid rgba(255,255,255,.15);">
               <th style="text-align:left;padding:8px 10px;color:#9fcfb3;font-weight:600;">Operator</th>
@@ -166,7 +172,7 @@
             <tr style="border-bottom:1px solid rgba(255,255,255,.07);"><td style="padding:9px 10px;color:#e8f5ed;">easyBet</td><td style="padding:9px 10px;color:#9fcfb3;">Remote Betting</td><td style="padding:9px 10px;color:#6ee7b7;font-size:12px;font-family:monospace;">A-0955-C10260130-001</td><td style="padding:9px 10px;"><span style="background:#14532d;color:#4ade80;border-radius:4px;padding:2px 8px;font-size:12px;font-weight:600;">✓ Active</span></td></tr>
             <tr style="border-bottom:1px solid rgba(255,255,255,.07);"><td style="padding:9px 10px;color:#e8f5ed;">Interwetten</td><td style="padding:9px 10px;color:#9fcfb3;">Remote Betting</td><td style="padding:9px 10px;color:#6ee7b7;font-size:12px;font-family:monospace;">GRAI-1365-RB-26-0001</td><td style="padding:9px 10px;"><span style="background:#14532d;color:#4ade80;border-radius:4px;padding:2px 8px;font-size:12px;font-weight:600;">✓ Active</span></td></tr>
             <tr style="border-bottom:1px solid rgba(255,255,255,.07);background:rgba(242,101,34,.08);"><td style="padding:9px 10px;color:#e8f5ed;">Our recommended partner <span style="background:#F26522;color:#fff;border-radius:4px;padding:1px 7px;font-size:11px;font-weight:700;margin-left:6px;">Partner</span></td><td style="padding:9px 10px;color:#9fcfb3;">Remote Betting</td><td style="padding:9px 10px;color:#6ee7b7;font-size:12px;font-family:monospace;">GRAI-0191-RB-26-0001</td><td style="padding:9px 10px;"><span style="background:#14532d;color:#4ade80;border-radius:4px;padding:2px 8px;font-size:12px;font-weight:600;">✓ Active</span> <a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" style="margin-left:8px;background:#F26522;color:#fff;border-radius:4px;padding:3px 10px;font-size:12px;font-weight:700;text-decoration:none;">Bet Now →</a></td></tr>
-            <tr><td colspan="4" style="padding:12px 10px;color:#6b9e82;font-size:13px;font-style:italic;">+ 22 further operators. Full list at <a href="https://www.grai.ie" rel="nofollow noopener" target="_blank" style="color:#4ade80;">grai.ie</a> (opens in GRAI's official licensed operators register).</td></tr>
+            <tr id="graiNoResults" style="display:none;"><td colspan="4" style="padding:16px 10px;color:#9fcfb3;font-style:italic;text-align:center;">No operators match your search.</td></tr>
           </tbody>
         </table>
       </div>
@@ -358,10 +364,10 @@
 </p>
 
 <h2>GRAI Licence Explained: Ireland's New Gambling Regulator 2026</h2>
-<p>The Gambling Regulatory Authority of Ireland (GRAI) became operational in 2026, issuing its first remote betting licences from 1 July 2026. As of November 2026, GRAI has issued 11 remote betting licences to sports betting operators. Casino (remote gaming) licences are not yet available — these are expected from 2027 to 2028, and zero have been issued to date.</p>
+<p>The Gambling Regulatory Authority of Ireland (GRAI) became operational in 2026, issuing its first remote betting licences from 1 July 2026. As of November 2026, GRAI has issued 43 remote betting licences to sports betting operators. Casino (remote gaming) licences are not yet available — these are expected from 2027 to 2028, and zero have been issued to date.</p>
 <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:0.95rem">
 <tr style="background:#1e3a28"><th style="padding:9px;border:1px solid #2d5a3d;text-align:left;color:#cde6d4">Licence type</th><th style="padding:9px;border:1px solid #2d5a3d;text-align:left;color:#cde6d4">Issued since</th><th style="padding:9px;border:1px solid #2d5a3d;text-align:left;color:#cde6d4">Number issued</th><th style="padding:9px;border:1px solid #2d5a3d;text-align:left;color:#cde6d4">Notes</th></tr>
-<tr><td style="padding:8px;border:1px solid #2d5a3d">Remote betting</td><td style="padding:8px;border:1px solid #2d5a3d">1 July 2026</td><td style="padding:8px;border:1px solid #2d5a3d">11</td><td style="padding:8px;border:1px solid #2d5a3d">Sports betting operators</td></tr>
+<tr><td style="padding:8px;border:1px solid #2d5a3d">Remote betting</td><td style="padding:8px;border:1px solid #2d5a3d">1 July 2026</td><td style="padding:8px;border:1px solid #2d5a3d">43</td><td style="padding:8px;border:1px solid #2d5a3d">Sports betting operators</td></tr>
 <tr style="background:#0d1f14"><td style="padding:8px;border:1px solid #2d5a3d">Retail betting</td><td style="padding:8px;border:1px solid #2d5a3d">1 December 2026</td><td style="padding:8px;border:1px solid #2d5a3d">Pending</td><td style="padding:8px;border:1px solid #2d5a3d">High street bookmakers</td></tr>
 <tr><td style="padding:8px;border:1px solid #2d5a3d">Remote gaming (casino)</td><td style="padding:8px;border:1px solid #2d5a3d">Expected 2027–2028</td><td style="padding:8px;border:1px solid #2d5a3d">0</td><td style="padding:8px;border:1px solid #2d5a3d">Not yet available</td></tr>
 </table>
@@ -428,6 +434,24 @@ document.querySelectorAll('.faq-question').forEach(q => {
 document.querySelector('.burger')?.addEventListener('click', () => {
   document.getElementById('mainNav').classList.toggle('open');
 });
+
+function filterGRAI(q) {
+  const val = q.trim().toLowerCase();
+  const table = document.getElementById('graiTable');
+  if (!table) return;
+  const rows = table.querySelectorAll('tbody tr:not(#graiNoResults)');
+  let visible = 0;
+  rows.forEach(row => {
+    const text = row.textContent.toLowerCase();
+    const show = !val || text.includes(val);
+    row.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+  const noRes = document.getElementById('graiNoResults');
+  if (noRes) noRes.style.display = visible === 0 ? '' : 'none';
+  const count = document.getElementById('graiCount');
+  if (count) count.textContent = val ? `${visible} operator${visible !== 1 ? 's' : ''} found` : '';
+}
 </script>
 
 <script src="../js/slot-game.js"></script>
