@@ -285,12 +285,40 @@
     </svg>
 
     <div id="pour-pct" style="text-align:center;color:#DEB887;font-family:Inter,sans-serif;font-size:16px;font-weight:600;margin-top:8px;letter-spacing:2px;opacity:0.8">Pouring your pint... 0%</div>
+<script>
+// Animate the % counter — purely cosmetic, runs right here inline
+(function(){
+  var el = document.getElementById('pour-pct');
+  if(!el) return;
+  var t0 = Date.now(), dur = 380;
+  function tick(){
+    var p = Math.min(100, Math.round((Date.now()-t0)/dur*100));
+    el.textContent = 'Pouring your pint... ' + p + '%';
+    if(p < 100) requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+</script>
   </div>
 
   <div style="text-align:center;margin-top:14px"><img src="/images/logo-full.svg" alt="CraicBet - Ireland's Betting &amp; Casino Guide" style="width:min(420px,80vw);height:auto;filter:drop-shadow(0 2px 12px rgba(242,101,34,.3))"></div>
 </div>
 <style>@keyframes x{}</style>
-<script>try{if(sessionStorage.getItem("cbPre")){document.getElementById("preloader").style.display="none"}}catch(e){}</script>
+<script>
+// Hide preloader — runs immediately on parse, before any other script can fail
+(function(){
+  // If already seen this session, hide instantly
+  try { if(sessionStorage.getItem('cbPre')){ document.write('<style>#preloader{display:none!important}</style>'); return; } } catch(e){}
+  // Otherwise: hide after 2s max, no matter what else fails
+  window.__preTm = setTimeout(function hidePre(){
+    var pre = document.getElementById('preloader');
+    if (!pre) return;
+    pre.style.transition = 'opacity .4s';
+    pre.style.opacity = '0';
+    setTimeout(function(){ pre.style.display = 'none'; try{sessionStorage.setItem('cbPre','1');}catch(e){} }, 420);
+  }, 400); // start hiding after just 400ms — fast enough, still shows the animation briefly
+})();
+</script>
 
 
 <!-- ===== HEADER ===== -->
@@ -1309,38 +1337,6 @@ document.querySelector('.burger')?.addEventListener('click', () => {
 
 <script src="js/slot-game.js"></script>
 <script src="/js/ui-sound.js"></script>
-
-<script>
-(function(){
-  var pre = document.getElementById('preloader');
-  if (!pre) return;
-  var pct = document.getElementById('pour-pct');
-  var start = Date.now();
-  var duration = 1800; // ms total animation
-  function step() {
-    var elapsed = Date.now() - start;
-    var p = Math.min(100, Math.round((elapsed / duration) * 100));
-    if (pct) pct.textContent = 'Pouring your pint... ' + p + '%';
-    if (p < 100) {
-      requestAnimationFrame(step);
-    } else {
-      pre.style.opacity = '0';
-      pre.style.transition = 'opacity .5s ease';
-      setTimeout(function() {
-        pre.style.display = 'none';
-        try { sessionStorage.setItem('cbPre','1'); } catch(e){}
-      }, 520);
-    }
-  }
-  // Start immediately — don't wait for DOMContentLoaded (we're at bottom of body)
-  requestAnimationFrame(step);
-  // Safety fallback: hide after 3s no matter what
-  setTimeout(function() {
-    pre.style.opacity = '0';
-    setTimeout(function() { pre.style.display = 'none'; }, 520);
-  }, 3000);
-})();
-</script>
 
 </body>
 </html>
