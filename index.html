@@ -654,50 +654,50 @@
 </header>
 
 <!-- ===== FULLSCREEN MEGA MENU ===== -->
-<div id="megaMenu" class="mega-menu" aria-hidden="true">
-  <div class="mega-menu-inner">
+<div id="megaMenu" class="mega-menu" aria-hidden="true" style="display:none;position:fixed;inset:0;z-index:8000;background:rgba(0,0,0,0.6);">
+  <div class="mega-menu-inner" style="display:flex;width:min(680px,100vw);height:100%;margin-left:auto;background:#0d2518;box-shadow:-4px 0 40px rgba(0,0,0,0.5)">
     <!-- Left: main nav items -->
-    <div class="mega-left">
-      <button class="mega-close" id="megaClose" aria-label="Close menu">✕</button>
-      <ul class="mega-items">
-        <li class="mega-item active" data-sub="sub-grai">
+    <div class="mega-left" style="width:200px;flex-shrink:0;background:rgba(0,0,0,0.3);display:flex;flex-direction:column;border-right:1px solid rgba(255,255,255,0.08);padding:16px 0;">
+      <button class="mega-close" id="megaClose" aria-label="Close menu" style="align-self:flex-end;margin:0 12px 12px;background:none;border:none;color:rgba(255,255,255,0.5);font-size:1.3rem;cursor:pointer;line-height:1;">✕</button>
+      <ul class="mega-items" style="list-style:none;margin:0;padding:0;flex:1;">
+        <li class="mega-item active" data-sub="sub-grai" style="display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid #F26522;background:rgba(255,255,255,0.07);color:#fff;font-size:0.95rem;font-weight:500;list-style:none;">
           <span class="mega-icon">🏛️</span>
           <span class="mega-label">GRAI</span>
           <span class="mega-arrow">›</span>
         </li>
-        <li class="mega-item" data-sub="sub-betting">
+        <li class="mega-item" data-sub="sub-betting" style="display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid transparent;color:rgba(255,255,255,0.65);font-size:0.95rem;font-weight:500;list-style:none;">
           <span class="mega-icon">⚽</span>
           <span class="mega-label">Betting</span>
           <span class="mega-arrow">›</span>
         </li>
-        <li class="mega-item" data-sub="sub-casinos">
+        <li class="mega-item" data-sub="sub-casinos" style="display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid transparent;color:rgba(255,255,255,0.65);font-size:0.95rem;font-weight:500;list-style:none;">
           <span class="mega-icon">🎰</span>
           <span class="mega-label">Casinos</span>
           <span class="mega-arrow">›</span>
         </li>
-        <li class="mega-item" data-sub="sub-bonuses">
+        <li class="mega-item" data-sub="sub-bonuses" style="display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid transparent;color:rgba(255,255,255,0.65);font-size:0.95rem;font-weight:500;list-style:none;">
           <span class="mega-icon">🎁</span>
           <span class="mega-label">Bonuses</span>
           <span class="mega-arrow">›</span>
         </li>
-        <li class="mega-item" data-sub="sub-slots">
+        <li class="mega-item" data-sub="sub-slots" style="display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid transparent;color:rgba(255,255,255,0.65);font-size:0.95rem;font-weight:500;list-style:none;">
           <span class="mega-icon">🎲</span>
           <span class="mega-label">Slots</span>
           <span class="mega-arrow">›</span>
         </li>
-        <li class="mega-item" data-sub="sub-guides">
+        <li class="mega-item" data-sub="sub-guides" style="display:flex;align-items:center;gap:10px;padding:13px 16px;cursor:pointer;border-left:3px solid transparent;color:rgba(255,255,255,0.65);font-size:0.95rem;font-weight:500;list-style:none;">
           <span class="mega-icon">📖</span>
           <span class="mega-label">Guides</span>
           <span class="mega-arrow">›</span>
         </li>
       </ul>
-      <a href="pages/search" class="mega-search-btn">🔍 Search</a>
+      <a href="pages/search" class="mega-search-btn" style="display:block;margin:12px 16px 0;padding:10px;background:rgba(242,101,34,0.15);border:1px solid rgba(242,101,34,0.4);border-radius:8px;color:#F26522;text-align:center;font-size:0.9rem;font-weight:600;text-decoration:none;">🔍 Search</a>
     </div>
 
     <!-- Right: sub-links per category -->
-    <div class="mega-right">
-      <div class="mega-sub active" id="sub-grai">
-        <div class="mega-sub-title">GRAI Licensing</div>
+    <div class="mega-right" style="flex:1;padding:48px 24px 24px;overflow-y:auto;">
+      <div class="mega-sub active" style="display:block;" id="sub-grai">
+        <div class="mega-sub-title" style="font-size:0.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px;">GRAI Licensing</div>
         <a href="pages/grai-licence-explained">GRAI Licence Explained</a>
         <a href="pages/grai-licensed-bookmakers">GRAI Bookmakers</a>
         <a href="pages/grai-licence-register-tracker">Licence Register</a>
@@ -705,8 +705,8 @@
         <a href="pages/is-online-gambling-legal-ireland">Is Gambling Legal?</a>
         <a href="pages/unlicensed-betting-sites-ireland">Unlicensed Sites Warning</a>
       </div>
-      <div class="mega-sub" id="sub-betting">
-        <div class="mega-sub-title">Sports Betting</div>
+      <div class="mega-sub" style="display:none;" id="sub-betting">
+        <div class="mega-sub-title" style="font-size:0.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px;">Sports Betting</div>
         <a href="pages/betting-sites-ireland">Best Betting Sites</a>
         <a href="pages/betting-apps-ireland">Betting Apps</a>
         <a href="pages/free-bets-ireland">Free Bets Ireland</a>
@@ -715,8 +715,8 @@
         <a href="pages/football-betting-ireland">Football Betting</a>
         <a href="pages/accumulator-calculator-ireland">Acca Calculator</a>
       </div>
-      <div class="mega-sub" id="sub-casinos">
-        <div class="mega-sub-title">Online Casinos</div>
+      <div class="mega-sub" style="display:none;" id="sub-casinos">
+        <div class="mega-sub-title" style="font-size:0.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px;">Online Casinos</div>
         <a href="pages/best-casinos-ireland">Best Casinos Ireland</a>
         <a href="pages/fast-payout-casinos">Fast Payout Casinos</a>
         <a href="pages/revolut-casinos">Revolut Casinos</a>
@@ -724,16 +724,16 @@
         <a href="pages/trustly-casino-ireland">Trustly Casinos</a>
         <a href="pages/irish-banks-blocking-casino-deposits">Bank Blocks Guide</a>
       </div>
-      <div class="mega-sub" id="sub-bonuses">
-        <div class="mega-sub-title">Bonuses & Offers</div>
+      <div class="mega-sub" style="display:none;" id="sub-bonuses">
+        <div class="mega-sub-title" style="font-size:0.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px;">Bonuses & Offers</div>
         <a href="pages/casino-bonuses-ireland">Casino Bonuses</a>
         <a href="pages/no-deposit-bonus">No Deposit Bonuses</a>
         <a href="pages/wagering-requirements-explained">Wagering Explained</a>
         <a href="pages/free-spins-no-deposit">Free Spins</a>
         <a href="pages/casino-bonuses-ireland#welcome">Welcome Bonuses</a>
       </div>
-      <div class="mega-sub" id="sub-slots">
-        <div class="mega-sub-title">Slot Reviews</div>
+      <div class="mega-sub" style="display:none;" id="sub-slots">
+        <div class="mega-sub-title" style="font-size:0.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px;">Slot Reviews</div>
         <a href="pages/slot-reviews">All Slot Reviews</a>
         <a href="pages/slots/gates-of-olympus">Gates of Olympus</a>
         <a href="pages/slots/sweet-bonanza">Sweet Bonanza</a>
@@ -741,8 +741,8 @@
         <a href="pages/slots/book-of-dead">Book of Dead</a>
         <a href="pages/rtp-explained">What Is RTP?</a>
       </div>
-      <div class="mega-sub" id="sub-guides">
-        <div class="mega-sub-title">Guides & Education</div>
+      <div class="mega-sub" style="display:none;" id="sub-guides">
+        <div class="mega-sub-title" style="font-size:0.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#F26522;margin-bottom:14px;">Guides & Education</div>
         <a href="pages/guides">All Guides</a>
         <a href="pages/responsible-gambling">Responsible Gambling</a>
         <a href="pages/gambling-tax-ireland">Gambling Tax Ireland</a>
@@ -1787,14 +1787,14 @@ document.querySelectorAll('.faq-question').forEach(q => {
   var closeBtn = document.getElementById('megaClose');
 
   function openMenu() {
-    menu.classList.add('open');
+    menu.style.display = 'flex';
     menu.setAttribute('aria-hidden','false');
     btn.classList.add('is-open');
     btn.setAttribute('aria-expanded','true');
     document.body.style.overflow = 'hidden';
   }
   function closeMenu() {
-    menu.classList.remove('open');
+    menu.style.display = 'none';
     menu.setAttribute('aria-hidden','true');
     btn.classList.remove('is-open');
     btn.setAttribute('aria-expanded','false');
@@ -1816,17 +1816,30 @@ document.querySelectorAll('.faq-question').forEach(q => {
     if (e.key === 'Escape') closeMenu();
   });
 
+  // Style sub links
+  document.querySelectorAll('.mega-sub a').forEach(function(a){
+    a.style.cssText = 'display:block;padding:11px 0;color:rgba(255,255,255,0.75);text-decoration:none;font-size:0.97rem;font-weight:500;border-bottom:1px solid rgba(255,255,255,0.07);transition:color .15s,padding-left .15s;';
+    a.addEventListener('mouseover',function(){ this.style.color='#fff'; this.style.paddingLeft='6px'; });
+    a.addEventListener('mouseout',function(){ this.style.color='rgba(255,255,255,0.75)'; this.style.paddingLeft='0'; });
+  });
+
   // Sub-menu switching
   document.querySelectorAll('.mega-item').forEach(function(item) {
     item.addEventListener('click', function() {
       var subId = item.getAttribute('data-sub');
-      // Active item
-      document.querySelectorAll('.mega-item').forEach(function(i){ i.classList.remove('active'); });
-      item.classList.add('active');
+      // Active item styles
+      document.querySelectorAll('.mega-item').forEach(function(i){
+        i.style.borderLeftColor = 'transparent';
+        i.style.background = '';
+        i.style.color = 'rgba(255,255,255,0.65)';
+      });
+      item.style.borderLeftColor = '#F26522';
+      item.style.background = 'rgba(255,255,255,0.07)';
+      item.style.color = '#fff';
       // Active sub
-      document.querySelectorAll('.mega-sub').forEach(function(s){ s.classList.remove('active'); });
+      document.querySelectorAll('.mega-sub').forEach(function(s){ s.style.display = 'none'; });
       var sub = document.getElementById(subId);
-      if (sub) sub.classList.add('active');
+      if (sub) sub.style.display = 'block';
     });
   });
 })();
