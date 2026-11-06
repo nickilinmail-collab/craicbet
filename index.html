@@ -619,14 +619,14 @@
 (function(){
   // If already seen this session, hide instantly
   try { if(sessionStorage.getItem('cbPre')){ document.write('<style>#preloader{display:none!important}</style>'); return; } } catch(e){}
-  // Otherwise: hide after 2s max, no matter what else fails
+  // Otherwise: hide after 7s, no matter what else fails
   window.__preTm = setTimeout(function hidePre(){
     var pre = document.getElementById('preloader');
     if (!pre) return;
     pre.style.transition = 'opacity .6s';
     pre.style.opacity = '0';
     setTimeout(function(){ pre.style.display = 'none'; try{sessionStorage.setItem('cbPre','1');}catch(e){} }, 650);
-  }, 4500); // 4.5s — enjoy the full pirate voyage
+  }, 7000); // 7s — enjoy the full pirate voyage
 })();
 </script>
 
