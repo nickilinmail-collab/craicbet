@@ -102,37 +102,37 @@
   });
   if (openIdx < 0) openIdx = 0;
 
-  var css = '#megaMenu{position:fixed;inset:0;z-index:10000;background:rgba(10,20,14,.45);display:none;backdrop-filter:blur(2px)}' +
+  var css = '#megaMenu{position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.55);display:none;backdrop-filter:blur(2px)}' +
     '#megaMenu *{box-sizing:border-box}' +
-    '#megaMenu .mm-panel{position:absolute;top:0;right:0;height:100%;width:min(400px,100vw);background:linear-gradient(180deg,#ffffff,#f1f2f4);color:#111;display:flex;flex-direction:column;box-shadow:-8px 0 40px rgba(0,0,0,.25);transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);font-family:Inter,system-ui,sans-serif}' +
+    '#megaMenu .mm-panel{position:absolute;top:0;right:0;height:100%;width:min(400px,100vw);background:linear-gradient(180deg,#0f3a1f,#0A2E14);color:#fff;display:flex;flex-direction:column;box-shadow:-8px 0 40px rgba(0,0,0,.25);transform:translateX(100%);transition:transform .28s cubic-bezier(.4,0,.2,1);font-family:Inter,system-ui,sans-serif}' +
     '#megaMenu.open .mm-panel{transform:none}' +
-    '#megaMenu .mm-head{display:flex;align-items:center;gap:12px;padding:16px 22px;font-size:1.15rem;font-weight:700;background:#0A2E14;color:#fff}' +
+    '#megaMenu .mm-head{display:flex;align-items:center;gap:12px;padding:16px 22px;font-size:1.15rem;font-weight:700;background:rgba(0,0,0,.25);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}' +
     '#megaMenu .mm-head img{height:38px;width:auto}' +
     '#megaMenu .mm-head .mm-ic{width:26px;height:26px;color:#111}' +
     '#megaMenu .mm-close{margin-left:auto;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.1);color:#fff;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center}' +
     '#megaMenu .mm-rule{height:8px}' +
     '#megaMenu .mm-list{flex:1;overflow-y:auto;padding:4px 14px 14px;-webkit-overflow-scrolling:touch}' +
-    '#megaMenu .mm-row{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:999px;color:#1a1a1a;text-decoration:none;font-size:1.02rem;font-weight:500;cursor:pointer;user-select:none;transition:background .15s}' +
-    '#megaMenu .mm-row:hover{background:#eef0f2}' +
-    '#megaMenu .mm-row .mm-ic{color:#1a1a1a;flex-shrink:0}' +
+    '#megaMenu .mm-row{display:flex;align-items:center;gap:14px;padding:13px 16px;border-radius:999px;color:rgba(255,255,255,.88);text-decoration:none;font-size:1.02rem;font-weight:500;cursor:pointer;user-select:none;transition:background .15s}' +
+    '#megaMenu .mm-row:hover{background:rgba(255,255,255,.08)}' +
+    '#megaMenu .mm-row .mm-ic{color:#9fd3b3;flex-shrink:0}' +
     '#megaMenu .mm-row .mm-n{margin-left:auto;min-width:26px;height:24px;border-radius:7px;background:#F26522;color:#fff;font-size:.78rem;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 7px}' +
-    '#megaMenu .mm-row .mm-ch{width:18px;height:18px;color:#777;transition:transform .2s;margin-left:6px}' +
-    '#megaMenu .mm-sec.open>.mm-row .mm-ch{transform:rotate(180deg);color:#fff}' +
+    '#megaMenu .mm-row .mm-ch{width:18px;height:18px;color:rgba(255,255,255,.5);transition:transform .2s;margin-left:6px}' +
+    '#megaMenu .mm-sec.open>.mm-row .mm-ch{transform:rotate(180deg);color:#0A2E14}' +
     '#megaMenu .mm-sec{margin:2px 0}' +
-    '#megaMenu .mm-sec.open>.mm-row{background:#111;color:#fff}' +
-    '#megaMenu .mm-sec.open>.mm-row .mm-ic{color:#fff}' +
-    '#megaMenu .mm-sec.open>.mm-row .mm-n{background:#fff;color:#111}' +
+    '#megaMenu .mm-sec.open>.mm-row{background:#fff;color:#0A2E14}' +
+    '#megaMenu .mm-sec.open>.mm-row .mm-ic{color:#0A2E14}' +
+    '#megaMenu .mm-sec.open>.mm-row .mm-n{background:#F26522;color:#fff}' +
     '#megaMenu .mm-sub{display:none;position:relative;margin:6px 0 8px 32px;padding-left:16px}' +
-    '#megaMenu .mm-sub:before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1.5px;background:#d6d8dc}' +
+    '#megaMenu .mm-sub:before{content:"";position:absolute;left:0;top:8px;bottom:8px;width:1.5px;background:rgba(255,255,255,.22)}' +
     '#megaMenu .mm-sec.open>.mm-sub{display:block}' +
-    '#megaMenu .mm-sub a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:999px;color:#222;text-decoration:none;font-size:.98rem;font-weight:500;transition:background .15s}' +
-    '#megaMenu .mm-sub a .mm-ic{width:20px;height:20px;color:#222}' +
-    '#megaMenu .mm-sub a:hover{background:#eef0f2}' +
-    '#megaMenu .mm-sub a.cur{background:#e8e9ec;font-weight:600}' +
-    '#megaMenu .mm-foot{padding:12px 22px 18px;border-top:1px solid rgba(0,0,0,.08)}' +
-    '#megaMenu .mm-search{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;background:#111;color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}' +
+    '#megaMenu .mm-sub a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:999px;color:rgba(255,255,255,.8);text-decoration:none;font-size:.98rem;font-weight:500;transition:background .15s}' +
+    '#megaMenu .mm-sub a .mm-ic{width:20px;height:20px;color:rgba(255,255,255,.55)}' +
+    '#megaMenu .mm-sub a:hover{background:rgba(255,255,255,.08);color:#fff}' +
+    '#megaMenu .mm-sub a.cur{background:rgba(255,255,255,.14);color:#fff;font-weight:600}' +
+    '#megaMenu .mm-foot{padding:12px 22px 18px;border-top:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.2)}' +
+    '#megaMenu .mm-search{display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;background:#F26522;color:#fff;text-decoration:none;font-weight:600;font-size:.95rem}' +
     '#megaMenu .mm-search .mm-ic{color:#fff}' +
-    '#megaMenu .mm-rg{margin-top:10px;font-size:.75rem;color:#555;text-align:center}' +
+    '#megaMenu .mm-rg{margin-top:10px;font-size:.75rem;color:rgba(255,255,255,.6);text-align:center}' +
     '#megaMenu .mm-rg b{display:inline-block;background:#e53935;color:#fff;border-radius:999px;padding:1px 7px;font-weight:800;margin-right:6px}';
 
   var esc = function (s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
