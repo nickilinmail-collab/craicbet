@@ -1467,3 +1467,7 @@ ul, ol { list-style: none; }
     right: 60px;
   }
 }
+
+/* Dark inline callout boxes: force light text so article-content p/strong colours don't win */
+[style*="background:#1a3a2a"], [style*="background:#1a3a2a"] p, [style*="background:#1a3a2a"] strong, [style*="background:#1a3a2a"] li,
+[style*="background:#1a2a1a"], [style*="background:#1a2a1a"] p, [style*="background:#1a2a1a"] strong, [style*="background:#1a2a1a"] li { color: #e8f5ec; }
