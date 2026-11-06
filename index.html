@@ -64,6 +64,18 @@
 // Geo redirect: UK users → /uk/ (client-side, not cloaking — Google sees same content)
 // Only redirects if no cookie set (user hasn't manually chosen a version)
 (function(){
+  // ?geo=ie in URL = user manually chose IE, set cookie and stay
+  if (window.location.search.indexOf('geo=ie') > -1) {
+    var d = new Date(); d.setTime(d.getTime() + 90*24*60*60*1000);
+    document.cookie = 'cb_geo=ie;expires=' + d.toUTCString() + ';path=/';
+    return;
+  }
+  // ?geo=uk = user manually chose UK
+  if (window.location.search.indexOf('geo=uk') > -1) {
+    var d = new Date(); d.setTime(d.getTime() + 90*24*60*60*1000);
+    document.cookie = 'cb_geo=uk;expires=' + d.toUTCString() + ';path=/';
+    window.location.href = '/uk/'; return;
+  }
   if (document.cookie.indexOf('cb_geo=ie') > -1) return; // user chose IE manually
   if (document.cookie.indexOf('cb_geo=uk') > -1) { window.location.href = '/uk/'; return; }
   try {
@@ -324,7 +336,7 @@
       <a href="pages/guides">Guides</a>
     </nav>
     
-    <div class="lang-switcher"><a href="./" class="active-lang">🇮🇪 IE</a><a href="uk/">🇬🇧 UK</a></div>
+    <div class="lang-switcher"><a href="./" class="active-lang">🇮🇪 IE</a><a href="/?geo=uk">🇬🇧 UK</a></div>
     <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
