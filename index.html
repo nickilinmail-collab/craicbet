@@ -335,8 +335,6 @@
       <a href="pages/fast-payout-casinos">Fast Payouts</a>
       <a href="pages/guides">Guides</a>
     </nav>
-    
-    <div class="lang-switcher"><a href="./" class="active-lang">🇮🇪 IE</a><a href="/?geo=uk">🇬🇧 UK</a></div>
     <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')">
       <span></span><span></span><span></span>
     </button>
@@ -1336,49 +1334,7 @@ document.querySelector('.burger')?.addEventListener('click', () => {
 </script>
 
 <script src="js/slot-game.js"></script>
-<script>(function(){
-var _pre=document.getElementById("preloader");
-if(_pre&&_pre.style.display==="none"){/* already seen this session */}else{
-try{sessionStorage.setItem("cbPre","1")}catch(e){}
-/* Day lager / night stout: 08-20 local = light beer */
-try{
-  var hh=new Date().getHours();
-  if(hh>=8&&hh<20){
-    var pre=document.getElementById("preloader");
-    var g=pre.querySelector("#stout");
-    if(g){var st=g.querySelectorAll("stop");
-      if(st[0])st[0].setAttribute("stop-color","#FFC53D");
-      if(st[1])st[1].setAttribute("stop-color","#F5A623");
-      if(st[2])st[2].setAttribute("stop-color","#D9880B");}
-    pre.querySelectorAll('[fill="#2A0E00"]').forEach(function(el){el.setAttribute("fill","#E8A319")});
-    pre.querySelectorAll('[fill="#3D1500"]').forEach(function(el){el.setAttribute("fill","#FFDF7E")});
-    pre.querySelectorAll('[fill="#3A1500"]').forEach(function(el){el.setAttribute("fill","#FFF6D8");el.setAttribute("opacity","0.55")});
-  }
-}catch(e){}
-var audio=new Audio("/audio/pour.mp3");
-audio.volume=0.7;
-var evs=["pointerdown","keydown","touchstart","wheel","mousemove","scroll"];
-function unlock(){audio.play().then(function(){evs.forEach(function(e){document.removeEventListener(e,unlock)})}).catch(function(){})}
-audio.play().catch(function(){});
-evs.forEach(function(e){document.addEventListener(e,unlock,{passive:true})});
-var pct=document.getElementById("pour-pct");
-var p=0;
-var iv=setInterval(function(){
-  p+=2;if(p>100)p=100;
-  if(pct)pct.textContent="Pouring your pint... "+p+"%";
-  if(p>=100){
-    clearInterval(iv);
-    if(pct)pct.textContent="Sláinte!";
-    setTimeout(function(){
-      var el=document.getElementById("preloader");
-      if(el){el.style.opacity="0";setTimeout(function(){el.style.display="none"},800)}
-      try{audio.pause()}catch(e){}
-    },800);
-  }
-},70);
-}
-})();</script>
 <script src="/js/ui-sound.js"></script>
-<script src="/js/geo-switcher.js"></script>
+
 </body>
 </html>
