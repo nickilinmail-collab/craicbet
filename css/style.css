@@ -92,15 +92,16 @@ ul, ol { list-style: none; }
 .logo span.gold { color: var(--gold); }
 
 /* Navigation */
-.nav { display: flex; align-items: center; gap: 8px; }
+.nav { display: flex; align-items: center; gap: 4px; flex-wrap: nowrap; }
 
 .nav a {
   color: var(--gray-300);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
-  padding: 8px 16px;
+  padding: 8px 10px;
   border-radius: var(--radius-sm);
   transition: var(--transition);
+  white-space: nowrap;
 }
 
 .nav a:hover, .nav a.active {
@@ -843,7 +844,7 @@ ul, ol { list-style: none; }
   .footer-grid, .footer-inner { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .nav { display: none; }
   .burger { display: flex; }
   .nav.open {
