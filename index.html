@@ -647,11 +647,114 @@
       <a href="pages/fast-payout-casinos">Fast Payouts</a>
       <a href="pages/guides">Guides</a>
     </nav>
-    <button class="burger" onclick="document.getElementById('mainNav').classList.toggle('open')">
+    <button class="burger" id="burgerBtn" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
+
+<!-- ===== FULLSCREEN MEGA MENU ===== -->
+<div id="megaMenu" class="mega-menu" aria-hidden="true">
+  <div class="mega-menu-inner">
+    <!-- Left: main nav items -->
+    <div class="mega-left">
+      <button class="mega-close" id="megaClose" aria-label="Close menu">✕</button>
+      <ul class="mega-items">
+        <li class="mega-item active" data-sub="sub-grai">
+          <span class="mega-icon">🏛️</span>
+          <span class="mega-label">GRAI</span>
+          <span class="mega-arrow">›</span>
+        </li>
+        <li class="mega-item" data-sub="sub-betting">
+          <span class="mega-icon">⚽</span>
+          <span class="mega-label">Betting</span>
+          <span class="mega-arrow">›</span>
+        </li>
+        <li class="mega-item" data-sub="sub-casinos">
+          <span class="mega-icon">🎰</span>
+          <span class="mega-label">Casinos</span>
+          <span class="mega-arrow">›</span>
+        </li>
+        <li class="mega-item" data-sub="sub-bonuses">
+          <span class="mega-icon">🎁</span>
+          <span class="mega-label">Bonuses</span>
+          <span class="mega-arrow">›</span>
+        </li>
+        <li class="mega-item" data-sub="sub-slots">
+          <span class="mega-icon">🎲</span>
+          <span class="mega-label">Slots</span>
+          <span class="mega-arrow">›</span>
+        </li>
+        <li class="mega-item" data-sub="sub-guides">
+          <span class="mega-icon">📖</span>
+          <span class="mega-label">Guides</span>
+          <span class="mega-arrow">›</span>
+        </li>
+      </ul>
+      <a href="pages/search" class="mega-search-btn">🔍 Search</a>
+    </div>
+
+    <!-- Right: sub-links per category -->
+    <div class="mega-right">
+      <div class="mega-sub active" id="sub-grai">
+        <div class="mega-sub-title">GRAI Licensing</div>
+        <a href="pages/grai-licence-explained">GRAI Licence Explained</a>
+        <a href="pages/grai-licensed-bookmakers">GRAI Bookmakers</a>
+        <a href="pages/grai-licence-register-tracker">Licence Register</a>
+        <a href="pages/grai-complaints-ireland">GRAI Complaints</a>
+        <a href="pages/is-online-gambling-legal-ireland">Is Gambling Legal?</a>
+        <a href="pages/unlicensed-betting-sites-ireland">Unlicensed Sites Warning</a>
+      </div>
+      <div class="mega-sub" id="sub-betting">
+        <div class="mega-sub-title">Sports Betting</div>
+        <a href="pages/betting-sites-ireland">Best Betting Sites</a>
+        <a href="pages/betting-apps-ireland">Betting Apps</a>
+        <a href="pages/free-bets-ireland">Free Bets Ireland</a>
+        <a href="pages/horse-racing-betting-ireland">Horse Racing</a>
+        <a href="pages/gaa-betting-ireland">GAA Betting</a>
+        <a href="pages/football-betting-ireland">Football Betting</a>
+        <a href="pages/accumulator-calculator-ireland">Acca Calculator</a>
+      </div>
+      <div class="mega-sub" id="sub-casinos">
+        <div class="mega-sub-title">Online Casinos</div>
+        <a href="pages/best-casinos-ireland">Best Casinos Ireland</a>
+        <a href="pages/fast-payout-casinos">Fast Payout Casinos</a>
+        <a href="pages/revolut-casinos">Revolut Casinos</a>
+        <a href="pages/google-pay-casino-ireland">Google Pay Casinos</a>
+        <a href="pages/trustly-casino-ireland">Trustly Casinos</a>
+        <a href="pages/irish-banks-blocking-casino-deposits">Bank Blocks Guide</a>
+      </div>
+      <div class="mega-sub" id="sub-bonuses">
+        <div class="mega-sub-title">Bonuses & Offers</div>
+        <a href="pages/casino-bonuses-ireland">Casino Bonuses</a>
+        <a href="pages/no-deposit-bonus">No Deposit Bonuses</a>
+        <a href="pages/wagering-requirements-explained">Wagering Explained</a>
+        <a href="pages/free-spins-no-deposit">Free Spins</a>
+        <a href="pages/casino-bonuses-ireland#welcome">Welcome Bonuses</a>
+      </div>
+      <div class="mega-sub" id="sub-slots">
+        <div class="mega-sub-title">Slot Reviews</div>
+        <a href="pages/slot-reviews">All Slot Reviews</a>
+        <a href="pages/slots/gates-of-olympus">Gates of Olympus</a>
+        <a href="pages/slots/sweet-bonanza">Sweet Bonanza</a>
+        <a href="pages/slots/big-bass-bonanza">Big Bass Bonanza</a>
+        <a href="pages/slots/book-of-dead">Book of Dead</a>
+        <a href="pages/rtp-explained">What Is RTP?</a>
+      </div>
+      <div class="mega-sub" id="sub-guides">
+        <div class="mega-sub-title">Guides & Education</div>
+        <a href="pages/guides">All Guides</a>
+        <a href="pages/responsible-gambling">Responsible Gambling</a>
+        <a href="pages/gambling-tax-ireland">Gambling Tax Ireland</a>
+        <a href="pages/each-way-betting-guide">Each-Way Betting</a>
+        <a href="pages/offshore-casinos-ireland">Offshore Casinos</a>
+        <a href="pages/about">About CraicBet</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MEGA MENU -->
+
 
 <!-- ===== HERO ===== -->
 <section class="hero">
@@ -1646,9 +1749,56 @@ document.querySelectorAll('.faq-question').forEach(q => {
     q.parentElement.classList.toggle('open');
   });
 });
-document.querySelector('.burger')?.addEventListener('click', () => {
-  document.getElementById('mainNav').classList.toggle('open');
-});
+// ===== MEGA MENU =====
+(function(){
+  var btn = document.getElementById('burgerBtn');
+  var menu = document.getElementById('megaMenu');
+  var closeBtn = document.getElementById('megaClose');
+
+  function openMenu() {
+    menu.classList.add('open');
+    menu.setAttribute('aria-hidden','false');
+    btn.classList.add('is-open');
+    btn.setAttribute('aria-expanded','true');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeMenu() {
+    menu.classList.remove('open');
+    menu.setAttribute('aria-hidden','true');
+    btn.classList.remove('is-open');
+    btn.setAttribute('aria-expanded','false');
+    document.body.style.overflow = '';
+  }
+
+  btn && btn.addEventListener('click', function() {
+    menu.classList.contains('open') ? closeMenu() : openMenu();
+  });
+  closeBtn && closeBtn.addEventListener('click', closeMenu);
+
+  // Click outside inner panel to close
+  menu && menu.addEventListener('click', function(e) {
+    if (e.target === menu) closeMenu();
+  });
+
+  // ESC to close
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  // Sub-menu switching
+  document.querySelectorAll('.mega-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+      var subId = item.getAttribute('data-sub');
+      // Active item
+      document.querySelectorAll('.mega-item').forEach(function(i){ i.classList.remove('active'); });
+      item.classList.add('active');
+      // Active sub
+      document.querySelectorAll('.mega-sub').forEach(function(s){ s.classList.remove('active'); });
+      var sub = document.getElementById(subId);
+      if (sub) sub.classList.add('active');
+    });
+  });
+})();
 </script>
 
 <script src="js/slot-game.js"></script>
