@@ -92,7 +92,8 @@ ul, ol { list-style: none; }
 .logo span.gold { color: var(--gold); }
 
 /* Navigation */
-.nav { display: flex; align-items: center; gap: 4px; flex-wrap: nowrap; }
+.nav { display: flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: nowrap; flex: 1; }
+@media (min-width: 1025px) { .header-inner .burger { display: none; } }
 
 .nav a {
   color: var(--gray-300);
