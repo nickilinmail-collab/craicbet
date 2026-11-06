@@ -93,7 +93,8 @@ ul, ol { list-style: none; }
 
 /* Navigation */
 .nav { display: flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: nowrap; flex: 1; }
-@media (min-width: 1025px) { .header-inner .burger { display: none; } }
+/* burger is visible at every width: desktop nav stays, burger opens the mega menu */
+.header-inner .burger { display: flex; margin-left: 12px; }
 
 .nav a {
   color: var(--gray-300);
