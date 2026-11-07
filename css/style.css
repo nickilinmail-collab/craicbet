@@ -1113,41 +1113,59 @@ ul, ol { list-style: none; }
 .pros li::before { content: '+ '; color: var(--emerald); font-weight: 700; }
 .cons li::before { content: '- '; color: var(--danger); font-weight: 700; }
 
-/* FAQ */
+/* FAQ — open white cards (answers always visible) */
 .faq-item {
   background: var(--white);
   border: 1px solid var(--gray-200);
-  border-radius: var(--radius-sm);
-  margin-bottom: 12px;
+  border-radius: 14px;
+  margin-bottom: 16px;
   overflow: hidden;
+  padding: 6px 4px;
 }
 
 .faq-question {
-  padding: 16px 20px;
-  font-weight: 600;
-  cursor: pointer;
+  padding: 18px 22px 10px;
+  font-weight: 700;
+  font-size: 1.15rem;
+  cursor: default;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--dark);
+  gap: 12px;
+  color: #14432a;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  line-height: 1.35;
 }
 
+.faq-question::after {
+  content: '\25BE';
+  font-size: 0.75em;
+  color: #14432a;
+  flex-shrink: 0;
+}
+
+/* pages whose markup already carries a <span>▾</span> chevron: no double arrow */
+.faq-question:has(span)::after { content: none; }
+.faq-question > span { font-size: 0.75em; color: #14432a; flex-shrink: 0; }
+
 .faq-question:hover {
-  background: var(--emerald-light);
+  background: none;
 }
 
 .faq-answer {
-  padding: 0 20px 16px;
+  padding: 0 22px 18px;
   color: var(--gray-800);
-  font-size: 0.9rem;
-  line-height: 1.7;
-  display: none;
-}
-
-.faq-item.open .faq-answer,
-.faq-item.active .faq-answer {
+  font-size: 0.98rem;
+  line-height: 1.75;
   display: block;
 }
+
+.faq-answer p { margin: 0 0 8px; }
+.faq-answer p:last-child { margin-bottom: 0; }
 
 /* ===== BREADCRUMBS ===== */
 .breadcrumbs {
