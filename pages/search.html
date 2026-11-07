@@ -50,6 +50,16 @@
       color: #111;
     }
     #searchInput::placeholder { color: #9ca3af; }
+    .answer-card { border-radius: 14px; padding: 18px 22px; margin: 0 0 22px; font-size: 15px; line-height: 1.65; }
+    .answer-card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+    .answer-card .ac-meta { font-size: 13px; opacity: .85; margin-top: 8px; }
+    .answer-card a { font-weight: 600; }
+    .answer-ok { background: #e8f5e9; border: 1px solid #2e7d32; }
+    .answer-ok h3 { color: #14432a; }
+    .answer-warn { background: #fff7e6; border: 1px solid #e6a23c; }
+    .answer-warn h3 { color: #8a5a00; }
+    .answer-info { background: #eef4fb; border: 1px solid #5b8bc9; }
+    .answer-info h3 { color: #1d4e89; }
     .search-btn {
       padding: 16px 24px;
       background: #F26522;
@@ -218,8 +228,10 @@
 
 <div class="search-results-wrap">
   <div id="resultsStatus" class="results-status" aria-live="polite"></div>
+  <div id="answerBox"></div>
   <div id="resultsContainer"></div>
 </div>
+<script src="/js/grai-data.js"></script>
 
 <footer class="footer">
   <div class="footer-grid">
@@ -402,17 +414,94 @@
     return html;
   }
 
+  /* ---------- Smart instant answers (offline, grounded in site data) ---------- */
+  var RG_LINE = '<div class="ac-meta">18+ &middot; Gambling Awareness Trust 1800 753 753 &middot; gamblingcare.ie</div>';
+
+  var INTENTS = [
+    { re: /(€\s*5|5\s*(euro|eur)\b|five euro).*(deposit|casino)|deposit.*(€\s*5|5\s*euro)/i,
+      cls: 'answer-info', title: '€5 minimum deposits in Ireland',
+      html: '€5 minimums are mostly a <strong>GRAI-licensed bookmaker</strong> thing — most standalone casinos start at €10–€20. We keep a verified table of 10 operators with €5 methods, checked monthly. <a href="/pages/5-euro-deposit-casino">See the €5 deposit table &rarr;</a>' },
+    { re: /(€\s*1\b|1\s*euro).*(deposit|casino)/i,
+      cls: 'answer-warn', title: '€1 deposit casinos — honest answer',
+      html: 'In practice almost none exist: €1 claims usually apply to a single e-wallet method, and cards start at €10. <a href="/pages/1-euro-deposit-casino">Why, and what works instead &rarr;</a>' },
+    { re: /casino.*(licence|license|licens)|licen[cs].*casino/i,
+      cls: 'answer-warn', title: 'GRAI casino licences: zero issued',
+      html: 'The GRAI has issued <strong>remote betting licences only</strong> (since 1 July 2026). Casino/gaming licences are expected <strong>2027–2028</strong> — any site claiming a GRAI casino licence today is wrong. <a href="/pages/grai-licence-explained">How GRAI licensing works &rarr;</a>' },
+    { re: /\b(acca|accumulator)s?\b.*(calc|odds|return)|\bcalculator\b/i,
+      cls: 'answer-info', title: 'Accumulator calculator',
+      html: 'Work out combined odds and returns for up to 8 legs, including the real house edge that compounds with every leg. <a href="/pages/accumulator-calculator-ireland">Open the free acca calculator &rarr;</a>' },
+    { re: /\bapps?\b/i,
+      cls: 'answer-info', title: 'Betting apps in Ireland',
+      html: 'Only GRAI-licensed operators can legally offer mobile betting in Ireland. We compare the licensed apps on speed, payments (Apple Pay, Revolut) and GAA coverage. <a href="/pages/betting-apps-ireland">Best betting apps 2026 &rarr;</a>' },
+    { re: /(unlicensed|blocked|banned|blacklist|enforcement|stake\.com|offshore)/i,
+      cls: 'answer-warn', title: 'Unlicensed sites & GRAI enforcement',
+      html: 'Over 100 unlicensed operators are under GRAI investigation; some (e.g. Stake) have blocked Irish players. Unlicensed sites offer no fund protection and no NGER self-exclusion. <a href="/pages/unlicensed-betting-sites-ireland">Enforcement tracker &rarr;</a>' },
+    { re: /(statistic|how many.*(gamble|bet)|problem gambling|gambling.*ireland.*(figure|number|data))/i,
+      cls: 'answer-info', title: 'Ireland gambling statistics',
+      html: 'Key sourced figures: ~75% of Irish adults gamble monthly, €5.5bn annual spend, 130k with problem gambling (ESRI), 42 GRAI licences issued. <a href="/pages/ireland-gambling-statistics">Full statistics hub &rarr;</a>' },
+    { re: /(bonus|free bet|free spins|welcome offer)/i,
+      cls: 'answer-info', title: 'Bonuses — the honest maths',
+      html: 'A €100 bonus with 30x wagering means €3,000 in bets before withdrawal. We rate offers by real clearing cost, not headline size. <a href="/pages/casino-bonuses-ireland">Casino bonuses &rarr;</a> &middot; <a href="/pages/free-bets-ireland">Free bets &rarr;</a>' },
+    { re: /(who regulates|regulator|\bgrai\b.*(what|who|is)|gambling regulat)/i,
+      cls: 'answer-info', title: 'Who regulates gambling in Ireland',
+      html: 'The <strong>Gambling Regulatory Authority of Ireland (GRAI)</strong>, under the Gambling Regulation Act 2024. Remote betting licences since 1 July 2026; in-person from 1 Dec 2026; casino licences expected 2027–28. <a href="/pages/grai-licence-explained">GRAI explained &rarr;</a>' }
+  ];
+
+  function normBrand(s) { return s.toLowerCase().replace(/[^a-z0-9]/g, ''); }
+
+  function licenceAnswer(q) {
+    if (!window.GRAI_REGISTER) return '';
+    var reg = window.GRAI_REGISTER.betting_licensed;
+    var nq = normBrand(q.replace(/\b(is|are|the|a|in|ireland|irish|legal|legit|safe|licen[cs]ed?|licence|license|grai|betting|bookmaker|bookie|casino|site|register(ed)?|allowed|trust(worthy)?)\b/gi, ''));
+    if (nq.length < 4) return '';
+    var hit = null, hitKey = '';
+    for (var k in reg) {
+      if (nq === k || (nq.length >= 4 && (nq.indexOf(k) !== -1 || k.indexOf(nq) !== -1))) {
+        if (!hit || k.length > hitKey.length) { hit = reg[k]; hitKey = k; }
+      }
+    }
+    if (hit) {
+      return '<div class="answer-card answer-ok"><h3>&#9989; ' + esc(hit.name) + ' holds a GRAI licence</h3>'
+        + '<strong>' + esc(hit.licence) + '</strong> &middot; ' + esc(hit.ltype || 'Remote Betting')
+        + ' &middot; valid ' + esc(hit.valid_from) + ' &ndash; ' + esc(hit.valid_to) + '.'
+        + ' Verified against the official register at grai.ie on ' + esc(window.GRAI_REGISTER.last_updated) + '.'
+        + ' <a href="/pages/grai-licence-checker">Licence checker &rarr;</a> &middot; <a href="/pages/grai-licensed-bookmakers-ireland">Full list &rarr;</a>'
+        + RG_LINE + '</div>';
+    }
+    if (/\b(legal|licen[cs]|legit|safe|allowed|grai)\b/i.test(q)) {
+      return '<div class="answer-card answer-warn"><h3>&#9888;&#65039; Not found on the GRAI register</h3>'
+        + 'We couldn’t match that name to any of the 42 GRAI betting licences (register read ' + esc(window.GRAI_REGISTER.last_updated) + '). It may be unlicensed for Ireland, or spelled differently — try the <a href="/pages/grai-licence-checker">Licence Checker</a> (50+ brand aliases) or the <a href="/pages/grai-licensed-bookmakers-ireland">full licensee list</a>. Remember: no casino holds a GRAI licence yet.'
+        + RG_LINE + '</div>';
+    }
+    return '';
+  }
+
+  function smartAnswer(q) {
+    var lic = licenceAnswer(q);
+    if (lic) return lic;
+    for (var i = 0; i < INTENTS.length; i++) {
+      if (INTENTS[i].re.test(q)) {
+        return '<div class="answer-card ' + INTENTS[i].cls + '"><h3>' + INTENTS[i].title + '</h3>'
+          + INTENTS[i].html + RG_LINE + '</div>';
+      }
+    }
+    return '';
+  }
+
   function doSearch(query) {
     if (!index) return;
     var q = query.trim();
     var statusEl    = document.getElementById('resultsStatus');
     var containerEl = document.getElementById('resultsContainer');
+    var answerEl    = document.getElementById('answerBox');
 
     if (!q) {
       statusEl.textContent = '';
       containerEl.innerHTML = '';
+      answerEl.innerHTML = '';
       return;
     }
+    answerEl.innerHTML = smartAnswer(q);
 
     var tokens = tokenise(q);
     if (!tokens.length) {
