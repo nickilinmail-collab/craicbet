@@ -800,9 +800,9 @@ ul, ol { list-style: none; }
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255,255,255,0.12);
   margin-top: 40px;
-  padding: 20px;
+  padding: 24px 20px;
   text-align: center;
   max-width: 1200px;
   margin-left: auto;
@@ -810,26 +810,36 @@ ul, ol { list-style: none; }
 }
 
 .footer-bottom p {
-  font-size: 0.75rem;
-  color: var(--gray-600);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
   max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
+  margin: 4px auto;
+  line-height: 1.7;
+}
+
+.footer-bottom a {
+  color: rgba(255,255,255,0.65);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
 }
 
 .age-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 2px solid var(--danger);
-  border-radius: 50%;
-  background: var(--danger);
-  color: #fff;
-  font-weight: 800;
-  font-size: 0.85rem;
+  padding: 4px 10px;
+  border: 1.5px solid rgba(255,255,255,0.25);
+  border-radius: 6px;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.7);
+  font-weight: 700;
+  font-size: 0.8rem;
   margin: 10px 0;
+  letter-spacing: 0.02em;
 }
 
 /* ===== RESPONSIVE ===== */
