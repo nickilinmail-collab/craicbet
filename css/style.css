@@ -91,10 +91,10 @@ ul, ol { list-style: none; }
 .logo span.green { color: var(--emerald); }
 .logo span.gold { color: var(--gold); }
 
-/* Navigation */
-.nav { display: flex; align-items: center; justify-content: center; gap: 4px; flex-wrap: nowrap; flex: 1; }
-/* burger is visible at every width: desktop nav stays, burger opens the mega menu */
-.header-inner .burger { display: flex; margin-left: 12px; }
+/* Navigation — hidden; burger mega-menu handles all navigation */
+.nav { display: none !important; }
+/* burger is visible at every width */
+.header-inner .burger { display: flex; margin-left: auto; }
 
 .nav a {
   color: var(--gray-300);
