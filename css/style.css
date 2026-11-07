@@ -1036,6 +1036,14 @@ ul, ol { list-style: none; }
   padding: 40px 20px;
 }
 
+/* Pages built as <article class="article-page"> without a .container wrapper */
+.article-page .article-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+.article-page .article-header { padding-top: 24px; }
+
 .article-header {
   margin-bottom: 32px;
 }
