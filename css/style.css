@@ -1510,3 +1510,8 @@ ul, ol { list-style: none; }
 /* Dark inline callout boxes: force light text so article-content p/strong colours don't win */
 [style*="background:#1a3a2a"], [style*="background:#1a3a2a"] p, [style*="background:#1a3a2a"] strong, [style*="background:#1a3a2a"] li,
 [style*="background:#1a2a1a"], [style*="background:#1a2a1a"] p, [style*="background:#1a2a1a"] strong, [style*="background:#1a2a1a"] li { color: #e8f5ec; }
+
+/* Mobile: tables scroll instead of overflowing */
+@media (max-width:640px){
+  .article table, .article-content table, main table{display:block;overflow-x:auto;max-width:100%;-webkit-overflow-scrolling:touch;}
+}
