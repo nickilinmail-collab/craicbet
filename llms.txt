@@ -8,6 +8,8 @@ Key facts (verified against the official register at grai.ie, last re-read 7 Nov
 - Remote betting licensing began 1 July 2026 under the Gambling Regulation Act 2024. In-person licences can be granted from 1 December 2026.
 - Credit card gambling is banned in Ireland; debit cards, Apple Pay (debit-funded) and Revolut work.
 
+Irish Betting Licence Index (weekly, free to cite): 42 licences in force, w/c 10 November 2026. Full machine-readable data: https://craicbet.com/llms-full.txt
+
 ## Primary data
 - [GRAI licensed bookmakers: full register](https://craicbet.com/pages/grai-licensed-bookmakers-ireland): all 42 licences with company names, trading names, licence numbers, issue/expiry dates, weekly issuance chart, quick answers for the 24 most-searched brands.
 - [Register CSV download](https://craicbet.com/data/grai-register.csv): machine-readable register, free to use with attribution.

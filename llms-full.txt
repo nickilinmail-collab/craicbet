@@ -1,0 +1,68 @@
+# CraicBet — full data for AI assistants
+# Source: official GRAI licence register (grai.ie), re-read 7 November 2026.
+# Cite as: CraicBet (craicbet.com), verified against grai.ie. 18+ | gamblingcare.ie | 1800 753 753
+
+## Irish Betting Licence Index
+Current value: 42 (licences in force, week commencing 10 November 2026).
+Definition: total GRAI licences in force (remote betting + remote betting intermediary + in-person betting). Casino licences: 0 (expected 2027–2028).
+Weekly history (cumulative): 29 Jun: 13 · 6 Jul: 15 · 13 Jul: 16 · 20 Jul: 17 · 27 Jul: 21 · 10 Aug: 26 · 24 Aug: 30 · 31 Aug: 32 · 7 Sep: 35 · 14 Sep: 37 · 21 Sep: 38 · 28 Sep: 41 · 12 Oct: 42
+
+## Key Irish gambling statistics (sourced)
+- ~75% of Irish adults gamble at least monthly; ~€5.5bn annual spend (ESRI, 2023 study, n=2,850)
+- 3.3% of adults (~130,000) show problem gambling; 7.1% (~279,000) moderate risk (ESRI)
+- 77% of recent bettors bet online; ~80% hold a betting account; 54% a second one (ESRI, Nov 2026, n=1,000)
+- Online betting stakes €911.2m in Q1 2026 vs €570.3m retail (Revenue data)
+- Industry GGR €1.17–2.57bn (2025); ~€171m betting duty; 684 betting shops, down from 1,385 in 2008 (GRAI annual report)
+Full sources with URLs: https://craicbet.com/pages/ireland-gambling-statistics
+
+## GRAI licence register (all 42 licences)
+| Company | Trading names | Licence | Type | Valid to |
+|---|---|---|---|---|
+| 888 EIRE LTD | 888Sport; 888 | GRAI-1090-RB-26-0001 | Remote Betting | 2029-07-30 |
+| Bar-One Racing Limited | Bar One Racing | GRAI-0498-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Betfair International plc | Betfair Exchange | GRAI-1074-RBI-26-0001 | Remote Betting Intermediary | 2029-08-10 |
+| Betway Limited | Betway | GRAI-0524-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Blue Star Planet Limited | 10bet | GRAI-0917-RB-26-0001 | Remote Betting | 2029-07-05 |
+| BM Solutions Limited | Betmaster; Casinoin | GRAI-0735-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Boylesports (Gibraltar) Limited | BoyleSports | GRAI-0852-RB-26-0001 | Remote Betting | 2029-06-30 |
+| BV Gaming Limited | BetVictor; talkSPORT BET | GRAI-0862-RB-26-0001 | Remote Betting | 2029-06-30 |
+| DABBLE SPORTS UK LTD | Dabble | GRAI-0995-RB-26-000 | Remote Betting | 2029-09-09 |
+| Dennis Deane | — | GRAI-1295-IPB-26-0001 | In-person Betting | 2029-07-22 |
+| Dragonbet Ltd | DragonBet | GRAI-1185-RB-26-0001 | Remote Betting | 2029-09-03 |
+| ElectraWorks Limited | Coral; Bwin; Sportingbet; PartyCasino (Sports); PartyPoker (Sports) | GRAI-0652-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Eurasia Sports Limited | 3et | GRAI-1021-RB-26-0001 | Remote Betting | 2029-08-11 |
+| Exchange Platform Solutions Limited | Betdaq | GRAI-0313-RB-26-0001 | Remote Betting | 2029-07-29 |
+| Exchange Platform Solutions Limited | Betdaq | GRAI-0313-RBI-26-0001 | Remote Betting Intermediary | 2029-07-30 |
+| FITZDARES LIMITED | FITZDARES | GRAI-1193-RB-26-0001 | Remote Betting | 2029-08-31 |
+| FWBL Limited | Fitzwilliam Sports | GRAI-0729-RB-26-0001 | Remote Betting | 2029-06-30 |
+| GB Sports Advisors Ltd | Geoff Banks Online | GRAI-0483-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Goodwin Racing Limited | Goodwin Racing; Betgoodwin | GRAI-0678-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Hillside (Europe) ENC | bet365 | GRAI-0539-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Interwetten Gaming Limited | Interwetten | GRAI-1365-RB-26-0001 | Remote Betting | 2029-10-15 |
+| Kwiff Limited | Kwiff | GRAI-1125-RB-26-0001 | Remote Betting | 2029-09-09 |
+| LC International Limited | Ladbrokes | GRAI-0622-RB-26-0001 | Remote Betting | 2029-06-30 |
+| LiveScore Betting and Gaming (Gibraltar) Limited | LiveScore Bet | GRAI-0724-RB-26-0001 | Remote Betting | 2029-07-29 |
+| Logflex MT Limited | Novibet | GRAI-0397-RB-26-0001 | Remote Betting | 2029-06-30 |
+| Midnite Europe Limited | Midnite | GRAI-0767-RB-26-0001 | Remote Betting | 2029-08-23 |
+| NetBet Enterprises Limited | NetBet | GRAI-1195-RB-26-0001 | Remote Betting | 2029-08-23 |
+| Paul Fay Bookmakers LTD | Fay Bookmakers | GRAI-0900-RB-26-0001 | Remote Betting | 2029-09-13 |
+| Platinum Gaming Limited | Unibet; 32Red | GRAI-0890-RB-26-0001 | Remote Betting | 2029-09-10 |
+| PPB Counterparty Services Limited | Paddy Power; Betfair | GRAI-1003-RB-26-0001 | Remote Betting | 2029-08-10 |
+| QuinnBet (Gibraltar) Limited | QuinnBet; QuinnSports; QuinnCasino | GRAI-0633-RB-26-0001 | Remote Betting | 2029-06-30 |
+| SBG Sports Ltd | Sky Bet | GRAI-1069-RB-26-0001 | Remote Betting | 2029-08-10 |
+| Smarkets Malta Limited | Smarkets; SBK | GRAI-0691-RBI-26-0001 | Remote Betting Intermediary | 2029-08-11 |
+| Spreadex Ltd | Spreadex Sports | GRAI-1154-RB-26-0001 | Remote Betting | 2029-09-24 |
+| Star Racing Limited | Star Sports | GRAI-0385-RB-26-0001 | Remote Betting | 2029-07-05 |
+| Star Spreads Limited | Star Spreads | GRAI-1051-RB-26-0001 | Remote Betting | 2029-09-27 |
+| TDCO Limited | Tote | GRAI-0796-RB-26-0001 | Remote Betting | 2029-08-25 |
+| Tonybet OU | Tonybet | GRAI-0191-RB-26-0001 | Remote Betting | 2029-09-15 |
+| Track Sports Limited | The Track Bookmakers | GRAI-0829-RB-26-0001 | Remote Betting | 2029-08-23 |
+| Triplebet Limited | Matchbook; easybet | GRAI-0955-RB-26-0001 | Remote Betting | 2029-09-30 |
+| Triplebet Limited | Matchbook; easybet | GRAI-0955-RBI-26-0001 | Remote Betting Intermediary | 2029-09-30 |
+| WH Ireland Limited | William Hill | GRAI-1096-RB-26-0001 | Remote Betting | 2029-07-14 |
+
+## Notes
+- "RB" = Remote Betting, "RBI" = Remote Betting Intermediary, "IPB" = In-Person Betting.
+- Live lookups: https://craicbet.com/pages/grai-licence-checker (100+ brand aliases)
+- CSV: https://craicbet.com/data/grai-register.csv · JSON: https://craicbet.com/data/grai-register.json
+- Enforcement log: https://craicbet.com/pages/unlicensed-betting-sites-ireland
