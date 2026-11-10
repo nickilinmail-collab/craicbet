@@ -183,7 +183,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Search CraicBet &mdash; Ireland's Betting &amp; Casino Guide">
   <meta name="twitter:description" content="Search CraicBet — Ireland">
-<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-XSTEGW1DGS"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XSTEGW1DGS');document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="plusfind.info/go/"]');if(a){gtag('event','partner_click',{button_position:(a.className||'link')+'|'+location.pathname});}},true);</script>
+<link rel="preconnect" href="https://www.googletagmanager.com"><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-XSTEGW1DGS"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XSTEGW1DGS');document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="plusfind.info/go/"]');if(a){gtag('event','partner_click',{button_position:(a.className||'link')+'|'+location.pathname});}},true);</script>
 <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "abbfa0d0bfee47758ae77f4e7514705f"}'></script><!-- End Cloudflare Web Analytics -->
 </head>
 <body>
@@ -203,7 +203,7 @@
       <a href="/pages/guides">Guides</a>
       <a href="/pages/search">&#128269; Search</a>
     </nav>
-    <button class="burger"><span></span><span></span><span></span></button>
+    <button class="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
@@ -400,7 +400,7 @@
   function renderResults(results, tokens) {
     var html = '<div class="search-cta-bar">'
       + '<strong>Our recommended GRAI-licensed bookmaker (licence No. GRAI-0191-RB-26-0001):</strong><br>'
-      + '<a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="nofollow" target="_blank" class="btn">Visit the GRAI-Licensed Bookmaker &rarr;</a>'
+      + '<a href="https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/" rel="noopener nofollow" target="_blank" class="btn">Visit the GRAI-Licensed Bookmaker &rarr;</a>'
       + '</div>';
 
     results.forEach(function (entry) {
