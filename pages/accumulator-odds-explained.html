@@ -86,6 +86,46 @@
 
 <p>Accumulators are the most popular bet type on Irish football. The appeal is obvious: combine several selections and a small stake can return a large amount. But many punters don't fully understand how the return is calculated, how often accas actually win, or why the bookmaker's margin makes long accas increasingly unfavourable. This guide covers all three honestly.</p>
 
+
+<h2 id="calculator">Acca Calculator</h2>
+<div style="background:linear-gradient(160deg,#0A2E14,#0F3D1C);border-radius:16px;padding:26px 22px;color:#fff;margin:24px 0">
+  <label style="font-size:14px">Stake (&euro;)
+    <input id="acStake" type="number" value="10" min="0.1" step="0.5" style="width:100%;margin-top:6px;padding:10px;border-radius:8px;border:none;font-size:16px">
+  </label>
+  <label style="font-size:14px;display:block;margin-top:14px">Decimal odds of each leg, separated by commas
+    <input id="acLegs" type="text" value="1.8, 2.1, 1.5, 3.0" placeholder="e.g. 1.8, 2.1, 1.5, 3.0" style="width:100%;margin-top:6px;padding:10px;border-radius:8px;border:none;font-size:16px">
+  </label>
+  <label style="font-size:14px;display:block;margin-top:14px">Acca bonus (%)
+    <input id="acBonus" type="number" value="0" min="0" max="100" step="5" style="width:100%;margin-top:6px;padding:10px;border-radius:8px;border:none;font-size:16px">
+  </label>
+  <div id="acOut" style="margin-top:22px;background:rgba(255,255,255,.08);border-radius:12px;padding:18px;font-size:15px;line-height:1.9"></div>
+</div>
+<script>
+(function(){
+ function fmt(n){return "€"+n.toLocaleString("en-IE",{minimumFractionDigits:2,maximumFractionDigits:2});}
+ function calc(){
+  var st=+document.getElementById("acStake").value||0;
+  var bonus=(+document.getElementById("acBonus").value||0)/100;
+  var legs=document.getElementById("acLegs").value.split(",").map(function(x){return parseFloat(x.trim());}).filter(function(x){return x>1;});
+  if(!legs.length||!st){document.getElementById("acOut").innerHTML="Enter a stake and at least one leg with decimal odds above 1.";return;}
+  var odds=legs.reduce(function(a,b){return a*b;},1);
+  var profit=st*(odds-1);
+  var bonusAmt=profit*bonus;
+  var ret=st+profit+bonusAmt;
+  var fair=legs.reduce(function(a,b){return a*(b*1.05);},1);
+  var edge=(1-odds/fair)*100;
+  var html=legs.length+"-fold at combined decimal odds <strong>"+odds.toFixed(2)+"</strong><br>";
+  html+="Return if ALL "+legs.length+" legs win: <strong style=\"font-size:1.2em\">"+fmt(ret)+"</strong> (profit "+fmt(profit+bonusAmt)+")<br>";
+  if(bonus>0) html+="Acca bonus ("+Math.round(bonus*100)+"%): <strong style=\"color:#5BE08A\">+"+fmt(bonusAmt)+"</strong><br>";
+  html+="One leg loses: <strong style=\"color:#ff8a7a\">-"+fmt(st)+"</strong><br>";
+  html+="<span style=\"color:#ffd34d\">Estimated house edge across "+legs.length+" legs: ~"+edge.toFixed(0)+"% (margin compounds with every leg)</span>";
+  document.getElementById("acOut").innerHTML=html;
+ }
+ ["acStake","acLegs","acBonus"].forEach(function(id){document.getElementById(id).addEventListener("input",calc);});
+ calc();
+})();
+</script>
+
 <h2>How Accumulator Odds Are Multiplied</h2>
 
 <p>An accumulator return is calculated by multiplying together the decimal odds of every selection, then multiplying that combined figure by your stake.</p>
