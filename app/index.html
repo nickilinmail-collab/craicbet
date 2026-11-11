@@ -71,6 +71,7 @@
 
   <div class="card" id="install">
     <div class="label">Add to Home Screen</div>
+    <button id="installBtn" class="btn" type="button" style="display:none;width:100%;border:0;margin-top:12px;cursor:pointer;font-family:inherit">Install the CraicBet app</button>
     <ol id="steps"></ol>
   </div>
 
@@ -101,6 +102,20 @@
     var steps = ios ? ['Open this page in Safari.', 'Tap the Share button at the bottom of the screen.', 'Choose "Add to Home Screen", then tap Add.']
       : android ? ['Open this page in Chrome.', 'Tap the menu (three dots) in the top right.', 'Choose "Add to Home screen" or "Install app".']
       : null;
+    // Android / Chrome: offer a real one-tap install when the browser allows it
+    var deferred = null, btn = document.getElementById('installBtn');
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault(); deferred = e;
+      btn.style.display = 'block';
+      document.getElementById('steps').style.display = 'none';
+      document.getElementById('install').style.display = 'block';
+    });
+    btn.addEventListener('click', function () {
+      if (!deferred) return;
+      deferred.prompt();
+      deferred.userChoice.then(function () { deferred = null; btn.style.display = 'none'; });
+    });
+    window.addEventListener('appinstalled', function () { document.getElementById('install').style.display = 'none'; });
     if (!steps) return;
     var ol = document.getElementById('steps');
     steps.forEach(function (t) { var li = document.createElement('li'); li.textContent = t; ol.appendChild(li); });
