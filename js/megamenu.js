@@ -177,3 +177,11 @@
     row.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
   });
 })();
+
+/* Load the share bar on every page that uses this menu. */
+(function () {
+  var s = document.createElement('script');
+  s.src = '/js/share.js?v=20261111';
+  s.defer = true;
+  document.head.appendChild(s);
+})();
