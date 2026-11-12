@@ -181,7 +181,7 @@
 /* Load the share bar on every page that uses this menu. */
 (function () {
   var s = document.createElement('script');
-  s.src = '/js/share.js?v=20261111';
+  s.src = '/js/share.js?v=20261112';
   s.defer = true;
   document.head.appendChild(s);
 })();

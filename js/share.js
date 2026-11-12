@@ -1,7 +1,9 @@
 /* CraicBet share bar: added to the end of every article page (loaded from megamenu.js). */
 (function () {
   if (document.getElementById('cb-share')) return;
-  var host = document.querySelector('.article-content') || document.querySelector('article');
+  var path = location.pathname.replace(/index(\.html)?$/, '');
+  if (/^\/((ga|pl)\/)?$/.test(path) || path.indexOf('/app/') === 0) return; // home pages and the web app
+  var host = document.querySelector('.article-content') || document.querySelector('article') || document.querySelector('main');
   if (!host) return; // home page, hubs without an article and the web app have no share bar
   var lang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
   var T = {
