@@ -1,10 +1,10 @@
 /* CraicBet share bar: added to the end of every article page (loaded from megamenu.js). */
 (function () {
   if (document.getElementById('cb-share')) return;
-  var path = location.pathname.replace(/index(\.html)?$/, '');
-  if (/^\/((ga|pl)\/)?$/.test(path) || path.indexOf('/app/') === 0) return; // home pages and the web app
+  if (location.pathname.indexOf('/app/') === 0) return; // the web app has its own layout
   var host = document.querySelector('.article-content') || document.querySelector('article') || document.querySelector('main');
-  if (!host) return; // home page, hubs without an article and the web app have no share bar
+  var foot = host ? null : document.querySelector('footer'); // home pages: place the bar just above the footer
+  if (!host && !foot) return;
   var lang = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase();
   var T = {
     en: { h: 'Found this useful? Share it', copy: 'Copy link', done: 'Copied', more: 'Share' },
@@ -55,5 +55,6 @@
     else { var t = document.createElement('textarea'); t.value = url; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); ok(); } catch (x) {} document.body.removeChild(t); }
   });
   box.appendChild(cp);
-  host.appendChild(box);
+  if (host) { host.appendChild(box); }
+  else { box.style.maxWidth = '1100px'; box.style.margin = '28px auto'; var w = document.createElement('div'); w.style.padding = '0 16px'; w.appendChild(box); foot.parentNode.insertBefore(w, foot); }
 })();
