@@ -1,7 +1,16 @@
 # CraicBet — craicbet.com
 
 Static English/Irish/Polish site (betting & casino guide for Ireland), plain HTML on GitHub Pages.
-Funnel: every CTA button links to https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/ (rel="nofollow", target="_blank").
+Funnel: two partner links, both rel="nofollow" target="_blank". Never invent a third.
+- GRAI-licensed partner bookmaker (licence GRAI-0191-RB-26-0001) — https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/
+  The default for every CTA, and the only link allowed on betting pages.
+- Non-GRAI provider — https://gameslnk.cc/go/2e7c17f7e91e426ba3e5e5242aaa9b3e365b64d1eb0a0b0b/
+  Secondary button, currently on 1782 pages. Its own label must say the operator is not GRAI-licensed
+  (current wording: "Explore Non-GRAI Provider"); never presented as licensed or regulated in Ireland.
+  One per card, never twice in the same card.
+  Open question (13 Nov 2026): it also sits on 683 betting pages, including
+  grai-licensed-betting-sites-ireland, where a non-GRAI operator sits beside licensed ones.
+  Owner to decide whether it belongs there; until then leave existing placements alone.
 
 ## Strategy (as of 1 Nov 2026) — BETTING FIRST
 The site started casino-first; the priority is now BETTING + GRAI, because the partner operator's only Irish licence is a GRAI
