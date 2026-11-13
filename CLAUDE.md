@@ -37,6 +37,23 @@ the operator's licence number GRAI-0191-RB-26-0001 — cite it; never claim any 
 - `sitemap.xml` — append every new page (clean URL, lastmod).
 - Scheduled tasks live on this repo: daily GRAI tracker update, daily indexing list, weekly news roundup, betting conveyor, daily sports engine.
 
+## Outreach to journalists (MUST follow)
+- NEVER send email. Not once, not "obviously approved", not when the owner has asked for letters earlier
+  in the conversation. Prepare the text, or a Gmail draft, and stop. The owner sends. A standing request
+  like "send 10 letters" is a request to WRITE 10 letters.
+- Mail goes from mark@craicbet.com ("Mark Craic"), a send-as alias on the nickilinmail@gmail.com account.
+  The Gmail tool has no "from" field — it uses whatever Gmail has as default send-as. Verify before relying on it.
+- NO links in the body, and no mention of the domain in the body either (mail clients auto-link a bare
+  domain, so it reads as a link request and the pitch dies). Disclose the commercial interest in words
+  without the address: "I edit a trade guide that earns affiliate commission". Domain belongs in the
+  signature only. Offer data as an attached CSV, never as a page to visit.
+- A link is what a journalist adds when the story is worth it. Asking for one in a first email shows
+  why you wrote and devalues everything else in the letter.
+- Give the journalist a question for the regulator, not a conclusion. State the innocent explanation too
+  — a pitch with no caveat reads as PR.
+- Check Gmail's sent mail before writing: someone may already have been contacted. A second cold email
+  the same day burns the contact. Follow up in the existing thread instead.
+
 ## Checks before any push
 - Internal links resolve to existing files; JSON-LD parses; no brand names in titles/headings (grep); page renders (header/footer intact).
 - Commit messages end with the attribution lines given in system reminders.
