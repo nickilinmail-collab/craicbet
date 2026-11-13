@@ -2,19 +2,19 @@
 
 Status: `pre` = page live before event · `live` = event in progress · `post` = result section added · `tbc` = date not yet verified against an official source.
 
-Last engine run: 2026-11-12
+Last engine run: 2026-11-13
 
 | Event | Dates | Page slug | Status |
 |---|---|---|---|
-| Cheltenham November Meeting | 13–15 Nov 2026 | pages/cheltenham-november-meeting-2026-betting-ireland | pre |
-| Ireland v Fiji (Nations Championship, Aviva) | Sat 14 Nov 2026, 20:10 | pages/ireland-v-fiji-betting-2026 | pre |
-| Grand Slam of Darts (Wolverhampton, new 48-player format) | 14–22 Nov 2026 | pages/grand-slam-of-darts-2026-betting-ireland | pre (built 11 Nov) |
+| Cheltenham November Meeting | 13–15 Nov 2026 | pages/cheltenham-november-meeting-2026-betting-ireland | live (13 Nov) — add Result after Sunday |
+| Ireland v Fiji (Nations Championship, Aviva) | Sat 14 Nov 2026, 20:10 | pages/ireland-v-fiji-betting-2026 | pre (XV added 13 Nov) |
+| Grand Slam of Darts (Wolverhampton, new 48-player format) | 14–22 Nov 2026 | pages/grand-slam-of-darts-2026-betting-ireland | pre (draw + Josh Rock angle added 13 Nov) |
 | Navan Racing Festival / Troytown weekend | 14–15 Nov 2026 (confirmed navanracecourse.ie) | pages/navan-racing-festival-2026-betting-ireland | pre (built 12 Nov) |
 | Punchestown Premiere Weekend (Morgiana Hurdle / John Durkan) | 21–22 Nov 2026 | pages/punchestown-premiere-weekend-betting | pre |
 | Ireland v South Africa (Nations Championship, Aviva) | Sat 21 Nov 2026, 16:40 | pages/ireland-v-south-africa-betting-2026 | pre |
 | Nations Championship Grand Finals weekend (London) | 27–29 Nov 2026 | — opponent depends on table; build once Ireland's final fixture is set | tbc |
-| UK Championship snooker (York Barbican, 50th edition) | 27 Nov – 6 Dec 2026 | — none yet | build when inside 14-day window (from 13 Nov run) |
-| Fairyhouse Winter Festival (Royal Bond / Drinmore / Hatton's Grace) | Day 1 Sat 28 Nov 2026 per fairyhouse.ie (Day 2 presumably Sun 29 Nov — confirm) | — none yet | build ~15 Nov when inside window |
+| UK Championship snooker | Quals 21–26 Nov (Leicester); main stage 28 Nov – 6 Dec 2026, York Barbican (snooker.org + WST calendar) | pages/uk-championship-snooker-2026-betting-ireland | pre (built 13 Nov) |
+| Fairyhouse Winter Festival (Royal Bond / Drinmore / Hatton's Grace) | Day 1 Sat 28 Nov 2026 per fairyhouse.ie (Day 2 presumably Sun 29 Nov — confirm) | — none yet | build 14–15 Nov run (inside window from 14 Nov) |
 | Leopardstown Christmas Festival | from 26 Dec 2026 | pages/leopardstown-christmas-festival-2026-betting | pre |
 | PDC World Darts Championship (Alexandra Palace) | from mid-Dec 2026 — verify exact dates | pages/darts-world-championship-betting (evergreen) | pre — consider 2026/27-specific refresh in Dec |
 
@@ -24,4 +24,5 @@ Last engine run: 2026-11-12
 - UK Championship snooker (27 Nov–6 Dec): enters 14-day window on 13 Nov run — build then.
 - 2026 verified sources: Grand Slam dates/format/prize/TV — Sky Sports tournament page; Punchestown Premiere Weekend 21–22 Nov — Punchestown's own 2026 race titles (via Sporting Life racecards); Ireland fixtures — irishrugby.ie / autumn-internationals.co.uk (Fiji KO 20:10, VMTV/ITV); UK Championship 27 Nov–6 Dec, York Barbican — Wikipedia/York Barbican.
 - No Irish player in the published Grand Slam 2026 field (Sky Sports field list) — page says so; update if a late replacement changes that.
+- 13 Nov run: built UK Championship page (main stage 28 Nov–6 Dec per snooker.org & WST calendar — NB Wikipedia says 27 Nov, two sources say 28; used 28). Irish quals interest: Aaron Hill v Vafaei in Q3, Leone Crowley in Q1 (snooker.org draw) — update page if either reaches York. Fiji page: confirmed XV added (Beirne first-time captain, Hansen full-back, 7 changes; TheJournal/Irish Times 12 Nov). Darts page: PDC draw added (Littler–Greaves Group A Sat evening); corrected Irish angle — Josh Rock (NI) IS in the field, seeded 8, Group C; earlier "no Irish player" note was wrong for the island. Add Result sections: Austria v Ireland after Sat 14, Ireland v Kosovo after Tue 17, Cheltenham + Navan + Fiji after the weekend.
 - Post-event checklist: add Result section + dateModified within 3 days of each event above.
