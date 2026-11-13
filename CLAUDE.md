@@ -3,7 +3,7 @@
 Static English/Irish/Polish site (betting & casino guide for Ireland), plain HTML on GitHub Pages.
 Funnel: two partner links, both rel="nofollow" target="_blank". Never invent a third.
 - GRAI-licensed partner bookmaker (licence GRAI-0191-RB-26-0001) — https://plusfind.info/go/2e7c17f7eb1e426bd9fae5242aaa9b3e365b64d1eb0a0b0b/
-  The default for every CTA, and the only link allowed on betting pages.
+  The default for every CTA, and the only one used as the primary button.
 - Non-GRAI provider — https://gameslnk.cc/go/2e7c17f7e91e426ba3e5e5242aaa9b3e365b64d1eb0a0b0b/
   Secondary button, currently on 1782 pages. Its own label must say the operator is not GRAI-licensed
   (current wording: "Explore Non-GRAI Provider"); never presented as licensed or regulated in Ireland.
