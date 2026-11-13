@@ -148,7 +148,6 @@ document.querySelector('.burger')?.addEventListener('click', () => {{
   document.getElementById('mainNav').classList.toggle('open');
 }});
 </script>
-<script src="../js/slot-game.js"></script>
 <script src="/js/ui-sound.js"></script>
 </body>
 </html>'''

@@ -182,7 +182,6 @@
 document.querySelector('.burger').addEventListener('click',function(){this.classList.toggle('active');document.querySelector('.nav').classList.toggle('active');});
 document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){const item=this.parentElement;const isOpen=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(function(el){el.classList.remove('active');});if(!isOpen){item.classList.add('active');}});});
 </script>
-<script src="../../js/slot-game.js"></script>
 <script src="/js/ui-sound.js"></script>
 <script src="/js/megamenu.js" defer></script>
 <script src="/js/spotlight.js" defer></script>
