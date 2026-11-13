@@ -37,6 +37,8 @@
     .rg{font-size:12px;line-height:1.5;color:#8abba0;margin-top:12px;text-align:center}
     .rg a{color:#8abba0}
     .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    .grid1{grid-template-columns:1fr}
+    .note{font-size:13px;line-height:1.5;color:#8abba0;margin-top:10px}
     .tile{display:block;background:#0A2E14;border:1px solid #1f5230;border-radius:12px;padding:14px 12px;color:#fff;text-decoration:none;font-size:14px;font-weight:600;line-height:1.3}
     .tile span{display:block;font-size:12px;font-weight:400;color:#8abba0;margin-top:3px}
     .foot{font-size:12px;line-height:1.6;color:#6a9a7a;text-align:center;margin-top:18px}
@@ -72,9 +74,22 @@
   <div class="card" id="install">
     <div class="label">Add to Home Screen</div>
     <button id="installBtn" class="btn" type="button" style="display:none;width:100%;border:0;margin-top:12px;cursor:pointer;font-family:inherit">Install the CraicBet app</button>
-    <ol id="steps"></ol>
+    <ol id="steps">
+      <li><strong>iPhone:</strong> open this page in Safari, tap Share, then &ldquo;Add to Home Screen&rdquo;.</li>
+      <li><strong>Android:</strong> open it in Chrome, tap the menu, then &ldquo;Add to Home screen&rdquo; or &ldquo;Install app&rdquo;.</li>
+    </ol>
   </div>
 
+  <div class="card">
+    <div class="label">Today</div>
+    <div class="grid grid1">
+      <a class="tile" href="/pages/horse-racing-ireland-today">Irish racing today<span>Meetings and how the card reads</span></a>
+      <a class="tile" href="/pages/football-tips-ireland-today">Football today<span>Fixtures and prices</span></a>
+      <a class="tile" href="/pages/gaa-tips-today-ireland">GAA today<span>League and championship</span></a>
+      <a class="tile" href="/pages/where-to-watch">Where to watch<span>Confirmed Irish broadcasters</span></a>
+    </div>
+    <p class="note">These four are rebuilt every morning, so the app is worth opening daily.</p>
+  </div>
   <div class="card">
     <div class="label">Tools &amp; guides</div>
     <div class="grid">
@@ -84,6 +99,10 @@
       <a class="tile" href="/pages/free-bet-calculator">Free bet calculator<span>What a free bet is worth</span></a>
       <a class="tile" href="/pages/grai-licensed-bookmakers-ireland">Licence check<span>Every GRAI licence</span></a>
       <a class="tile" href="/pages/betting-apps-ireland">Betting apps<span>iOS and Android guide</span></a>
+      <a class="tile" href="/pages/grai-licence-checker">Licence checker<span>Search by brand name</span></a>
+      <a class="tile" href="/pages/grai-licence-register-tracker">Register tracker<span>What changed, and when</span></a>
+      <a class="tile" href="/pages/gambling-news-ireland">Irish gambling news<span>Weekly digest</span></a>
+      <a class="tile" href="/pages/guides">All guides<span>Betting and casino</span></a>
     </div>
   </div>
 

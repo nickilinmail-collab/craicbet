@@ -1,5 +1,5 @@
 // CraicBet app shell: keeps the launch screen available offline.
-const CACHE = 'craicbet-app-v2';
+const CACHE = 'craicbet-app-v3';
 const SHELL = ['/app/', '/app/manifest.webmanifest', '/app/icons/icon-192.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
