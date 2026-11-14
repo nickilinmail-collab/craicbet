@@ -23,6 +23,11 @@ the operator's licence number GRAI-0191-RB-26-0001 — cite it; never claim any 
 - NEVER use operator brand names in URLs, <title>, H1/H2, meta description, keywords or schema. This covers the partner brand
   (TonyBet) AND all GRAI-licensed brands (bet365, Paddy Power, Betfair, Betdaq, 888, William Hill, Tote, Fitzdares, DragonBet,
   Kwiff, Dabble, 32Red, Unibet, NetBet, etc.). A factual sentence inside body text may name a brand; headings/keys may not.
+  Scope, settled 14 Nov 2026: this covers BOOKMAKER brands only. Casino brands, slot titles and software
+  providers are NOT covered — pages/brands/ (120 pages), pages/slots/ (468) and pages/providers/ (10) may
+  carry those names in their URLs and headings, and do. They rank well on the long tail (DublinBet 8.9,
+  Slotanza 4.0, Golden Star 1.0 in mid-November) and are left alone. "Tote betting" in a heading means
+  pool betting, the bet type, and is not the brand The Tote: the three pages using it that way are correct.
 - NEVER claim any casino holds a GRAI licence: GRAI issues remote BETTING licences only (since 1 July 2026). Casino (gaming)
   licences are expected 2027–2028 — zero issued. Our operator holds betting licence GRAI-0191-RB-26-0001 (16 Sep 2026–15 Sep 2029).
 - No fake reviews, no invented RTP/stats/odds, no "guaranteed wins", no fabricated facts. Unverified figures are "reported".
